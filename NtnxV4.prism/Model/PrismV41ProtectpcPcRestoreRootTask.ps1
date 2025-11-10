@@ -21,7 +21,7 @@ Task uuid of the root PC restore task.
 PrismV41ProtectpcPcRestoreRootTask<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcPcRestoreRootTask {
+function Initialize-PrismV41ProtectpcPcRestoreRootTask {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 PrismV41ProtectpcPcRestoreRootTask<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcPcRestoreRootTask {
+function ConvertFrom-JsonToPrismV41ProtectpcPcRestoreRootTask {
     Param(
         [AllowEmptyString()]
         [string]$Json

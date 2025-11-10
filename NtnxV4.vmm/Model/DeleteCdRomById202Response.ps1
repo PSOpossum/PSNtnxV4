@@ -23,7 +23,7 @@ No description available.
 DeleteCdRomById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteCdRomById202Response {
+function Initialize-DeleteCdRomById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteCdRomById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteCdRomById202Response {
+function ConvertFrom-JsonToDeleteCdRomById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigGetSSLCertificateApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetSSLCertificateApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetSSLCertificateApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetSSLCertificateApiRespons
 
         # try to match ClustermgmtV41ConfigSSLCertificate defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSSLCertificate $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigSSLCertificate $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetSSLCertificateApiRespons
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

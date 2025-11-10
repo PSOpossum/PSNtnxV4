@@ -23,7 +23,7 @@ No description available.
 MountStorageContainer202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4MountStorageContainer202Response {
+function Initialize-MountStorageContainer202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 MountStorageContainer202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToMountStorageContainer202Response {
+function ConvertFrom-JsonToMountStorageContainer202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 SecurityV40ConfigDeleteKeyManagementServerApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigDeleteKeyManagementServerApiResponse {
+function Initialize-SecurityV40ConfigDeleteKeyManagementServerApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SecurityV40ConfigDeleteKeyManagementServerApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigDeleteKeyManagementServerApiResponse {
+function ConvertFrom-JsonToSecurityV40ConfigDeleteKeyManagementServerApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

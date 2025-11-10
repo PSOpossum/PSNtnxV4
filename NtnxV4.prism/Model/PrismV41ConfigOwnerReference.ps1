@@ -23,7 +23,7 @@ Username of the task owner.
 PrismV41ConfigOwnerReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigOwnerReference {
+function Initialize-PrismV41ConfigOwnerReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -71,7 +71,7 @@ Json object
 
 PrismV41ConfigOwnerReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigOwnerReference {
+function ConvertFrom-JsonToPrismV41ConfigOwnerReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

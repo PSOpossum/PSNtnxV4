@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigGetNicApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGetNicApiResponse {
+function Initialize-VmmV41AhvConfigGetNicApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigGetNicApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetNicApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigGetNicApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

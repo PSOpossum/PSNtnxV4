@@ -33,7 +33,7 @@ Programming interface ID
 ClustermgmtV41AhvConfigPcieDeviceConfiguration<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41AhvConfigPcieDeviceConfiguration {
+function Initialize-ClustermgmtV41AhvConfigPcieDeviceConfiguration {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -96,7 +96,7 @@ Json object
 
 ClustermgmtV41AhvConfigPcieDeviceConfiguration<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41AhvConfigPcieDeviceConfiguration {
+function ConvertFrom-JsonToClustermgmtV41AhvConfigPcieDeviceConfiguration {
     Param(
         [AllowEmptyString()]
         [string]$Json

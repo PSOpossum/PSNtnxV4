@@ -23,7 +23,7 @@ No description available.
 GetVmStatsById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetVmStatsById200Response {
+function Initialize-GetVmStatsById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetVmStatsById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetVmStatsById200Response {
+function ConvertFrom-JsonToGetVmStatsById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

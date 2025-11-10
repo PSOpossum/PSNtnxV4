@@ -28,7 +28,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreatePlacementPolicy202Response
 #>
-function New-NtnxV4PlacementPolicy {
+function New-PlacementPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -42,7 +42,7 @@ function New-NtnxV4PlacementPolicy {
     )
 
     Process {
-        'Calling method: New-NtnxV4PlacementPolicy' | Write-Debug
+        'Calling method: New-PlacementPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -54,7 +54,7 @@ function New-NtnxV4PlacementPolicy {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -91,7 +91,7 @@ function New-NtnxV4PlacementPolicy {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -131,7 +131,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeletePlacementPolicyById202Response
 #>
-function Invoke-NtnxV4DeletePlacementPolicyById {
+function Invoke-DeletePlacementPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -142,7 +142,7 @@ function Invoke-NtnxV4DeletePlacementPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeletePlacementPolicyById' | Write-Debug
+        'Calling method: Invoke-DeletePlacementPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -154,7 +154,7 @@ function Invoke-NtnxV4DeletePlacementPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -181,7 +181,7 @@ function Invoke-NtnxV4DeletePlacementPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -221,7 +221,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetPlacementPolicyById200Response
 #>
-function Get-NtnxV4PlacementPolicyById {
+function Get-PlacementPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -232,7 +232,7 @@ function Get-NtnxV4PlacementPolicyById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4PlacementPolicyById' | Write-Debug
+        'Calling method: Get-PlacementPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -244,7 +244,7 @@ function Get-NtnxV4PlacementPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -271,7 +271,7 @@ function Get-NtnxV4PlacementPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -323,7 +323,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListPlacementPolicies200Response
 #>
-function Invoke-NtnxV4ListPlacementPolicies {
+function Invoke-ListPlacementPolicies {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -346,7 +346,7 @@ function Invoke-NtnxV4ListPlacementPolicies {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListPlacementPolicies' | Write-Debug
+        'Calling method: Invoke-ListPlacementPolicies' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -358,7 +358,7 @@ function Invoke-NtnxV4ListPlacementPolicies {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -401,7 +401,7 @@ function Invoke-NtnxV4ListPlacementPolicies {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -447,7 +447,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ResumePlacementPolicy202Response
 #>
-function Resume-NtnxV4PlacementPolicy {
+function Resume-PlacementPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -464,7 +464,7 @@ function Resume-NtnxV4PlacementPolicy {
     )
 
     Process {
-        'Calling method: Resume-NtnxV4PlacementPolicy' | Write-Debug
+        'Calling method: Resume-PlacementPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -476,7 +476,7 @@ function Resume-NtnxV4PlacementPolicy {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -513,7 +513,7 @@ function Resume-NtnxV4PlacementPolicy {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -562,7 +562,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 SuspendPlacementPolicy202Response
 #>
-function Suspend-NtnxV4PlacementPolicy {
+function Suspend-PlacementPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -582,7 +582,7 @@ function Suspend-NtnxV4PlacementPolicy {
     )
 
     Process {
-        'Calling method: Suspend-NtnxV4PlacementPolicy' | Write-Debug
+        'Calling method: Suspend-PlacementPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -594,7 +594,7 @@ function Suspend-NtnxV4PlacementPolicy {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -640,7 +640,7 @@ function Suspend-NtnxV4PlacementPolicy {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -689,7 +689,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdatePlacementPolicyById202Response
 #>
-function Update-NtnxV4PlacementPolicyById {
+function Update-PlacementPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -709,7 +709,7 @@ function Update-NtnxV4PlacementPolicyById {
     )
 
     Process {
-        'Calling method: Update-NtnxV4PlacementPolicyById' | Write-Debug
+        'Calling method: Update-PlacementPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -721,7 +721,7 @@ function Update-NtnxV4PlacementPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -767,7 +767,7 @@ function Update-NtnxV4PlacementPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

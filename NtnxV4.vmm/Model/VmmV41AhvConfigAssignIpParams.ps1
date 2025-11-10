@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigAssignIpParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigAssignIpParams {
+function Initialize-VmmV41AhvConfigAssignIpParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigAssignIpParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigAssignIpParams {
+function ConvertFrom-JsonToVmmV41AhvConfigAssignIpParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

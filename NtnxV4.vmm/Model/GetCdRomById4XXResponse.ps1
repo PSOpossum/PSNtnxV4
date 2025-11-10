@@ -23,7 +23,7 @@ No description available.
 GetCdRomById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetCdRomById4XXResponse {
+function Initialize-GetCdRomById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetCdRomById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetCdRomById4XXResponse {
+function ConvertFrom-JsonToGetCdRomById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 PrismV41ManagementCreateBackupTargetApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementCreateBackupTargetApiResponse {
+function Initialize-PrismV41ManagementCreateBackupTargetApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ManagementCreateBackupTargetApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementCreateBackupTargetApiResponse {
+function ConvertFrom-JsonToPrismV41ManagementCreateBackupTargetApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

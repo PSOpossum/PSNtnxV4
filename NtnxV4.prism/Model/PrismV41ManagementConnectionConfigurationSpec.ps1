@@ -21,7 +21,7 @@ No description available.
 PrismV41ManagementConnectionConfigurationSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementConnectionConfigurationSpec {
+function Initialize-PrismV41ManagementConnectionConfigurationSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 PrismV41ManagementConnectionConfigurationSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementConnectionConfigurationSpec {
+function ConvertFrom-JsonToPrismV41ManagementConnectionConfigurationSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

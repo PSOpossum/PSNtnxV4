@@ -29,7 +29,7 @@ List of validation error messages
 ClustermgmtV41ErrorSchemaValidationError<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ErrorSchemaValidationError {
+function Initialize-ClustermgmtV41ErrorSchemaValidationError {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 ClustermgmtV41ErrorSchemaValidationError<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorSchemaValidationError {
+function ConvertFrom-JsonToClustermgmtV41ErrorSchemaValidationError {
     Param(
         [AllowEmptyString()]
         [string]$Json

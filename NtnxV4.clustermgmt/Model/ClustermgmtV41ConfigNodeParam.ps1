@@ -33,7 +33,7 @@ Indicates if the host networking needs to be skipped or not.
 ClustermgmtV41ConfigNodeParam<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeParam {
+function Initialize-ClustermgmtV41ConfigNodeParam {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -128,7 +128,7 @@ Json object
 
 ClustermgmtV41ConfigNodeParam<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeParam {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeParam {
     Param(
         [AllowEmptyString()]
         [string]$Json

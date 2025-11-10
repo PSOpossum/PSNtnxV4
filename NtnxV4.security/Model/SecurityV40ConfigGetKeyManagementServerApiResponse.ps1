@@ -23,7 +23,7 @@ No description available.
 SecurityV40ConfigGetKeyManagementServerApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigGetKeyManagementServerApiResponse {
+function Initialize-SecurityV40ConfigGetKeyManagementServerApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SecurityV40ConfigGetKeyManagementServerApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigGetKeyManagementServerApiResponse {
+function ConvertFrom-JsonToSecurityV40ConfigGetKeyManagementServerApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 PrismV41ProtectpcBackupTargets<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcBackupTargets {
+function Initialize-PrismV41ProtectpcBackupTargets {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ProtectpcBackupTargets<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcBackupTargets {
+function ConvertFrom-JsonToPrismV41ProtectpcBackupTargets {
     Param(
         [AllowEmptyString()]
         [string]$Json

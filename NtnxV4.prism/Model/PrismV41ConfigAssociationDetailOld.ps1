@@ -29,7 +29,7 @@ No description available.
 PrismV41ConfigAssociationDetailOld<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigAssociationDetailOld {
+function Initialize-PrismV41ConfigAssociationDetailOld {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -94,7 +94,7 @@ Json object
 
 PrismV41ConfigAssociationDetailOld<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigAssociationDetailOld {
+function ConvertFrom-JsonToPrismV41ConfigAssociationDetailOld {
     Param(
         [AllowEmptyString()]
         [string]$Json

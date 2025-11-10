@@ -21,7 +21,7 @@ The external ID (UUID) of the category.
 VmmV41AhvPoliciesCategoryReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesCategoryReference {
+function Initialize-VmmV41AhvPoliciesCategoryReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvPoliciesCategoryReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesCategoryReference {
+function ConvertFrom-JsonToVmmV41AhvPoliciesCategoryReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

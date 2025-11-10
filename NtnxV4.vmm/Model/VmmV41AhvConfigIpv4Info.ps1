@@ -21,7 +21,7 @@ The IP addresses as found on the guest VM for the NIC.
 VmmV41AhvConfigIpv4Info<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigIpv4Info {
+function Initialize-VmmV41AhvConfigIpv4Info {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigIpv4Info<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigIpv4Info {
+function ConvertFrom-JsonToVmmV41AhvConfigIpv4Info {
     Param(
         [AllowEmptyString()]
         [string]$Json

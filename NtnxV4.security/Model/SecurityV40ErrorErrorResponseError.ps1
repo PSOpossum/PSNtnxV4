@@ -22,7 +22,7 @@ JSON object
 
 SecurityV40ErrorErrorResponseError<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ErrorErrorResponseError {
+function ConvertFrom-JsonToSecurityV40ErrorErrorResponseError {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ErrorErrorResponseError {
 
         # try to match SecurityV40ErrorAppMessage[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ErrorAppMessage[] $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ErrorAppMessage[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ErrorErrorResponseError {
 
         # try to match SecurityV40ErrorSchemaValidationError defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ErrorSchemaValidationError $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ErrorSchemaValidationError $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

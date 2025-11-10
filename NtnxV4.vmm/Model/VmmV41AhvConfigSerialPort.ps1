@@ -29,7 +29,7 @@ Index of the serial port. Index 1 is reserved for internal usage.
 VmmV41AhvConfigSerialPort<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigSerialPort {
+function Initialize-VmmV41AhvConfigSerialPort {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -102,7 +102,7 @@ Json object
 
 VmmV41AhvConfigSerialPort<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSerialPort {
+function ConvertFrom-JsonToVmmV41AhvConfigSerialPort {
     Param(
         [AllowEmptyString()]
         [string]$Json

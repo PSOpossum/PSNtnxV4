@@ -23,7 +23,7 @@ No description available.
 VmmV41ContentDeployTemplateApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentDeployTemplateApiResponse {
+function Initialize-VmmV41ContentDeployTemplateApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ContentDeployTemplateApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentDeployTemplateApiResponse {
+function ConvertFrom-JsonToVmmV41ContentDeployTemplateApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

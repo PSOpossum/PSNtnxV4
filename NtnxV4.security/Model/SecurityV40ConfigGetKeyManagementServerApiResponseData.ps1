@@ -22,7 +22,7 @@ JSON object
 
 SecurityV40ConfigGetKeyManagementServerApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigGetKeyManagementServerApiResponseData {
+function ConvertFrom-JsonToSecurityV40ConfigGetKeyManagementServerApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ConfigGetKeyManagementServerApiRespo
 
         # try to match SecurityV40ConfigKeyManagementServer defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ConfigKeyManagementServer $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ConfigKeyManagementServer $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ConfigGetKeyManagementServerApiRespo
 
         # try to match SecurityV40ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

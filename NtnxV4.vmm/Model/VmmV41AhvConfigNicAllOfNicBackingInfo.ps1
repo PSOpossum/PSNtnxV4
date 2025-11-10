@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigNicAllOfNicBackingInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigNicAllOfNicBackingInfo {
+function Initialize-VmmV41AhvConfigNicAllOfNicBackingInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VmmV41AhvConfigNicAllOfNicBackingInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigNicAllOfNicBackingInfo {
+function ConvertFrom-JsonToVmmV41AhvConfigNicAllOfNicBackingInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

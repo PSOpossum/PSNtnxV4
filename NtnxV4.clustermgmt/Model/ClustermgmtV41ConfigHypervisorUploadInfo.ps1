@@ -23,7 +23,7 @@ Node list containing upload information.
 ClustermgmtV41ConfigHypervisorUploadInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHypervisorUploadInfo {
+function Initialize-ClustermgmtV41ConfigHypervisorUploadInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 ClustermgmtV41ConfigHypervisorUploadInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHypervisorUploadInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigHypervisorUploadInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

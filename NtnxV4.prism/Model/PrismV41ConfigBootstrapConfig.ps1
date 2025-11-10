@@ -23,7 +23,7 @@ No description available.
 PrismV41ConfigBootstrapConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigBootstrapConfig {
+function Initialize-PrismV41ConfigBootstrapConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 PrismV41ConfigBootstrapConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigBootstrapConfig {
+function ConvertFrom-JsonToPrismV41ConfigBootstrapConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -22,7 +22,7 @@ JSON object
 
 CommonV10ConfigKVPairValue<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPairValue {
+function ConvertFrom-JsonToCommonV10ConfigKVPairValue {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPairValue {
 
         # try to match Boolean defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToBoolean $Json
+            $matchInstance = ConvertFrom-JsonToBoolean $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPairValue {
 
         # try to match CommonV10ConfigMapOfStringWrapper[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToCommonV10ConfigMapOfStringWrapper[] $Json
+            $matchInstance = ConvertFrom-JsonToCommonV10ConfigMapOfStringWrapper[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -68,7 +68,7 @@ function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPairValue {
 
         # try to match Int32 defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToInt32 $Json
+            $matchInstance = ConvertFrom-JsonToInt32 $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -84,7 +84,7 @@ function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPairValue {
 
         # try to match Int32[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToInt32[] $Json
+            $matchInstance = ConvertFrom-JsonToInt32[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -100,7 +100,7 @@ function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPairValue {
 
         # try to match String defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToString $Json
+            $matchInstance = ConvertFrom-JsonToString $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -116,7 +116,7 @@ function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPairValue {
 
         # try to match String[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToString[] $Json
+            $matchInstance = ConvertFrom-JsonToString[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -132,7 +132,7 @@ function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPairValue {
 
         # try to match System.Collections.Hashtable defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSystem.Collections.Hashtable $Json
+            $matchInstance = ConvertFrom-JsonToSystem.Collections.Hashtable $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

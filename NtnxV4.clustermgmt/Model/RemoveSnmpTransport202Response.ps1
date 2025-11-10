@@ -23,7 +23,7 @@ No description available.
 RemoveSnmpTransport202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4RemoveSnmpTransport202Response {
+function Initialize-RemoveSnmpTransport202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 RemoveSnmpTransport202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToRemoveSnmpTransport202Response {
+function ConvertFrom-JsonToRemoveSnmpTransport202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

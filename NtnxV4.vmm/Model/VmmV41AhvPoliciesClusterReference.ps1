@@ -21,7 +21,7 @@ The external ID (UUID) of the cluster.
 VmmV41AhvPoliciesClusterReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesClusterReference {
+function Initialize-VmmV41AhvPoliciesClusterReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvPoliciesClusterReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesClusterReference {
+function ConvertFrom-JsonToVmmV41AhvPoliciesClusterReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

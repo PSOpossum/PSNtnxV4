@@ -21,7 +21,7 @@ Indicates whether the virtual disk is pinned to the hot tier or not.
 VmmV41EsxiConfigVmDiskStorageConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigVmDiskStorageConfig {
+function Initialize-VmmV41EsxiConfigVmDiskStorageConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41EsxiConfigVmDiskStorageConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigVmDiskStorageConfig {
+function ConvertFrom-JsonToVmmV41EsxiConfigVmDiskStorageConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

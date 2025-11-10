@@ -51,7 +51,7 @@ Indicates if diagnostics are running on the Disk.
 ClustermgmtV41ConfigDiskAdvanceConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDiskAdvanceConfig {
+function Initialize-ClustermgmtV41ConfigDiskAdvanceConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -150,7 +150,7 @@ Json object
 
 ClustermgmtV41ConfigDiskAdvanceConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDiskAdvanceConfig {
+function ConvertFrom-JsonToClustermgmtV41ConfigDiskAdvanceConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

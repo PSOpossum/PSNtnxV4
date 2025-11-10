@@ -23,7 +23,7 @@ No description available.
 GetTemplateVersionById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetTemplateVersionById4XXResponse {
+function Initialize-GetTemplateVersionById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetTemplateVersionById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetTemplateVersionById4XXResponse {
+function ConvertFrom-JsonToGetTemplateVersionById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

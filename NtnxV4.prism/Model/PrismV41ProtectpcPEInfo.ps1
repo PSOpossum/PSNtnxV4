@@ -29,7 +29,7 @@ Tells the reason why the backup might be paused. Will be empty if isBackupPaused
 PrismV41ProtectpcPEInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcPEInfo {
+function Initialize-PrismV41ProtectpcPEInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -85,7 +85,7 @@ Json object
 
 PrismV41ProtectpcPEInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcPEInfo {
+function ConvertFrom-JsonToPrismV41ProtectpcPEInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -22,7 +22,7 @@ JSON object
 
 VmmV41ContentGetImageFileApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentGetImageFileApiResponseData {
+function ConvertFrom-JsonToVmmV41ContentGetImageFileApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41ContentGetImageFileApiResponseData {
 
         # try to match System.IO.FileInfo defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSystem.IO.FileInfo $Json
+            $matchInstance = ConvertFrom-JsonToSystem.IO.FileInfo $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41ContentGetImageFileApiResponseData {
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

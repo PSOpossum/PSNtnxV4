@@ -23,7 +23,7 @@ No description available.
 ListHostNicsByHostId200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListHostNicsByHostId200Response {
+function Initialize-ListHostNicsByHostId200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListHostNicsByHostId200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListHostNicsByHostId200Response {
+function ConvertFrom-JsonToListHostNicsByHostId200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

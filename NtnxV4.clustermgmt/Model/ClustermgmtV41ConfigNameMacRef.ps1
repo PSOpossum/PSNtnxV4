@@ -23,7 +23,7 @@ Mac address.
 ClustermgmtV41ConfigNameMacRef<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNameMacRef {
+function Initialize-ClustermgmtV41ConfigNameMacRef {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -71,7 +71,7 @@ Json object
 
 ClustermgmtV41ConfigNameMacRef<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNameMacRef {
+function ConvertFrom-JsonToClustermgmtV41ConfigNameMacRef {
     Param(
         [AllowEmptyString()]
         [string]$Json

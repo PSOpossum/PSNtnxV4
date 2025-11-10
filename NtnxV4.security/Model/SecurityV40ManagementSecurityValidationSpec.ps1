@@ -35,7 +35,7 @@ Qualified entity type. For example dataprotection:config:recovery-point
 SecurityV40ManagementSecurityValidationSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ManagementSecurityValidationSpec {
+function Initialize-SecurityV40ManagementSecurityValidationSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -140,7 +140,7 @@ Json object
 
 SecurityV40ManagementSecurityValidationSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ManagementSecurityValidationSpec {
+function ConvertFrom-JsonToSecurityV40ManagementSecurityValidationSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -25,7 +25,7 @@ No description available.
 CommonV10ConfigIPAddressOrFQDN<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigIPAddressOrFQDN {
+function Initialize-CommonV10ConfigIPAddressOrFQDN {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 CommonV10ConfigIPAddressOrFQDN<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigIPAddressOrFQDN {
+function ConvertFrom-JsonToCommonV10ConfigIPAddressOrFQDN {
     Param(
         [AllowEmptyString()]
         [string]$Json

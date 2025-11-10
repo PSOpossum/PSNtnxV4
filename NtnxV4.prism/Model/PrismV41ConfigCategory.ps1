@@ -39,7 +39,7 @@ This field gives detailed information about the resources which are associated w
 PrismV41ConfigCategory<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigCategory {
+function Initialize-PrismV41ConfigCategory {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -161,7 +161,7 @@ Json object
 
 PrismV41ConfigCategory<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigCategory {
+function ConvertFrom-JsonToPrismV41ConfigCategory {
     Param(
         [AllowEmptyString()]
         [string]$Json

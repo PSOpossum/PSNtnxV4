@@ -27,7 +27,7 @@ List of non-migratable VMs.
 ClustermgmtV41ConfigNonMigratableVmsResult<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNonMigratableVmsResult {
+function Initialize-ClustermgmtV41ConfigNonMigratableVmsResult {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -96,7 +96,7 @@ Json object
 
 ClustermgmtV41ConfigNonMigratableVmsResult<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNonMigratableVmsResult {
+function ConvertFrom-JsonToClustermgmtV41ConfigNonMigratableVmsResult {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -37,7 +37,7 @@ Domain manager (Prism Central) nodes external identifier.
 PrismV41ManagementRestorableDomainManager<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementRestorableDomainManager {
+function Initialize-PrismV41ManagementRestorableDomainManager {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -135,7 +135,7 @@ Json object
 
 PrismV41ManagementRestorableDomainManager<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementRestorableDomainManager {
+function ConvertFrom-JsonToPrismV41ManagementRestorableDomainManager {
     Param(
         [AllowEmptyString()]
         [string]$Json

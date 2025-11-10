@@ -21,7 +21,7 @@ List of extIds of the categories to be updated for the entity.
 ClustermgmtV41ConfigCategoryEntityReferences<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigCategoryEntityReferences {
+function Initialize-ClustermgmtV41ConfigCategoryEntityReferences {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 ClustermgmtV41ConfigCategoryEntityReferences<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigCategoryEntityReferences {
+function ConvertFrom-JsonToClustermgmtV41ConfigCategoryEntityReferences {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -41,7 +41,7 @@ Represents the visibility of banner state.
 SecurityV40ConfigSecurityConfigVisibilitySetting<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigSecurityConfigVisibilitySetting {
+function Initialize-SecurityV40ConfigSecurityConfigVisibilitySetting {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -130,7 +130,7 @@ Json object
 
 SecurityV40ConfigSecurityConfigVisibilitySetting<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigSecurityConfigVisibilitySetting {
+function ConvertFrom-JsonToSecurityV40ConfigSecurityConfigVisibilitySetting {
     Param(
         [AllowEmptyString()]
         [string]$Json

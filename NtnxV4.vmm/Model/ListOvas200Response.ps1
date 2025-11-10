@@ -23,7 +23,7 @@ No description available.
 ListOvas200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListOvas200Response {
+function Initialize-ListOvas200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListOvas200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListOvas200Response {
+function ConvertFrom-JsonToListOvas200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

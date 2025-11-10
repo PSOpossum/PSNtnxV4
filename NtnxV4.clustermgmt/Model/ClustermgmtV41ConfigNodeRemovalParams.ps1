@@ -27,7 +27,7 @@ No description available.
 ClustermgmtV41ConfigNodeRemovalParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeRemovalParams {
+function Initialize-ClustermgmtV41ConfigNodeRemovalParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -90,7 +90,7 @@ Json object
 
 ClustermgmtV41ConfigNodeRemovalParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeRemovalParams {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeRemovalParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

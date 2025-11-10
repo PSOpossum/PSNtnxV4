@@ -57,7 +57,7 @@ NICs attached to the VM.
 VmmV41EsxiConfigVm<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigVm {
+function Initialize-VmmV41EsxiConfigVm {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -235,7 +235,7 @@ Json object
 
 VmmV41EsxiConfigVm<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigVm {
+function ConvertFrom-JsonToVmmV41EsxiConfigVm {
     Param(
         [AllowEmptyString()]
         [string]$Json

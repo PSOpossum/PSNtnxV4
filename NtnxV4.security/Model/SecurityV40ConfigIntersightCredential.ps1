@@ -27,7 +27,7 @@ Pre-defined type of credential.
 SecurityV40ConfigIntersightCredential<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigIntersightCredential {
+function Initialize-SecurityV40ConfigIntersightCredential {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -92,7 +92,7 @@ Json object
 
 SecurityV40ConfigIntersightCredential<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigIntersightCredential {
+function ConvertFrom-JsonToSecurityV40ConfigIntersightCredential {
     Param(
         [AllowEmptyString()]
         [string]$Json

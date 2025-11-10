@@ -31,7 +31,7 @@ Indicates if the disk is undergoing migration to another container.
 VmmV41AhvConfigVmDisk<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmDisk {
+function Initialize-VmmV41AhvConfigVmDisk {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -95,7 +95,7 @@ Json object
 
 VmmV41AhvConfigVmDisk<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmDisk {
+function ConvertFrom-JsonToVmmV41AhvConfigVmDisk {
     Param(
         [AllowEmptyString()]
         [string]$Json

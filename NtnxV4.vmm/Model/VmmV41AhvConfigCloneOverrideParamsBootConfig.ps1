@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigCloneOverrideParamsBootConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloneOverrideParamsBootConfig {
+function ConvertFrom-JsonToVmmV41AhvConfigCloneOverrideParamsBootConfig {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloneOverrideParamsBootConfig {
 
         # try to match VmmV41AhvConfigLegacyBoot defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigLegacyBoot $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigLegacyBoot $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloneOverrideParamsBootConfig {
 
         # try to match VmmV41AhvConfigUefiBoot defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUefiBoot $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigUefiBoot $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

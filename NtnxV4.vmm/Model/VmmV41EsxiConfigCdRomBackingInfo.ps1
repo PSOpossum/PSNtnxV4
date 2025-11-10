@@ -23,7 +23,7 @@ No description available.
 VmmV41EsxiConfigCdRomBackingInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigCdRomBackingInfo {
+function Initialize-VmmV41EsxiConfigCdRomBackingInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -67,7 +67,7 @@ Json object
 
 VmmV41EsxiConfigCdRomBackingInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigCdRomBackingInfo {
+function ConvertFrom-JsonToVmmV41EsxiConfigCdRomBackingInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

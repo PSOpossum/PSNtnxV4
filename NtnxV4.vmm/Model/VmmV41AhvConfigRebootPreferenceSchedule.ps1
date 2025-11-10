@@ -21,7 +21,7 @@ The start time for a scheduled restart.
 VmmV41AhvConfigRebootPreferenceSchedule<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigRebootPreferenceSchedule {
+function Initialize-VmmV41AhvConfigRebootPreferenceSchedule {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigRebootPreferenceSchedule<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigRebootPreferenceSchedule {
+function ConvertFrom-JsonToVmmV41AhvConfigRebootPreferenceSchedule {
     Param(
         [AllowEmptyString()]
         [string]$Json

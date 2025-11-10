@@ -23,7 +23,7 @@ No description available.
 PrismV41ManagementObjectStoreLocation<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementObjectStoreLocation {
+function Initialize-PrismV41ManagementObjectStoreLocation {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -70,7 +70,7 @@ Json object
 
 PrismV41ManagementObjectStoreLocation<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementObjectStoreLocation {
+function ConvertFrom-JsonToPrismV41ManagementObjectStoreLocation {
     Param(
         [AllowEmptyString()]
         [string]$Json

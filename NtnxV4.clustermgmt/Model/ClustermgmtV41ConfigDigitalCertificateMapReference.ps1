@@ -23,7 +23,7 @@ Value for the fields digital_certificate_base64 and key_management_server_uuid f
 ClustermgmtV41ConfigDigitalCertificateMapReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDigitalCertificateMapReference {
+function Initialize-ClustermgmtV41ConfigDigitalCertificateMapReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigDigitalCertificateMapReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDigitalCertificateMapReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigDigitalCertificateMapReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -41,7 +41,7 @@ Indicates whether the high-strength password is in use or not.
 ClustermgmtV41ConfigSystemUserPassword<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSystemUserPassword {
+function Initialize-ClustermgmtV41ConfigSystemUserPassword {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -137,7 +137,7 @@ Json object
 
 ClustermgmtV41ConfigSystemUserPassword<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSystemUserPassword {
+function ConvertFrom-JsonToClustermgmtV41ConfigSystemUserPassword {
     Param(
         [AllowEmptyString()]
         [string]$Json

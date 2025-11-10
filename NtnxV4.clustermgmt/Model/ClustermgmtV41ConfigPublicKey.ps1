@@ -23,7 +23,7 @@ Ssh key value.
 ClustermgmtV41ConfigPublicKey<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigPublicKey {
+function Initialize-ClustermgmtV41ConfigPublicKey {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 ClustermgmtV41ConfigPublicKey<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigPublicKey {
+function ConvertFrom-JsonToClustermgmtV41ConfigPublicKey {
     Param(
         [AllowEmptyString()]
         [string]$Json

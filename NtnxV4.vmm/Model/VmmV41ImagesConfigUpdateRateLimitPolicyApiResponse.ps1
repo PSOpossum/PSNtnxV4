@@ -23,7 +23,7 @@ No description available.
 VmmV41ImagesConfigUpdateRateLimitPolicyApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ImagesConfigUpdateRateLimitPolicyApiResponse {
+function Initialize-VmmV41ImagesConfigUpdateRateLimitPolicyApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ImagesConfigUpdateRateLimitPolicyApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigUpdateRateLimitPolicyApiResponse {
+function ConvertFrom-JsonToVmmV41ImagesConfigUpdateRateLimitPolicyApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

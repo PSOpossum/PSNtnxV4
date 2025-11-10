@@ -39,7 +39,7 @@ No description available.
 ClustermgmtV41ConfigHypervisorUploadNodeListItem<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHypervisorUploadNodeListItem {
+function Initialize-ClustermgmtV41ConfigHypervisorUploadNodeListItem {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -117,7 +117,7 @@ Json object
 
 ClustermgmtV41ConfigHypervisorUploadNodeListItem<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHypervisorUploadNodeListItem {
+function ConvertFrom-JsonToClustermgmtV41ConfigHypervisorUploadNodeListItem {
     Param(
         [AllowEmptyString()]
         [string]$Json

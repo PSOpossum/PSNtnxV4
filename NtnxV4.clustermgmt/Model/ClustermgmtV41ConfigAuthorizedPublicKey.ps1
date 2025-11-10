@@ -23,7 +23,7 @@ Authorized public key's required for cluster users like admin,nutanix etc.
 ClustermgmtV41ConfigAuthorizedPublicKey<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigAuthorizedPublicKey {
+function Initialize-ClustermgmtV41ConfigAuthorizedPublicKey {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -70,7 +70,7 @@ Json object
 
 ClustermgmtV41ConfigAuthorizedPublicKey<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigAuthorizedPublicKey {
+function ConvertFrom-JsonToClustermgmtV41ConfigAuthorizedPublicKey {
     Param(
         [AllowEmptyString()]
         [string]$Json

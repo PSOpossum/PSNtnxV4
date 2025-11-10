@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigDeleteGpuApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDeleteGpuApiResponse {
+function Initialize-VmmV41AhvConfigDeleteGpuApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigDeleteGpuApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDeleteGpuApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigDeleteGpuApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 PrismV41ManagementUnregisterApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementUnregisterApiResponse {
+function Initialize-PrismV41ManagementUnregisterApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ManagementUnregisterApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementUnregisterApiResponse {
+function ConvertFrom-JsonToPrismV41ManagementUnregisterApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

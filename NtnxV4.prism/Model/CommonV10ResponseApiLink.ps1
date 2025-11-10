@@ -23,7 +23,7 @@ A name that identifies the relationship of the link to the object that is return
 CommonV10ResponseApiLink<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ResponseApiLink {
+function Initialize-CommonV10ResponseApiLink {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CommonV10ResponseApiLink<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ResponseApiLink {
+function ConvertFrom-JsonToCommonV10ResponseApiLink {
     Param(
         [AllowEmptyString()]
         [string]$Json

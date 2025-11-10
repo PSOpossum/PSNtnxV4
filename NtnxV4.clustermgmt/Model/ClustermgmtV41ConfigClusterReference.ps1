@@ -23,7 +23,7 @@ Cluster name. This is part of payload for both cluster create & update operation
 ClustermgmtV41ConfigClusterReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigClusterReference {
+function Initialize-ClustermgmtV41ConfigClusterReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -71,7 +71,7 @@ Json object
 
 ClustermgmtV41ConfigClusterReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigClusterReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigClusterReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

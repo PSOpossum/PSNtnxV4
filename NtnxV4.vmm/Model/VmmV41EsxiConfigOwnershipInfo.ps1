@@ -21,7 +21,7 @@ No description available.
 VmmV41EsxiConfigOwnershipInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigOwnershipInfo {
+function Initialize-VmmV41EsxiConfigOwnershipInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VmmV41EsxiConfigOwnershipInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigOwnershipInfo {
+function ConvertFrom-JsonToVmmV41EsxiConfigOwnershipInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 DeployTemplate4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeployTemplate4XXResponse {
+function Initialize-DeployTemplate4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeployTemplate4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeployTemplate4XXResponse {
+function ConvertFrom-JsonToDeployTemplate4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

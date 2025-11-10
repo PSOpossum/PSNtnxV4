@@ -23,7 +23,7 @@ No description available.
 DisassociateCategories4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DisassociateCategories4XXResponse {
+function Initialize-DisassociateCategories4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DisassociateCategories4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDisassociateCategories4XXResponse {
+function ConvertFrom-JsonToDisassociateCategories4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

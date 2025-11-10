@@ -21,7 +21,7 @@ Value of Sysprep unattend xml definition. The value must be base64 encoded.
 VmmV41AhvConfigUnattendxml<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigUnattendxml {
+function Initialize-VmmV41AhvConfigUnattendxml {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VmmV41AhvConfigUnattendxml<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUnattendxml {
+function ConvertFrom-JsonToVmmV41AhvConfigUnattendxml {
     Param(
         [AllowEmptyString()]
         [string]$Json

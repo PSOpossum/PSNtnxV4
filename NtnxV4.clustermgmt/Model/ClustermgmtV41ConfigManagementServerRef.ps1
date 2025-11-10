@@ -29,7 +29,7 @@ Indicates whether the host is managed by an entity or not.
 ClustermgmtV41ConfigManagementServerRef<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigManagementServerRef {
+function Initialize-ClustermgmtV41ConfigManagementServerRef {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -85,7 +85,7 @@ Json object
 
 ClustermgmtV41ConfigManagementServerRef<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigManagementServerRef {
+function ConvertFrom-JsonToClustermgmtV41ConfigManagementServerRef {
     Param(
         [AllowEmptyString()]
         [string]$Json

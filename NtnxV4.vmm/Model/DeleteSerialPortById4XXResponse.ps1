@@ -23,7 +23,7 @@ No description available.
 DeleteSerialPortById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteSerialPortById4XXResponse {
+function Initialize-DeleteSerialPortById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteSerialPortById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteSerialPortById4XXResponse {
+function ConvertFrom-JsonToDeleteSerialPortById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

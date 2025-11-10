@@ -23,7 +23,7 @@ No description available.
 CreateTemplate202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateTemplate202Response {
+function Initialize-CreateTemplate202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateTemplate202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateTemplate202Response {
+function ConvertFrom-JsonToCreateTemplate202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

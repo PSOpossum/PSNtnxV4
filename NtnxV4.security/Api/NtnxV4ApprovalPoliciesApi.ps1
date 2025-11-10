@@ -31,7 +31,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 AssociatePolicies202Response
 #>
-function Join-NtnxV4Policies {
+function Join-Policies {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -48,7 +48,7 @@ function Join-NtnxV4Policies {
     )
 
     Process {
-        'Calling method: Join-NtnxV4Policies' | Write-Debug
+        'Calling method: Join-Policies' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -60,7 +60,7 @@ function Join-NtnxV4Policies {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -101,7 +101,7 @@ function Join-NtnxV4Policies {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -141,7 +141,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateApprovalPolicy202Response
 #>
-function New-NtnxV4ApprovalPolicy {
+function New-ApprovalPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -152,7 +152,7 @@ function New-NtnxV4ApprovalPolicy {
     )
 
     Process {
-        'Calling method: New-NtnxV4ApprovalPolicy' | Write-Debug
+        'Calling method: New-ApprovalPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -164,7 +164,7 @@ function New-NtnxV4ApprovalPolicy {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -196,7 +196,7 @@ function New-NtnxV4ApprovalPolicy {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -239,7 +239,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetApprovalPolicyByExtId200Response
 #>
-function Get-NtnxV4ApprovalPolicyByExtId {
+function Get-ApprovalPolicyByExtId {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -253,7 +253,7 @@ function Get-NtnxV4ApprovalPolicyByExtId {
     )
 
     Process {
-        'Calling method: Get-NtnxV4ApprovalPolicyByExtId' | Write-Debug
+        'Calling method: Get-ApprovalPolicyByExtId' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -265,7 +265,7 @@ function Get-NtnxV4ApprovalPolicyByExtId {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -296,7 +296,7 @@ function Get-NtnxV4ApprovalPolicyByExtId {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -342,7 +342,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListApprovalPolicies200Response
 #>
-function Invoke-NtnxV4ListApprovalPolicies {
+function Invoke-ListApprovalPolicies {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -359,7 +359,7 @@ function Invoke-NtnxV4ListApprovalPolicies {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListApprovalPolicies' | Write-Debug
+        'Calling method: Invoke-ListApprovalPolicies' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -371,7 +371,7 @@ function Invoke-NtnxV4ListApprovalPolicies {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -406,7 +406,7 @@ function Invoke-NtnxV4ListApprovalPolicies {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -455,7 +455,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateApprovalPolicyByExtId202Response
 #>
-function Update-NtnxV4ApprovalPolicyByExtId {
+function Update-ApprovalPolicyByExtId {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -475,7 +475,7 @@ function Update-NtnxV4ApprovalPolicyByExtId {
     )
 
     Process {
-        'Calling method: Update-NtnxV4ApprovalPolicyByExtId' | Write-Debug
+        'Calling method: Update-ApprovalPolicyByExtId' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -487,7 +487,7 @@ function Update-NtnxV4ApprovalPolicyByExtId {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -533,7 +533,7 @@ function Update-NtnxV4ApprovalPolicyByExtId {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

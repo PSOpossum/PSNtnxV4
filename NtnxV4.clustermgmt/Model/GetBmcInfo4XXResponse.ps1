@@ -23,7 +23,7 @@ No description available.
 GetBmcInfo4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetBmcInfo4XXResponse {
+function Initialize-GetBmcInfo4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetBmcInfo4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetBmcInfo4XXResponse {
+function ConvertFrom-JsonToGetBmcInfo4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

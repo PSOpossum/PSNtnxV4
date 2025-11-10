@@ -21,7 +21,7 @@ No description available.
 CredentialEntityCredentialDetails<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CredentialEntityCredentialDetails {
+function Initialize-CredentialEntityCredentialDetails {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 CredentialEntityCredentialDetails<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCredentialEntityCredentialDetails {
+function ConvertFrom-JsonToCredentialEntityCredentialDetails {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -25,7 +25,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetSSLCertificate200Response
 #>
-function Get-NtnxV4SSLCertificate {
+function Get-SSLCertificate {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -36,7 +36,7 @@ function Get-NtnxV4SSLCertificate {
     )
 
     Process {
-        'Calling method: Get-NtnxV4SSLCertificate' | Write-Debug
+        'Calling method: Get-SSLCertificate' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -75,7 +75,7 @@ function Get-NtnxV4SSLCertificate {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -124,7 +124,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateSSLCertificate202Response
 #>
-function Update-NtnxV4SSLCertificate {
+function Update-SSLCertificate {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -144,7 +144,7 @@ function Update-NtnxV4SSLCertificate {
     )
 
     Process {
-        'Calling method: Update-NtnxV4SSLCertificate' | Write-Debug
+        'Calling method: Update-SSLCertificate' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -202,7 +202,7 @@ function Update-NtnxV4SSLCertificate {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

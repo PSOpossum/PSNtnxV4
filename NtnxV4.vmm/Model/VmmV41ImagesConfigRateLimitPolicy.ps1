@@ -41,7 +41,7 @@ External identifier of the Prism Elements where a rate limit is the effective ra
 VmmV41ImagesConfigRateLimitPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ImagesConfigRateLimitPolicy {
+function Initialize-VmmV41ImagesConfigRateLimitPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -171,7 +171,7 @@ Json object
 
 VmmV41ImagesConfigRateLimitPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigRateLimitPolicy {
+function ConvertFrom-JsonToVmmV41ImagesConfigRateLimitPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

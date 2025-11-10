@@ -23,7 +23,7 @@ No description available.
 CancelTask200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CancelTask200Response {
+function Initialize-CancelTask200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CancelTask200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCancelTask200Response {
+function ConvertFrom-JsonToCancelTask200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

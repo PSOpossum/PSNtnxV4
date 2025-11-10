@@ -21,7 +21,7 @@ VLAN ID for the SR-IOV NIC.
 VmmV41AhvConfigSriovNicNetworkInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigSriovNicNetworkInfo {
+function Initialize-VmmV41AhvConfigSriovNicNetworkInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigSriovNicNetworkInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSriovNicNetworkInfo {
+function ConvertFrom-JsonToVmmV41AhvConfigSriovNicNetworkInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

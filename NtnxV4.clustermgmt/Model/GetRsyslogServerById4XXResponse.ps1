@@ -23,7 +23,7 @@ No description available.
 GetRsyslogServerById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetRsyslogServerById4XXResponse {
+function Initialize-GetRsyslogServerById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetRsyslogServerById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetRsyslogServerById4XXResponse {
+function ConvertFrom-JsonToGetRsyslogServerById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

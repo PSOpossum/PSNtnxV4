@@ -23,7 +23,7 @@ No description available.
 ListDomainManagers200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListDomainManagers200Response {
+function Initialize-ListDomainManagers200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 ListDomainManagers200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListDomainManagers200Response {
+function ConvertFrom-JsonToListDomainManagers200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

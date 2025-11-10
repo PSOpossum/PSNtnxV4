@@ -25,7 +25,7 @@ No description available.
 ClustermgmtV41ConfigNodeListItemReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeListItemReference {
+function Initialize-ClustermgmtV41ConfigNodeListItemReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -73,7 +73,7 @@ Json object
 
 ClustermgmtV41ConfigNodeListItemReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeListItemReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeListItemReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

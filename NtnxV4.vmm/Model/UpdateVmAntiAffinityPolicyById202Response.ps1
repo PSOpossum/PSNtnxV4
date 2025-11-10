@@ -23,7 +23,7 @@ No description available.
 UpdateVmAntiAffinityPolicyById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateVmAntiAffinityPolicyById202Response {
+function Initialize-UpdateVmAntiAffinityPolicyById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateVmAntiAffinityPolicyById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateVmAntiAffinityPolicyById202Response {
+function ConvertFrom-JsonToUpdateVmAntiAffinityPolicyById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

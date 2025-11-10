@@ -21,7 +21,7 @@ The NIC configuration to apply on the target cluster when migrating a VM from th
 VmmV41AhvConfigVmCrossClusterMigrateOverrides<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmCrossClusterMigrateOverrides {
+function Initialize-VmmV41AhvConfigVmCrossClusterMigrateOverrides {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigVmCrossClusterMigrateOverrides<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmCrossClusterMigrateOverrides {
+function ConvertFrom-JsonToVmmV41AhvConfigVmCrossClusterMigrateOverrides {
     Param(
         [AllowEmptyString()]
         [string]$Json

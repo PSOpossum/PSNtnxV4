@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigDiskAdditionSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDiskAdditionSpec {
+function Initialize-ClustermgmtV41ConfigDiskAdditionSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 ClustermgmtV41ConfigDiskAdditionSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDiskAdditionSpec {
+function ConvertFrom-JsonToClustermgmtV41ConfigDiskAdditionSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

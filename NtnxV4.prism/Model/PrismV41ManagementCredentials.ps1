@@ -21,7 +21,7 @@ No description available.
 PrismV41ManagementCredentials<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementCredentials {
+function Initialize-PrismV41ManagementCredentials {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 PrismV41ManagementCredentials<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementCredentials {
+function ConvertFrom-JsonToPrismV41ManagementCredentials {
     Param(
         [AllowEmptyString()]
         [string]$Json

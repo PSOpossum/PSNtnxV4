@@ -23,7 +23,7 @@ No description available.
 CustomizeGuestVm4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CustomizeGuestVm4XXResponse {
+function Initialize-CustomizeGuestVm4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CustomizeGuestVm4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCustomizeGuestVm4XXResponse {
+function ConvertFrom-JsonToCustomizeGuestVm4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

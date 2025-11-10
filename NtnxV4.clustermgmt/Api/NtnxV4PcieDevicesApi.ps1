@@ -34,7 +34,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListPcieDevices200Response
 #>
-function Invoke-NtnxV4ListPcieDevices {
+function Invoke-ListPcieDevices {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -54,7 +54,7 @@ function Invoke-NtnxV4ListPcieDevices {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListPcieDevices' | Write-Debug
+        'Calling method: Invoke-ListPcieDevices' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -105,7 +105,7 @@ function Invoke-NtnxV4ListPcieDevices {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

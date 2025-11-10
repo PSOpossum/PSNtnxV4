@@ -119,7 +119,7 @@ PCIe devices attached to the VM.
 VmmV41AhvConfigVm<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVm {
+function Initialize-VmmV41AhvConfigVm {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -457,7 +457,7 @@ Json object
 
 VmmV41AhvConfigVm<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVm {
+function ConvertFrom-JsonToVmmV41AhvConfigVm {
     Param(
         [AllowEmptyString()]
         [string]$Json

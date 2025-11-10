@@ -23,7 +23,7 @@ Device index on the bus. This field is ignored unless the bus details are specif
 VmmV41EsxiConfigCdRomAddress<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigCdRomAddress {
+function Initialize-VmmV41EsxiConfigCdRomAddress {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -71,7 +71,7 @@ Json object
 
 VmmV41EsxiConfigCdRomAddress<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigCdRomAddress {
+function ConvertFrom-JsonToVmmV41EsxiConfigCdRomAddress {
     Param(
         [AllowEmptyString()]
         [string]$Json

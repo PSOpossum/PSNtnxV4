@@ -23,7 +23,7 @@ No description available.
 PrismV41ManagementListRestorableDomainManagersApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementListRestorableDomainManagersApiResponse {
+function Initialize-PrismV41ManagementListRestorableDomainManagersApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ManagementListRestorableDomainManagersApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementListRestorableDomainManagersApiResponse {
+function ConvertFrom-JsonToPrismV41ManagementListRestorableDomainManagersApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

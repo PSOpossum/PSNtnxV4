@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigMigrationPlans<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigMigrationPlans {
+function Initialize-VmmV41AhvConfigMigrationPlans {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigMigrationPlans<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigMigrationPlans {
+function ConvertFrom-JsonToVmmV41AhvConfigMigrationPlans {
     Param(
         [AllowEmptyString()]
         [string]$Json

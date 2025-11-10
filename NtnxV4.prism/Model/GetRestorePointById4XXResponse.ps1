@@ -23,7 +23,7 @@ No description available.
 GetRestorePointById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetRestorePointById4XXResponse {
+function Initialize-GetRestorePointById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetRestorePointById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetRestorePointById4XXResponse {
+function ConvertFrom-JsonToGetRestorePointById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

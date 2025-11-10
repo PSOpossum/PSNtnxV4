@@ -23,7 +23,7 @@ No description available.
 UpdateDiskLEDState202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateDiskLEDState202Response {
+function Initialize-UpdateDiskLEDState202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateDiskLEDState202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateDiskLEDState202Response {
+function ConvertFrom-JsonToUpdateDiskLEDState202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

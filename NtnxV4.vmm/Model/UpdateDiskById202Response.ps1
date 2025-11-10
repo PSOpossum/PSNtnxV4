@@ -23,7 +23,7 @@ No description available.
 UpdateDiskById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateDiskById202Response {
+function Initialize-UpdateDiskById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateDiskById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateDiskById202Response {
+function ConvertFrom-JsonToUpdateDiskById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -29,7 +29,7 @@ No description available.
 VmmV41EsxiConfigNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNic {
+function Initialize-VmmV41EsxiConfigNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -94,7 +94,7 @@ Json object
 
 VmmV41EsxiConfigNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNic {
+function ConvertFrom-JsonToVmmV41EsxiConfigNic {
     Param(
         [AllowEmptyString()]
         [string]$Json

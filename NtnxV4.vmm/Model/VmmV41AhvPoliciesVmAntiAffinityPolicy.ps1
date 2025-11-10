@@ -45,7 +45,7 @@ Number of VMs with compliance state as pending, which are part of the VM-VM anti
 VmmV41AhvPoliciesVmAntiAffinityPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesVmAntiAffinityPolicy {
+function Initialize-VmmV41AhvPoliciesVmAntiAffinityPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -158,7 +158,7 @@ Json object
 
 VmmV41AhvPoliciesVmAntiAffinityPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesVmAntiAffinityPolicy {
+function ConvertFrom-JsonToVmmV41AhvPoliciesVmAntiAffinityPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ Rack name.
 ClustermgmtV41ConfigBlockItem<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigBlockItem {
+function Initialize-ClustermgmtV41ConfigBlockItem {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -70,7 +70,7 @@ Json object
 
 ClustermgmtV41ConfigBlockItem<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigBlockItem {
+function ConvertFrom-JsonToClustermgmtV41ConfigBlockItem {
     Param(
         [AllowEmptyString()]
         [string]$Json

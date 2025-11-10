@@ -22,7 +22,7 @@ JSON object
 
 PrismV41ManagementObjectStoreLocationProviderConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementObjectStoreLocationProviderConfig {
+function ConvertFrom-JsonToPrismV41ManagementObjectStoreLocationProviderConfig {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementObjectStoreLocationProviderCo
 
         # try to match PrismV41ManagementAWSS3Config defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ManagementAWSS3Config $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ManagementAWSS3Config $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementObjectStoreLocationProviderCo
 
         # try to match PrismV41ManagementNutanixObjectsConfig defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ManagementNutanixObjectsConfig $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ManagementNutanixObjectsConfig $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

@@ -23,7 +23,7 @@ No description available.
 CreatePcieDevice4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreatePcieDevice4XXResponse {
+function Initialize-CreatePcieDevice4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreatePcieDevice4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreatePcieDevice4XXResponse {
+function ConvertFrom-JsonToCreatePcieDevice4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -25,7 +25,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetBatchById200Response
 #>
-function Get-NtnxV4BatchById {
+function Get-BatchById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -36,7 +36,7 @@ function Get-NtnxV4BatchById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4BatchById' | Write-Debug
+        'Calling method: Get-BatchById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -48,7 +48,7 @@ function Get-NtnxV4BatchById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -75,7 +75,7 @@ function Get-NtnxV4BatchById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -127,7 +127,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListBatches200Response
 #>
-function Invoke-NtnxV4ListBatches {
+function Invoke-ListBatches {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -150,7 +150,7 @@ function Invoke-NtnxV4ListBatches {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListBatches' | Write-Debug
+        'Calling method: Invoke-ListBatches' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -162,7 +162,7 @@ function Invoke-NtnxV4ListBatches {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -205,7 +205,7 @@ function Invoke-NtnxV4ListBatches {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -248,7 +248,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 SubmitBatch202Response
 #>
-function Submit-NtnxV4Batch {
+function Submit-Batch {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -262,7 +262,7 @@ function Submit-NtnxV4Batch {
     )
 
     Process {
-        'Calling method: Submit-NtnxV4Batch' | Write-Debug
+        'Calling method: Submit-Batch' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -274,7 +274,7 @@ function Submit-NtnxV4Batch {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -311,7 +311,7 @@ function Submit-NtnxV4Batch {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

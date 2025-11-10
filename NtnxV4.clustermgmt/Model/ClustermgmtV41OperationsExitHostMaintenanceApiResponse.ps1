@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41OperationsExitHostMaintenanceApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41OperationsExitHostMaintenanceApiResponse {
+function Initialize-ClustermgmtV41OperationsExitHostMaintenanceApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41OperationsExitHostMaintenanceApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41OperationsExitHostMaintenanceApiResponse {
+function ConvertFrom-JsonToClustermgmtV41OperationsExitHostMaintenanceApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

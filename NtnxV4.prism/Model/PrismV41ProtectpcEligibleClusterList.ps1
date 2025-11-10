@@ -21,7 +21,7 @@ No description available.
 PrismV41ProtectpcEligibleClusterList<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcEligibleClusterList {
+function Initialize-PrismV41ProtectpcEligibleClusterList {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 PrismV41ProtectpcEligibleClusterList<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcEligibleClusterList {
+function ConvertFrom-JsonToPrismV41ProtectpcEligibleClusterList {
     Param(
         [AllowEmptyString()]
         [string]$Json

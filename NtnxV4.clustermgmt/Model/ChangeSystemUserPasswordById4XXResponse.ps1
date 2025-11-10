@@ -23,7 +23,7 @@ No description available.
 ChangeSystemUserPasswordById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ChangeSystemUserPasswordById4XXResponse {
+function Initialize-ChangeSystemUserPasswordById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ChangeSystemUserPasswordById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToChangeSystemUserPasswordById4XXResponse {
+function ConvertFrom-JsonToChangeSystemUserPasswordById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

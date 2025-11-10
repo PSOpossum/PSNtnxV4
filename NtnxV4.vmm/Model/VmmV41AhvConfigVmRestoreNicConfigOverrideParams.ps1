@@ -25,7 +25,7 @@ No description available.
 VmmV41AhvConfigVmRestoreNicConfigOverrideParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmRestoreNicConfigOverrideParams {
+function Initialize-VmmV41AhvConfigVmRestoreNicConfigOverrideParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -77,7 +77,7 @@ Json object
 
 VmmV41AhvConfigVmRestoreNicConfigOverrideParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmRestoreNicConfigOverrideParams {
+function ConvertFrom-JsonToVmmV41AhvConfigVmRestoreNicConfigOverrideParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

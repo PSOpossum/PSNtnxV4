@@ -22,7 +22,7 @@ JSON object
 
 PrismV41ConfigListCategoriesApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigListCategoriesApiResponseData {
+function ConvertFrom-JsonToPrismV41ConfigListCategoriesApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ConfigListCategoriesApiResponseData {
 
         # try to match PrismV41ConfigCategory[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ConfigCategory[] $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ConfigCategory[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ConfigListCategoriesApiResponseData {
 
         # try to match PrismV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

@@ -25,7 +25,7 @@ List of approvers.
 SecurityV40ManagementApproverGroup<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ManagementApproverGroup {
+function Initialize-SecurityV40ManagementApproverGroup {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -96,7 +96,7 @@ Json object
 
 SecurityV40ManagementApproverGroup<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ManagementApproverGroup {
+function ConvertFrom-JsonToSecurityV40ManagementApproverGroup {
     Param(
         [AllowEmptyString()]
         [string]$Json

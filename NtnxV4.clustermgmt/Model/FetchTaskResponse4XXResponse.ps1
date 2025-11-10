@@ -23,7 +23,7 @@ No description available.
 FetchTaskResponse4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4FetchTaskResponse4XXResponse {
+function Initialize-FetchTaskResponse4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 FetchTaskResponse4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToFetchTaskResponse4XXResponse {
+function ConvertFrom-JsonToFetchTaskResponse4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

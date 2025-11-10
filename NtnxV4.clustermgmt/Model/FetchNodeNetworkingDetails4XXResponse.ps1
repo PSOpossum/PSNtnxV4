@@ -23,7 +23,7 @@ No description available.
 FetchNodeNetworkingDetails4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4FetchNodeNetworkingDetails4XXResponse {
+function Initialize-FetchNodeNetworkingDetails4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 FetchNodeNetworkingDetails4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToFetchNodeNetworkingDetails4XXResponse {
+function ConvertFrom-JsonToFetchNodeNetworkingDetails4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

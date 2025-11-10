@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigDiskMigrationParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDiskMigrationParams {
+function Initialize-VmmV41AhvConfigDiskMigrationParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigDiskMigrationParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDiskMigrationParams {
+function ConvertFrom-JsonToVmmV41AhvConfigDiskMigrationParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

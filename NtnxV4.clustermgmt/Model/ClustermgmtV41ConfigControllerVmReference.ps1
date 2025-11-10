@@ -31,7 +31,7 @@ Maintenance mode status.
 ClustermgmtV41ConfigControllerVmReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigControllerVmReference {
+function Initialize-ClustermgmtV41ConfigControllerVmReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -98,7 +98,7 @@ Json object
 
 ClustermgmtV41ConfigControllerVmReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigControllerVmReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigControllerVmReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -31,7 +31,7 @@ Indicates whether the vCenter Server extension is registered for the cluster.
 ClustermgmtV41ConfigVcenterExtension<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigVcenterExtension {
+function Initialize-ClustermgmtV41ConfigVcenterExtension {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -102,7 +102,7 @@ Json object
 
 ClustermgmtV41ConfigVcenterExtension<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigVcenterExtension {
+function ConvertFrom-JsonToClustermgmtV41ConfigVcenterExtension {
     Param(
         [AllowEmptyString()]
         [string]$Json

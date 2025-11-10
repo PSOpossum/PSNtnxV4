@@ -23,7 +23,7 @@ No description available.
 VmmV41ContentTemplateVmReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentTemplateVmReference {
+function Initialize-VmmV41ContentTemplateVmReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -71,7 +71,7 @@ Json object
 
 VmmV41ContentTemplateVmReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentTemplateVmReference {
+function ConvertFrom-JsonToVmmV41ContentTemplateVmReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

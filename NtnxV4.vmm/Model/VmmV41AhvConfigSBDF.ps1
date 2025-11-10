@@ -27,7 +27,7 @@ PCI Function number in hexadecimal.
 VmmV41AhvConfigSBDF<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigSBDF {
+function Initialize-VmmV41AhvConfigSBDF {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 VmmV41AhvConfigSBDF<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSBDF {
+function ConvertFrom-JsonToVmmV41AhvConfigSBDF {
     Param(
         [AllowEmptyString()]
         [string]$Json

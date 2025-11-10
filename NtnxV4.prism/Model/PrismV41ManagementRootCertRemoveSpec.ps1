@@ -21,7 +21,7 @@ The external identifier of the domain manager (Prism Central) resource.
 PrismV41ManagementRootCertRemoveSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementRootCertRemoveSpec {
+function Initialize-PrismV41ManagementRootCertRemoveSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -65,7 +65,7 @@ Json object
 
 PrismV41ManagementRootCertRemoveSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementRootCertRemoveSpec {
+function ConvertFrom-JsonToPrismV41ManagementRootCertRemoveSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

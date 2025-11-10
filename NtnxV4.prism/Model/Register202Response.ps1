@@ -23,7 +23,7 @@ No description available.
 Register202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4Register202Response {
+function Initialize-Register202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 Register202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToRegister202Response {
+function ConvertFrom-JsonToRegister202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

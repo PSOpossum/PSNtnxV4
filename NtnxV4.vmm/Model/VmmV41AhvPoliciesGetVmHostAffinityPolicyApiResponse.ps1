@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvPoliciesGetVmHostAffinityPolicyApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesGetVmHostAffinityPolicyApiResponse {
+function Initialize-VmmV41AhvPoliciesGetVmHostAffinityPolicyApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvPoliciesGetVmHostAffinityPolicyApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesGetVmHostAffinityPolicyApiResponse {
+function ConvertFrom-JsonToVmmV41AhvPoliciesGetVmHostAffinityPolicyApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

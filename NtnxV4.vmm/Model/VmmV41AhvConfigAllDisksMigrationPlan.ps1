@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigAllDisksMigrationPlan<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigAllDisksMigrationPlan {
+function Initialize-VmmV41AhvConfigAllDisksMigrationPlan {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigAllDisksMigrationPlan<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigAllDisksMigrationPlan {
+function ConvertFrom-JsonToVmmV41AhvConfigAllDisksMigrationPlan {
     Param(
         [AllowEmptyString()]
         [string]$Json

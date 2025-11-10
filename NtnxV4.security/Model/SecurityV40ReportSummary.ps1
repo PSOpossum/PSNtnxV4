@@ -39,7 +39,7 @@ The date the dashboard information was last refreshed
 SecurityV40ReportSummary<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ReportSummary {
+function Initialize-SecurityV40ReportSummary {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -126,7 +126,7 @@ Json object
 
 SecurityV40ReportSummary<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ReportSummary {
+function ConvertFrom-JsonToSecurityV40ReportSummary {
     Param(
         [AllowEmptyString()]
         [string]$Json

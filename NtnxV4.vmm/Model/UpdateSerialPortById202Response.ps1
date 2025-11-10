@@ -23,7 +23,7 @@ No description available.
 UpdateSerialPortById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateSerialPortById202Response {
+function Initialize-UpdateSerialPortById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateSerialPortById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateSerialPortById202Response {
+function ConvertFrom-JsonToUpdateSerialPortById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

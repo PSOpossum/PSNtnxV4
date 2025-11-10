@@ -21,7 +21,7 @@ Globally unique identifier denoting PCIe device label. It should be of type UUID
 VmmV41AhvConfigPcieDeviceReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigPcieDeviceReference {
+function Initialize-VmmV41AhvConfigPcieDeviceReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigPcieDeviceReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigPcieDeviceReference {
+function ConvertFrom-JsonToVmmV41AhvConfigPcieDeviceReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

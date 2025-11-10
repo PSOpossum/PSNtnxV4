@@ -23,7 +23,7 @@ No description available.
 DeleteCategoryById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteCategoryById4XXResponse {
+function Initialize-DeleteCategoryById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteCategoryById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteCategoryById4XXResponse {
+function ConvertFrom-JsonToDeleteCategoryById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

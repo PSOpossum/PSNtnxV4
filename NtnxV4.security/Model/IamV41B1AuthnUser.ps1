@@ -69,7 +69,7 @@ No description available.
 IamV41B1AuthnUser<PSCustomObject>
 #>
 
-function Initialize-NtnxV4IamV41B1AuthnUser {
+function Initialize-IamV41B1AuthnUser {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -294,7 +294,7 @@ Json object
 
 IamV41B1AuthnUser<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToIamV41B1AuthnUser {
+function ConvertFrom-JsonToIamV41B1AuthnUser {
     Param(
         [AllowEmptyString()]
         [string]$Json

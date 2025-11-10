@@ -25,7 +25,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CancelTask200Response
 #>
-function Stop-NtnxV4Task {
+function Stop-Task {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -36,7 +36,7 @@ function Stop-NtnxV4Task {
     )
 
     Process {
-        'Calling method: Stop-NtnxV4Task' | Write-Debug
+        'Calling method: Stop-Task' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -48,7 +48,7 @@ function Stop-NtnxV4Task {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -75,7 +75,7 @@ function Stop-NtnxV4Task {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -118,7 +118,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetTaskById200Response
 #>
-function Get-NtnxV4TaskById {
+function Get-TaskById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -132,7 +132,7 @@ function Get-NtnxV4TaskById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4TaskById' | Write-Debug
+        'Calling method: Get-TaskById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -144,7 +144,7 @@ function Get-NtnxV4TaskById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -175,7 +175,7 @@ function Get-NtnxV4TaskById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -227,7 +227,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListTasks200Response
 #>
-function Invoke-NtnxV4ListTasks {
+function Invoke-ListTasks {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -250,7 +250,7 @@ function Invoke-NtnxV4ListTasks {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListTasks' | Write-Debug
+        'Calling method: Invoke-ListTasks' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -262,7 +262,7 @@ function Invoke-NtnxV4ListTasks {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -305,7 +305,7 @@ function Invoke-NtnxV4ListTasks {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

@@ -28,7 +28,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateKeyManagementServer202Response
 #>
-function New-NtnxV4KeyManagementServer {
+function New-KeyManagementServer {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -42,7 +42,7 @@ function New-NtnxV4KeyManagementServer {
     )
 
     Process {
-        'Calling method: New-NtnxV4KeyManagementServer' | Write-Debug
+        'Calling method: New-KeyManagementServer' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -54,7 +54,7 @@ function New-NtnxV4KeyManagementServer {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -91,7 +91,7 @@ function New-NtnxV4KeyManagementServer {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -134,7 +134,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeleteKeyManagementServerById202Response
 #>
-function Invoke-NtnxV4DeleteKeyManagementServerById {
+function Invoke-DeleteKeyManagementServerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -148,7 +148,7 @@ function Invoke-NtnxV4DeleteKeyManagementServerById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteKeyManagementServerById' | Write-Debug
+        'Calling method: Invoke-DeleteKeyManagementServerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -160,7 +160,7 @@ function Invoke-NtnxV4DeleteKeyManagementServerById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -192,7 +192,7 @@ function Invoke-NtnxV4DeleteKeyManagementServerById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -232,7 +232,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetKeyManagementServerById200Response
 #>
-function Get-NtnxV4KeyManagementServerById {
+function Get-KeyManagementServerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -243,7 +243,7 @@ function Get-NtnxV4KeyManagementServerById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4KeyManagementServerById' | Write-Debug
+        'Calling method: Get-KeyManagementServerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -255,7 +255,7 @@ function Get-NtnxV4KeyManagementServerById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -282,7 +282,7 @@ function Get-NtnxV4KeyManagementServerById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -319,7 +319,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListKeyManagementServers200Response
 #>
-function Invoke-NtnxV4ListKeyManagementServers {
+function Invoke-ListKeyManagementServers {
     [CmdletBinding()]
     Param (
         [Switch]
@@ -327,7 +327,7 @@ function Invoke-NtnxV4ListKeyManagementServers {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListKeyManagementServers' | Write-Debug
+        'Calling method: Invoke-ListKeyManagementServers' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -339,7 +339,7 @@ function Invoke-NtnxV4ListKeyManagementServers {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -362,7 +362,7 @@ function Invoke-NtnxV4ListKeyManagementServers {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -411,7 +411,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateKeyManagementServerById202Response
 #>
-function Update-NtnxV4KeyManagementServerById {
+function Update-KeyManagementServerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -431,7 +431,7 @@ function Update-NtnxV4KeyManagementServerById {
     )
 
     Process {
-        'Calling method: Update-NtnxV4KeyManagementServerById' | Write-Debug
+        'Calling method: Update-KeyManagementServerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -443,7 +443,7 @@ function Update-NtnxV4KeyManagementServerById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -489,7 +489,7 @@ function Update-NtnxV4KeyManagementServerById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

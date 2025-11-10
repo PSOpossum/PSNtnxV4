@@ -25,7 +25,7 @@ No description available.
 VmmV41EsxiConfigNicBackingInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNicBackingInfo {
+function Initialize-VmmV41EsxiConfigNicBackingInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 VmmV41EsxiConfigNicBackingInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNicBackingInfo {
+function ConvertFrom-JsonToVmmV41EsxiConfigNicBackingInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

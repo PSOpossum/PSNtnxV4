@@ -25,7 +25,7 @@ Overall completion percentage of task.
 PrismV41ProtectpcRecoveryStatus<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcRecoveryStatus {
+function Initialize-PrismV41ProtectpcRecoveryStatus {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 PrismV41ProtectpcRecoveryStatus<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcRecoveryStatus {
+function ConvertFrom-JsonToPrismV41ProtectpcRecoveryStatus {
     Param(
         [AllowEmptyString()]
         [string]$Json

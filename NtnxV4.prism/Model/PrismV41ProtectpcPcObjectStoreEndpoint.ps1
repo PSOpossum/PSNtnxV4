@@ -43,7 +43,7 @@ Whether custom certificate provided or not.
 PrismV41ProtectpcPcObjectStoreEndpoint<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcPcObjectStoreEndpoint {
+function Initialize-PrismV41ProtectpcPcObjectStoreEndpoint {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -131,7 +131,7 @@ Json object
 
 PrismV41ProtectpcPcObjectStoreEndpoint<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcPcObjectStoreEndpoint {
+function ConvertFrom-JsonToPrismV41ProtectpcPcObjectStoreEndpoint {
     Param(
         [AllowEmptyString()]
         [string]$Json

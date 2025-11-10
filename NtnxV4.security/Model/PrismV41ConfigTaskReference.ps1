@@ -21,7 +21,7 @@ A globally unique identifier for a task.
 PrismV41ConfigTaskReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigTaskReference {
+function Initialize-PrismV41ConfigTaskReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 PrismV41ConfigTaskReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigTaskReference {
+function ConvertFrom-JsonToPrismV41ConfigTaskReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ Password for the server.
 VmmV41EsxiConfigNutanixCredential<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNutanixCredential {
+function Initialize-VmmV41EsxiConfigNutanixCredential {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 VmmV41EsxiConfigNutanixCredential<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNutanixCredential {
+function ConvertFrom-JsonToVmmV41EsxiConfigNutanixCredential {
     Param(
         [AllowEmptyString()]
         [string]$Json

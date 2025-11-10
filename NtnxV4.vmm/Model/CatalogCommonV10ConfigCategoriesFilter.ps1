@@ -23,7 +23,7 @@ Filter to match entities based on the provided categories.
 CatalogCommonV10ConfigCategoriesFilter<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CatalogCommonV10ConfigCategoriesFilter {
+function Initialize-CatalogCommonV10ConfigCategoriesFilter {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -83,7 +83,7 @@ Json object
 
 CatalogCommonV10ConfigCategoriesFilter<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCatalogCommonV10ConfigCategoriesFilter {
+function ConvertFrom-JsonToCatalogCommonV10ConfigCategoriesFilter {
     Param(
         [AllowEmptyString()]
         [string]$Json

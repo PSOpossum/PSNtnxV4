@@ -25,7 +25,7 @@ No description available.
 VmmV41AhvConfigCloudInit<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCloudInit {
+function Initialize-VmmV41AhvConfigCloudInit {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -77,7 +77,7 @@ Json object
 
 VmmV41AhvConfigCloudInit<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloudInit {
+function ConvertFrom-JsonToVmmV41AhvConfigCloudInit {
     Param(
         [AllowEmptyString()]
         [string]$Json

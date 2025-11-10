@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigSysprepSysprepScript<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSysprepSysprepScript {
+function ConvertFrom-JsonToVmmV41AhvConfigSysprepSysprepScript {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSysprepSysprepScript {
 
         # try to match VmmV41AhvConfigCustomKeyValues defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCustomKeyValues $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigCustomKeyValues $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSysprepSysprepScript {
 
         # try to match VmmV41AhvConfigUnattendxml defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUnattendxml $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigUnattendxml $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

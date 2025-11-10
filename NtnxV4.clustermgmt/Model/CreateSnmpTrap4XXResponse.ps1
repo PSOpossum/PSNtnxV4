@@ -23,7 +23,7 @@ No description available.
 CreateSnmpTrap4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateSnmpTrap4XXResponse {
+function Initialize-CreateSnmpTrap4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateSnmpTrap4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateSnmpTrap4XXResponse {
+function ConvertFrom-JsonToCreateSnmpTrap4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

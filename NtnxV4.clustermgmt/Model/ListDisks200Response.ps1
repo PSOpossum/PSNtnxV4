@@ -23,7 +23,7 @@ No description available.
 ListDisks200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListDisks200Response {
+function Initialize-ListDisks200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListDisks200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListDisks200Response {
+function ConvertFrom-JsonToListDisks200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

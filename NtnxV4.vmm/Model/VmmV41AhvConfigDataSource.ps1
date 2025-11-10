@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigDataSource<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDataSource {
+function Initialize-VmmV41AhvConfigDataSource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigDataSource<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDataSource {
+function ConvertFrom-JsonToVmmV41AhvConfigDataSource {
     Param(
         [AllowEmptyString()]
         [string]$Json

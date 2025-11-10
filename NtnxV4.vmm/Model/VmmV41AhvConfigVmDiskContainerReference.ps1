@@ -21,7 +21,7 @@ A globally unique identifier of a VM disk container. It should be of type UUID.
 VmmV41AhvConfigVmDiskContainerReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmDiskContainerReference {
+function Initialize-VmmV41AhvConfigVmDiskContainerReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigVmDiskContainerReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmDiskContainerReference {
+function ConvertFrom-JsonToVmmV41AhvConfigVmDiskContainerReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -39,7 +39,7 @@ Frame buffer size in bytes.
 ClustermgmtV41ConfigPhysicalGpuConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigPhysicalGpuConfig {
+function Initialize-ClustermgmtV41ConfigPhysicalGpuConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -148,7 +148,7 @@ Json object
 
 ClustermgmtV41ConfigPhysicalGpuConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigPhysicalGpuConfig {
+function ConvertFrom-JsonToClustermgmtV41ConfigPhysicalGpuConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

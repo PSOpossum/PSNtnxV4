@@ -23,7 +23,7 @@ No description available.
 PrismV41ConfigListDomainManagerApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigListDomainManagerApiResponse {
+function Initialize-PrismV41ConfigListDomainManagerApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ConfigListDomainManagerApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigListDomainManagerApiResponse {
+function ConvertFrom-JsonToPrismV41ConfigListDomainManagerApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

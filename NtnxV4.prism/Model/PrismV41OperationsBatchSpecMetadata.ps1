@@ -29,7 +29,7 @@ The chunk size to use during the batching operation. If not specified a minimum 
 PrismV41OperationsBatchSpecMetadata<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41OperationsBatchSpecMetadata {
+function Initialize-PrismV41OperationsBatchSpecMetadata {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -106,7 +106,7 @@ Json object
 
 PrismV41OperationsBatchSpecMetadata<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41OperationsBatchSpecMetadata {
+function ConvertFrom-JsonToPrismV41OperationsBatchSpecMetadata {
     Param(
         [AllowEmptyString()]
         [string]$Json

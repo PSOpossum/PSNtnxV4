@@ -23,7 +23,7 @@ Disk external identifier which is captured as a part of this recovery point.
 DataprotectionV40CommonDiskRecoveryPoint<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DataprotectionV40CommonDiskRecoveryPoint {
+function Initialize-DataprotectionV40CommonDiskRecoveryPoint {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 DataprotectionV40CommonDiskRecoveryPoint<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDataprotectionV40CommonDiskRecoveryPoint {
+function ConvertFrom-JsonToDataprotectionV40CommonDiskRecoveryPoint {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigListHostNicsByHostIdApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigListHostNicsByHostIdApiResponse {
+function Initialize-ClustermgmtV41ConfigListHostNicsByHostIdApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigListHostNicsByHostIdApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListHostNicsByHostIdApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigListHostNicsByHostIdApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

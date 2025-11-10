@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigGetVirtualNicApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigGetVirtualNicApiResponse {
+function Initialize-ClustermgmtV41ConfigGetVirtualNicApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigGetVirtualNicApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetVirtualNicApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetVirtualNicApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

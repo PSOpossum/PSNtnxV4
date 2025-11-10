@@ -47,7 +47,7 @@ Creation time for the bucket access key.
 IamV41B1AuthnBucketsAccessKey<PSCustomObject>
 #>
 
-function Initialize-NtnxV4IamV41B1AuthnBucketsAccessKey {
+function Initialize-IamV41B1AuthnBucketsAccessKey {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -174,7 +174,7 @@ Json object
 
 IamV41B1AuthnBucketsAccessKey<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToIamV41B1AuthnBucketsAccessKey {
+function ConvertFrom-JsonToIamV41B1AuthnBucketsAccessKey {
     Param(
         [AllowEmptyString()]
         [string]$Json

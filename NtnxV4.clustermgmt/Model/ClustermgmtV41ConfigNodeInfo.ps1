@@ -49,7 +49,7 @@ Current network interface of a node.
 ClustermgmtV41ConfigNodeInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeInfo {
+function Initialize-ClustermgmtV41ConfigNodeInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -158,7 +158,7 @@ Json object
 
 ClustermgmtV41ConfigNodeInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

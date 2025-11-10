@@ -25,7 +25,7 @@ Secondary IP addresses for the NIC.
 VmmV41AhvConfigIpv4Config<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigIpv4Config {
+function Initialize-VmmV41AhvConfigIpv4Config {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -80,7 +80,7 @@ Json object
 
 VmmV41AhvConfigIpv4Config<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigIpv4Config {
+function ConvertFrom-JsonToVmmV41AhvConfigIpv4Config {
     Param(
         [AllowEmptyString()]
         [string]$Json

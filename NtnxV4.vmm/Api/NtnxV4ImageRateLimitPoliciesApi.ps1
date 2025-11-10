@@ -28,7 +28,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateRateLimitPolicy202Response
 #>
-function New-NtnxV4RateLimitPolicy {
+function New-RateLimitPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -42,7 +42,7 @@ function New-NtnxV4RateLimitPolicy {
     )
 
     Process {
-        'Calling method: New-NtnxV4RateLimitPolicy' | Write-Debug
+        'Calling method: New-RateLimitPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -54,7 +54,7 @@ function New-NtnxV4RateLimitPolicy {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -91,7 +91,7 @@ function New-NtnxV4RateLimitPolicy {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -131,7 +131,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeleteRateLimitPolicyById202Response
 #>
-function Invoke-NtnxV4DeleteRateLimitPolicyById {
+function Invoke-DeleteRateLimitPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -142,7 +142,7 @@ function Invoke-NtnxV4DeleteRateLimitPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteRateLimitPolicyById' | Write-Debug
+        'Calling method: Invoke-DeleteRateLimitPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -154,7 +154,7 @@ function Invoke-NtnxV4DeleteRateLimitPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -181,7 +181,7 @@ function Invoke-NtnxV4DeleteRateLimitPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -221,7 +221,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetRateLimitPolicyById200Response
 #>
-function Get-NtnxV4RateLimitPolicyById {
+function Get-RateLimitPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -232,7 +232,7 @@ function Get-NtnxV4RateLimitPolicyById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4RateLimitPolicyById' | Write-Debug
+        'Calling method: Get-RateLimitPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -244,7 +244,7 @@ function Get-NtnxV4RateLimitPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -271,7 +271,7 @@ function Get-NtnxV4RateLimitPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -323,7 +323,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListEffectiveRateLimitPolicies200Response
 #>
-function Invoke-NtnxV4ListEffectiveRateLimitPolicies {
+function Invoke-ListEffectiveRateLimitPolicies {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -346,7 +346,7 @@ function Invoke-NtnxV4ListEffectiveRateLimitPolicies {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListEffectiveRateLimitPolicies' | Write-Debug
+        'Calling method: Invoke-ListEffectiveRateLimitPolicies' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -358,7 +358,7 @@ function Invoke-NtnxV4ListEffectiveRateLimitPolicies {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -401,7 +401,7 @@ function Invoke-NtnxV4ListEffectiveRateLimitPolicies {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -453,7 +453,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListRateLimitPolicies200Response
 #>
-function Invoke-NtnxV4ListRateLimitPolicies {
+function Invoke-ListRateLimitPolicies {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -476,7 +476,7 @@ function Invoke-NtnxV4ListRateLimitPolicies {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListRateLimitPolicies' | Write-Debug
+        'Calling method: Invoke-ListRateLimitPolicies' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -488,7 +488,7 @@ function Invoke-NtnxV4ListRateLimitPolicies {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -531,7 +531,7 @@ function Invoke-NtnxV4ListRateLimitPolicies {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -580,7 +580,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateRateLimitPolicyById202Response
 #>
-function Update-NtnxV4RateLimitPolicyById {
+function Update-RateLimitPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -600,7 +600,7 @@ function Update-NtnxV4RateLimitPolicyById {
     )
 
     Process {
-        'Calling method: Update-NtnxV4RateLimitPolicyById' | Write-Debug
+        'Calling method: Update-RateLimitPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -612,7 +612,7 @@ function Update-NtnxV4RateLimitPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -658,7 +658,7 @@ function Update-NtnxV4RateLimitPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

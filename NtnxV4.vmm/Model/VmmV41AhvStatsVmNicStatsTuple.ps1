@@ -25,7 +25,7 @@ The VM NIC number of dropped transmitted packets.
 VmmV41AhvStatsVmNicStatsTuple<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvStatsVmNicStatsTuple {
+function Initialize-VmmV41AhvStatsVmNicStatsTuple {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 VmmV41AhvStatsVmNicStatsTuple<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvStatsVmNicStatsTuple {
+function ConvertFrom-JsonToVmmV41AhvStatsVmNicStatsTuple {
     Param(
         [AllowEmptyString()]
         [string]$Json

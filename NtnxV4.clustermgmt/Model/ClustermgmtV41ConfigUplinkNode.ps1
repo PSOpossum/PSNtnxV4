@@ -25,7 +25,7 @@ Active and standby uplink information of the target nodes.
 ClustermgmtV41ConfigUplinkNode<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUplinkNode {
+function Initialize-ClustermgmtV41ConfigUplinkNode {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -88,7 +88,7 @@ Json object
 
 ClustermgmtV41ConfigUplinkNode<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUplinkNode {
+function ConvertFrom-JsonToClustermgmtV41ConfigUplinkNode {
     Param(
         [AllowEmptyString()]
         [string]$Json

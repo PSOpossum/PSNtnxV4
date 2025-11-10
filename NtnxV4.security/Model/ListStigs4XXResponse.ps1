@@ -23,7 +23,7 @@ No description available.
 ListStigs4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListStigs4XXResponse {
+function Initialize-ListStigs4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListStigs4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListStigs4XXResponse {
+function ConvertFrom-JsonToListStigs4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

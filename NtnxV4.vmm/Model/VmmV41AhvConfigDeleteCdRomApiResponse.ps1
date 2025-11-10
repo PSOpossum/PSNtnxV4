@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigDeleteCdRomApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDeleteCdRomApiResponse {
+function Initialize-VmmV41AhvConfigDeleteCdRomApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigDeleteCdRomApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDeleteCdRomApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigDeleteCdRomApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigGetCdRomApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetCdRomApiResponseData {
+function ConvertFrom-JsonToVmmV41AhvConfigGetCdRomApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetCdRomApiResponseData {
 
         # try to match VmmV41AhvConfigCdRom defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCdRom $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigCdRom $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetCdRomApiResponseData {
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

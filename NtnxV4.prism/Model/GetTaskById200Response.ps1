@@ -23,7 +23,7 @@ No description available.
 GetTaskById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetTaskById200Response {
+function Initialize-GetTaskById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetTaskById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetTaskById200Response {
+function ConvertFrom-JsonToGetTaskById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

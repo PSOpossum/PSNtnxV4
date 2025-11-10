@@ -21,7 +21,7 @@ The fully qualified domain name of the host.
 CommonV10ConfigFQDN<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigFQDN {
+function Initialize-CommonV10ConfigFQDN {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 CommonV10ConfigFQDN<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigFQDN {
+function ConvertFrom-JsonToCommonV10ConfigFQDN {
     Param(
         [AllowEmptyString()]
         [string]$Json

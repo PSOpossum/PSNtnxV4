@@ -29,7 +29,7 @@ No description available.
 ClustermgmtV41ConfigTaskResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigTaskResponse {
+function Initialize-ClustermgmtV41ConfigTaskResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -95,7 +95,7 @@ Json object
 
 ClustermgmtV41ConfigTaskResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigTaskResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigTaskResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

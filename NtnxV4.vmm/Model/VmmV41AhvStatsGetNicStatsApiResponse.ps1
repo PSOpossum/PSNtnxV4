@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvStatsGetNicStatsApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvStatsGetNicStatsApiResponse {
+function Initialize-VmmV41AhvStatsGetNicStatsApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvStatsGetNicStatsApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvStatsGetNicStatsApiResponse {
+function ConvertFrom-JsonToVmmV41AhvStatsGetNicStatsApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

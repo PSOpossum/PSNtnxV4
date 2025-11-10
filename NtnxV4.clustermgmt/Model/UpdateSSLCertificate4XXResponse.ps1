@@ -23,7 +23,7 @@ No description available.
 UpdateSSLCertificate4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateSSLCertificate4XXResponse {
+function Initialize-UpdateSSLCertificate4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateSSLCertificate4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateSSLCertificate4XXResponse {
+function ConvertFrom-JsonToUpdateSSLCertificate4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

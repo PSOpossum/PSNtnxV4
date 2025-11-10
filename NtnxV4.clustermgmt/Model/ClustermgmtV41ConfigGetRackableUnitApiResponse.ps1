@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigGetRackableUnitApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigGetRackableUnitApiResponse {
+function Initialize-ClustermgmtV41ConfigGetRackableUnitApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigGetRackableUnitApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetRackableUnitApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetRackableUnitApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

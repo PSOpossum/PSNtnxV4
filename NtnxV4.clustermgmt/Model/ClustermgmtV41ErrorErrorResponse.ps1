@@ -21,7 +21,7 @@ No description available.
 ClustermgmtV41ErrorErrorResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ErrorErrorResponse {
+function Initialize-ClustermgmtV41ErrorErrorResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 ClustermgmtV41ErrorErrorResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse {
+function ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

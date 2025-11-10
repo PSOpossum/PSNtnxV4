@@ -23,7 +23,7 @@ No description available.
 UnprotectCluster202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UnprotectCluster202Response {
+function Initialize-UnprotectCluster202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UnprotectCluster202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUnprotectCluster202Response {
+function ConvertFrom-JsonToUnprotectCluster202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

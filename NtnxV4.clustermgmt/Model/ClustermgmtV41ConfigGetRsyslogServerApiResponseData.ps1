@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigGetRsyslogServerApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetRsyslogServerApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetRsyslogServerApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetRsyslogServerApiResponse
 
         # try to match ClustermgmtV41ConfigRsyslogServer defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRsyslogServer $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigRsyslogServer $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetRsyslogServerApiResponse
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

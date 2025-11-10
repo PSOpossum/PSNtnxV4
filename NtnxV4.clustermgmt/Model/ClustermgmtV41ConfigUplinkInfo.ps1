@@ -23,7 +23,7 @@ Uplink details for a controller VM.
 ClustermgmtV41ConfigUplinkInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUplinkInfo {
+function Initialize-ClustermgmtV41ConfigUplinkInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 ClustermgmtV41ConfigUplinkInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUplinkInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigUplinkInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

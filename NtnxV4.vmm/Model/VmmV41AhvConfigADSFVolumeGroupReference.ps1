@@ -21,7 +21,7 @@ The globally unique identifier of an ADSF volume group. It should be of type UUI
 VmmV41AhvConfigADSFVolumeGroupReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigADSFVolumeGroupReference {
+function Initialize-VmmV41AhvConfigADSFVolumeGroupReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -65,7 +65,7 @@ Json object
 
 VmmV41AhvConfigADSFVolumeGroupReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigADSFVolumeGroupReference {
+function ConvertFrom-JsonToVmmV41AhvConfigADSFVolumeGroupReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

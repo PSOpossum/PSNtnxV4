@@ -31,7 +31,7 @@ Node IP addresses of a registered cluster.
 PrismV41ManagementRemoteCluster<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementRemoteCluster {
+function Initialize-PrismV41ManagementRemoteCluster {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -120,7 +120,7 @@ Json object
 
 PrismV41ManagementRemoteCluster<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementRemoteCluster {
+function ConvertFrom-JsonToPrismV41ManagementRemoteCluster {
     Param(
         [AllowEmptyString()]
         [string]$Json

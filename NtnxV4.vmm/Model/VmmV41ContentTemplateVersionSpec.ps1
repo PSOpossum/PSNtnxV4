@@ -45,7 +45,7 @@ List of external identifier of the cluster where the image is located.
 VmmV41ContentTemplateVersionSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentTemplateVersionSpec {
+function Initialize-VmmV41ContentTemplateVersionSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -166,7 +166,7 @@ Json object
 
 VmmV41ContentTemplateVersionSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentTemplateVersionSpec {
+function ConvertFrom-JsonToVmmV41ContentTemplateVersionSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

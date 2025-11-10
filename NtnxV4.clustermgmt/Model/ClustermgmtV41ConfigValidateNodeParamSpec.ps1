@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigValidateNodeParamSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigValidateNodeParamSpec {
+function ConvertFrom-JsonToClustermgmtV41ConfigValidateNodeParamSpec {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigValidateNodeParamSpec {
 
         # try to match ClustermgmtV41ConfigBundleParam defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigBundleParam $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigBundleParam $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigValidateNodeParamSpec {
 
         # try to match ClustermgmtV41ConfigUplinkNode[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUplinkNode[] $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigUplinkNode[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

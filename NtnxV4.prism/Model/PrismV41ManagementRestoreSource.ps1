@@ -27,7 +27,7 @@ No description available.
 PrismV41ManagementRestoreSource<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementRestoreSource {
+function Initialize-PrismV41ManagementRestoreSource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -92,7 +92,7 @@ Json object
 
 PrismV41ManagementRestoreSource<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementRestoreSource {
+function ConvertFrom-JsonToPrismV41ManagementRestoreSource {
     Param(
         [AllowEmptyString()]
         [string]$Json

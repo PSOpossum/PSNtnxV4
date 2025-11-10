@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigRegisterVcenterExtensionApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRegisterVcenterExtensionApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41ConfigRegisterVcenterExtensionApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRegisterVcenterExtensionApi
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRegisterVcenterExtensionApi
 
         # try to match PrismV41ConfigTaskReference defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ConfigTaskReference $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ConfigTaskReference $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

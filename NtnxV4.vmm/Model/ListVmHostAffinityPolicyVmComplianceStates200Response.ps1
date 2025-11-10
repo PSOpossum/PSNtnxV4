@@ -23,7 +23,7 @@ No description available.
 ListVmHostAffinityPolicyVmComplianceStates200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListVmHostAffinityPolicyVmComplianceStates200Response {
+function Initialize-ListVmHostAffinityPolicyVmComplianceStates200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListVmHostAffinityPolicyVmComplianceStates200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListVmHostAffinityPolicyVmComplianceStates200Response {
+function ConvertFrom-JsonToListVmHostAffinityPolicyVmComplianceStates200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

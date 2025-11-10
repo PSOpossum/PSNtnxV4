@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41StatsGetDiskStatsApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41StatsGetDiskStatsApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41StatsGetDiskStatsApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41StatsGetDiskStatsApiResponseData 
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41StatsGetDiskStatsApiResponseData 
 
         # try to match ClustermgmtV41StatsDiskStats defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41StatsDiskStats $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41StatsDiskStats $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

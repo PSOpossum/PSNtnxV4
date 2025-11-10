@@ -23,7 +23,7 @@ No description available.
 PrismV41ProtectpcFailedRecoveryPointsStats<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcFailedRecoveryPointsStats {
+function Initialize-PrismV41ProtectpcFailedRecoveryPointsStats {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ProtectpcFailedRecoveryPointsStats<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcFailedRecoveryPointsStats {
+function ConvertFrom-JsonToPrismV41ProtectpcFailedRecoveryPointsStats {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 CreateCredential4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateCredential4XXResponse {
+function Initialize-CreateCredential4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateCredential4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateCredential4XXResponse {
+function ConvertFrom-JsonToCreateCredential4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

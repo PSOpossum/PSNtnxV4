@@ -29,7 +29,7 @@ List of validation error messages
 SecurityV40ErrorSchemaValidationError<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ErrorSchemaValidationError {
+function Initialize-SecurityV40ErrorSchemaValidationError {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 SecurityV40ErrorSchemaValidationError<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ErrorSchemaValidationError {
+function ConvertFrom-JsonToSecurityV40ErrorSchemaValidationError {
     Param(
         [AllowEmptyString()]
         [string]$Json

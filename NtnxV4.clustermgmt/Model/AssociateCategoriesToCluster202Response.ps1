@@ -23,7 +23,7 @@ No description available.
 AssociateCategoriesToCluster202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4AssociateCategoriesToCluster202Response {
+function Initialize-AssociateCategoriesToCluster202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 AssociateCategoriesToCluster202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToAssociateCategoriesToCluster202Response {
+function ConvertFrom-JsonToAssociateCategoriesToCluster202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

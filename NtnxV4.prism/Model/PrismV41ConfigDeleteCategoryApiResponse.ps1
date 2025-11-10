@@ -23,7 +23,7 @@ No description available.
 PrismV41ConfigDeleteCategoryApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigDeleteCategoryApiResponse {
+function Initialize-PrismV41ConfigDeleteCategoryApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ConfigDeleteCategoryApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigDeleteCategoryApiResponse {
+function ConvertFrom-JsonToPrismV41ConfigDeleteCategoryApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

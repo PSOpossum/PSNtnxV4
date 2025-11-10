@@ -23,7 +23,7 @@ Secret access key of the object store provided for the backup target.
 PrismV41ManagementAccessKeyCredentials<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementAccessKeyCredentials {
+function Initialize-PrismV41ManagementAccessKeyCredentials {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 PrismV41ManagementAccessKeyCredentials<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementAccessKeyCredentials {
+function ConvertFrom-JsonToPrismV41ManagementAccessKeyCredentials {
     Param(
         [AllowEmptyString()]
         [string]$Json

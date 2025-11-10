@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigGetSSLCertificateApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigGetSSLCertificateApiResponse {
+function Initialize-ClustermgmtV41ConfigGetSSLCertificateApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigGetSSLCertificateApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetSSLCertificateApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetSSLCertificateApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

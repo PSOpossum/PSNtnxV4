@@ -33,7 +33,7 @@ No description available.
 VmmV41AhvConfigNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigNic {
+function Initialize-VmmV41AhvConfigNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -106,7 +106,7 @@ Json object
 
 VmmV41AhvConfigNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigNic {
+function ConvertFrom-JsonToVmmV41AhvConfigNic {
     Param(
         [AllowEmptyString()]
         [string]$Json

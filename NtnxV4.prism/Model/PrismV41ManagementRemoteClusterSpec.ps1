@@ -23,7 +23,7 @@ No description available.
 PrismV41ManagementRemoteClusterSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementRemoteClusterSpec {
+function Initialize-PrismV41ManagementRemoteClusterSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 PrismV41ManagementRemoteClusterSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementRemoteClusterSpec {
+function ConvertFrom-JsonToPrismV41ManagementRemoteClusterSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

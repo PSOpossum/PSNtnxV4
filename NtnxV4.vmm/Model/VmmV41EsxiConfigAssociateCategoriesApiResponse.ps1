@@ -23,7 +23,7 @@ No description available.
 VmmV41EsxiConfigAssociateCategoriesApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigAssociateCategoriesApiResponse {
+function Initialize-VmmV41EsxiConfigAssociateCategoriesApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41EsxiConfigAssociateCategoriesApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigAssociateCategoriesApiResponse {
+function ConvertFrom-JsonToVmmV41EsxiConfigAssociateCategoriesApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

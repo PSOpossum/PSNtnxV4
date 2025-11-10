@@ -23,7 +23,7 @@ Timeout for the workflow in seconds.
 ClustermgmtV41OperationsHostMaintenanceCommonSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41OperationsHostMaintenanceCommonSpec {
+function Initialize-ClustermgmtV41OperationsHostMaintenanceCommonSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -70,7 +70,7 @@ Json object
 
 ClustermgmtV41OperationsHostMaintenanceCommonSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41OperationsHostMaintenanceCommonSpec {
+function ConvertFrom-JsonToClustermgmtV41OperationsHostMaintenanceCommonSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

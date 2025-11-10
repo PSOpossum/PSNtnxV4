@@ -23,7 +23,7 @@ No description available.
 GetProductById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetProductById200Response {
+function Initialize-GetProductById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetProductById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetProductById200Response {
+function ConvertFrom-JsonToGetProductById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -25,7 +25,7 @@ The path of the attribute that failed validation in the schema.
 PrismV41ErrorSchemaValidationErrorMessage<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ErrorSchemaValidationErrorMessage {
+function Initialize-PrismV41ErrorSchemaValidationErrorMessage {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 PrismV41ErrorSchemaValidationErrorMessage<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ErrorSchemaValidationErrorMessage {
+function ConvertFrom-JsonToPrismV41ErrorSchemaValidationErrorMessage {
     Param(
         [AllowEmptyString()]
         [string]$Json

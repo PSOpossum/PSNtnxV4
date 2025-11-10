@@ -22,7 +22,7 @@ JSON object
 
 PrismV41ConfigGetDomainManagerApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigGetDomainManagerApiResponseData {
+function ConvertFrom-JsonToPrismV41ConfigGetDomainManagerApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ConfigGetDomainManagerApiResponseData {
 
         # try to match PrismV41ConfigDomainManager defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ConfigDomainManager $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ConfigDomainManager $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ConfigGetDomainManagerApiResponseData {
 
         # try to match PrismV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

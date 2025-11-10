@@ -39,7 +39,7 @@ No description available.
 PrismV41ManagementProduct<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementProduct {
+function Initialize-PrismV41ManagementProduct {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -130,7 +130,7 @@ Json object
 
 PrismV41ManagementProduct<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementProduct {
+function ConvertFrom-JsonToPrismV41ManagementProduct {
     Param(
         [AllowEmptyString()]
         [string]$Json

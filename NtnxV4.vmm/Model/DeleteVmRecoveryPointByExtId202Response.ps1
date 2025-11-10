@@ -23,7 +23,7 @@ No description available.
 DeleteVmRecoveryPointByExtId202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteVmRecoveryPointByExtId202Response {
+function Initialize-DeleteVmRecoveryPointByExtId202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteVmRecoveryPointByExtId202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteVmRecoveryPointByExtId202Response {
+function ConvertFrom-JsonToDeleteVmRecoveryPointByExtId202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

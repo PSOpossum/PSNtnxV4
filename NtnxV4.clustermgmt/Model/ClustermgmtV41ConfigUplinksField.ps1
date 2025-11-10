@@ -25,7 +25,7 @@ Interface value.
 ClustermgmtV41ConfigUplinksField<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUplinksField {
+function Initialize-ClustermgmtV41ConfigUplinksField {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -77,7 +77,7 @@ Json object
 
 ClustermgmtV41ConfigUplinksField<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUplinksField {
+function ConvertFrom-JsonToClustermgmtV41ConfigUplinksField {
     Param(
         [AllowEmptyString()]
         [string]$Json

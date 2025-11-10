@@ -23,7 +23,7 @@ No description available.
 ClearThickProvisionedSpace4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClearThickProvisionedSpace4XXResponse {
+function Initialize-ClearThickProvisionedSpace4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClearThickProvisionedSpace4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClearThickProvisionedSpace4XXResponse {
+function ConvertFrom-JsonToClearThickProvisionedSpace4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

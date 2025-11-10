@@ -21,7 +21,7 @@ A globally unique identifier of a VM disk of type UUID.
 VmmV41AhvConfigVtpmDevice<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVtpmDevice {
+function Initialize-VmmV41AhvConfigVtpmDevice {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigVtpmDevice<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVtpmDevice {
+function ConvertFrom-JsonToVmmV41AhvConfigVtpmDevice {
     Param(
         [AllowEmptyString()]
         [string]$Json

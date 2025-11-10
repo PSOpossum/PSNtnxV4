@@ -21,7 +21,7 @@ The IPv6 addresses as found on the guest VM for the NIC.
 VmmV41AhvConfigIpv6Info<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigIpv6Info {
+function Initialize-VmmV41AhvConfigIpv6Info {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigIpv6Info<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigIpv6Info {
+function ConvertFrom-JsonToVmmV41AhvConfigIpv6Info {
     Param(
         [AllowEmptyString()]
         [string]$Json

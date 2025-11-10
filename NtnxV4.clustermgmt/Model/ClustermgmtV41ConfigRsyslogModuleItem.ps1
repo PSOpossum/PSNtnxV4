@@ -25,7 +25,7 @@ Option to log, monitor/output files of a module.
 ClustermgmtV41ConfigRsyslogModuleItem<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRsyslogModuleItem {
+function Initialize-ClustermgmtV41ConfigRsyslogModuleItem {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 ClustermgmtV41ConfigRsyslogModuleItem<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRsyslogModuleItem {
+function ConvertFrom-JsonToClustermgmtV41ConfigRsyslogModuleItem {
     Param(
         [AllowEmptyString()]
         [string]$Json

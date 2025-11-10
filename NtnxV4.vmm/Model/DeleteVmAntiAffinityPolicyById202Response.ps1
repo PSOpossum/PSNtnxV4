@@ -23,7 +23,7 @@ No description available.
 DeleteVmAntiAffinityPolicyById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteVmAntiAffinityPolicyById202Response {
+function Initialize-DeleteVmAntiAffinityPolicyById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteVmAntiAffinityPolicyById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteVmAntiAffinityPolicyById202Response {
+function ConvertFrom-JsonToDeleteVmAntiAffinityPolicyById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

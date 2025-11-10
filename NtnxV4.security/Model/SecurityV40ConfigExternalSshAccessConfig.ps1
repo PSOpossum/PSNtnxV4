@@ -27,7 +27,7 @@ Duration in Hours for which Ssh should be enabled. Default is 1 hour.
 SecurityV40ConfigExternalSshAccessConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigExternalSshAccessConfig {
+function Initialize-SecurityV40ConfigExternalSshAccessConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 SecurityV40ConfigExternalSshAccessConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigExternalSshAccessConfig {
+function ConvertFrom-JsonToSecurityV40ConfigExternalSshAccessConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

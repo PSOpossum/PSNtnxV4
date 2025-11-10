@@ -31,7 +31,7 @@ The map of argument name to value.
 VmmV41ErrorAppMessage<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ErrorAppMessage {
+function Initialize-VmmV41ErrorAppMessage {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -91,7 +91,7 @@ Json object
 
 VmmV41ErrorAppMessage<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ErrorAppMessage {
+function ConvertFrom-JsonToVmmV41ErrorAppMessage {
     Param(
         [AllowEmptyString()]
         [string]$Json

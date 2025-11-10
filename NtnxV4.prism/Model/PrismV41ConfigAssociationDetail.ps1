@@ -33,7 +33,7 @@ The UUID of the entity or policy associated with the particular category.
 PrismV41ConfigAssociationDetail<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigAssociationDetail {
+function Initialize-PrismV41ConfigAssociationDetail {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -108,7 +108,7 @@ Json object
 
 PrismV41ConfigAssociationDetail<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigAssociationDetail {
+function ConvertFrom-JsonToPrismV41ConfigAssociationDetail {
     Param(
         [AllowEmptyString()]
         [string]$Json

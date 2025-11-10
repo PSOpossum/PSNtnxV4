@@ -21,7 +21,7 @@ A globally unique identifier of a VM category of type UUID.
 VmmV41AhvConfigCategoryReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCategoryReference {
+function Initialize-VmmV41AhvConfigCategoryReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigCategoryReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCategoryReference {
+function ConvertFrom-JsonToVmmV41AhvConfigCategoryReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

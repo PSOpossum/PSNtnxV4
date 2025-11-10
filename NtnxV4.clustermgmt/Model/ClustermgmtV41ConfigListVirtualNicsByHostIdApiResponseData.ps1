@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigListVirtualNicsByHostIdApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListVirtualNicsByHostIdApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41ConfigListVirtualNicsByHostIdApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListVirtualNicsByHostIdApiR
 
         # try to match ClustermgmtV41ConfigVirtualNic[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigVirtualNic[] $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigVirtualNic[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListVirtualNicsByHostIdApiR
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

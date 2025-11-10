@@ -21,7 +21,7 @@ A RPO value in seconds to be configured.
 PrismV41ProtectpcRpoConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcRpoConfig {
+function Initialize-PrismV41ProtectpcRpoConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 PrismV41ProtectpcRpoConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcRpoConfig {
+function ConvertFrom-JsonToPrismV41ProtectpcRpoConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

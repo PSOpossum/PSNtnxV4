@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigGetCdRomApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGetCdRomApiResponse {
+function Initialize-VmmV41AhvConfigGetCdRomApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigGetCdRomApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetCdRomApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigGetCdRomApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

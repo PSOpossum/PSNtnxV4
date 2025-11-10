@@ -27,7 +27,7 @@ Indicates whether the NIC is connected or not. Default is True.
 VmmV41AhvConfigDpOffloadNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDpOffloadNic {
+function Initialize-VmmV41AhvConfigDpOffloadNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -83,7 +83,7 @@ Json object
 
 VmmV41AhvConfigDpOffloadNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDpOffloadNic {
+function ConvertFrom-JsonToVmmV41AhvConfigDpOffloadNic {
     Param(
         [AllowEmptyString()]
         [string]$Json

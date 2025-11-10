@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigSysprep<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigSysprep {
+function Initialize-VmmV41AhvConfigSysprep {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -67,7 +67,7 @@ Json object
 
 VmmV41AhvConfigSysprep<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSysprep {
+function ConvertFrom-JsonToVmmV41AhvConfigSysprep {
     Param(
         [AllowEmptyString()]
         [string]$Json

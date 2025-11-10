@@ -33,7 +33,7 @@ Specifies a reason why the backup might have paused. This is empty if the isBack
 PrismV41ManagementBackupTarget<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementBackupTarget {
+function Initialize-PrismV41ManagementBackupTarget {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -110,7 +110,7 @@ Json object
 
 PrismV41ManagementBackupTarget<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementBackupTarget {
+function ConvertFrom-JsonToPrismV41ManagementBackupTarget {
     Param(
         [AllowEmptyString()]
         [string]$Json

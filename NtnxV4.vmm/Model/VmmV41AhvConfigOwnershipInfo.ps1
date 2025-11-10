@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigOwnershipInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigOwnershipInfo {
+function Initialize-VmmV41AhvConfigOwnershipInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigOwnershipInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigOwnershipInfo {
+function ConvertFrom-JsonToVmmV41AhvConfigOwnershipInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

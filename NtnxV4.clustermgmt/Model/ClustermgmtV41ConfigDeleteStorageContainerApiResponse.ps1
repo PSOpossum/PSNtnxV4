@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigDeleteStorageContainerApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDeleteStorageContainerApiResponse {
+function Initialize-ClustermgmtV41ConfigDeleteStorageContainerApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigDeleteStorageContainerApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDeleteStorageContainerApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigDeleteStorageContainerApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

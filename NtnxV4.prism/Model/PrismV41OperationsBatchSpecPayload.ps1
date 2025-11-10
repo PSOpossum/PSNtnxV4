@@ -23,7 +23,7 @@ The data section of the payload provided to the batch operation.
 PrismV41OperationsBatchSpecPayload<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41OperationsBatchSpecPayload {
+function Initialize-PrismV41OperationsBatchSpecPayload {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41OperationsBatchSpecPayload<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41OperationsBatchSpecPayload {
+function ConvertFrom-JsonToPrismV41OperationsBatchSpecPayload {
     Param(
         [AllowEmptyString()]
         [string]$Json

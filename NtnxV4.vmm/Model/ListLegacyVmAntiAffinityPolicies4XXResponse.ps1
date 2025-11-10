@@ -23,7 +23,7 @@ No description available.
 ListLegacyVmAntiAffinityPolicies4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListLegacyVmAntiAffinityPolicies4XXResponse {
+function Initialize-ListLegacyVmAntiAffinityPolicies4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListLegacyVmAntiAffinityPolicies4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListLegacyVmAntiAffinityPolicies4XXResponse {
+function ConvertFrom-JsonToListLegacyVmAntiAffinityPolicies4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

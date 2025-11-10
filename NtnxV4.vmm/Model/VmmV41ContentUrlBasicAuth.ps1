@@ -23,7 +23,7 @@ Password for basic authentication.
 VmmV41ContentUrlBasicAuth<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentUrlBasicAuth {
+function Initialize-VmmV41ContentUrlBasicAuth {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 VmmV41ContentUrlBasicAuth<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentUrlBasicAuth {
+function ConvertFrom-JsonToVmmV41ContentUrlBasicAuth {
     Param(
         [AllowEmptyString()]
         [string]$Json

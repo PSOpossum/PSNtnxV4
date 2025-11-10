@@ -95,7 +95,7 @@ Rackable unit UUID.
 ClustermgmtV41ConfigHost<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHost {
+function Initialize-ClustermgmtV41ConfigHost {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -326,7 +326,7 @@ Json object
 
 ClustermgmtV41ConfigHost<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHost {
+function ConvertFrom-JsonToClustermgmtV41ConfigHost {
     Param(
         [AllowEmptyString()]
         [string]$Json

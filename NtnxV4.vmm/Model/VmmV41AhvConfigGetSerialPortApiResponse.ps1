@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigGetSerialPortApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGetSerialPortApiResponse {
+function Initialize-VmmV41AhvConfigGetSerialPortApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigGetSerialPortApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetSerialPortApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigGetSerialPortApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

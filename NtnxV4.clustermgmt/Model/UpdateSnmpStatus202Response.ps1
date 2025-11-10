@@ -23,7 +23,7 @@ No description available.
 UpdateSnmpStatus202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateSnmpStatus202Response {
+function Initialize-UpdateSnmpStatus202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateSnmpStatus202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateSnmpStatus202Response {
+function ConvertFrom-JsonToUpdateSnmpStatus202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

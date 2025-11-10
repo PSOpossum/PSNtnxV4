@@ -21,7 +21,7 @@ RPO interval in minutes at which the backup is taken.
 PrismV41ManagementBackupPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementBackupPolicy {
+function Initialize-PrismV41ManagementBackupPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 PrismV41ManagementBackupPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementBackupPolicy {
+function ConvertFrom-JsonToPrismV41ManagementBackupPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

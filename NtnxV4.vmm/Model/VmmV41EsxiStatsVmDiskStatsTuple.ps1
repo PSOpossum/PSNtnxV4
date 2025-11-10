@@ -71,7 +71,7 @@ The VM disk controller timespan in microseconds.
 VmmV41EsxiStatsVmDiskStatsTuple<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiStatsVmDiskStatsTuple {
+function Initialize-VmmV41EsxiStatsVmDiskStatsTuple {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -210,7 +210,7 @@ Json object
 
 VmmV41EsxiStatsVmDiskStatsTuple<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiStatsVmDiskStatsTuple {
+function ConvertFrom-JsonToVmmV41EsxiStatsVmDiskStatsTuple {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -21,7 +21,7 @@ No description available.
 PrismV41ManagementBackupTargetAllOfLocation<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementBackupTargetAllOfLocation {
+function Initialize-PrismV41ManagementBackupTargetAllOfLocation {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 PrismV41ManagementBackupTargetAllOfLocation<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementBackupTargetAllOfLocation {
+function ConvertFrom-JsonToPrismV41ManagementBackupTargetAllOfLocation {
     Param(
         [AllowEmptyString()]
         [string]$Json

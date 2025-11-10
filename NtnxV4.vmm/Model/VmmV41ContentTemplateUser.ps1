@@ -69,7 +69,7 @@ No description available.
 VmmV41ContentTemplateUser<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentTemplateUser {
+function Initialize-VmmV41ContentTemplateUser {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -294,7 +294,7 @@ Json object
 
 VmmV41ContentTemplateUser<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentTemplateUser {
+function ConvertFrom-JsonToVmmV41ContentTemplateUser {
     Param(
         [AllowEmptyString()]
         [string]$Json

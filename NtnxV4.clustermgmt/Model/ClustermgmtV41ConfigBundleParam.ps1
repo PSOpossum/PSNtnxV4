@@ -23,7 +23,7 @@ List of node attributes for validating bundle compatibility.
 ClustermgmtV41ConfigBundleParam<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigBundleParam {
+function Initialize-ClustermgmtV41ConfigBundleParam {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 ClustermgmtV41ConfigBundleParam<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigBundleParam {
+function ConvertFrom-JsonToClustermgmtV41ConfigBundleParam {
     Param(
         [AllowEmptyString()]
         [string]$Json

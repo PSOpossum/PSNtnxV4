@@ -21,7 +21,7 @@ The external ID (UUID) of the conflicting VM-host affinity policy which is appli
 VmmV41AhvPoliciesConflictingVmHostAffinityPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesConflictingVmHostAffinityPolicy {
+function Initialize-VmmV41AhvPoliciesConflictingVmHostAffinityPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvPoliciesConflictingVmHostAffinityPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesConflictingVmHostAffinityPolicy {
+function ConvertFrom-JsonToVmmV41AhvPoliciesConflictingVmHostAffinityPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

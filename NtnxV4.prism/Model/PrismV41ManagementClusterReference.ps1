@@ -23,7 +23,7 @@ Name of the cluster.
 PrismV41ManagementClusterReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementClusterReference {
+function Initialize-PrismV41ManagementClusterReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -79,7 +79,7 @@ Json object
 
 PrismV41ManagementClusterReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementClusterReference {
+function ConvertFrom-JsonToPrismV41ManagementClusterReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

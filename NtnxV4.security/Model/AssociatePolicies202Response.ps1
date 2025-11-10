@@ -23,7 +23,7 @@ No description available.
 AssociatePolicies202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4AssociatePolicies202Response {
+function Initialize-AssociatePolicies202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 AssociatePolicies202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToAssociatePolicies202Response {
+function ConvertFrom-JsonToAssociatePolicies202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -31,7 +31,7 @@ The map of argument name to value.
 ClustermgmtV41ErrorAppMessage<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ErrorAppMessage {
+function Initialize-ClustermgmtV41ErrorAppMessage {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -91,7 +91,7 @@ Json object
 
 ClustermgmtV41ErrorAppMessage<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorAppMessage {
+function ConvertFrom-JsonToClustermgmtV41ErrorAppMessage {
     Param(
         [AllowEmptyString()]
         [string]$Json

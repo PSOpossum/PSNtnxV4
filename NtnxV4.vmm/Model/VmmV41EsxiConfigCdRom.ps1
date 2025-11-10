@@ -29,7 +29,7 @@ No description available.
 VmmV41EsxiConfigCdRom<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigCdRom {
+function Initialize-VmmV41EsxiConfigCdRom {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -94,7 +94,7 @@ Json object
 
 VmmV41EsxiConfigCdRom<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigCdRom {
+function ConvertFrom-JsonToVmmV41EsxiConfigCdRom {
     Param(
         [AllowEmptyString()]
         [string]$Json

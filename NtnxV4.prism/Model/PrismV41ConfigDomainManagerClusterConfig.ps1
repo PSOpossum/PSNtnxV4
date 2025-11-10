@@ -33,7 +33,7 @@ No description available.
 PrismV41ConfigDomainManagerClusterConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigDomainManagerClusterConfig {
+function Initialize-PrismV41ConfigDomainManagerClusterConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -125,7 +125,7 @@ Json object
 
 PrismV41ConfigDomainManagerClusterConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigDomainManagerClusterConfig {
+function ConvertFrom-JsonToPrismV41ConfigDomainManagerClusterConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

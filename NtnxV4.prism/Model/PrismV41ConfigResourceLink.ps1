@@ -25,7 +25,7 @@ Name of the resource.
 PrismV41ConfigResourceLink<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigResourceLink {
+function Initialize-PrismV41ConfigResourceLink {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -76,7 +76,7 @@ Json object
 
 PrismV41ConfigResourceLink<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigResourceLink {
+function ConvertFrom-JsonToPrismV41ConfigResourceLink {
     Param(
         [AllowEmptyString()]
         [string]$Json

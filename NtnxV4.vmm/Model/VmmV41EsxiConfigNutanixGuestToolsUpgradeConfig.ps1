@@ -21,7 +21,7 @@ No description available.
 VmmV41EsxiConfigNutanixGuestToolsUpgradeConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNutanixGuestToolsUpgradeConfig {
+function Initialize-VmmV41EsxiConfigNutanixGuestToolsUpgradeConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41EsxiConfigNutanixGuestToolsUpgradeConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNutanixGuestToolsUpgradeConfig {
+function ConvertFrom-JsonToVmmV41EsxiConfigNutanixGuestToolsUpgradeConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

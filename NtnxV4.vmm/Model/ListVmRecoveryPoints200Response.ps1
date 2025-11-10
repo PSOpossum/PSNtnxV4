@@ -23,7 +23,7 @@ No description available.
 ListVmRecoveryPoints200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListVmRecoveryPoints200Response {
+function Initialize-ListVmRecoveryPoints200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListVmRecoveryPoints200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListVmRecoveryPoints200Response {
+function ConvertFrom-JsonToListVmRecoveryPoints200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

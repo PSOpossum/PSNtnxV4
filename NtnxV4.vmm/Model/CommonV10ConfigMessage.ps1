@@ -27,7 +27,7 @@ No description available.
 CommonV10ConfigMessage<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigMessage {
+function Initialize-CommonV10ConfigMessage {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -79,7 +79,7 @@ Json object
 
 CommonV10ConfigMessage<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigMessage {
+function ConvertFrom-JsonToCommonV10ConfigMessage {
     Param(
         [AllowEmptyString()]
         [string]$Json

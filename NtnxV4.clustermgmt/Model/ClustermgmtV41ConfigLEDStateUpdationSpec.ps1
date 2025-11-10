@@ -21,7 +21,7 @@ Indicates LED status of the Disk. It can either be on or off.
 ClustermgmtV41ConfigLEDStateUpdationSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigLEDStateUpdationSpec {
+function Initialize-ClustermgmtV41ConfigLEDStateUpdationSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 ClustermgmtV41ConfigLEDStateUpdationSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigLEDStateUpdationSpec {
+function ConvertFrom-JsonToClustermgmtV41ConfigLEDStateUpdationSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

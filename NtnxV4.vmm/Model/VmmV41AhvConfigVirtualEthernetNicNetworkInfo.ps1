@@ -39,7 +39,7 @@ No description available.
 VmmV41AhvConfigVirtualEthernetNicNetworkInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVirtualEthernetNicNetworkInfo {
+function Initialize-VmmV41AhvConfigVirtualEthernetNicNetworkInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -125,7 +125,7 @@ Json object
 
 VmmV41AhvConfigVirtualEthernetNicNetworkInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVirtualEthernetNicNetworkInfo {
+function ConvertFrom-JsonToVmmV41AhvConfigVirtualEthernetNicNetworkInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

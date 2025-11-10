@@ -43,7 +43,7 @@ A flag indicating whether the batch procession should halt or continue when an e
 PrismV41OperationsBatch<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41OperationsBatch {
+function Initialize-PrismV41OperationsBatch {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -142,7 +142,7 @@ Json object
 
 PrismV41OperationsBatch<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41OperationsBatch {
+function ConvertFrom-JsonToPrismV41OperationsBatch {
     Param(
         [AllowEmptyString()]
         [string]$Json

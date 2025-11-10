@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvPoliciesVmHostAffinityPolicyVmComplianceStateAllOfComplianceStatus<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesVmHostAffinityPolicyVmComplianceStateAllOfComplianceStatus {
+function Initialize-VmmV41AhvPoliciesVmHostAffinityPolicyVmComplianceStateAllOfComplianceStatus {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VmmV41AhvPoliciesVmHostAffinityPolicyVmComplianceStateAllOfComplianceStatus<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesVmHostAffinityPolicyVmComplianceStateAllOfComplianceStatus {
+function ConvertFrom-JsonToVmmV41AhvPoliciesVmHostAffinityPolicyVmComplianceStateAllOfComplianceStatus {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigListGpusApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigListGpusApiResponse {
+function Initialize-VmmV41AhvConfigListGpusApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigListGpusApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigListGpusApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigListGpusApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

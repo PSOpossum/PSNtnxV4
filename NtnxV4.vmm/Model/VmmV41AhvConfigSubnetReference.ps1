@@ -21,7 +21,7 @@ The globally unique identifier of a subnet of type UUID.
 VmmV41AhvConfigSubnetReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigSubnetReference {
+function Initialize-VmmV41AhvConfigSubnetReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigSubnetReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSubnetReference {
+function ConvertFrom-JsonToVmmV41AhvConfigSubnetReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

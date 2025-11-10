@@ -35,7 +35,7 @@ No description available.
 ClustermgmtV41ConfigHostGpu<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHostGpu {
+function Initialize-ClustermgmtV41ConfigHostGpu {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -113,7 +113,7 @@ Json object
 
 ClustermgmtV41ConfigHostGpu<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHostGpu {
+function ConvertFrom-JsonToClustermgmtV41ConfigHostGpu {
     Param(
         [AllowEmptyString()]
         [string]$Json

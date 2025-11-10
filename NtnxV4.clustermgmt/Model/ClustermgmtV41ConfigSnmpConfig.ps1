@@ -33,7 +33,7 @@ SNMP trap details.
 ClustermgmtV41ConfigSnmpConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSnmpConfig {
+function Initialize-ClustermgmtV41ConfigSnmpConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -130,7 +130,7 @@ Json object
 
 ClustermgmtV41ConfigSnmpConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSnmpConfig {
+function ConvertFrom-JsonToClustermgmtV41ConfigSnmpConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

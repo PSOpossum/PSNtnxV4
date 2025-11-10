@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvPoliciesListLegacyVmAntiAffinityPoliciesApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesListLegacyVmAntiAffinityPoliciesApiResponseData {
+function ConvertFrom-JsonToVmmV41AhvPoliciesListLegacyVmAntiAffinityPoliciesApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesListLegacyVmAntiAffinityPolici
 
         # try to match VmmV41AhvPoliciesLegacyVmAntiAffinityPolicy[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesLegacyVmAntiAffinityPolicy[] $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvPoliciesLegacyVmAntiAffinityPolicy[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesListLegacyVmAntiAffinityPolici
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

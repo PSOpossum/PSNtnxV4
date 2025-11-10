@@ -23,7 +23,7 @@ Secondary IP addresses for the NIC.
 VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec {
+function Initialize-VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec {
+function ConvertFrom-JsonToVmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

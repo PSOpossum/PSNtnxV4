@@ -21,7 +21,7 @@ Specification of the configured approval policy.
 SecurityV40ManagementAssociatePoliciesSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ManagementAssociatePoliciesSpec {
+function Initialize-SecurityV40ManagementAssociatePoliciesSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 SecurityV40ManagementAssociatePoliciesSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ManagementAssociatePoliciesSpec {
+function ConvertFrom-JsonToSecurityV40ManagementAssociatePoliciesSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

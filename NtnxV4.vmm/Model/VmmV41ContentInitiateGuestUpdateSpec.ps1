@@ -21,7 +21,7 @@ The identifier of a version.
 VmmV41ContentInitiateGuestUpdateSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentInitiateGuestUpdateSpec {
+function Initialize-VmmV41ContentInitiateGuestUpdateSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41ContentInitiateGuestUpdateSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentInitiateGuestUpdateSpec {
+function ConvertFrom-JsonToVmmV41ContentInitiateGuestUpdateSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

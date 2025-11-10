@@ -23,7 +23,7 @@ No description available.
 CreateOva4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateOva4XXResponse {
+function Initialize-CreateOva4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateOva4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateOva4XXResponse {
+function ConvertFrom-JsonToCreateOva4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

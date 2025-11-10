@@ -21,7 +21,7 @@ Cluster fault tolerance defines how many simultaneous failures within a fault do
 ClustermgmtV41ConfigStorageSummary<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigStorageSummary {
+function Initialize-ClustermgmtV41ConfigStorageSummary {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 ClustermgmtV41ConfigStorageSummary<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigStorageSummary {
+function ConvertFrom-JsonToClustermgmtV41ConfigStorageSummary {
     Param(
         [AllowEmptyString()]
         [string]$Json

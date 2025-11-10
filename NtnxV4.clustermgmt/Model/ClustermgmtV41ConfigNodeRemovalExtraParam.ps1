@@ -25,7 +25,7 @@ Indicates if add node check need to be skip or not.
 ClustermgmtV41ConfigNodeRemovalExtraParam<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeRemovalExtraParam {
+function Initialize-ClustermgmtV41ConfigNodeRemovalExtraParam {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 ClustermgmtV41ConfigNodeRemovalExtraParam<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeRemovalExtraParam {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeRemovalExtraParam {
     Param(
         [AllowEmptyString()]
         [string]$Json

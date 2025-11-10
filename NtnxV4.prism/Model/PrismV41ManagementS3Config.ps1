@@ -23,7 +23,7 @@ The region name of the object store endpoint where the backup data of the domain
 PrismV41ManagementS3Config<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementS3Config {
+function Initialize-PrismV41ManagementS3Config {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 PrismV41ManagementS3Config<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementS3Config {
+function ConvertFrom-JsonToPrismV41ManagementS3Config {
     Param(
         [AllowEmptyString()]
         [string]$Json

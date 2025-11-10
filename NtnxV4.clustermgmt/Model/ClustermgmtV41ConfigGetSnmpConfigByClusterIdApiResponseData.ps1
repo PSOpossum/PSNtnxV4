@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigGetSnmpConfigByClusterIdApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetSnmpConfigByClusterIdApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetSnmpConfigByClusterIdApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetSnmpConfigByClusterIdApi
 
         # try to match ClustermgmtV41ConfigSnmpConfig defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSnmpConfig $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigSnmpConfig $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetSnmpConfigByClusterIdApi
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

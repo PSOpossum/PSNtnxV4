@@ -21,7 +21,7 @@ The external ID (UUID) of the host.
 VmmV41AhvPoliciesHostReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesHostReference {
+function Initialize-VmmV41AhvPoliciesHostReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvPoliciesHostReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesHostReference {
+function ConvertFrom-JsonToVmmV41AhvPoliciesHostReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

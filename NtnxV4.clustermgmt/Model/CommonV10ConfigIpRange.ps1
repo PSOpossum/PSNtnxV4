@@ -23,7 +23,7 @@ No description available.
 CommonV10ConfigIpRange<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigIpRange {
+function Initialize-CommonV10ConfigIpRange {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CommonV10ConfigIpRange<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigIpRange {
+function ConvertFrom-JsonToCommonV10ConfigIpRange {
     Param(
         [AllowEmptyString()]
         [string]$Json

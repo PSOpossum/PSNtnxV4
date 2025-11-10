@@ -21,7 +21,7 @@ The identifier of the temporary VM created when the guest OS update was initiate
 VmmV41ContentGuestUpdateStatus<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentGuestUpdateStatus {
+function Initialize-VmmV41ContentGuestUpdateStatus {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41ContentGuestUpdateStatus<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentGuestUpdateStatus {
+function ConvertFrom-JsonToVmmV41ContentGuestUpdateStatus {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -29,7 +29,7 @@ No description available.
 VmmV41AhvConfigDisk<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDisk {
+function Initialize-VmmV41AhvConfigDisk {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -94,7 +94,7 @@ Json object
 
 VmmV41AhvConfigDisk<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDisk {
+function ConvertFrom-JsonToVmmV41AhvConfigDisk {
     Param(
         [AllowEmptyString()]
         [string]$Json

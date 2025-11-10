@@ -23,7 +23,7 @@ No description available.
 ListRestorableDomainManagers4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListRestorableDomainManagers4XXResponse {
+function Initialize-ListRestorableDomainManagers4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListRestorableDomainManagers4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListRestorableDomainManagers4XXResponse {
+function ConvertFrom-JsonToListRestorableDomainManagers4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

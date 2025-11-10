@@ -23,7 +23,7 @@ No description available.
 ListSerialPortsByVmId200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListSerialPortsByVmId200Response {
+function Initialize-ListSerialPortsByVmId200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListSerialPortsByVmId200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListSerialPortsByVmId200Response {
+function ConvertFrom-JsonToListSerialPortsByVmId200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

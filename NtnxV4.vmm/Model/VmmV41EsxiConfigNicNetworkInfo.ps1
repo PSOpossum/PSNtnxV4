@@ -23,7 +23,7 @@ No description available.
 VmmV41EsxiConfigNicNetworkInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNicNetworkInfo {
+function Initialize-VmmV41EsxiConfigNicNetworkInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41EsxiConfigNicNetworkInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNicNetworkInfo {
+function ConvertFrom-JsonToVmmV41EsxiConfigNicNetworkInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

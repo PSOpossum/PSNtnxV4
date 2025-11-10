@@ -21,7 +21,7 @@ Software version.
 ClustermgmtV41ConfigBuildInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigBuildInfo {
+function Initialize-ClustermgmtV41ConfigBuildInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 ClustermgmtV41ConfigBuildInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigBuildInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigBuildInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

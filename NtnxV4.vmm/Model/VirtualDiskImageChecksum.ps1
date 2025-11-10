@@ -21,7 +21,7 @@ No description available.
 VirtualDiskImageChecksum<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VirtualDiskImageChecksum {
+function Initialize-VirtualDiskImageChecksum {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VirtualDiskImageChecksum<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVirtualDiskImageChecksum {
+function ConvertFrom-JsonToVirtualDiskImageChecksum {
     Param(
         [AllowEmptyString()]
         [string]$Json

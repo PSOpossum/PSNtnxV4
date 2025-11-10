@@ -23,7 +23,7 @@ The type of error, like INVALID_INPUT, INTERNAL_SERVER_ERROR, etc.
 PrismV41ProtectpcApiError<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcApiError {
+function Initialize-PrismV41ProtectpcApiError {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ProtectpcApiError<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcApiError {
+function ConvertFrom-JsonToPrismV41ProtectpcApiError {
     Param(
         [AllowEmptyString()]
         [string]$Json

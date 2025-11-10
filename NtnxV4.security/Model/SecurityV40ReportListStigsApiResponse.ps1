@@ -23,7 +23,7 @@ No description available.
 SecurityV40ReportListStigsApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ReportListStigsApiResponse {
+function Initialize-SecurityV40ReportListStigsApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SecurityV40ReportListStigsApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ReportListStigsApiResponse {
+function ConvertFrom-JsonToSecurityV40ReportListStigsApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

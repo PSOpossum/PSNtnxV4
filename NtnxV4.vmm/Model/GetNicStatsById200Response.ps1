@@ -23,7 +23,7 @@ No description available.
 GetNicStatsById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetNicStatsById200Response {
+function Initialize-GetNicStatsById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetNicStatsById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetNicStatsById200Response {
+function ConvertFrom-JsonToGetNicStatsById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

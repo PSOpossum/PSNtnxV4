@@ -23,7 +23,7 @@ No description available.
 UpdateKeyManagementServerById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateKeyManagementServerById202Response {
+function Initialize-UpdateKeyManagementServerById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateKeyManagementServerById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateKeyManagementServerById202Response {
+function ConvertFrom-JsonToUpdateKeyManagementServerById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

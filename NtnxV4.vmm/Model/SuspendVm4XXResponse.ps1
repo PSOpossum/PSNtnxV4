@@ -23,7 +23,7 @@ No description available.
 SuspendVm4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SuspendVm4XXResponse {
+function Initialize-SuspendVm4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SuspendVm4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSuspendVm4XXResponse {
+function ConvertFrom-JsonToSuspendVm4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

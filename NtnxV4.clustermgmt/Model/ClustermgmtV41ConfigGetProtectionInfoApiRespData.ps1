@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigGetProtectionInfoApiRespData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetProtectionInfoApiRespData {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetProtectionInfoApiRespData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetProtectionInfoApiRespDat
 
         # try to match ClustermgmtV41ConfigProtectionInfo defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigProtectionInfo $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigProtectionInfo $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetProtectionInfoApiRespDat
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

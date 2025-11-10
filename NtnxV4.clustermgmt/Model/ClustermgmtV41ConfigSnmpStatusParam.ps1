@@ -21,7 +21,7 @@ SNMP user information.
 ClustermgmtV41ConfigSnmpStatusParam<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSnmpStatusParam {
+function Initialize-ClustermgmtV41ConfigSnmpStatusParam {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 ClustermgmtV41ConfigSnmpStatusParam<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSnmpStatusParam {
+function ConvertFrom-JsonToClustermgmtV41ConfigSnmpStatusParam {
     Param(
         [AllowEmptyString()]
         [string]$Json

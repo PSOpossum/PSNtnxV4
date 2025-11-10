@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigVmAllOfBootConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmAllOfBootConfig {
+function Initialize-VmmV41AhvConfigVmAllOfBootConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VmmV41AhvConfigVmAllOfBootConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmAllOfBootConfig {
+function ConvertFrom-JsonToVmmV41AhvConfigVmAllOfBootConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

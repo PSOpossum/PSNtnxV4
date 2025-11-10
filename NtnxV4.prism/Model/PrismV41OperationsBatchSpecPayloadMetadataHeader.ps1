@@ -23,7 +23,7 @@ The value of the header parameter.
 PrismV41OperationsBatchSpecPayloadMetadataHeader<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41OperationsBatchSpecPayloadMetadataHeader {
+function Initialize-PrismV41OperationsBatchSpecPayloadMetadataHeader {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 PrismV41OperationsBatchSpecPayloadMetadataHeader<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41OperationsBatchSpecPayloadMetadataHeader {
+function ConvertFrom-JsonToPrismV41OperationsBatchSpecPayloadMetadataHeader {
     Param(
         [AllowEmptyString()]
         [string]$Json

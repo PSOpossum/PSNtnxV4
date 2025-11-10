@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigGetDiskApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigGetDiskApiResponse {
+function Initialize-ClustermgmtV41ConfigGetDiskApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigGetDiskApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetDiskApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetDiskApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

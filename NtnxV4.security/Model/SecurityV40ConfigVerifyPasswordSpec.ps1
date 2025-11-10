@@ -21,7 +21,7 @@ Existing password of a user account.
 SecurityV40ConfigVerifyPasswordSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigVerifyPasswordSpec {
+function Initialize-SecurityV40ConfigVerifyPasswordSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 SecurityV40ConfigVerifyPasswordSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigVerifyPasswordSpec {
+function ConvertFrom-JsonToSecurityV40ConfigVerifyPasswordSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

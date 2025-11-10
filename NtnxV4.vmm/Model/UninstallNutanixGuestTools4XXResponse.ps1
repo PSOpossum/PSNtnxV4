@@ -23,7 +23,7 @@ No description available.
 UninstallNutanixGuestTools4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UninstallNutanixGuestTools4XXResponse {
+function Initialize-UninstallNutanixGuestTools4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UninstallNutanixGuestTools4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUninstallNutanixGuestTools4XXResponse {
+function ConvertFrom-JsonToUninstallNutanixGuestTools4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

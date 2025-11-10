@@ -27,7 +27,7 @@ No description available.
 PrismV41ProtectpcReplicaInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcReplicaInfo {
+function Initialize-PrismV41ProtectpcReplicaInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 PrismV41ProtectpcReplicaInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcReplicaInfo {
+function ConvertFrom-JsonToPrismV41ProtectpcReplicaInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

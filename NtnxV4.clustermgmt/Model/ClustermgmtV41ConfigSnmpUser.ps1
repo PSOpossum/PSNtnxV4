@@ -35,7 +35,7 @@ SNMP user encryption key.
 ClustermgmtV41ConfigSnmpUser<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSnmpUser {
+function Initialize-ClustermgmtV41ConfigSnmpUser {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -132,7 +132,7 @@ Json object
 
 ClustermgmtV41ConfigSnmpUser<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSnmpUser {
+function ConvertFrom-JsonToClustermgmtV41ConfigSnmpUser {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -53,7 +53,7 @@ This field signifies billing API hostname which serves billing apis.
 PrismV41MgmtEnvironmentInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41MgmtEnvironmentInfo {
+function Initialize-PrismV41MgmtEnvironmentInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -172,7 +172,7 @@ Json object
 
 PrismV41MgmtEnvironmentInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41MgmtEnvironmentInfo {
+function ConvertFrom-JsonToPrismV41MgmtEnvironmentInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

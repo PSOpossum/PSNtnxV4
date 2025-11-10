@@ -187,7 +187,7 @@ The reserved memory of the VM in bytes.
 VmmV41AhvStatsVmStatsTuple<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvStatsVmStatsTuple {
+function Initialize-VmmV41AhvStatsVmStatsTuple {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -558,7 +558,7 @@ Json object
 
 VmmV41AhvStatsVmStatsTuple<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvStatsVmStatsTuple {
+function ConvertFrom-JsonToVmmV41AhvStatsVmStatsTuple {
     Param(
         [AllowEmptyString()]
         [string]$Json

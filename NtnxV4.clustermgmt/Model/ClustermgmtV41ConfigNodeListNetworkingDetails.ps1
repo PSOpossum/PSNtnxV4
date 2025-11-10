@@ -49,7 +49,7 @@ Indicates whether the hypervisor is robo mixed or not.
 ClustermgmtV41ConfigNodeListNetworkingDetails<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeListNetworkingDetails {
+function Initialize-ClustermgmtV41ConfigNodeListNetworkingDetails {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -154,7 +154,7 @@ Json object
 
 ClustermgmtV41ConfigNodeListNetworkingDetails<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeListNetworkingDetails {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeListNetworkingDetails {
     Param(
         [AllowEmptyString()]
         [string]$Json

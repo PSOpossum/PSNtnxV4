@@ -25,7 +25,7 @@ Number of entities that are not protected.
 ClustermgmtV41ConfigProtectedEntity<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigProtectedEntity {
+function Initialize-ClustermgmtV41ConfigProtectedEntity {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -80,7 +80,7 @@ Json object
 
 ClustermgmtV41ConfigProtectedEntity<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigProtectedEntity {
+function ConvertFrom-JsonToClustermgmtV41ConfigProtectedEntity {
     Param(
         [AllowEmptyString()]
         [string]$Json

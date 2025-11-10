@@ -21,7 +21,7 @@ The globally unique identifier of an availability zone type UUID.
 VmmV41AhvConfigAvailabilityZoneReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigAvailabilityZoneReference {
+function Initialize-VmmV41AhvConfigAvailabilityZoneReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigAvailabilityZoneReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigAvailabilityZoneReference {
+function ConvertFrom-JsonToVmmV41AhvConfigAvailabilityZoneReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

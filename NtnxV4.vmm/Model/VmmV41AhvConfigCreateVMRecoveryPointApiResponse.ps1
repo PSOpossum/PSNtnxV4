@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigCreateVMRecoveryPointApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCreateVMRecoveryPointApiResponse {
+function Initialize-VmmV41AhvConfigCreateVMRecoveryPointApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigCreateVMRecoveryPointApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCreateVMRecoveryPointApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigCreateVMRecoveryPointApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

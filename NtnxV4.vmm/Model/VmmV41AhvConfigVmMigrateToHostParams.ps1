@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigVmMigrateToHostParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmMigrateToHostParams {
+function Initialize-VmmV41AhvConfigVmMigrateToHostParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VmmV41AhvConfigVmMigrateToHostParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmMigrateToHostParams {
+function ConvertFrom-JsonToVmmV41AhvConfigVmMigrateToHostParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

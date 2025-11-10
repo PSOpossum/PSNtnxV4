@@ -23,7 +23,7 @@ No description available.
 CrossClusterMigrateVm4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CrossClusterMigrateVm4XXResponse {
+function Initialize-CrossClusterMigrateVm4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CrossClusterMigrateVm4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCrossClusterMigrateVm4XXResponse {
+function ConvertFrom-JsonToCrossClusterMigrateVm4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

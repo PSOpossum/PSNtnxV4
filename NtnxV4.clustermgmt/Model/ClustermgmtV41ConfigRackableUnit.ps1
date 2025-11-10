@@ -37,7 +37,7 @@ No description available.
 ClustermgmtV41ConfigRackableUnit<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRackableUnit {
+function Initialize-ClustermgmtV41ConfigRackableUnit {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -131,7 +131,7 @@ Json object
 
 ClustermgmtV41ConfigRackableUnit<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRackableUnit {
+function ConvertFrom-JsonToClustermgmtV41ConfigRackableUnit {
     Param(
         [AllowEmptyString()]
         [string]$Json

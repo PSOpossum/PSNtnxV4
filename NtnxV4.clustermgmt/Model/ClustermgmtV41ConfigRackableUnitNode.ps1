@@ -25,7 +25,7 @@ Position of a node in a rackable unit.
 ClustermgmtV41ConfigRackableUnitNode<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRackableUnitNode {
+function Initialize-ClustermgmtV41ConfigRackableUnitNode {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -73,7 +73,7 @@ Json object
 
 ClustermgmtV41ConfigRackableUnitNode<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRackableUnitNode {
+function ConvertFrom-JsonToClustermgmtV41ConfigRackableUnitNode {
     Param(
         [AllowEmptyString()]
         [string]$Json

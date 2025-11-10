@@ -29,7 +29,7 @@ An array of entity-specific metadata
 CommonV10ResponseApiResponseMetadata<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ResponseApiResponseMetadata {
+function Initialize-CommonV10ResponseApiResponseMetadata {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -116,7 +116,7 @@ Json object
 
 CommonV10ResponseApiResponseMetadata<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ResponseApiResponseMetadata {
+function ConvertFrom-JsonToCommonV10ResponseApiResponseMetadata {
     Param(
         [AllowEmptyString()]
         [string]$Json

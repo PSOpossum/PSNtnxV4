@@ -23,7 +23,7 @@ No description available.
 DeletePlacementPolicyById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeletePlacementPolicyById4XXResponse {
+function Initialize-DeletePlacementPolicyById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeletePlacementPolicyById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeletePlacementPolicyById4XXResponse {
+function ConvertFrom-JsonToDeletePlacementPolicyById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

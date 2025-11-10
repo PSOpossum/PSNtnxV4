@@ -117,7 +117,7 @@ The external identifier of the Storage Container.
 ClustermgmtV41StatsStorageContainerStats<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41StatsStorageContainerStats {
+function Initialize-ClustermgmtV41StatsStorageContainerStats {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -719,7 +719,7 @@ Json object
 
 ClustermgmtV41StatsStorageContainerStats<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41StatsStorageContainerStats {
+function ConvertFrom-JsonToClustermgmtV41StatsStorageContainerStats {
     Param(
         [AllowEmptyString()]
         [string]$Json

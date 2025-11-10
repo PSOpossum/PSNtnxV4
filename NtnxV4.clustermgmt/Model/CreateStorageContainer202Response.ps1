@@ -23,7 +23,7 @@ No description available.
 CreateStorageContainer202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateStorageContainer202Response {
+function Initialize-CreateStorageContainer202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateStorageContainer202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateStorageContainer202Response {
+function ConvertFrom-JsonToCreateStorageContainer202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

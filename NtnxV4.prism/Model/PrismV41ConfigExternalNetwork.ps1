@@ -27,7 +27,7 @@ The network external identifier to which Domain Manager (Prism Central) is to be
 PrismV41ConfigExternalNetwork<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigExternalNetwork {
+function Initialize-PrismV41ConfigExternalNetwork {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -103,7 +103,7 @@ Json object
 
 PrismV41ConfigExternalNetwork<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigExternalNetwork {
+function ConvertFrom-JsonToPrismV41ConfigExternalNetwork {
     Param(
         [AllowEmptyString()]
         [string]$Json

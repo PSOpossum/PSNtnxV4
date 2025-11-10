@@ -21,7 +21,7 @@ No description available.
 ClustermgmtV41ConfigNodeNetworkConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeNetworkConfig {
+function Initialize-ClustermgmtV41ConfigNodeNetworkConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 ClustermgmtV41ConfigNodeNetworkConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeNetworkConfig {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeNetworkConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

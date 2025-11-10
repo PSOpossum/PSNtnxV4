@@ -23,7 +23,7 @@ No description available.
 MigrateNicById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4MigrateNicById202Response {
+function Initialize-MigrateNicById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 MigrateNicById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToMigrateNicById202Response {
+function ConvertFrom-JsonToMigrateNicById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

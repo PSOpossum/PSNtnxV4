@@ -45,7 +45,7 @@ This readonly attribute is unused.
 VmmV41ConfigTemplatePlacementPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ConfigTemplatePlacementPolicy {
+function Initialize-VmmV41ConfigTemplatePlacementPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -173,7 +173,7 @@ Json object
 
 VmmV41ConfigTemplatePlacementPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ConfigTemplatePlacementPolicy {
+function ConvertFrom-JsonToVmmV41ConfigTemplatePlacementPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

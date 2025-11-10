@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigGetPcieDeviceApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetPcieDeviceApiResponseData {
+function ConvertFrom-JsonToVmmV41AhvConfigGetPcieDeviceApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetPcieDeviceApiResponseData {
 
         # try to match VmmV41AhvConfigPcieDevice defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigPcieDevice $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigPcieDevice $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetPcieDeviceApiResponseData {
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

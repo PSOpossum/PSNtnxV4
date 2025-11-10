@@ -21,7 +21,7 @@ The external ID of the legacy VM Group which the VM is the part of.
 VmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy {
+function Initialize-VmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy {
+function ConvertFrom-JsonToVmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

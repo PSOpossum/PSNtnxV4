@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41AhvConfigListPcieDevicesApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41AhvConfigListPcieDevicesApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41AhvConfigListPcieDevicesApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41AhvConfigListPcieDevicesApiRespon
 
         # try to match ClustermgmtV41AhvConfigPcieDevice[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41AhvConfigPcieDevice[] $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41AhvConfigPcieDevice[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41AhvConfigListPcieDevicesApiRespon
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

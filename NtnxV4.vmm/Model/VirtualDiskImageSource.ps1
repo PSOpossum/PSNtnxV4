@@ -21,7 +21,7 @@ No description available.
 VirtualDiskImageSource<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VirtualDiskImageSource {
+function Initialize-VirtualDiskImageSource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VirtualDiskImageSource<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVirtualDiskImageSource {
+function ConvertFrom-JsonToVirtualDiskImageSource {
     Param(
         [AllowEmptyString()]
         [string]$Json

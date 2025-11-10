@@ -27,7 +27,7 @@ A boolean value to indicate if all non-migratable uvms must be shutdown.
 ClustermgmtV41OperationsEnterHostMaintenanceSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41OperationsEnterHostMaintenanceSpec {
+function Initialize-ClustermgmtV41OperationsEnterHostMaintenanceSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 ClustermgmtV41OperationsEnterHostMaintenanceSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41OperationsEnterHostMaintenanceSpec {
+function ConvertFrom-JsonToClustermgmtV41OperationsEnterHostMaintenanceSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

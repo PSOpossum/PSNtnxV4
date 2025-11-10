@@ -45,7 +45,7 @@ Indicates whether the Nutanix CVM defence knowledge consent banner is enabled.
 SecurityV40ConfigSecurityConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigSecurityConfig {
+function Initialize-SecurityV40ConfigSecurityConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -145,7 +145,7 @@ Json object
 
 SecurityV40ConfigSecurityConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigSecurityConfig {
+function ConvertFrom-JsonToSecurityV40ConfigSecurityConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

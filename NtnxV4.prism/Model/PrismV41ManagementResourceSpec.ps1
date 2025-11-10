@@ -23,7 +23,7 @@ Indicates the memory to be added for a given portfolio product in bytes.
 PrismV41ManagementResourceSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementResourceSpec {
+function Initialize-PrismV41ManagementResourceSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ManagementResourceSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementResourceSpec {
+function ConvertFrom-JsonToPrismV41ManagementResourceSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -21,7 +21,7 @@ No description available.
 PrismV41ErrorErrorResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ErrorErrorResponse {
+function Initialize-PrismV41ErrorErrorResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 PrismV41ErrorErrorResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ErrorErrorResponse {
+function ConvertFrom-JsonToPrismV41ErrorErrorResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

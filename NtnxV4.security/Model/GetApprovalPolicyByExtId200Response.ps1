@@ -23,7 +23,7 @@ No description available.
 GetApprovalPolicyByExtId200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetApprovalPolicyByExtId200Response {
+function Initialize-GetApprovalPolicyByExtId200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetApprovalPolicyByExtId200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetApprovalPolicyByExtId200Response {
+function ConvertFrom-JsonToGetApprovalPolicyByExtId200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

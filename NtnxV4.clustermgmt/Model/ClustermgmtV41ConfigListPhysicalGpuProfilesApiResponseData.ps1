@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigListPhysicalGpuProfilesApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListPhysicalGpuProfilesApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41ConfigListPhysicalGpuProfilesApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListPhysicalGpuProfilesApiR
 
         # try to match ClustermgmtV41ConfigPhysicalGpuProfile[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigPhysicalGpuProfile[] $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigPhysicalGpuProfile[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListPhysicalGpuProfilesApiR
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

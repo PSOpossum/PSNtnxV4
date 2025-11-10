@@ -23,7 +23,7 @@ No description available.
 VmmV41ImagesConfigDeleteRateLimitPolicyApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ImagesConfigDeleteRateLimitPolicyApiResponse {
+function Initialize-VmmV41ImagesConfigDeleteRateLimitPolicyApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ImagesConfigDeleteRateLimitPolicyApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigDeleteRateLimitPolicyApiResponse {
+function ConvertFrom-JsonToVmmV41ImagesConfigDeleteRateLimitPolicyApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

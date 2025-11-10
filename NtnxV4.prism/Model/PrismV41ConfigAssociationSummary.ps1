@@ -27,7 +27,7 @@ Count of associations of a particular type of entity or policy
 PrismV41ConfigAssociationSummary<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigAssociationSummary {
+function Initialize-PrismV41ConfigAssociationSummary {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -80,7 +80,7 @@ Json object
 
 PrismV41ConfigAssociationSummary<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigAssociationSummary {
+function ConvertFrom-JsonToPrismV41ConfigAssociationSummary {
     Param(
         [AllowEmptyString()]
         [string]$Json

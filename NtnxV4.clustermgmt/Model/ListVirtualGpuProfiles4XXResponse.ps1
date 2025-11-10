@@ -23,7 +23,7 @@ No description available.
 ListVirtualGpuProfiles4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListVirtualGpuProfiles4XXResponse {
+function Initialize-ListVirtualGpuProfiles4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListVirtualGpuProfiles4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListVirtualGpuProfiles4XXResponse {
+function ConvertFrom-JsonToListVirtualGpuProfiles4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

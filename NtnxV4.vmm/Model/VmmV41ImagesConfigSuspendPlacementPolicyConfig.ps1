@@ -21,7 +21,7 @@ Boolean to indicate whether tasks running to enforce the image placement policy 
 VmmV41ImagesConfigSuspendPlacementPolicyConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ImagesConfigSuspendPlacementPolicyConfig {
+function Initialize-VmmV41ImagesConfigSuspendPlacementPolicyConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41ImagesConfigSuspendPlacementPolicyConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigSuspendPlacementPolicyConfig {
+function ConvertFrom-JsonToVmmV41ImagesConfigSuspendPlacementPolicyConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

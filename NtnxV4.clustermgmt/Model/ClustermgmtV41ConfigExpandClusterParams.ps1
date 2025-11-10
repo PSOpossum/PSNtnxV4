@@ -27,7 +27,7 @@ Indicates if pre-expand checks can be skipped for node addition.
 ClustermgmtV41ConfigExpandClusterParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigExpandClusterParams {
+function Initialize-ClustermgmtV41ConfigExpandClusterParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 ClustermgmtV41ConfigExpandClusterParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigExpandClusterParams {
+function ConvertFrom-JsonToClustermgmtV41ConfigExpandClusterParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

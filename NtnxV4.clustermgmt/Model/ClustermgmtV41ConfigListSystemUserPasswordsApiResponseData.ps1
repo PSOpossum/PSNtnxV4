@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigListSystemUserPasswordsApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListSystemUserPasswordsApiResponseData {
+function ConvertFrom-JsonToClustermgmtV41ConfigListSystemUserPasswordsApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListSystemUserPasswordsApiR
 
         # try to match ClustermgmtV41ConfigSystemUserPassword[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSystemUserPassword[] $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigSystemUserPassword[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListSystemUserPasswordsApiR
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

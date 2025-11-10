@@ -22,7 +22,7 @@ JSON object
 
 PrismV41ManagementClusterRegistrationSpecRemoteCluster<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementClusterRegistrationSpecRemoteCluster {
+function ConvertFrom-JsonToPrismV41ManagementClusterRegistrationSpecRemoteCluster {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementClusterRegistrationSpecRemote
 
         # try to match PrismV41ManagementAOSRemoteClusterSpec defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ManagementAOSRemoteClusterSpec $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ManagementAOSRemoteClusterSpec $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementClusterRegistrationSpecRemote
 
         # try to match PrismV41ManagementClusterReference defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ManagementClusterReference $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ManagementClusterReference $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -68,7 +68,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementClusterRegistrationSpecRemote
 
         # try to match PrismV41ManagementDomainManagerRemoteClusterSpec defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ManagementDomainManagerRemoteClusterSpec $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ManagementDomainManagerRemoteClusterSpec $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

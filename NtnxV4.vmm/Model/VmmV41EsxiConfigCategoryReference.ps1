@@ -21,7 +21,7 @@ The globally unique identifier of an instance of type UUID.
 VmmV41EsxiConfigCategoryReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigCategoryReference {
+function Initialize-VmmV41EsxiConfigCategoryReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41EsxiConfigCategoryReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigCategoryReference {
+function ConvertFrom-JsonToVmmV41EsxiConfigCategoryReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

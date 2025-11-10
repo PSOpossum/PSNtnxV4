@@ -23,7 +23,7 @@ A globally unique identifier of a VM of type UUID.
 VmmV41AhvConfigVmSourceReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmSourceReference {
+function Initialize-VmmV41AhvConfigVmSourceReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigVmSourceReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmSourceReference {
+function ConvertFrom-JsonToVmmV41AhvConfigVmSourceReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

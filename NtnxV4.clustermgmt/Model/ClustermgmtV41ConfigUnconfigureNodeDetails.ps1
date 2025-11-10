@@ -21,7 +21,7 @@ List of unconfigured nodes.
 ClustermgmtV41ConfigUnconfigureNodeDetails<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUnconfigureNodeDetails {
+function Initialize-ClustermgmtV41ConfigUnconfigureNodeDetails {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 ClustermgmtV41ConfigUnconfigureNodeDetails<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUnconfigureNodeDetails {
+function ConvertFrom-JsonToClustermgmtV41ConfigUnconfigureNodeDetails {
     Param(
         [AllowEmptyString()]
         [string]$Json

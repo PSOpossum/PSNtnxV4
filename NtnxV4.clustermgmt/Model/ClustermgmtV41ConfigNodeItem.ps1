@@ -53,7 +53,7 @@ No description available.
 ClustermgmtV41ConfigNodeItem<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeItem {
+function Initialize-ClustermgmtV41ConfigNodeItem {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -180,7 +180,7 @@ Json object
 
 ClustermgmtV41ConfigNodeItem<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeItem {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeItem {
     Param(
         [AllowEmptyString()]
         [string]$Json

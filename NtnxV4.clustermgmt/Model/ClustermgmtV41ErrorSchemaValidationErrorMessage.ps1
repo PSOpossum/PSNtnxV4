@@ -25,7 +25,7 @@ The path of the attribute that failed validation in the schema.
 ClustermgmtV41ErrorSchemaValidationErrorMessage<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ErrorSchemaValidationErrorMessage {
+function Initialize-ClustermgmtV41ErrorSchemaValidationErrorMessage {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 ClustermgmtV41ErrorSchemaValidationErrorMessage<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorSchemaValidationErrorMessage {
+function ConvertFrom-JsonToClustermgmtV41ErrorSchemaValidationErrorMessage {
     Param(
         [AllowEmptyString()]
         [string]$Json

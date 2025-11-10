@@ -23,7 +23,7 @@ No description available.
 GetRestoreSourceById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetRestoreSourceById200Response {
+function Initialize-GetRestoreSourceById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetRestoreSourceById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetRestoreSourceById200Response {
+function ConvertFrom-JsonToGetRestoreSourceById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ Rack Id.
 ClustermgmtV41ConfigRackReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRackReference {
+function Initialize-ClustermgmtV41ConfigRackReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -67,7 +67,7 @@ Json object
 
 ClustermgmtV41ConfigRackReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRackReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigRackReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

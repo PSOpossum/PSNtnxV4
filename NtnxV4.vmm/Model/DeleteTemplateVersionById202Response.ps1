@@ -23,7 +23,7 @@ No description available.
 DeleteTemplateVersionById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteTemplateVersionById202Response {
+function Initialize-DeleteTemplateVersionById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteTemplateVersionById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteTemplateVersionById202Response {
+function ConvertFrom-JsonToDeleteTemplateVersionById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

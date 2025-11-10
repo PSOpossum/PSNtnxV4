@@ -27,7 +27,7 @@ No description available.
 PrismV41ManagementNutanixObjectsConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementNutanixObjectsConfig {
+function Initialize-PrismV41ManagementNutanixObjectsConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -98,7 +98,7 @@ Json object
 
 PrismV41ManagementNutanixObjectsConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementNutanixObjectsConfig {
+function ConvertFrom-JsonToPrismV41ManagementNutanixObjectsConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

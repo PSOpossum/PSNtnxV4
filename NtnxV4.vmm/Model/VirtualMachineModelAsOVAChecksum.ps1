@@ -21,7 +21,7 @@ No description available.
 VirtualMachineModelAsOVAChecksum<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VirtualMachineModelAsOVAChecksum {
+function Initialize-VirtualMachineModelAsOVAChecksum {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VirtualMachineModelAsOVAChecksum<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVirtualMachineModelAsOVAChecksum {
+function ConvertFrom-JsonToVirtualMachineModelAsOVAChecksum {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 DiscoverUnconfiguredNodes202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DiscoverUnconfiguredNodes202Response {
+function Initialize-DiscoverUnconfiguredNodes202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DiscoverUnconfiguredNodes202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDiscoverUnconfiguredNodes202Response {
+function ConvertFrom-JsonToDiscoverUnconfiguredNodes202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

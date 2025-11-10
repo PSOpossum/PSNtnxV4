@@ -22,7 +22,7 @@ JSON object
 
 PrismV41ManagementGetBackupTargetApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementGetBackupTargetApiResponseData {
+function ConvertFrom-JsonToPrismV41ManagementGetBackupTargetApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementGetBackupTargetApiResponseDat
 
         # try to match PrismV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementGetBackupTargetApiResponseDat
 
         # try to match PrismV41ManagementBackupTarget defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ManagementBackupTarget $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ManagementBackupTarget $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

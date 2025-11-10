@@ -23,7 +23,7 @@ No description available.
 GetSnmpConfigByClusterId4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetSnmpConfigByClusterId4XXResponse {
+function Initialize-GetSnmpConfigByClusterId4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetSnmpConfigByClusterId4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetSnmpConfigByClusterId4XXResponse {
+function ConvertFrom-JsonToGetSnmpConfigByClusterId4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

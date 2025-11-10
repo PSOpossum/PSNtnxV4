@@ -23,7 +23,7 @@ No description available.
 PublishTemplate4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PublishTemplate4XXResponse {
+function Initialize-PublishTemplate4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PublishTemplate4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPublishTemplate4XXResponse {
+function ConvertFrom-JsonToPublishTemplate4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

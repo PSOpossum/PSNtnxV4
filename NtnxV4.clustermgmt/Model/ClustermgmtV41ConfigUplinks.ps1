@@ -23,7 +23,7 @@ Standby uplink information.
 ClustermgmtV41ConfigUplinks<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUplinks {
+function Initialize-ClustermgmtV41ConfigUplinks {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 ClustermgmtV41ConfigUplinks<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUplinks {
+function ConvertFrom-JsonToClustermgmtV41ConfigUplinks {
     Param(
         [AllowEmptyString()]
         [string]$Json

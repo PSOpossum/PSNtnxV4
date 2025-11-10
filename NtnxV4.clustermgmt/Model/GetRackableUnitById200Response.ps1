@@ -23,7 +23,7 @@ No description available.
 GetRackableUnitById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetRackableUnitById200Response {
+function Initialize-GetRackableUnitById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetRackableUnitById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetRackableUnitById200Response {
+function ConvertFrom-JsonToGetRackableUnitById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

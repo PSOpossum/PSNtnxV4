@@ -27,7 +27,7 @@ Indicates whether a custom certificate were configured or not.
 PrismV41ManagementConnectionConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementConnectionConfig {
+function Initialize-PrismV41ManagementConnectionConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 PrismV41ManagementConnectionConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementConnectionConfig {
+function ConvertFrom-JsonToPrismV41ManagementConnectionConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

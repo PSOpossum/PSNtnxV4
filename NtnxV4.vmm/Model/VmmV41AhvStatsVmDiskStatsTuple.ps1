@@ -75,7 +75,7 @@ The VM disk controller percentage of write I/O in parts per million.
 VmmV41AhvStatsVmDiskStatsTuple<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvStatsVmDiskStatsTuple {
+function Initialize-VmmV41AhvStatsVmDiskStatsTuple {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -222,7 +222,7 @@ Json object
 
 VmmV41AhvStatsVmDiskStatsTuple<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvStatsVmDiskStatsTuple {
+function ConvertFrom-JsonToVmmV41AhvStatsVmDiskStatsTuple {
     Param(
         [AllowEmptyString()]
         [string]$Json

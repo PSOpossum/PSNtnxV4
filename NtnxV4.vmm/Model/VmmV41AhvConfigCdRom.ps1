@@ -31,7 +31,7 @@ No description available.
 VmmV41AhvConfigCdRom<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCdRom {
+function Initialize-VmmV41AhvConfigCdRom {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -101,7 +101,7 @@ Json object
 
 VmmV41AhvConfigCdRom<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCdRom {
+function ConvertFrom-JsonToVmmV41AhvConfigCdRom {
     Param(
         [AllowEmptyString()]
         [string]$Json

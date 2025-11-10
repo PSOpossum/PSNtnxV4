@@ -23,7 +23,7 @@ No description available.
 AssociateEsxiCategories4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4AssociateEsxiCategories4XXResponse {
+function Initialize-AssociateEsxiCategories4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 AssociateEsxiCategories4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToAssociateEsxiCategories4XXResponse {
+function ConvertFrom-JsonToAssociateEsxiCategories4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

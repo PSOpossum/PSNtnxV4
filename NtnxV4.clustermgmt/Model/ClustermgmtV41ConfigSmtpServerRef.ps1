@@ -25,7 +25,7 @@ No description available.
 ClustermgmtV41ConfigSmtpServerRef<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSmtpServerRef {
+function Initialize-ClustermgmtV41ConfigSmtpServerRef {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 ClustermgmtV41ConfigSmtpServerRef<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSmtpServerRef {
+function ConvertFrom-JsonToClustermgmtV41ConfigSmtpServerRef {
     Param(
         [AllowEmptyString()]
         [string]$Json

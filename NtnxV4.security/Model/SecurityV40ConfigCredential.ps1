@@ -31,7 +31,7 @@ Indicates if the credential is valid.
 SecurityV40ConfigCredential<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigCredential {
+function Initialize-SecurityV40ConfigCredential {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -116,7 +116,7 @@ Json object
 
 SecurityV40ConfigCredential<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigCredential {
+function ConvertFrom-JsonToSecurityV40ConfigCredential {
     Param(
         [AllowEmptyString()]
         [string]$Json

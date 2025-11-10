@@ -27,7 +27,7 @@ No description available.
 ClustermgmtV41OperationsRollingRebootParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41OperationsRollingRebootParams {
+function Initialize-ClustermgmtV41OperationsRollingRebootParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -92,7 +92,7 @@ Json object
 
 ClustermgmtV41OperationsRollingRebootParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41OperationsRollingRebootParams {
+function ConvertFrom-JsonToClustermgmtV41OperationsRollingRebootParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

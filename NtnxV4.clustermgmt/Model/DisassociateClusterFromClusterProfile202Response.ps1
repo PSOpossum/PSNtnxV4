@@ -23,7 +23,7 @@ No description available.
 DisassociateClusterFromClusterProfile202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DisassociateClusterFromClusterProfile202Response {
+function Initialize-DisassociateClusterFromClusterProfile202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DisassociateClusterFromClusterProfile202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDisassociateClusterFromClusterProfile202Response {
+function ConvertFrom-JsonToDisassociateClusterFromClusterProfile202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -25,7 +25,7 @@ No description available.
 VmmV41AhvConfigGuestToolsInstallConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGuestToolsInstallConfig {
+function Initialize-VmmV41AhvConfigGuestToolsInstallConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -80,7 +80,7 @@ Json object
 
 VmmV41AhvConfigGuestToolsInstallConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGuestToolsInstallConfig {
+function ConvertFrom-JsonToVmmV41AhvConfigGuestToolsInstallConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 GetSnmpUserById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetSnmpUserById200Response {
+function Initialize-GetSnmpUserById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetSnmpUserById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetSnmpUserById200Response {
+function ConvertFrom-JsonToGetSnmpUserById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

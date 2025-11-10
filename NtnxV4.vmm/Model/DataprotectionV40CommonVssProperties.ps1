@@ -27,7 +27,7 @@ Indicates whether to store the VSS metadata if the user is interested in applica
 DataprotectionV40CommonVssProperties<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DataprotectionV40CommonVssProperties {
+function Initialize-DataprotectionV40CommonVssProperties {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -91,7 +91,7 @@ Json object
 
 DataprotectionV40CommonVssProperties<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDataprotectionV40CommonVssProperties {
+function ConvertFrom-JsonToDataprotectionV40CommonVssProperties {
     Param(
         [AllowEmptyString()]
         [string]$Json

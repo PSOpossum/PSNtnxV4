@@ -23,7 +23,7 @@ No description available.
 CreateVm202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateVm202Response {
+function Initialize-CreateVm202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateVm202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateVm202Response {
+function ConvertFrom-JsonToCreateVm202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

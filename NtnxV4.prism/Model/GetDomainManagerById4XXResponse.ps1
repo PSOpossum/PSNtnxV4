@@ -23,7 +23,7 @@ No description available.
 GetDomainManagerById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetDomainManagerById4XXResponse {
+function Initialize-GetDomainManagerById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetDomainManagerById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetDomainManagerById4XXResponse {
+function ConvertFrom-JsonToGetDomainManagerById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

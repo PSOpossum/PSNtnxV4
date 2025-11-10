@@ -21,7 +21,7 @@ The external ID (UUID) of the VM.
 VmmV41AhvPoliciesVmReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesVmReference {
+function Initialize-VmmV41AhvPoliciesVmReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvPoliciesVmReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesVmReference {
+function ConvertFrom-JsonToVmmV41AhvPoliciesVmReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

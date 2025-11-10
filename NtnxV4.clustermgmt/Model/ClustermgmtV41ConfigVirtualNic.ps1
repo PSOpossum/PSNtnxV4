@@ -49,7 +49,7 @@ List of host NIC UUID associated with the host virtual NIC.
 ClustermgmtV41ConfigVirtualNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigVirtualNic {
+function Initialize-ClustermgmtV41ConfigVirtualNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -184,7 +184,7 @@ Json object
 
 ClustermgmtV41ConfigVirtualNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigVirtualNic {
+function ConvertFrom-JsonToClustermgmtV41ConfigVirtualNic {
     Param(
         [AllowEmptyString()]
         [string]$Json

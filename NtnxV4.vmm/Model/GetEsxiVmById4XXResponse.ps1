@@ -23,7 +23,7 @@ No description available.
 GetEsxiVmById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetEsxiVmById4XXResponse {
+function Initialize-GetEsxiVmById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetEsxiVmById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetEsxiVmById4XXResponse {
+function ConvertFrom-JsonToGetEsxiVmById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

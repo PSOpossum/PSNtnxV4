@@ -23,7 +23,7 @@ Human readable name of the cluster.
 SecurityV40CommonCluster<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40CommonCluster {
+function Initialize-SecurityV40CommonCluster {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -71,7 +71,7 @@ Json object
 
 SecurityV40CommonCluster<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40CommonCluster {
+function ConvertFrom-JsonToSecurityV40CommonCluster {
     Param(
         [AllowEmptyString()]
         [string]$Json

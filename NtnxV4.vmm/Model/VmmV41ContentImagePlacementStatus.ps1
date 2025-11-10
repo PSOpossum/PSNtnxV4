@@ -31,7 +31,7 @@ List of image placement policy external identifiers that conflict with the curre
 VmmV41ContentImagePlacementStatus<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentImagePlacementStatus {
+function Initialize-VmmV41ContentImagePlacementStatus {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -129,7 +129,7 @@ Json object
 
 VmmV41ContentImagePlacementStatus<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentImagePlacementStatus {
+function ConvertFrom-JsonToVmmV41ContentImagePlacementStatus {
     Param(
         [AllowEmptyString()]
         [string]$Json

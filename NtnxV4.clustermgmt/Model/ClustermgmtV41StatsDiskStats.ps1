@@ -91,7 +91,7 @@ Disk write I/O, expressed in parts per million.
 ClustermgmtV41StatsDiskStats<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41StatsDiskStats {
+function Initialize-ClustermgmtV41StatsDiskStats {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -544,7 +544,7 @@ Json object
 
 ClustermgmtV41StatsDiskStats<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41StatsDiskStats {
+function ConvertFrom-JsonToClustermgmtV41StatsDiskStats {
     Param(
         [AllowEmptyString()]
         [string]$Json

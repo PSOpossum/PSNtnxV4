@@ -23,7 +23,7 @@ No description available.
 VmmV41EsxiConfigRebootGuestOSApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigRebootGuestOSApiResponse {
+function Initialize-VmmV41EsxiConfigRebootGuestOSApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41EsxiConfigRebootGuestOSApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigRebootGuestOSApiResponse {
+function ConvertFrom-JsonToVmmV41EsxiConfigRebootGuestOSApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

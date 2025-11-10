@@ -31,7 +31,7 @@ The map of argument name to value.
 PrismV41ErrorAppMessage<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ErrorAppMessage {
+function Initialize-PrismV41ErrorAppMessage {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -91,7 +91,7 @@ Json object
 
 PrismV41ErrorAppMessage<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ErrorAppMessage {
+function ConvertFrom-JsonToPrismV41ErrorAppMessage {
     Param(
         [AllowEmptyString()]
         [string]$Json

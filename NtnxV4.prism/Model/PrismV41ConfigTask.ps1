@@ -71,7 +71,7 @@ Name of the application to which the task belongs.
 PrismV41ConfigTask<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigTask {
+function Initialize-PrismV41ConfigTask {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -284,7 +284,7 @@ Json object
 
 PrismV41ConfigTask<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigTask {
+function ConvertFrom-JsonToPrismV41ConfigTask {
     Param(
         [AllowEmptyString()]
         [string]$Json

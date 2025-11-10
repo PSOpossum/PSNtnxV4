@@ -23,7 +23,7 @@ No description available.
 CommonV10ConfigIPAddress<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigIPAddress {
+function Initialize-CommonV10ConfigIPAddress {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CommonV10ConfigIPAddress<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigIPAddress {
+function ConvertFrom-JsonToCommonV10ConfigIPAddress {
     Param(
         [AllowEmptyString()]
         [string]$Json

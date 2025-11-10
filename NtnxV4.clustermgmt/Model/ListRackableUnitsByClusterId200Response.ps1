@@ -23,7 +23,7 @@ No description available.
 ListRackableUnitsByClusterId200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListRackableUnitsByClusterId200Response {
+function Initialize-ListRackableUnitsByClusterId200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 ListRackableUnitsByClusterId200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListRackableUnitsByClusterId200Response {
+function ConvertFrom-JsonToListRackableUnitsByClusterId200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 DeleteImageById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteImageById4XXResponse {
+function Initialize-DeleteImageById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteImageById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteImageById4XXResponse {
+function ConvertFrom-JsonToDeleteImageById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

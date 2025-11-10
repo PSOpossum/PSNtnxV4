@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigDeleteDiskApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDeleteDiskApiResponse {
+function Initialize-VmmV41AhvConfigDeleteDiskApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigDeleteDiskApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDeleteDiskApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigDeleteDiskApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

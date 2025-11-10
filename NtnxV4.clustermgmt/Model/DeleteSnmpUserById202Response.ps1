@@ -23,7 +23,7 @@ No description available.
 DeleteSnmpUserById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteSnmpUserById202Response {
+function Initialize-DeleteSnmpUserById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteSnmpUserById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteSnmpUserById202Response {
+function ConvertFrom-JsonToDeleteSnmpUserById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

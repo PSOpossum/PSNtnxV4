@@ -23,7 +23,7 @@ No description available.
 CancelGuestUpdate202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CancelGuestUpdate202Response {
+function Initialize-CancelGuestUpdate202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CancelGuestUpdate202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCancelGuestUpdate202Response {
+function ConvertFrom-JsonToCancelGuestUpdate202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

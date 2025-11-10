@@ -23,7 +23,7 @@ The prefix length of the network to which this host IPv6 address belongs.
 CommonV10ConfigIPv6Address<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigIPv6Address {
+function Initialize-CommonV10ConfigIPv6Address {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -79,7 +79,7 @@ Json object
 
 CommonV10ConfigIPv6Address<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigIPv6Address {
+function ConvertFrom-JsonToCommonV10ConfigIPv6Address {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -21,7 +21,7 @@ MAC address of the NIC.
 VmmV41AhvConfigVmRestoreVirtualEthernetNicOverrideSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmRestoreVirtualEthernetNicOverrideSpec {
+function Initialize-VmmV41AhvConfigVmRestoreVirtualEthernetNicOverrideSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigVmRestoreVirtualEthernetNicOverrideSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmRestoreVirtualEthernetNicOverrideSpec {
+function ConvertFrom-JsonToVmmV41AhvConfigVmRestoreVirtualEthernetNicOverrideSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

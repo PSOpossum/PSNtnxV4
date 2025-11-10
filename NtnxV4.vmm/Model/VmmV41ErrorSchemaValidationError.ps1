@@ -29,7 +29,7 @@ List of validation error messages
 VmmV41ErrorSchemaValidationError<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ErrorSchemaValidationError {
+function Initialize-VmmV41ErrorSchemaValidationError {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 VmmV41ErrorSchemaValidationError<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ErrorSchemaValidationError {
+function ConvertFrom-JsonToVmmV41ErrorSchemaValidationError {
     Param(
         [AllowEmptyString()]
         [string]$Json

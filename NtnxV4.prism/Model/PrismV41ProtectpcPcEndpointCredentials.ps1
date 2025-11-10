@@ -25,7 +25,7 @@ Certificate which will be used while validating the object store identity
 PrismV41ProtectpcPcEndpointCredentials<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcPcEndpointCredentials {
+function Initialize-PrismV41ProtectpcPcEndpointCredentials {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 PrismV41ProtectpcPcEndpointCredentials<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcPcEndpointCredentials {
+function ConvertFrom-JsonToPrismV41ProtectpcPcEndpointCredentials {
     Param(
         [AllowEmptyString()]
         [string]$Json

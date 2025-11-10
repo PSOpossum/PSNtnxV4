@@ -23,7 +23,7 @@ No description available.
 SecurityV40ConfigCreateCredentialApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigCreateCredentialApiResponse {
+function Initialize-SecurityV40ConfigCreateCredentialApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SecurityV40ConfigCreateCredentialApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigCreateCredentialApiResponse {
+function ConvertFrom-JsonToSecurityV40ConfigCreateCredentialApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

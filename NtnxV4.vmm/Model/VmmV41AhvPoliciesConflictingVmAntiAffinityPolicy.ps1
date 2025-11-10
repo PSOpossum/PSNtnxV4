@@ -21,7 +21,7 @@ The external ID of the conflicting VM-VM anti-affinity policy which is applied o
 VmmV41AhvPoliciesConflictingVmAntiAffinityPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesConflictingVmAntiAffinityPolicy {
+function Initialize-VmmV41AhvPoliciesConflictingVmAntiAffinityPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvPoliciesConflictingVmAntiAffinityPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesConflictingVmAntiAffinityPolicy {
+function ConvertFrom-JsonToVmmV41AhvPoliciesConflictingVmAntiAffinityPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

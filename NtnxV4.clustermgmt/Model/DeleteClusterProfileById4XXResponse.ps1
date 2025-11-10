@@ -23,7 +23,7 @@ No description available.
 DeleteClusterProfileById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteClusterProfileById4XXResponse {
+function Initialize-DeleteClusterProfileById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteClusterProfileById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteClusterProfileById4XXResponse {
+function ConvertFrom-JsonToDeleteClusterProfileById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

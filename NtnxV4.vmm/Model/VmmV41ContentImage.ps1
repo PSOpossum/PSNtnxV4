@@ -49,7 +49,7 @@ Status of an image placement policy.
 VmmV41ContentImage<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentImage {
+function Initialize-VmmV41ContentImage {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -200,7 +200,7 @@ Json object
 
 VmmV41ContentImage<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentImage {
+function ConvertFrom-JsonToVmmV41ContentImage {
     Param(
         [AllowEmptyString()]
         [string]$Json

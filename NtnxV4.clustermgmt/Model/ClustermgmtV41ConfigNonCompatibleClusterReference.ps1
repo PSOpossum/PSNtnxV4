@@ -23,7 +23,7 @@ Cluster profile setting.
 ClustermgmtV41ConfigNonCompatibleClusterReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNonCompatibleClusterReference {
+function Initialize-ClustermgmtV41ConfigNonCompatibleClusterReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -75,7 +75,7 @@ Json object
 
 ClustermgmtV41ConfigNonCompatibleClusterReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNonCompatibleClusterReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigNonCompatibleClusterReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

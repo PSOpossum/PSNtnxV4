@@ -31,7 +31,7 @@ Indicates if the discovery is manual or not.
 ClustermgmtV41ConfigNodeDiscoveryParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeDiscoveryParams {
+function Initialize-ClustermgmtV41ConfigNodeDiscoveryParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -115,7 +115,7 @@ Json object
 
 ClustermgmtV41ConfigNodeDiscoveryParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeDiscoveryParams {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeDiscoveryParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

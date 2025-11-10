@@ -21,7 +21,7 @@ Globally unique identifier of a NIC profile. It should be of type UUID.
 VmmV41AhvConfigNicProfileReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigNicProfileReference {
+function Initialize-VmmV41AhvConfigNicProfileReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigNicProfileReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigNicProfileReference {
+function ConvertFrom-JsonToVmmV41AhvConfigNicProfileReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

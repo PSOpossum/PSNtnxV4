@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigGuestPowerOptions<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGuestPowerOptions {
+function Initialize-VmmV41AhvConfigGuestPowerOptions {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigGuestPowerOptions<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGuestPowerOptions {
+function ConvertFrom-JsonToVmmV41AhvConfigGuestPowerOptions {
     Param(
         [AllowEmptyString()]
         [string]$Json

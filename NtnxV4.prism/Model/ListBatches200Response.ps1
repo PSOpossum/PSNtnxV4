@@ -23,7 +23,7 @@ No description available.
 ListBatches200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListBatches200Response {
+function Initialize-ListBatches200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListBatches200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListBatches200Response {
+function ConvertFrom-JsonToListBatches200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

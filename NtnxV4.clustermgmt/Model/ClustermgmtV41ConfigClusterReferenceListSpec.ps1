@@ -21,7 +21,7 @@ Cluster reference for an entity.
 ClustermgmtV41ConfigClusterReferenceListSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigClusterReferenceListSpec {
+function Initialize-ClustermgmtV41ConfigClusterReferenceListSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 ClustermgmtV41ConfigClusterReferenceListSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigClusterReferenceListSpec {
+function ConvertFrom-JsonToClustermgmtV41ConfigClusterReferenceListSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

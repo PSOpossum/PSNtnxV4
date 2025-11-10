@@ -23,7 +23,7 @@ No description available.
 SecurityV40ManagementCreateApprovalPolicyApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ManagementCreateApprovalPolicyApiResponse {
+function Initialize-SecurityV40ManagementCreateApprovalPolicyApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SecurityV40ManagementCreateApprovalPolicyApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ManagementCreateApprovalPolicyApiResponse {
+function ConvertFrom-JsonToSecurityV40ManagementCreateApprovalPolicyApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

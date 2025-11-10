@@ -23,7 +23,7 @@ Secret key of the Intersight connection.
 SecurityV40ConfigKeyBasedAuth<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigKeyBasedAuth {
+function Initialize-SecurityV40ConfigKeyBasedAuth {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -90,7 +90,7 @@ Json object
 
 SecurityV40ConfigKeyBasedAuth<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigKeyBasedAuth {
+function ConvertFrom-JsonToSecurityV40ConfigKeyBasedAuth {
     Param(
         [AllowEmptyString()]
         [string]$Json

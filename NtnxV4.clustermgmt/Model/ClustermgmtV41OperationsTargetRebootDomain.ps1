@@ -23,7 +23,7 @@ The maximum number of concurrent reboots of the specified domain which can be to
 ClustermgmtV41OperationsTargetRebootDomain<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41OperationsTargetRebootDomain {
+function Initialize-ClustermgmtV41OperationsTargetRebootDomain {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -67,7 +67,7 @@ Json object
 
 ClustermgmtV41OperationsTargetRebootDomain<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41OperationsTargetRebootDomain {
+function ConvertFrom-JsonToClustermgmtV41OperationsTargetRebootDomain {
     Param(
         [AllowEmptyString()]
         [string]$Json

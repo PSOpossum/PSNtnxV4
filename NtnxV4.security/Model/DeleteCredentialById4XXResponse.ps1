@@ -23,7 +23,7 @@ No description available.
 DeleteCredentialById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteCredentialById4XXResponse {
+function Initialize-DeleteCredentialById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteCredentialById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteCredentialById4XXResponse {
+function ConvertFrom-JsonToDeleteCredentialById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

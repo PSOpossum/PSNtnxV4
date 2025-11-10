@@ -43,7 +43,7 @@ Fraction of the physical GPU assigned.
 VmmV41AhvConfigGpu<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGpu {
+function Initialize-VmmV41AhvConfigGpu {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -146,7 +146,7 @@ Json object
 
 VmmV41AhvConfigGpu<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGpu {
+function ConvertFrom-JsonToVmmV41AhvConfigGpu {
     Param(
         [AllowEmptyString()]
         [string]$Json

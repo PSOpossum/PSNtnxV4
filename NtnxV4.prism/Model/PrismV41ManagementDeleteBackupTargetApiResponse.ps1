@@ -23,7 +23,7 @@ No description available.
 PrismV41ManagementDeleteBackupTargetApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementDeleteBackupTargetApiResponse {
+function Initialize-PrismV41ManagementDeleteBackupTargetApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ManagementDeleteBackupTargetApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementDeleteBackupTargetApiResponse {
+function ConvertFrom-JsonToPrismV41ManagementDeleteBackupTargetApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

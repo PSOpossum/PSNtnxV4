@@ -23,7 +23,7 @@ No description available.
 GetClusterStats200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetClusterStats200Response {
+function Initialize-GetClusterStats200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetClusterStats200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetClusterStats200Response {
+function ConvertFrom-JsonToGetClusterStats200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

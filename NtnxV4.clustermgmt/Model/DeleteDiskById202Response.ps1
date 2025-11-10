@@ -23,7 +23,7 @@ No description available.
 DeleteDiskById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteDiskById202Response {
+function Initialize-DeleteDiskById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteDiskById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteDiskById202Response {
+function ConvertFrom-JsonToDeleteDiskById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

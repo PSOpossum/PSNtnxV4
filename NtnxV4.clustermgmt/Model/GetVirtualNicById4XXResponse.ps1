@@ -23,7 +23,7 @@ No description available.
 GetVirtualNicById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetVirtualNicById4XXResponse {
+function Initialize-GetVirtualNicById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetVirtualNicById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetVirtualNicById4XXResponse {
+function ConvertFrom-JsonToGetVirtualNicById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 CreateImage4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateImage4XXResponse {
+function Initialize-CreateImage4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateImage4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateImage4XXResponse {
+function ConvertFrom-JsonToCreateImage4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

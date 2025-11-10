@@ -23,7 +23,7 @@ Password required for the basic auth scheme.
 CommonV10ConfigBasicAuth<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigBasicAuth {
+function Initialize-CommonV10ConfigBasicAuth {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -90,7 +90,7 @@ Json object
 
 CommonV10ConfigBasicAuth<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigBasicAuth {
+function ConvertFrom-JsonToCommonV10ConfigBasicAuth {
     Param(
         [AllowEmptyString()]
         [string]$Json

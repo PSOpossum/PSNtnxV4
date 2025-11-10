@@ -23,7 +23,7 @@ No description available.
 MigrateVmToHost4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4MigrateVmToHost4XXResponse {
+function Initialize-MigrateVmToHost4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 MigrateVmToHost4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToMigrateVmToHost4XXResponse {
+function ConvertFrom-JsonToMigrateVmToHost4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

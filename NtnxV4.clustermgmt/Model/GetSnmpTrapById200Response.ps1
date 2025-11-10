@@ -23,7 +23,7 @@ No description available.
 GetSnmpTrapById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetSnmpTrapById200Response {
+function Initialize-GetSnmpTrapById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetSnmpTrapById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetSnmpTrapById200Response {
+function ConvertFrom-JsonToGetSnmpTrapById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

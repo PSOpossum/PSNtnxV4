@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigHypervCredentials<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHypervCredentials {
+function Initialize-ClustermgmtV41ConfigHypervCredentials {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigHypervCredentials<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHypervCredentials {
+function ConvertFrom-JsonToClustermgmtV41ConfigHypervCredentials {
     Param(
         [AllowEmptyString()]
         [string]$Json

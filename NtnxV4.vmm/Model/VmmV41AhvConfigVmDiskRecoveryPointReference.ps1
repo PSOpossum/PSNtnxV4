@@ -23,7 +23,7 @@ A globally unique identifier of a VM recovery point. It should be of type UUID.
 VmmV41AhvConfigVmDiskRecoveryPointReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmDiskRecoveryPointReference {
+function Initialize-VmmV41AhvConfigVmDiskRecoveryPointReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigVmDiskRecoveryPointReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmDiskRecoveryPointReference {
+function ConvertFrom-JsonToVmmV41AhvConfigVmDiskRecoveryPointReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

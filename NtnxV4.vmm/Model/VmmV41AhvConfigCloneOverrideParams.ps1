@@ -35,7 +35,7 @@ No description available.
 VmmV41AhvConfigCloneOverrideParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCloneOverrideParams {
+function Initialize-VmmV41AhvConfigCloneOverrideParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -130,7 +130,7 @@ Json object
 
 VmmV41AhvConfigCloneOverrideParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloneOverrideParams {
+function ConvertFrom-JsonToVmmV41AhvConfigCloneOverrideParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -40,7 +40,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListStigSummaries200Response
 #>
-function Invoke-NtnxV4ListStigSummaries {
+function Invoke-ListStigSummaries {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -66,7 +66,7 @@ function Invoke-NtnxV4ListStigSummaries {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListStigSummaries' | Write-Debug
+        'Calling method: Invoke-ListStigSummaries' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -78,7 +78,7 @@ function Invoke-NtnxV4ListStigSummaries {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -125,7 +125,7 @@ function Invoke-NtnxV4ListStigSummaries {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -177,7 +177,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListStigs200Response
 #>
-function Invoke-NtnxV4ListStigs {
+function Invoke-ListStigs {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -200,7 +200,7 @@ function Invoke-NtnxV4ListStigs {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListStigs' | Write-Debug
+        'Calling method: Invoke-ListStigs' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -212,7 +212,7 @@ function Invoke-NtnxV4ListStigs {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -255,7 +255,7 @@ function Invoke-NtnxV4ListStigs {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

@@ -29,7 +29,7 @@ No description available.
 VmmV41EsxiConfigDisk<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigDisk {
+function Initialize-VmmV41EsxiConfigDisk {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -94,7 +94,7 @@ Json object
 
 VmmV41EsxiConfigDisk<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigDisk {
+function ConvertFrom-JsonToVmmV41EsxiConfigDisk {
     Param(
         [AllowEmptyString()]
         [string]$Json

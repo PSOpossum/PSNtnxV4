@@ -47,7 +47,7 @@ No description available.
 DataprotectionV40CommonBaseVmRecoveryPoint<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DataprotectionV40CommonBaseVmRecoveryPoint {
+function Initialize-DataprotectionV40CommonBaseVmRecoveryPoint {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -173,7 +173,7 @@ Json object
 
 DataprotectionV40CommonBaseVmRecoveryPoint<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDataprotectionV40CommonBaseVmRecoveryPoint {
+function ConvertFrom-JsonToDataprotectionV40CommonBaseVmRecoveryPoint {
     Param(
         [AllowEmptyString()]
         [string]$Json

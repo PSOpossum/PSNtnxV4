@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigDisassociateCategoriesFromClusterApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDisassociateCategoriesFromClusterApiResponse {
+function Initialize-ClustermgmtV41ConfigDisassociateCategoriesFromClusterApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigDisassociateCategoriesFromClusterApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDisassociateCategoriesFromClusterApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigDisassociateCategoriesFromClusterApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -22,7 +22,7 @@ JSON object
 
 SecurityV40ConfigCreateCredentialApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigCreateCredentialApiResponseData {
+function ConvertFrom-JsonToSecurityV40ConfigCreateCredentialApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ConfigCreateCredentialApiResponseDat
 
         # try to match PrismV41ConfigTaskReference defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ConfigTaskReference $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ConfigTaskReference $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ConfigCreateCredentialApiResponseDat
 
         # try to match SecurityV40ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

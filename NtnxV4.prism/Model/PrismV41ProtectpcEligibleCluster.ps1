@@ -27,7 +27,7 @@ The amount of entities which can be backed up to the PE from PC.
 PrismV41ProtectpcEligibleCluster<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcEligibleCluster {
+function Initialize-PrismV41ProtectpcEligibleCluster {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -79,7 +79,7 @@ Json object
 
 PrismV41ProtectpcEligibleCluster<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcEligibleCluster {
+function ConvertFrom-JsonToPrismV41ProtectpcEligibleCluster {
     Param(
         [AllowEmptyString()]
         [string]$Json

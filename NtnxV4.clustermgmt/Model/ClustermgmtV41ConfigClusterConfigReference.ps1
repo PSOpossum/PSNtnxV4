@@ -57,7 +57,7 @@ Indicates if cluster is available to contact or not.
 ClustermgmtV41ConfigClusterConfigReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigClusterConfigReference {
+function Initialize-ClustermgmtV41ConfigClusterConfigReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -219,7 +219,7 @@ Json object
 
 ClustermgmtV41ConfigClusterConfigReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigClusterConfigReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigClusterConfigReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

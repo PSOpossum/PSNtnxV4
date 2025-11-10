@@ -29,7 +29,7 @@ No description available.
 PrismV41TrustSignedCertDetails<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41TrustSignedCertDetails {
+function Initialize-PrismV41TrustSignedCertDetails {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 PrismV41TrustSignedCertDetails<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41TrustSignedCertDetails {
+function ConvertFrom-JsonToPrismV41TrustSignedCertDetails {
     Param(
         [AllowEmptyString()]
         [string]$Json

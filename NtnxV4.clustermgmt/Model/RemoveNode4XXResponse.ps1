@@ -23,7 +23,7 @@ No description available.
 RemoveNode4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4RemoveNode4XXResponse {
+function Initialize-RemoveNode4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 RemoveNode4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToRemoveNode4XXResponse {
+function ConvertFrom-JsonToRemoveNode4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

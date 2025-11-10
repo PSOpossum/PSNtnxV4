@@ -23,7 +23,7 @@ No description available.
 SuspendPlacementPolicy202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SuspendPlacementPolicy202Response {
+function Initialize-SuspendPlacementPolicy202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SuspendPlacementPolicy202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSuspendPlacementPolicy202Response {
+function ConvertFrom-JsonToSuspendPlacementPolicy202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

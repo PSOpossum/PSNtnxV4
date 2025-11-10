@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigCreateRsyslogServerApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigCreateRsyslogServerApiResponse {
+function Initialize-ClustermgmtV41ConfigCreateRsyslogServerApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigCreateRsyslogServerApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigCreateRsyslogServerApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigCreateRsyslogServerApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

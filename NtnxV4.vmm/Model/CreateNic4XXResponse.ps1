@@ -23,7 +23,7 @@ No description available.
 CreateNic4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateNic4XXResponse {
+function Initialize-CreateNic4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateNic4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateNic4XXResponse {
+function ConvertFrom-JsonToCreateNic4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

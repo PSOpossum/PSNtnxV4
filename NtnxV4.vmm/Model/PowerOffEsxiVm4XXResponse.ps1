@@ -23,7 +23,7 @@ No description available.
 PowerOffEsxiVm4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PowerOffEsxiVm4XXResponse {
+function Initialize-PowerOffEsxiVm4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PowerOffEsxiVm4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPowerOffEsxiVm4XXResponse {
+function ConvertFrom-JsonToPowerOffEsxiVm4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

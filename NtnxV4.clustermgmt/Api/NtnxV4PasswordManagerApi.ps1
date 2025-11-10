@@ -31,7 +31,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ChangeSystemUserPasswordById202Response
 #>
-function Rename-NtnxV4SystemUserPasswordById {
+function Rename-SystemUserPasswordById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -48,7 +48,7 @@ function Rename-NtnxV4SystemUserPasswordById {
     )
 
     Process {
-        'Calling method: Rename-NtnxV4SystemUserPasswordById' | Write-Debug
+        'Calling method: Rename-SystemUserPasswordById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -101,7 +101,7 @@ function Rename-NtnxV4SystemUserPasswordById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -156,7 +156,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListSystemUserPasswords200Response
 #>
-function Invoke-NtnxV4ListSystemUserPasswords {
+function Invoke-ListSystemUserPasswords {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -182,7 +182,7 @@ function Invoke-NtnxV4ListSystemUserPasswords {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListSystemUserPasswords' | Write-Debug
+        'Calling method: Invoke-ListSystemUserPasswords' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -241,7 +241,7 @@ function Invoke-NtnxV4ListSystemUserPasswords {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

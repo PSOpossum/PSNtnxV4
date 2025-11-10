@@ -43,7 +43,7 @@ Community string(plaintext) for SNMP version 2.0.
 ClustermgmtV41ConfigSnmpTrap<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSnmpTrap {
+function Initialize-ClustermgmtV41ConfigSnmpTrap {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -155,7 +155,7 @@ Json object
 
 ClustermgmtV41ConfigSnmpTrap<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSnmpTrap {
+function ConvertFrom-JsonToClustermgmtV41ConfigSnmpTrap {
     Param(
         [AllowEmptyString()]
         [string]$Json

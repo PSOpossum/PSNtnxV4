@@ -23,7 +23,7 @@ No description available.
 UnregisterVcenterExtension4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UnregisterVcenterExtension4XXResponse {
+function Initialize-UnregisterVcenterExtension4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UnregisterVcenterExtension4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUnregisterVcenterExtension4XXResponse {
+function ConvertFrom-JsonToUnregisterVcenterExtension4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

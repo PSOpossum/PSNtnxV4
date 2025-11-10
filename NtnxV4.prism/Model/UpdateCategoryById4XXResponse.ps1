@@ -23,7 +23,7 @@ No description available.
 UpdateCategoryById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateCategoryById4XXResponse {
+function Initialize-UpdateCategoryById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateCategoryById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateCategoryById4XXResponse {
+function ConvertFrom-JsonToUpdateCategoryById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

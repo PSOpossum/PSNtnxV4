@@ -22,7 +22,7 @@ JSON object
 
 SecurityV40ReportListStigSummariesApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ReportListStigSummariesApiResponseData {
+function ConvertFrom-JsonToSecurityV40ReportListStigSummariesApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ReportListStigSummariesApiResponseDa
 
         # try to match SecurityV40ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ReportListStigSummariesApiResponseDa
 
         # try to match SecurityV40ReportStigSummary[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ReportStigSummary[] $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ReportStigSummary[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

@@ -23,7 +23,7 @@ No description available.
 DeleteGpuById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteGpuById202Response {
+function Initialize-DeleteGpuById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteGpuById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteGpuById202Response {
+function ConvertFrom-JsonToDeleteGpuById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

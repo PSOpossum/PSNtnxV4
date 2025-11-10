@@ -21,7 +21,7 @@ Key that identifies the source object in the bucket. The resource implies the bu
 VmmV41ContentObjectsLiteSource<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentObjectsLiteSource {
+function Initialize-VmmV41ContentObjectsLiteSource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 VmmV41ContentObjectsLiteSource<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentObjectsLiteSource {
+function ConvertFrom-JsonToVmmV41ContentObjectsLiteSource {
     Param(
         [AllowEmptyString()]
         [string]$Json

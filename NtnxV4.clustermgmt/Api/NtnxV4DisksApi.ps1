@@ -28,7 +28,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 AddDisk202Response
 #>
-function Add-NtnxV4Disk {
+function Add-Disk {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -42,7 +42,7 @@ function Add-NtnxV4Disk {
     )
 
     Process {
-        'Calling method: Add-NtnxV4Disk' | Write-Debug
+        'Calling method: Add-Disk' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -90,7 +90,7 @@ function Add-NtnxV4Disk {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -130,7 +130,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeleteDiskById202Response
 #>
-function Invoke-NtnxV4DeleteDiskById {
+function Invoke-DeleteDiskById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -141,7 +141,7 @@ function Invoke-NtnxV4DeleteDiskById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteDiskById' | Write-Debug
+        'Calling method: Invoke-DeleteDiskById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -180,7 +180,7 @@ function Invoke-NtnxV4DeleteDiskById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -220,7 +220,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetDiskById200Response
 #>
-function Get-NtnxV4DiskById {
+function Get-DiskById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -231,7 +231,7 @@ function Get-NtnxV4DiskById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4DiskById' | Write-Debug
+        'Calling method: Get-DiskById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -270,7 +270,7 @@ function Get-NtnxV4DiskById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -322,7 +322,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetDiskStats200Response
 #>
-function Get-NtnxV4DiskStats {
+function Get-DiskStats {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -345,7 +345,7 @@ function Get-NtnxV4DiskStats {
     )
 
     Process {
-        'Calling method: Get-NtnxV4DiskStats' | Write-Debug
+        'Calling method: Get-DiskStats' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -402,7 +402,7 @@ function Get-NtnxV4DiskStats {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -457,7 +457,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListDisks200Response
 #>
-function Invoke-NtnxV4ListDisks {
+function Invoke-ListDisks {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -483,7 +483,7 @@ function Invoke-NtnxV4ListDisks {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListDisks' | Write-Debug
+        'Calling method: Invoke-ListDisks' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -542,7 +542,7 @@ function Invoke-NtnxV4ListDisks {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -585,7 +585,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateDiskLEDState202Response
 #>
-function Update-NtnxV4DiskLEDState {
+function Update-DiskLEDState {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -599,7 +599,7 @@ function Update-NtnxV4DiskLEDState {
     )
 
     Process {
-        'Calling method: Update-NtnxV4DiskLEDState' | Write-Debug
+        'Calling method: Update-DiskLEDState' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -647,7 +647,7 @@ function Update-NtnxV4DiskLEDState {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

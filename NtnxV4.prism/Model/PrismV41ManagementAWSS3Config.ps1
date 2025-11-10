@@ -25,7 +25,7 @@ No description available.
 PrismV41ManagementAWSS3Config<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementAWSS3Config {
+function Initialize-PrismV41ManagementAWSS3Config {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -88,7 +88,7 @@ Json object
 
 PrismV41ManagementAWSS3Config<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementAWSS3Config {
+function ConvertFrom-JsonToPrismV41ManagementAWSS3Config {
     Param(
         [AllowEmptyString()]
         [string]$Json

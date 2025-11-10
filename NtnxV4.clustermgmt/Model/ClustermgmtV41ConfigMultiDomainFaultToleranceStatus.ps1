@@ -27,7 +27,7 @@ Domain fault tolerance configuration for all domain types
 ClustermgmtV41ConfigMultiDomainFaultToleranceStatus<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigMultiDomainFaultToleranceStatus {
+function Initialize-ClustermgmtV41ConfigMultiDomainFaultToleranceStatus {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -96,7 +96,7 @@ Json object
 
 ClustermgmtV41ConfigMultiDomainFaultToleranceStatus<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigMultiDomainFaultToleranceStatus {
+function ConvertFrom-JsonToClustermgmtV41ConfigMultiDomainFaultToleranceStatus {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ConfigTaskResponseAllOfResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
 
         # try to match ClustermgmtV41ConfigHypervisorUploadInfo defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHypervisorUploadInfo $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigHypervisorUploadInfo $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
 
         # try to match ClustermgmtV41ConfigNodeNetworkingDetails defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeNetworkingDetails $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigNodeNetworkingDetails $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -68,7 +68,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
 
         # try to match ClustermgmtV41ConfigNonCompatibleClusterReference[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNonCompatibleClusterReference[] $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigNonCompatibleClusterReference[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -84,7 +84,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
 
         # try to match ClustermgmtV41ConfigUnconfigureNodeDetails defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUnconfigureNodeDetails $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigUnconfigureNodeDetails $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -100,7 +100,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
 
         # try to match ClustermgmtV41ConfigValidateBundleInfo defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigValidateBundleInfo $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ConfigValidateBundleInfo $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

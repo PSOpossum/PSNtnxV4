@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigProtectionPolicyState<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigProtectionPolicyState {
+function Initialize-VmmV41AhvConfigProtectionPolicyState {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigProtectionPolicyState<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigProtectionPolicyState {
+function ConvertFrom-JsonToVmmV41AhvConfigProtectionPolicyState {
     Param(
         [AllowEmptyString()]
         [string]$Json

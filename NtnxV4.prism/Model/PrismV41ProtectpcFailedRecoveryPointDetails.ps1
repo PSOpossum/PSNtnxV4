@@ -25,7 +25,7 @@ Failure reason because of which backup failed for that particular timestamp.
 PrismV41ProtectpcFailedRecoveryPointDetails<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcFailedRecoveryPointDetails {
+function Initialize-PrismV41ProtectpcFailedRecoveryPointDetails {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 PrismV41ProtectpcFailedRecoveryPointDetails<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcFailedRecoveryPointDetails {
+function ConvertFrom-JsonToPrismV41ProtectpcFailedRecoveryPointDetails {
     Param(
         [AllowEmptyString()]
         [string]$Json

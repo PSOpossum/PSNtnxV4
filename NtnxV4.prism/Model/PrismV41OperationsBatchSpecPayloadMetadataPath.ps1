@@ -23,7 +23,7 @@ The value of the  path parameter.
 PrismV41OperationsBatchSpecPayloadMetadataPath<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41OperationsBatchSpecPayloadMetadataPath {
+function Initialize-PrismV41OperationsBatchSpecPayloadMetadataPath {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 PrismV41OperationsBatchSpecPayloadMetadataPath<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41OperationsBatchSpecPayloadMetadataPath {
+function ConvertFrom-JsonToPrismV41OperationsBatchSpecPayloadMetadataPath {
     Param(
         [AllowEmptyString()]
         [string]$Json

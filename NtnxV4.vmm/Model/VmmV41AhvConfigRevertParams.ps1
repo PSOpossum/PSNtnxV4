@@ -21,7 +21,7 @@ The external identifier of the VM Recovery Point.
 VmmV41AhvConfigRevertParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigRevertParams {
+function Initialize-VmmV41AhvConfigRevertParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -65,7 +65,7 @@ Json object
 
 VmmV41AhvConfigRevertParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigRevertParams {
+function ConvertFrom-JsonToVmmV41AhvConfigRevertParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

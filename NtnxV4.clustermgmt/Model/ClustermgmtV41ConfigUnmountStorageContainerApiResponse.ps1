@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigUnmountStorageContainerApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUnmountStorageContainerApiResponse {
+function Initialize-ClustermgmtV41ConfigUnmountStorageContainerApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigUnmountStorageContainerApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUnmountStorageContainerApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigUnmountStorageContainerApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

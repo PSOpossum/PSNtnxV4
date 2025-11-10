@@ -25,7 +25,7 @@ No description available.
 PrismV41ConfigEnvironmentInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigEnvironmentInfo {
+function Initialize-PrismV41ConfigEnvironmentInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -75,7 +75,7 @@ Json object
 
 PrismV41ConfigEnvironmentInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigEnvironmentInfo {
+function ConvertFrom-JsonToPrismV41ConfigEnvironmentInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

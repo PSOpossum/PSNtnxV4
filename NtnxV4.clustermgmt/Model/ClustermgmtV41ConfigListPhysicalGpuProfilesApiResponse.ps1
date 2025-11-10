@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigListPhysicalGpuProfilesApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigListPhysicalGpuProfilesApiResponse {
+function Initialize-ClustermgmtV41ConfigListPhysicalGpuProfilesApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigListPhysicalGpuProfilesApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListPhysicalGpuProfilesApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigListPhysicalGpuProfilesApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

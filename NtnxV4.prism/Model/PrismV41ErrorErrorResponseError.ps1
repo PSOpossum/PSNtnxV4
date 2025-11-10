@@ -22,7 +22,7 @@ JSON object
 
 PrismV41ErrorErrorResponseError<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ErrorErrorResponseError {
+function ConvertFrom-JsonToPrismV41ErrorErrorResponseError {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ErrorErrorResponseError {
 
         # try to match PrismV41ErrorAppMessage[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ErrorAppMessage[] $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ErrorAppMessage[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ErrorErrorResponseError {
 
         # try to match PrismV41ErrorSchemaValidationError defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ErrorSchemaValidationError $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ErrorSchemaValidationError $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

@@ -23,7 +23,7 @@ No description available.
 VmmV41EsxiConfigNutanixRebootPreference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNutanixRebootPreference {
+function Initialize-VmmV41EsxiConfigNutanixRebootPreference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -67,7 +67,7 @@ Json object
 
 VmmV41EsxiConfigNutanixRebootPreference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNutanixRebootPreference {
+function ConvertFrom-JsonToVmmV41EsxiConfigNutanixRebootPreference {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ IPV6 addresses for the NIC.
 VmmV41EsxiConfigIpAddressInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigIpAddressInfo {
+function Initialize-VmmV41EsxiConfigIpAddressInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 VmmV41EsxiConfigIpAddressInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigIpAddressInfo {
+function ConvertFrom-JsonToVmmV41EsxiConfigIpAddressInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

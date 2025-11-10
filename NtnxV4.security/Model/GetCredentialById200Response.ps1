@@ -23,7 +23,7 @@ No description available.
 GetCredentialById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetCredentialById200Response {
+function Initialize-GetCredentialById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetCredentialById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetCredentialById200Response {
+function ConvertFrom-JsonToGetCredentialById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

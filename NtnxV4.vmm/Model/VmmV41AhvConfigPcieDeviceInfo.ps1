@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigPcieDeviceInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigPcieDeviceInfo {
+function Initialize-VmmV41AhvConfigPcieDeviceInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigPcieDeviceInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigPcieDeviceInfo {
+function ConvertFrom-JsonToVmmV41AhvConfigPcieDeviceInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

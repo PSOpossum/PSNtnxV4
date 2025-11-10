@@ -23,7 +23,7 @@ No description available.
 VmmV41EsxiConfigResetVmApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigResetVmApiResponse {
+function Initialize-VmmV41EsxiConfigResetVmApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41EsxiConfigResetVmApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigResetVmApiResponse {
+function ConvertFrom-JsonToVmmV41EsxiConfigResetVmApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

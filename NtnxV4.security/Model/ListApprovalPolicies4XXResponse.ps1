@@ -23,7 +23,7 @@ No description available.
 ListApprovalPolicies4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListApprovalPolicies4XXResponse {
+function Initialize-ListApprovalPolicies4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListApprovalPolicies4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListApprovalPolicies4XXResponse {
+function ConvertFrom-JsonToListApprovalPolicies4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

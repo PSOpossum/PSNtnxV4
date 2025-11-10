@@ -23,7 +23,7 @@ No description available.
 DeleteSnmpTrapById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteSnmpTrapById202Response {
+function Initialize-DeleteSnmpTrapById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteSnmpTrapById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteSnmpTrapById202Response {
+function ConvertFrom-JsonToDeleteSnmpTrapById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

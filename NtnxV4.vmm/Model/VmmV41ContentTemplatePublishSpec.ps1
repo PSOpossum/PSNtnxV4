@@ -21,7 +21,7 @@ The active version of a template. The active version is the default version for 
 VmmV41ContentTemplatePublishSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentTemplatePublishSpec {
+function Initialize-VmmV41ContentTemplatePublishSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -65,7 +65,7 @@ Json object
 
 VmmV41ContentTemplatePublishSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentTemplatePublishSpec {
+function ConvertFrom-JsonToVmmV41ContentTemplatePublishSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -21,7 +21,7 @@ The external identifier of the resource which uniquely identifies it.
 PrismV41ConfigReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigReference {
+function Initialize-PrismV41ConfigReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 PrismV41ConfigReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigReference {
+function ConvertFrom-JsonToPrismV41ConfigReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

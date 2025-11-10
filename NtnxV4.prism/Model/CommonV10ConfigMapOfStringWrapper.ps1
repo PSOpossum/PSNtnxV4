@@ -21,7 +21,7 @@ A map with string keys and values.
 CommonV10ConfigMapOfStringWrapper<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigMapOfStringWrapper {
+function Initialize-CommonV10ConfigMapOfStringWrapper {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 CommonV10ConfigMapOfStringWrapper<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigMapOfStringWrapper {
+function ConvertFrom-JsonToCommonV10ConfigMapOfStringWrapper {
     Param(
         [AllowEmptyString()]
         [string]$Json

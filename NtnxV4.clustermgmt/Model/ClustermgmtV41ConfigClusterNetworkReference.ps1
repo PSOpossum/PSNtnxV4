@@ -51,7 +51,7 @@ Targets HTTP traffic to which is exempted from going through the configured HTTP
 ClustermgmtV41ConfigClusterNetworkReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigClusterNetworkReference {
+function Initialize-ClustermgmtV41ConfigClusterNetworkReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -192,7 +192,7 @@ Json object
 
 ClustermgmtV41ConfigClusterNetworkReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigClusterNetworkReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigClusterNetworkReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

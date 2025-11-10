@@ -23,7 +23,7 @@ No description available.
 ListHostsByClusterId4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListHostsByClusterId4XXResponse {
+function Initialize-ListHostsByClusterId4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListHostsByClusterId4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListHostsByClusterId4XXResponse {
+function ConvertFrom-JsonToListHostsByClusterId4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

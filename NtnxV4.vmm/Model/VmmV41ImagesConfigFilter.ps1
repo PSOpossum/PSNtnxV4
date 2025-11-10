@@ -23,7 +23,7 @@ Filter matches entities that have these categories attached.
 VmmV41ImagesConfigFilter<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ImagesConfigFilter {
+function Initialize-VmmV41ImagesConfigFilter {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -83,7 +83,7 @@ Json object
 
 VmmV41ImagesConfigFilter<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigFilter {
+function ConvertFrom-JsonToVmmV41ImagesConfigFilter {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -31,7 +31,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ClearThickProvisionedSpace202Response
 #>
-function Clear-NtnxV4ThickProvisionedSpace {
+function Clear-ThickProvisionedSpace {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -48,7 +48,7 @@ function Clear-NtnxV4ThickProvisionedSpace {
     )
 
     Process {
-        'Calling method: Clear-NtnxV4ThickProvisionedSpace' | Write-Debug
+        'Calling method: Clear-ThickProvisionedSpace' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -96,7 +96,7 @@ function Clear-NtnxV4ThickProvisionedSpace {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -142,7 +142,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateStorageContainer202Response
 #>
-function New-NtnxV4StorageContainer {
+function New-StorageContainer {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -159,7 +159,7 @@ function New-NtnxV4StorageContainer {
     )
 
     Process {
-        'Calling method: New-NtnxV4StorageContainer' | Write-Debug
+        'Calling method: New-StorageContainer' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -213,7 +213,7 @@ function New-NtnxV4StorageContainer {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -259,7 +259,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeleteStorageContainerById202Response
 #>
-function Invoke-NtnxV4DeleteStorageContainerById {
+function Invoke-DeleteStorageContainerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -276,7 +276,7 @@ function Invoke-NtnxV4DeleteStorageContainerById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteStorageContainerById' | Write-Debug
+        'Calling method: Invoke-DeleteStorageContainerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -324,7 +324,7 @@ function Invoke-NtnxV4DeleteStorageContainerById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -364,7 +364,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetStorageContainerById200Response
 #>
-function Get-NtnxV4StorageContainerById {
+function Get-StorageContainerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -375,7 +375,7 @@ function Get-NtnxV4StorageContainerById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4StorageContainerById' | Write-Debug
+        'Calling method: Get-StorageContainerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -414,7 +414,7 @@ function Get-NtnxV4StorageContainerById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -466,7 +466,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetStorageContainerStats200Response
 #>
-function Get-NtnxV4StorageContainerStats {
+function Get-StorageContainerStats {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -489,7 +489,7 @@ function Get-NtnxV4StorageContainerStats {
     )
 
     Process {
-        'Calling method: Get-NtnxV4StorageContainerStats' | Write-Debug
+        'Calling method: Get-StorageContainerStats' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -546,7 +546,7 @@ function Get-NtnxV4StorageContainerStats {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -595,7 +595,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListDataStoresByClusterId200Response
 #>
-function Invoke-NtnxV4ListDataStoresByClusterId {
+function Invoke-ListDataStoresByClusterId {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -615,7 +615,7 @@ function Invoke-NtnxV4ListDataStoresByClusterId {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListDataStoresByClusterId' | Write-Debug
+        'Calling method: Invoke-ListDataStoresByClusterId' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -666,7 +666,7 @@ function Invoke-NtnxV4ListDataStoresByClusterId {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -718,7 +718,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListStorageContainers200Response
 #>
-function Invoke-NtnxV4ListStorageContainers {
+function Invoke-ListStorageContainers {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -741,7 +741,7 @@ function Invoke-NtnxV4ListStorageContainers {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListStorageContainers' | Write-Debug
+        'Calling method: Invoke-ListStorageContainers' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -796,7 +796,7 @@ function Invoke-NtnxV4ListStorageContainers {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -839,7 +839,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 MountStorageContainer202Response
 #>
-function Mount-NtnxV4StorageContainer {
+function Mount-StorageContainer {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -853,7 +853,7 @@ function Mount-NtnxV4StorageContainer {
     )
 
     Process {
-        'Calling method: Mount-NtnxV4StorageContainer' | Write-Debug
+        'Calling method: Mount-StorageContainer' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -901,7 +901,7 @@ function Mount-NtnxV4StorageContainer {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -944,7 +944,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UnmountStorageContainer202Response
 #>
-function Invoke-NtnxV4UnmountStorageContainer {
+function Invoke-UnmountStorageContainer {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -958,7 +958,7 @@ function Invoke-NtnxV4UnmountStorageContainer {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4UnmountStorageContainer' | Write-Debug
+        'Calling method: Invoke-UnmountStorageContainer' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1006,7 +1006,7 @@ function Invoke-NtnxV4UnmountStorageContainer {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1055,7 +1055,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateStorageContainerById202Response
 #>
-function Update-NtnxV4StorageContainerById {
+function Update-StorageContainerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1075,7 +1075,7 @@ function Update-NtnxV4StorageContainerById {
     )
 
     Process {
-        'Calling method: Update-NtnxV4StorageContainerById' | Write-Debug
+        'Calling method: Update-StorageContainerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1133,7 +1133,7 @@ function Update-NtnxV4StorageContainerById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

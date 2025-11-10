@@ -25,7 +25,7 @@ A globally unique identifier of the task.
 PrismV41ConfigTaskReferenceInternal<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigTaskReferenceInternal {
+function Initialize-PrismV41ConfigTaskReferenceInternal {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -73,7 +73,7 @@ Json object
 
 PrismV41ConfigTaskReferenceInternal<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigTaskReferenceInternal {
+function ConvertFrom-JsonToPrismV41ConfigTaskReferenceInternal {
     Param(
         [AllowEmptyString()]
         [string]$Json

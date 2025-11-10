@@ -23,7 +23,7 @@ No description available.
 VmmV41ConfigGetTemplatePlacementPolicyApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ConfigGetTemplatePlacementPolicyApiResponse {
+function Initialize-VmmV41ConfigGetTemplatePlacementPolicyApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ConfigGetTemplatePlacementPolicyApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ConfigGetTemplatePlacementPolicyApiResponse {
+function ConvertFrom-JsonToVmmV41ConfigGetTemplatePlacementPolicyApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

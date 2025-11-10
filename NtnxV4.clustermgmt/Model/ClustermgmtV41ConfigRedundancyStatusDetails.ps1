@@ -23,7 +23,7 @@ Boolean flag to indicate if Zookeeper ensemble can meet the desired FT.
 ClustermgmtV41ConfigRedundancyStatusDetails<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRedundancyStatusDetails {
+function Initialize-ClustermgmtV41ConfigRedundancyStatusDetails {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigRedundancyStatusDetails<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRedundancyStatusDetails {
+function ConvertFrom-JsonToClustermgmtV41ConfigRedundancyStatusDetails {
     Param(
         [AllowEmptyString()]
         [string]$Json

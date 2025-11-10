@@ -23,7 +23,7 @@ Md5sum of ISO.
 ClustermgmtV41ConfigHypervisorIsoMap<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHypervisorIsoMap {
+function Initialize-ClustermgmtV41ConfigHypervisorIsoMap {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 ClustermgmtV41ConfigHypervisorIsoMap<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHypervisorIsoMap {
+function ConvertFrom-JsonToClustermgmtV41ConfigHypervisorIsoMap {
     Param(
         [AllowEmptyString()]
         [string]$Json

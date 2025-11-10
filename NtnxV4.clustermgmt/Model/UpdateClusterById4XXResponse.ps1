@@ -23,7 +23,7 @@ No description available.
 UpdateClusterById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateClusterById4XXResponse {
+function Initialize-UpdateClusterById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateClusterById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateClusterById4XXResponse {
+function ConvertFrom-JsonToUpdateClusterById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

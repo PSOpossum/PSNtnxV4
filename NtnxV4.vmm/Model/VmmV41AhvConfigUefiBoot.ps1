@@ -27,7 +27,7 @@ Indicates the order of device types in which the VM should try to boot from. If 
 VmmV41AhvConfigUefiBoot<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigUefiBoot {
+function Initialize-VmmV41AhvConfigUefiBoot {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 VmmV41AhvConfigUefiBoot<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUefiBoot {
+function ConvertFrom-JsonToVmmV41AhvConfigUefiBoot {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ Network information of SO nodes.
 ClustermgmtV41ConfigNetworkInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNetworkInfo {
+function Initialize-ClustermgmtV41ConfigNetworkInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 ClustermgmtV41ConfigNetworkInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNetworkInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigNetworkInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

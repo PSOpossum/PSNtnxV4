@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason {
+function ConvertFrom-JsonToVmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesNonCompliantVmHostAffinityPoli
 
         # try to match SystemCollectionsHashtable defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSystemCollectionsHashtable $Json
+            $matchInstance = ConvertFrom-JsonToSystemCollectionsHashtable $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesNonCompliantVmHostAffinityPoli
 
         # try to match VmmV41AhvPoliciesConflictingVmHostAffinityPolicy defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesConflictingVmHostAffinityPolicy $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvPoliciesConflictingVmHostAffinityPolicy $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -68,7 +68,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesNonCompliantVmHostAffinityPoli
 
         # try to match VmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

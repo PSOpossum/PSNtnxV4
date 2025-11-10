@@ -21,7 +21,7 @@ The value for the cloud-init user_data.
 VmmV41AhvConfigUserdata<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigUserdata {
+function Initialize-VmmV41AhvConfigUserdata {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VmmV41AhvConfigUserdata<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUserdata {
+function ConvertFrom-JsonToVmmV41AhvConfigUserdata {
     Param(
         [AllowEmptyString()]
         [string]$Json

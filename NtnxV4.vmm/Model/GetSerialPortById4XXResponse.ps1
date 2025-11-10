@@ -23,7 +23,7 @@ No description available.
 GetSerialPortById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetSerialPortById4XXResponse {
+function Initialize-GetSerialPortById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetSerialPortById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetSerialPortById4XXResponse {
+function ConvertFrom-JsonToGetSerialPortById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

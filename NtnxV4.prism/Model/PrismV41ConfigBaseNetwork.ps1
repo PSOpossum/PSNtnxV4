@@ -25,7 +25,7 @@ Range of IPs used for Prism Central network setup.
 PrismV41ConfigBaseNetwork<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigBaseNetwork {
+function Initialize-PrismV41ConfigBaseNetwork {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -92,7 +92,7 @@ Json object
 
 PrismV41ConfigBaseNetwork<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigBaseNetwork {
+function ConvertFrom-JsonToPrismV41ConfigBaseNetwork {
     Param(
         [AllowEmptyString()]
         [string]$Json

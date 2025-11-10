@@ -23,7 +23,7 @@ No description available.
 ListClusters200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListClusters200Response {
+function Initialize-ListClusters200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListClusters200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListClusters200Response {
+function ConvertFrom-JsonToListClusters200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

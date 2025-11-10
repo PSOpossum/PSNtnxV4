@@ -23,7 +23,7 @@ Software version.
 ClustermgmtV41ConfigSoftwareMapReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSoftwareMapReference {
+function Initialize-ClustermgmtV41ConfigSoftwareMapReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -67,7 +67,7 @@ Json object
 
 ClustermgmtV41ConfigSoftwareMapReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSoftwareMapReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigSoftwareMapReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

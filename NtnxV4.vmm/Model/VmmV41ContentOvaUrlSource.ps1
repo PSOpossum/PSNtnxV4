@@ -25,7 +25,7 @@ No description available.
 VmmV41ContentOvaUrlSource<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentOvaUrlSource {
+function Initialize-VmmV41ContentOvaUrlSource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -77,7 +77,7 @@ Json object
 
 VmmV41ContentOvaUrlSource<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentOvaUrlSource {
+function ConvertFrom-JsonToVmmV41ContentOvaUrlSource {
     Param(
         [AllowEmptyString()]
         [string]$Json

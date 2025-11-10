@@ -43,7 +43,7 @@ It is a read-only field inserted into category entity at the time of category cr
 PrismV41ConfigCategorySummaryOld<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigCategorySummaryOld {
+function Initialize-PrismV41ConfigCategorySummaryOld {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -179,7 +179,7 @@ Json object
 
 PrismV41ConfigCategorySummaryOld<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigCategorySummaryOld {
+function ConvertFrom-JsonToPrismV41ConfigCategorySummaryOld {
     Param(
         [AllowEmptyString()]
         [string]$Json

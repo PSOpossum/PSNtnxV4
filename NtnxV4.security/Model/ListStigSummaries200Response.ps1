@@ -23,7 +23,7 @@ No description available.
 ListStigSummaries200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListStigSummaries200Response {
+function Initialize-ListStigSummaries200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListStigSummaries200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListStigSummaries200Response {
+function ConvertFrom-JsonToListStigSummaries200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

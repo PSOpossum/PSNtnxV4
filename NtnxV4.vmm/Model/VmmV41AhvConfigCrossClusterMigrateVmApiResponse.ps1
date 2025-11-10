@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigCrossClusterMigrateVmApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCrossClusterMigrateVmApiResponse {
+function Initialize-VmmV41AhvConfigCrossClusterMigrateVmApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigCrossClusterMigrateVmApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCrossClusterMigrateVmApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigCrossClusterMigrateVmApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

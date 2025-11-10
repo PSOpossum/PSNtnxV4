@@ -23,7 +23,7 @@ No description available.
 DeleteRestoreSourceById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteRestoreSourceById4XXResponse {
+function Initialize-DeleteRestoreSourceById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteRestoreSourceById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteRestoreSourceById4XXResponse {
+function ConvertFrom-JsonToDeleteRestoreSourceById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

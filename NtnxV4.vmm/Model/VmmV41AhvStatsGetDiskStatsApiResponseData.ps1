@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvStatsGetDiskStatsApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvStatsGetDiskStatsApiResponseData {
+function ConvertFrom-JsonToVmmV41AhvStatsGetDiskStatsApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvStatsGetDiskStatsApiResponseData {
 
         # try to match VmmV41AhvStatsVmDiskStats defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvStatsVmDiskStats $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvStatsVmDiskStats $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvStatsGetDiskStatsApiResponseData {
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

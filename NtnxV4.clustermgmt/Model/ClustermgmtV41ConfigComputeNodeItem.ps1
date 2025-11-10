@@ -35,7 +35,7 @@ Rackable unit model type.
 ClustermgmtV41ConfigComputeNodeItem<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigComputeNodeItem {
+function Initialize-ClustermgmtV41ConfigComputeNodeItem {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -115,7 +115,7 @@ Json object
 
 ClustermgmtV41ConfigComputeNodeItem<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigComputeNodeItem {
+function ConvertFrom-JsonToClustermgmtV41ConfigComputeNodeItem {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 ListCredentials200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListCredentials200Response {
+function Initialize-ListCredentials200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListCredentials200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListCredentials200Response {
+function ConvertFrom-JsonToListCredentials200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

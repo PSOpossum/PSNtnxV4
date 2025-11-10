@@ -23,7 +23,7 @@ List of components in a domain.
 ClustermgmtV41ConfigDomainFaultTolerance<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDomainFaultTolerance {
+function Initialize-ClustermgmtV41ConfigDomainFaultTolerance {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -75,7 +75,7 @@ Json object
 
 ClustermgmtV41ConfigDomainFaultTolerance<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDomainFaultTolerance {
+function ConvertFrom-JsonToClustermgmtV41ConfigDomainFaultTolerance {
     Param(
         [AllowEmptyString()]
         [string]$Json

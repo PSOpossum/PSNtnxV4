@@ -23,7 +23,7 @@ No description available.
 PrismV41ManagementUpdateBackupTargetApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementUpdateBackupTargetApiResponse {
+function Initialize-PrismV41ManagementUpdateBackupTargetApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ManagementUpdateBackupTargetApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementUpdateBackupTargetApiResponse {
+function ConvertFrom-JsonToPrismV41ManagementUpdateBackupTargetApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -25,7 +25,7 @@ No description available.
 ClustermgmtV41ConfigProtectionSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigProtectionSpec {
+function Initialize-ClustermgmtV41ConfigProtectionSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -89,7 +89,7 @@ Json object
 
 ClustermgmtV41ConfigProtectionSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigProtectionSpec {
+function ConvertFrom-JsonToClustermgmtV41ConfigProtectionSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

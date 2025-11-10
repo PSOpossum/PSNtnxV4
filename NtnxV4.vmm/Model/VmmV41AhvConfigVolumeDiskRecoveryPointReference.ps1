@@ -23,7 +23,7 @@ The external identifier of the Volume Group Recovery Point. It should be of type
 VmmV41AhvConfigVolumeDiskRecoveryPointReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVolumeDiskRecoveryPointReference {
+function Initialize-VmmV41AhvConfigVolumeDiskRecoveryPointReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigVolumeDiskRecoveryPointReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVolumeDiskRecoveryPointReference {
+function ConvertFrom-JsonToVmmV41AhvConfigVolumeDiskRecoveryPointReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

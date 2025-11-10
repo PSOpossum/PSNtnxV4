@@ -43,7 +43,7 @@ List of category external identifiers for a VM Template.
 VmmV41ContentTemplate<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentTemplate {
+function Initialize-VmmV41ContentTemplate {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -156,7 +156,7 @@ Json object
 
 VmmV41ContentTemplate<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentTemplate {
+function ConvertFrom-JsonToVmmV41ContentTemplate {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -79,7 +79,7 @@ The corresponding name of the cluster owning the Storage Container instance.
 ClustermgmtV41ConfigStorageContainer<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigStorageContainer {
+function Initialize-ClustermgmtV41ConfigStorageContainer {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -272,7 +272,7 @@ Json object
 
 ClustermgmtV41ConfigStorageContainer<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigStorageContainer {
+function ConvertFrom-JsonToClustermgmtV41ConfigStorageContainer {
     Param(
         [AllowEmptyString()]
         [string]$Json

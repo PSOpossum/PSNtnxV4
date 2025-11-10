@@ -23,7 +23,7 @@ Type of request, either it can be expand_cluster or npe.
 ClustermgmtV41ConfigNodeDetails<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeDetails {
+function Initialize-ClustermgmtV41ConfigNodeDetails {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 ClustermgmtV41ConfigNodeDetails<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeDetails {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeDetails {
     Param(
         [AllowEmptyString()]
         [string]$Json

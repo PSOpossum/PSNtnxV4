@@ -23,7 +23,7 @@ No description available.
 ListNicsByVmId200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListNicsByVmId200Response {
+function Initialize-ListNicsByVmId200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListNicsByVmId200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListNicsByVmId200Response {
+function ConvertFrom-JsonToListNicsByVmId200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -21,7 +21,7 @@ An Auth token generated to be compatible with Component Registry. In request it 
 PrismV41TrustAuthMetadata<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41TrustAuthMetadata {
+function Initialize-PrismV41TrustAuthMetadata {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 PrismV41TrustAuthMetadata<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41TrustAuthMetadata {
+function ConvertFrom-JsonToPrismV41TrustAuthMetadata {
     Param(
         [AllowEmptyString()]
         [string]$Json

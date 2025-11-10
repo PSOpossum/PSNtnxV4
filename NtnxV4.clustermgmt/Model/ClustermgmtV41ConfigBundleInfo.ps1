@@ -21,7 +21,7 @@ Name of the hypervisor bundle.
 ClustermgmtV41ConfigBundleInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigBundleInfo {
+function Initialize-ClustermgmtV41ConfigBundleInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 ClustermgmtV41ConfigBundleInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigBundleInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigBundleInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

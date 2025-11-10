@@ -23,7 +23,7 @@ No description available.
 UpdateOvaById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateOvaById202Response {
+function Initialize-UpdateOvaById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateOvaById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateOvaById202Response {
+function ConvertFrom-JsonToUpdateOvaById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

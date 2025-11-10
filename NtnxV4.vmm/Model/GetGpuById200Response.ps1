@@ -23,7 +23,7 @@ No description available.
 GetGpuById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetGpuById200Response {
+function Initialize-GetGpuById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetGpuById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetGpuById200Response {
+function ConvertFrom-JsonToGetGpuById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

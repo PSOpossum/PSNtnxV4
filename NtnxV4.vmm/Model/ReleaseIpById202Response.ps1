@@ -23,7 +23,7 @@ No description available.
 ReleaseIpById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ReleaseIpById202Response {
+function Initialize-ReleaseIpById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ReleaseIpById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToReleaseIpById202Response {
+function ConvertFrom-JsonToReleaseIpById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

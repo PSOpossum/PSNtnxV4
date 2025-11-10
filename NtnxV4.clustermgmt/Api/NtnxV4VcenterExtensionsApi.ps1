@@ -25,7 +25,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetVcenterExtensionById200Response
 #>
-function Get-NtnxV4VcenterExtensionById {
+function Get-VcenterExtensionById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -36,7 +36,7 @@ function Get-NtnxV4VcenterExtensionById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4VcenterExtensionById' | Write-Debug
+        'Calling method: Get-VcenterExtensionById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -75,7 +75,7 @@ function Get-NtnxV4VcenterExtensionById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -124,7 +124,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListVcenterExtensions200Response
 #>
-function Invoke-NtnxV4ListVcenterExtensions {
+function Invoke-ListVcenterExtensions {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -144,7 +144,7 @@ function Invoke-NtnxV4ListVcenterExtensions {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListVcenterExtensions' | Write-Debug
+        'Calling method: Invoke-ListVcenterExtensions' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -195,7 +195,7 @@ function Invoke-NtnxV4ListVcenterExtensions {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -244,7 +244,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 RegisterVcenterExtension202Response
 #>
-function Register-NtnxV4VcenterExtension {
+function Register-VcenterExtension {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -264,7 +264,7 @@ function Register-NtnxV4VcenterExtension {
     )
 
     Process {
-        'Calling method: Register-NtnxV4VcenterExtension' | Write-Debug
+        'Calling method: Register-VcenterExtension' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -322,7 +322,7 @@ function Register-NtnxV4VcenterExtension {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -371,7 +371,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UnregisterVcenterExtension202Response
 #>
-function Unregister-NtnxV4VcenterExtension {
+function Unregister-VcenterExtension {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -391,7 +391,7 @@ function Unregister-NtnxV4VcenterExtension {
     )
 
     Process {
-        'Calling method: Unregister-NtnxV4VcenterExtension' | Write-Debug
+        'Calling method: Unregister-VcenterExtension' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -449,7 +449,7 @@ function Unregister-NtnxV4VcenterExtension {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

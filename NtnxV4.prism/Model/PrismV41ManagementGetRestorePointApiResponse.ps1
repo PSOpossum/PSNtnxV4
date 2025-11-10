@@ -23,7 +23,7 @@ No description available.
 PrismV41ManagementGetRestorePointApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementGetRestorePointApiResponse {
+function Initialize-PrismV41ManagementGetRestorePointApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ManagementGetRestorePointApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementGetRestorePointApiResponse {
+function ConvertFrom-JsonToPrismV41ManagementGetRestorePointApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

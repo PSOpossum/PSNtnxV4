@@ -23,7 +23,7 @@ Password for the server.
 VmmV41AhvConfigCredential<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCredential {
+function Initialize-VmmV41AhvConfigCredential {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -70,7 +70,7 @@ Json object
 
 VmmV41AhvConfigCredential<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCredential {
+function ConvertFrom-JsonToVmmV41AhvConfigCredential {
     Param(
         [AllowEmptyString()]
         [string]$Json

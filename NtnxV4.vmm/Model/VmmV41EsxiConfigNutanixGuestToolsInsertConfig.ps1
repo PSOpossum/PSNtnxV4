@@ -21,7 +21,7 @@ The list of the application names that are enabled on the guest VM.
 VmmV41EsxiConfigNutanixGuestToolsInsertConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNutanixGuestToolsInsertConfig {
+function Initialize-VmmV41EsxiConfigNutanixGuestToolsInsertConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41EsxiConfigNutanixGuestToolsInsertConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNutanixGuestToolsInsertConfig {
+function ConvertFrom-JsonToVmmV41EsxiConfigNutanixGuestToolsInsertConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

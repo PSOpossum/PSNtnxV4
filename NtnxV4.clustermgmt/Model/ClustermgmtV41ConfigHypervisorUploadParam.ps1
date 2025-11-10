@@ -21,7 +21,7 @@ List of node details for checking whether hypervisor ISO upload is required or n
 ClustermgmtV41ConfigHypervisorUploadParam<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHypervisorUploadParam {
+function Initialize-ClustermgmtV41ConfigHypervisorUploadParam {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -72,7 +72,7 @@ Json object
 
 ClustermgmtV41ConfigHypervisorUploadParam<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHypervisorUploadParam {
+function ConvertFrom-JsonToClustermgmtV41ConfigHypervisorUploadParam {
     Param(
         [AllowEmptyString()]
         [string]$Json

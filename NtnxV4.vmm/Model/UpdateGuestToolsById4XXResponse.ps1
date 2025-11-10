@@ -23,7 +23,7 @@ No description available.
 UpdateGuestToolsById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateGuestToolsById4XXResponse {
+function Initialize-UpdateGuestToolsById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateGuestToolsById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateGuestToolsById4XXResponse {
+function ConvertFrom-JsonToUpdateGuestToolsById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

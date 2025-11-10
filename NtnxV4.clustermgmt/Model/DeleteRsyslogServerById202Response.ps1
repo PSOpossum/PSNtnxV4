@@ -23,7 +23,7 @@ No description available.
 DeleteRsyslogServerById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteRsyslogServerById202Response {
+function Initialize-DeleteRsyslogServerById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteRsyslogServerById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteRsyslogServerById202Response {
+function ConvertFrom-JsonToDeleteRsyslogServerById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

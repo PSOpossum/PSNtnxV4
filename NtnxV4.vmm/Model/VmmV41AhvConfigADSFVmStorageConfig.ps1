@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigADSFVmStorageConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigADSFVmStorageConfig {
+function Initialize-VmmV41AhvConfigADSFVmStorageConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigADSFVmStorageConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigADSFVmStorageConfig {
+function ConvertFrom-JsonToVmmV41AhvConfigADSFVmStorageConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

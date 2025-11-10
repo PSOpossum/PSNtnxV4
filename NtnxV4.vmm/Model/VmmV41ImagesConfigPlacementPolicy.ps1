@@ -43,7 +43,7 @@ External identifier of the owner of the image placement policy.
 VmmV41ImagesConfigPlacementPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ImagesConfigPlacementPolicy {
+function Initialize-VmmV41ImagesConfigPlacementPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -167,7 +167,7 @@ Json object
 
 VmmV41ImagesConfigPlacementPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigPlacementPolicy {
+function ConvertFrom-JsonToVmmV41ImagesConfigPlacementPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

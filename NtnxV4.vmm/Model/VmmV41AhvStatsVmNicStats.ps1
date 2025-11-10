@@ -29,7 +29,7 @@ The timestamp of a specific VM stats response data point.
 VmmV41AhvStatsVmNicStats<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvStatsVmNicStats {
+function Initialize-VmmV41AhvStatsVmNicStats {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -95,7 +95,7 @@ Json object
 
 VmmV41AhvStatsVmNicStats<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvStatsVmNicStats {
+function ConvertFrom-JsonToVmmV41AhvStatsVmNicStats {
     Param(
         [AllowEmptyString()]
         [string]$Json

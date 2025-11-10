@@ -23,7 +23,7 @@ No description available.
 VmmV41ContentDeleteImageApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentDeleteImageApiResponse {
+function Initialize-VmmV41ContentDeleteImageApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ContentDeleteImageApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentDeleteImageApiResponse {
+function ConvertFrom-JsonToVmmV41ContentDeleteImageApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

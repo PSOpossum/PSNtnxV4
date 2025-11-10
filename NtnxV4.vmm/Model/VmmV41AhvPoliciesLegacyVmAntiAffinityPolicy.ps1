@@ -31,7 +31,7 @@ VMs that are part of the legacy VM-VM Anti-Affinity policy.
 VmmV41AhvPoliciesLegacyVmAntiAffinityPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesLegacyVmAntiAffinityPolicy {
+function Initialize-VmmV41AhvPoliciesLegacyVmAntiAffinityPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -116,7 +116,7 @@ Json object
 
 VmmV41AhvPoliciesLegacyVmAntiAffinityPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesLegacyVmAntiAffinityPolicy {
+function ConvertFrom-JsonToVmmV41AhvPoliciesLegacyVmAntiAffinityPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

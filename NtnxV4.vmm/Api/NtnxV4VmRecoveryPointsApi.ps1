@@ -28,7 +28,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateVmRecoveryPoint202Response
 #>
-function New-NtnxV4VmRecoveryPoint {
+function New-VmRecoveryPoint {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -42,7 +42,7 @@ function New-NtnxV4VmRecoveryPoint {
     )
 
     Process {
-        'Calling method: New-NtnxV4VmRecoveryPoint' | Write-Debug
+        'Calling method: New-VmRecoveryPoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -54,7 +54,7 @@ function New-NtnxV4VmRecoveryPoint {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -91,7 +91,7 @@ function New-NtnxV4VmRecoveryPoint {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -134,7 +134,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeleteVmRecoveryPointByExtId202Response
 #>
-function Invoke-NtnxV4DeleteVmRecoveryPointByExtId {
+function Invoke-DeleteVmRecoveryPointByExtId {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -148,7 +148,7 @@ function Invoke-NtnxV4DeleteVmRecoveryPointByExtId {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteVmRecoveryPointByExtId' | Write-Debug
+        'Calling method: Invoke-DeleteVmRecoveryPointByExtId' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -160,7 +160,7 @@ function Invoke-NtnxV4DeleteVmRecoveryPointByExtId {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -192,7 +192,7 @@ function Invoke-NtnxV4DeleteVmRecoveryPointByExtId {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -232,7 +232,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetVmRecoveryPointByExtId200Response
 #>
-function Get-NtnxV4VmRecoveryPointByExtId {
+function Get-VmRecoveryPointByExtId {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -243,7 +243,7 @@ function Get-NtnxV4VmRecoveryPointByExtId {
     )
 
     Process {
-        'Calling method: Get-NtnxV4VmRecoveryPointByExtId' | Write-Debug
+        'Calling method: Get-VmRecoveryPointByExtId' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -255,7 +255,7 @@ function Get-NtnxV4VmRecoveryPointByExtId {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -282,7 +282,7 @@ function Get-NtnxV4VmRecoveryPointByExtId {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -334,7 +334,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListVmRecoveryPoints200Response
 #>
-function Invoke-NtnxV4ListVmRecoveryPoints {
+function Invoke-ListVmRecoveryPoints {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -357,7 +357,7 @@ function Invoke-NtnxV4ListVmRecoveryPoints {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListVmRecoveryPoints' | Write-Debug
+        'Calling method: Invoke-ListVmRecoveryPoints' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -369,7 +369,7 @@ function Invoke-NtnxV4ListVmRecoveryPoints {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -412,7 +412,7 @@ function Invoke-NtnxV4ListVmRecoveryPoints {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -458,7 +458,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 RestoreVmRecoveryPoint202Response
 #>
-function Restore-NtnxV4VmRecoveryPoint {
+function Restore-VmRecoveryPoint {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -475,7 +475,7 @@ function Restore-NtnxV4VmRecoveryPoint {
     )
 
     Process {
-        'Calling method: Restore-NtnxV4VmRecoveryPoint' | Write-Debug
+        'Calling method: Restore-VmRecoveryPoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -487,7 +487,7 @@ function Restore-NtnxV4VmRecoveryPoint {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -528,7 +528,7 @@ function Restore-NtnxV4VmRecoveryPoint {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

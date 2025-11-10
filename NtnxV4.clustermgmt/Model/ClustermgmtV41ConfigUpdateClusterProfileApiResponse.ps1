@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigUpdateClusterProfileApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUpdateClusterProfileApiResponse {
+function Initialize-ClustermgmtV41ConfigUpdateClusterProfileApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigUpdateClusterProfileApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUpdateClusterProfileApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigUpdateClusterProfileApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

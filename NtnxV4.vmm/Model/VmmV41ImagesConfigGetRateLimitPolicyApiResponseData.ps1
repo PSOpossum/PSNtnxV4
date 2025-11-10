@@ -22,7 +22,7 @@ JSON object
 
 VmmV41ImagesConfigGetRateLimitPolicyApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigGetRateLimitPolicyApiResponseData {
+function ConvertFrom-JsonToVmmV41ImagesConfigGetRateLimitPolicyApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigGetRateLimitPolicyApiResponse
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigGetRateLimitPolicyApiResponse
 
         # try to match VmmV41ImagesConfigRateLimitPolicy defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigRateLimitPolicy $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ImagesConfigRateLimitPolicy $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

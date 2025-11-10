@@ -27,7 +27,7 @@ The identifier of the cluster where the VM(s) will be created using a template.
 VmmV41ContentTemplateDeployment<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentTemplateDeployment {
+function Initialize-VmmV41ContentTemplateDeployment {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -96,7 +96,7 @@ Json object
 
 VmmV41ContentTemplateDeployment<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentTemplateDeployment {
+function ConvertFrom-JsonToVmmV41ContentTemplateDeployment {
     Param(
         [AllowEmptyString()]
         [string]$Json

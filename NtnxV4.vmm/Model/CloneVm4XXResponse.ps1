@@ -23,7 +23,7 @@ No description available.
 CloneVm4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CloneVm4XXResponse {
+function Initialize-CloneVm4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CloneVm4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCloneVm4XXResponse {
+function ConvertFrom-JsonToCloneVm4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

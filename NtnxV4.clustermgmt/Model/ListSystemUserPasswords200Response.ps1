@@ -23,7 +23,7 @@ No description available.
 ListSystemUserPasswords200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListSystemUserPasswords200Response {
+function Initialize-ListSystemUserPasswords200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListSystemUserPasswords200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListSystemUserPasswords200Response {
+function ConvertFrom-JsonToListSystemUserPasswords200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

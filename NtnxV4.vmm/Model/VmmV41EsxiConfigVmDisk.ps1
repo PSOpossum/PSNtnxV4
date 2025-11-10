@@ -25,7 +25,7 @@ No description available.
 VmmV41EsxiConfigVmDisk<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigVmDisk {
+function Initialize-VmmV41EsxiConfigVmDisk {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -76,7 +76,7 @@ Json object
 
 VmmV41EsxiConfigVmDisk<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigVmDisk {
+function ConvertFrom-JsonToVmmV41EsxiConfigVmDisk {
     Param(
         [AllowEmptyString()]
         [string]$Json

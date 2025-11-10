@@ -81,7 +81,7 @@ PCI model ID of the host NIC.
 ClustermgmtV41ConfigHostNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHostNic {
+function Initialize-ClustermgmtV41ConfigHostNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -299,7 +299,7 @@ Json object
 
 ClustermgmtV41ConfigHostNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHostNic {
+function ConvertFrom-JsonToClustermgmtV41ConfigHostNic {
     Param(
         [AllowEmptyString()]
         [string]$Json

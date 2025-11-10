@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigRemoveSnmpTransportsApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRemoveSnmpTransportsApiResponse {
+function Initialize-ClustermgmtV41ConfigRemoveSnmpTransportsApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigRemoveSnmpTransportsApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRemoveSnmpTransportsApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigRemoveSnmpTransportsApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

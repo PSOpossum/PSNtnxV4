@@ -27,7 +27,7 @@ SMTP server password.
 ClustermgmtV41ConfigSmtpNetwork<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSmtpNetwork {
+function Initialize-ClustermgmtV41ConfigSmtpNetwork {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 ClustermgmtV41ConfigSmtpNetwork<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSmtpNetwork {
+function ConvertFrom-JsonToClustermgmtV41ConfigSmtpNetwork {
     Param(
         [AllowEmptyString()]
         [string]$Json

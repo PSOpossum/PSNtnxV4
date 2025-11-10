@@ -23,7 +23,7 @@ No description available.
 ListClusterProfiles4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListClusterProfiles4XXResponse {
+function Initialize-ListClusterProfiles4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListClusterProfiles4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListClusterProfiles4XXResponse {
+function ConvertFrom-JsonToListClusterProfiles4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

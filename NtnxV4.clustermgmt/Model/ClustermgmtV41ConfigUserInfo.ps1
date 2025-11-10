@@ -25,7 +25,7 @@ Cluster name. This is part of payload for both cluster create & update operation
 ClustermgmtV41ConfigUserInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUserInfo {
+function Initialize-ClustermgmtV41ConfigUserInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -80,7 +80,7 @@ Json object
 
 ClustermgmtV41ConfigUserInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUserInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigUserInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

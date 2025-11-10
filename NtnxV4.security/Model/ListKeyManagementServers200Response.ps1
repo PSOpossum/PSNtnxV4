@@ -23,7 +23,7 @@ No description available.
 ListKeyManagementServers200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListKeyManagementServers200Response {
+function Initialize-ListKeyManagementServers200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListKeyManagementServers200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListKeyManagementServers200Response {
+function ConvertFrom-JsonToListKeyManagementServers200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

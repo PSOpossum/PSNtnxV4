@@ -31,7 +31,7 @@ List of HTTP proxy types.
 ClustermgmtV41ConfigHttpProxyConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHttpProxyConfig {
+function Initialize-ClustermgmtV41ConfigHttpProxyConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -110,7 +110,7 @@ Json object
 
 ClustermgmtV41ConfigHttpProxyConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHttpProxyConfig {
+function ConvertFrom-JsonToClustermgmtV41ConfigHttpProxyConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

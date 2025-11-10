@@ -41,7 +41,7 @@ List of VM names in the datastore.
 ClustermgmtV41ConfigDataStore<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDataStore {
+function Initialize-ClustermgmtV41ConfigDataStore {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -149,7 +149,7 @@ Json object
 
 ClustermgmtV41ConfigDataStore<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDataStore {
+function ConvertFrom-JsonToClustermgmtV41ConfigDataStore {
     Param(
         [AllowEmptyString()]
         [string]$Json

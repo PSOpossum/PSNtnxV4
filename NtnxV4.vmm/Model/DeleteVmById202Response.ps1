@@ -23,7 +23,7 @@ No description available.
 DeleteVmById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteVmById202Response {
+function Initialize-DeleteVmById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteVmById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteVmById202Response {
+function ConvertFrom-JsonToDeleteVmById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

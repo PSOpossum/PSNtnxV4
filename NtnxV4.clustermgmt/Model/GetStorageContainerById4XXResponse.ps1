@@ -23,7 +23,7 @@ No description available.
 GetStorageContainerById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetStorageContainerById4XXResponse {
+function Initialize-GetStorageContainerById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetStorageContainerById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetStorageContainerById4XXResponse {
+function ConvertFrom-JsonToGetStorageContainerById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

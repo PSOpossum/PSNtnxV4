@@ -23,7 +23,7 @@ No description available.
 AssignEsxiVmOwner202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4AssignEsxiVmOwner202Response {
+function Initialize-AssignEsxiVmOwner202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 AssignEsxiVmOwner202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToAssignEsxiVmOwner202Response {
+function ConvertFrom-JsonToAssignEsxiVmOwner202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

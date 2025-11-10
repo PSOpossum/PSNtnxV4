@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigComputeNonMigratableVmsSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigComputeNonMigratableVmsSpec {
+function Initialize-ClustermgmtV41ConfigComputeNonMigratableVmsSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 ClustermgmtV41ConfigComputeNonMigratableVmsSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigComputeNonMigratableVmsSpec {
+function ConvertFrom-JsonToClustermgmtV41ConfigComputeNonMigratableVmsSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

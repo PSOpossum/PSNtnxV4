@@ -23,7 +23,7 @@ Value of stat at given timestamp.
 ClustermgmtV41StatsTimeValuePair<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41StatsTimeValuePair {
+function Initialize-ClustermgmtV41StatsTimeValuePair {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41StatsTimeValuePair<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41StatsTimeValuePair {
+function ConvertFrom-JsonToClustermgmtV41StatsTimeValuePair {
     Param(
         [AllowEmptyString()]
         [string]$Json

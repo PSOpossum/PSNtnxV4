@@ -34,7 +34,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ApplyClusterProfile202Response
 #>
-function Invoke-NtnxV4ApplyClusterProfile {
+function Invoke-ApplyClusterProfile {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -54,7 +54,7 @@ function Invoke-NtnxV4ApplyClusterProfile {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ApplyClusterProfile' | Write-Debug
+        'Calling method: Invoke-ApplyClusterProfile' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -111,7 +111,7 @@ function Invoke-NtnxV4ApplyClusterProfile {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -154,7 +154,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateClusterProfile202Response
 #>
-function New-NtnxV4ClusterProfile {
+function New-ClusterProfile {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -168,7 +168,7 @@ function New-NtnxV4ClusterProfile {
     )
 
     Process {
-        'Calling method: New-NtnxV4ClusterProfile' | Write-Debug
+        'Calling method: New-ClusterProfile' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -217,7 +217,7 @@ function New-NtnxV4ClusterProfile {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -260,7 +260,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeleteClusterProfileById202Response
 #>
-function Invoke-NtnxV4DeleteClusterProfileById {
+function Invoke-DeleteClusterProfileById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -274,7 +274,7 @@ function Invoke-NtnxV4DeleteClusterProfileById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteClusterProfileById' | Write-Debug
+        'Calling method: Invoke-DeleteClusterProfileById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -318,7 +318,7 @@ function Invoke-NtnxV4DeleteClusterProfileById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -364,7 +364,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DisassociateClusterFromClusterProfile202Response
 #>
-function Invoke-NtnxV4DisassociateClusterFromClusterProfile {
+function Invoke-DisassociateClusterFromClusterProfile {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -381,7 +381,7 @@ function Invoke-NtnxV4DisassociateClusterFromClusterProfile {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DisassociateClusterFromClusterProfile' | Write-Debug
+        'Calling method: Invoke-DisassociateClusterFromClusterProfile' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -434,7 +434,7 @@ function Invoke-NtnxV4DisassociateClusterFromClusterProfile {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -474,7 +474,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetClusterProfileById200Response
 #>
-function Get-NtnxV4ClusterProfileById {
+function Get-ClusterProfileById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -485,7 +485,7 @@ function Get-NtnxV4ClusterProfileById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4ClusterProfileById' | Write-Debug
+        'Calling method: Get-ClusterProfileById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -524,7 +524,7 @@ function Get-NtnxV4ClusterProfileById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -576,7 +576,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListClusterProfiles200Response
 #>
-function Invoke-NtnxV4ListClusterProfiles {
+function Invoke-ListClusterProfiles {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -599,7 +599,7 @@ function Invoke-NtnxV4ListClusterProfiles {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListClusterProfiles' | Write-Debug
+        'Calling method: Invoke-ListClusterProfiles' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -654,7 +654,7 @@ function Invoke-NtnxV4ListClusterProfiles {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -706,7 +706,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateClusterProfileById202Response
 #>
-function Update-NtnxV4ClusterProfileById {
+function Update-ClusterProfileById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -729,7 +729,7 @@ function Update-NtnxV4ClusterProfileById {
     )
 
     Process {
-        'Calling method: Update-NtnxV4ClusterProfileById' | Write-Debug
+        'Calling method: Update-ClusterProfileById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -791,7 +791,7 @@ function Update-NtnxV4ClusterProfileById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

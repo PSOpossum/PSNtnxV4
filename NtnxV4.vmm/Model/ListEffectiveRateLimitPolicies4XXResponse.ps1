@@ -23,7 +23,7 @@ No description available.
 ListEffectiveRateLimitPolicies4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListEffectiveRateLimitPolicies4XXResponse {
+function Initialize-ListEffectiveRateLimitPolicies4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListEffectiveRateLimitPolicies4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListEffectiveRateLimitPolicies4XXResponse {
+function ConvertFrom-JsonToListEffectiveRateLimitPolicies4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

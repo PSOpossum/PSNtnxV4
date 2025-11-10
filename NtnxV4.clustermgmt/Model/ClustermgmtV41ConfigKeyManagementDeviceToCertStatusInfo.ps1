@@ -23,7 +23,7 @@ Certificate status.
 ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo {
+function Initialize-ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -70,7 +70,7 @@ Json object
 
 ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

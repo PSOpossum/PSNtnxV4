@@ -21,7 +21,7 @@ The destination cluster UUID to recover the faulted cluster.
 ClustermgmtV41ConfigRecoverySpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRecoverySpec {
+function Initialize-ClustermgmtV41ConfigRecoverySpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 ClustermgmtV41ConfigRecoverySpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRecoverySpec {
+function ConvertFrom-JsonToClustermgmtV41ConfigRecoverySpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

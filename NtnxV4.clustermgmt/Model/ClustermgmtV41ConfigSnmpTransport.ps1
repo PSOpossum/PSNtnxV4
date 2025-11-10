@@ -23,7 +23,7 @@ SNMP port.
 ClustermgmtV41ConfigSnmpTransport<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSnmpTransport {
+function Initialize-ClustermgmtV41ConfigSnmpTransport {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -75,7 +75,7 @@ Json object
 
 ClustermgmtV41ConfigSnmpTransport<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSnmpTransport {
+function ConvertFrom-JsonToClustermgmtV41ConfigSnmpTransport {
     Param(
         [AllowEmptyString()]
         [string]$Json

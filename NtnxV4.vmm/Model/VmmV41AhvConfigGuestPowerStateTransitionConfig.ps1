@@ -23,7 +23,7 @@ Indicates whether to abort VM shutdown/restart if the script fails.
 VmmV41AhvConfigGuestPowerStateTransitionConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGuestPowerStateTransitionConfig {
+function Initialize-VmmV41AhvConfigGuestPowerStateTransitionConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigGuestPowerStateTransitionConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGuestPowerStateTransitionConfig {
+function ConvertFrom-JsonToVmmV41AhvConfigGuestPowerStateTransitionConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

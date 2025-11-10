@@ -27,7 +27,7 @@ The root certificate of the cluster.
 PrismV41ManagementRootCertificateAddSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementRootCertificateAddSpec {
+function Initialize-PrismV41ManagementRootCertificateAddSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -100,7 +100,7 @@ Json object
 
 PrismV41ManagementRootCertificateAddSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementRootCertificateAddSpec {
+function ConvertFrom-JsonToPrismV41ManagementRootCertificateAddSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

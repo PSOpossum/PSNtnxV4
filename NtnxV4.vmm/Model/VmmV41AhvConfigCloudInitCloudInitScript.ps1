@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigCloudInitCloudInitScript<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloudInitCloudInitScript {
+function ConvertFrom-JsonToVmmV41AhvConfigCloudInitCloudInitScript {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloudInitCloudInitScript {
 
         # try to match VmmV41AhvConfigCustomKeyValues defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCustomKeyValues $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigCustomKeyValues $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloudInitCloudInitScript {
 
         # try to match VmmV41AhvConfigUserdata defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUserdata $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigUserdata $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

@@ -21,7 +21,7 @@ No description available.
 ClustermgmtV41ConfigValidateNodeParam<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigValidateNodeParam {
+function Initialize-ClustermgmtV41ConfigValidateNodeParam {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 ClustermgmtV41ConfigValidateNodeParam<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigValidateNodeParam {
+function ConvertFrom-JsonToClustermgmtV41ConfigValidateNodeParam {
     Param(
         [AllowEmptyString()]
         [string]$Json

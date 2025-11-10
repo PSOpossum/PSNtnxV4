@@ -23,7 +23,7 @@ No description available.
 SecurityV40ManagementSecuredPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ManagementSecuredPolicy {
+function Initialize-SecurityV40ManagementSecuredPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -76,7 +76,7 @@ Json object
 
 SecurityV40ManagementSecuredPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ManagementSecuredPolicy {
+function ConvertFrom-JsonToSecurityV40ManagementSecuredPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -21,7 +21,7 @@ Minimum AOS version which supports category based VM-Host Affinity policies.
 VmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy {
+function Initialize-VmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy {
+function ConvertFrom-JsonToVmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -35,7 +35,7 @@ Categories for the VM.
 VmmV41AhvConfigOvaVmConfigOverrideSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigOvaVmConfigOverrideSpec {
+function Initialize-VmmV41AhvConfigOvaVmConfigOverrideSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -150,7 +150,7 @@ Json object
 
 VmmV41AhvConfigOvaVmConfigOverrideSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigOvaVmConfigOverrideSpec {
+function ConvertFrom-JsonToVmmV41AhvConfigOvaVmConfigOverrideSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

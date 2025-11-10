@@ -23,7 +23,7 @@ List of tolerance message attributes.
 ClustermgmtV41ConfigToleranceMessage<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigToleranceMessage {
+function Initialize-ClustermgmtV41ConfigToleranceMessage {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 ClustermgmtV41ConfigToleranceMessage<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigToleranceMessage {
+function ConvertFrom-JsonToClustermgmtV41ConfigToleranceMessage {
     Param(
         [AllowEmptyString()]
         [string]$Json

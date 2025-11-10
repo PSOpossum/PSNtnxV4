@@ -23,7 +23,7 @@ No description available.
 ListDataStoresByClusterId4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListDataStoresByClusterId4XXResponse {
+function Initialize-ListDataStoresByClusterId4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListDataStoresByClusterId4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListDataStoresByClusterId4XXResponse {
+function ConvertFrom-JsonToListDataStoresByClusterId4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

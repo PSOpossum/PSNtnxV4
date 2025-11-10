@@ -49,7 +49,7 @@ Number of VMs which are not compliant with the VM-host affinity policy.
 VmmV41AhvPoliciesVmHostAffinityPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesVmHostAffinityPolicy {
+function Initialize-VmmV41AhvPoliciesVmHostAffinityPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -174,7 +174,7 @@ Json object
 
 VmmV41AhvPoliciesVmHostAffinityPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesVmHostAffinityPolicy {
+function ConvertFrom-JsonToVmmV41AhvPoliciesVmHostAffinityPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

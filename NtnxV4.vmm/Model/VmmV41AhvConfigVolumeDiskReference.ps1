@@ -23,7 +23,7 @@ The external identifier of the Volume Group. It should be of type UUID.
 VmmV41AhvConfigVolumeDiskReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVolumeDiskReference {
+function Initialize-VmmV41AhvConfigVolumeDiskReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigVolumeDiskReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVolumeDiskReference {
+function ConvertFrom-JsonToVmmV41AhvConfigVolumeDiskReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

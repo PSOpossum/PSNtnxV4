@@ -18,7 +18,7 @@ Get the configuration object 'NtnxV4Configuration'.
 
 System.Collections.Hashtable
 #>
-function Get-NtnxV4Configuration {
+function Get-Configuration {
 
     $Configuration = $Global:PrismServerConnection
 
@@ -112,7 +112,7 @@ Return an object of the Configuration
 
 System.Collections.Hashtable
 #>
-function Set-NtnxV4Configuration {
+function Set-Configuration {
 
     [CmdletBinding()]
     Param(
@@ -212,7 +212,7 @@ API Key
 
 None
 #>
-function Set-NtnxV4ConfigurationApiKey {
+function Set-ConfigurationApiKey {
     [CmdletBinding()]
     Param(
         [string]$Id,
@@ -246,7 +246,7 @@ API Key prefix
 
 None
 #>
-function Set-NtnxV4ConfigurationApiKeyPrefix {
+function Set-ConfigurationApiKeyPrefix {
     [CmdletBinding()]
     Param(
         [string]$Id,
@@ -280,7 +280,7 @@ Value of the HTTP header
 
 None
 #>
-function Set-NtnxV4ConfigurationDefaultHeader {
+function Set-ConfigurationDefaultHeader {
     [CmdletBinding()]
     Param(
         [string]$Key,
@@ -309,7 +309,7 @@ Get the host setting in the form of array of hashtables.
 
 System.Collections.Hashtable[]
 #>
-function Get-NtnxV4HostSetting {
+function Get-HostSetting {
     return ,@(
           @{
             "Url" = "https://{pc-ip}:9440/api";
@@ -347,7 +347,7 @@ Get the URL from the host settings.
 
 String
 #>
-function Get-NtnxV4UrlFromHostSetting {
+function Get-UrlFromHostSetting {
 
     [CmdletBinding()]
     Param(
@@ -357,7 +357,7 @@ function Get-NtnxV4UrlFromHostSetting {
     )
 
     Process {
-        $Hosts = Get-NtnxV4HostSetting
+        $Hosts = Get-HostSetting
 
         # check array index out of bound
         if ($Index -lt 0 -or $Index -ge $Hosts.Length) {
@@ -430,7 +430,7 @@ SignatureValidityPeriod specifies the signature maximum validity time in seconds
 
 System.Collections.Hashtable
 #>
-function Set-NtnxV4ConfigurationHttpSigning {
+function Set-ConfigurationHttpSigning {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)]
@@ -464,7 +464,7 @@ function Set-NtnxV4ConfigurationHttpSigning {
             throw "Private key file path does not exist"
         }
 
-        $keyType = Get-NtnxV4KeyTypeFromFile -KeyFilePath $KeyFilePath
+        $keyType = Get-KeyTypeFromFile -KeyFilePath $KeyFilePath
         if ([String]::IsNullOrEmpty($SigningAlgorithm)) {
             if ($keyType -eq "RSA") {
                 $SigningAlgorithm = "RSASSA-PKCS1-v1_5"
@@ -516,7 +516,7 @@ Get the configuration object 'NtnxV4ConfigurationHttpSigning'.
 
 [PSCustomObject]
 #>
-function Get-NtnxV4ConfigurationHttpSigning{
+function Get-ConfigurationHttpSigning{
 
     $httpSignatureConfiguration = $Script:Configuration["HttpSigning"]
     return $httpSignatureConfiguration

@@ -23,7 +23,7 @@ No description available.
 VmmV41EsxiConfigInstallNutanixGuestToolsApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigInstallNutanixGuestToolsApiResponse {
+function Initialize-VmmV41EsxiConfigInstallNutanixGuestToolsApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41EsxiConfigInstallNutanixGuestToolsApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigInstallNutanixGuestToolsApiResponse {
+function ConvertFrom-JsonToVmmV41EsxiConfigInstallNutanixGuestToolsApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

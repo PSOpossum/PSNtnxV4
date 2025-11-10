@@ -23,7 +23,7 @@ No description available.
 PrismV41ConfigGetCategoryApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigGetCategoryApiResponse {
+function Initialize-PrismV41ConfigGetCategoryApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ConfigGetCategoryApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigGetCategoryApiResponse {
+function ConvertFrom-JsonToPrismV41ConfigGetCategoryApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

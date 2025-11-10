@@ -23,7 +23,7 @@ No description available.
 UnmountStorageContainer4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UnmountStorageContainer4XXResponse {
+function Initialize-UnmountStorageContainer4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UnmountStorageContainer4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUnmountStorageContainer4XXResponse {
+function ConvertFrom-JsonToUnmountStorageContainer4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

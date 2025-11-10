@@ -21,7 +21,7 @@ No description available.
 PrismV41ProtectpcApiResponseMetadata<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcApiResponseMetadata {
+function Initialize-PrismV41ProtectpcApiResponseMetadata {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 PrismV41ProtectpcApiResponseMetadata<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcApiResponseMetadata {
+function ConvertFrom-JsonToPrismV41ProtectpcApiResponseMetadata {
     Param(
         [AllowEmptyString()]
         [string]$Json

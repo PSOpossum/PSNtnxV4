@@ -35,7 +35,7 @@ No description available.
 PrismV41MgmtLbAddress<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41MgmtLbAddress {
+function Initialize-PrismV41MgmtLbAddress {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -112,7 +112,7 @@ Json object
 
 PrismV41MgmtLbAddress<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41MgmtLbAddress {
+function ConvertFrom-JsonToPrismV41MgmtLbAddress {
     Param(
         [AllowEmptyString()]
         [string]$Json

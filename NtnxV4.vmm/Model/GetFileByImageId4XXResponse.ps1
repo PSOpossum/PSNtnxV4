@@ -23,7 +23,7 @@ No description available.
 GetFileByImageId4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetFileByImageId4XXResponse {
+function Initialize-GetFileByImageId4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetFileByImageId4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetFileByImageId4XXResponse {
+function ConvertFrom-JsonToGetFileByImageId4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

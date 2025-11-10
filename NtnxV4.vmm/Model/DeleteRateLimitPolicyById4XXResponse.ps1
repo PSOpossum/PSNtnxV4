@@ -23,7 +23,7 @@ No description available.
 DeleteRateLimitPolicyById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteRateLimitPolicyById4XXResponse {
+function Initialize-DeleteRateLimitPolicyById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteRateLimitPolicyById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteRateLimitPolicyById4XXResponse {
+function ConvertFrom-JsonToDeleteRateLimitPolicyById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

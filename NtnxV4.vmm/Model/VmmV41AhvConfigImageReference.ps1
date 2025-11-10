@@ -21,7 +21,7 @@ A globally unique identifier of an image of type UUID.
 VmmV41AhvConfigImageReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigImageReference {
+function Initialize-VmmV41AhvConfigImageReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -65,7 +65,7 @@ Json object
 
 VmmV41AhvConfigImageReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigImageReference {
+function ConvertFrom-JsonToVmmV41AhvConfigImageReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

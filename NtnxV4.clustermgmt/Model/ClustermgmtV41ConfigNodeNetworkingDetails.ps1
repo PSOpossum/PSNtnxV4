@@ -25,7 +25,7 @@ List of warning messages.
 ClustermgmtV41ConfigNodeNetworkingDetails<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeNetworkingDetails {
+function Initialize-ClustermgmtV41ConfigNodeNetworkingDetails {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -88,7 +88,7 @@ Json object
 
 ClustermgmtV41ConfigNodeNetworkingDetails<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeNetworkingDetails {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeNetworkingDetails {
     Param(
         [AllowEmptyString()]
         [string]$Json

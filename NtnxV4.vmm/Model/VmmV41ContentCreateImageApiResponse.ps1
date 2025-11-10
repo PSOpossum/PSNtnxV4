@@ -23,7 +23,7 @@ No description available.
 VmmV41ContentCreateImageApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentCreateImageApiResponse {
+function Initialize-VmmV41ContentCreateImageApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ContentCreateImageApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentCreateImageApiResponse {
+function ConvertFrom-JsonToVmmV41ContentCreateImageApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

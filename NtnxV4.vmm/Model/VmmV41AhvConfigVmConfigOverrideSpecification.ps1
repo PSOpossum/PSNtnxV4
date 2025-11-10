@@ -29,7 +29,7 @@ No description available.
 VmmV41AhvConfigVmConfigOverrideSpecification<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmConfigOverrideSpecification {
+function Initialize-VmmV41AhvConfigVmConfigOverrideSpecification {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -96,7 +96,7 @@ Json object
 
 VmmV41AhvConfigVmConfigOverrideSpecification<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmConfigOverrideSpecification {
+function ConvertFrom-JsonToVmmV41AhvConfigVmConfigOverrideSpecification {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -33,7 +33,7 @@ Count of resources with STIG test not applicable.
 SecurityV40ReportStigSummary<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ReportStigSummary {
+function Initialize-SecurityV40ReportStigSummary {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -107,7 +107,7 @@ Json object
 
 SecurityV40ReportStigSummary<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ReportStigSummary {
+function ConvertFrom-JsonToSecurityV40ReportStigSummary {
     Param(
         [AllowEmptyString()]
         [string]$Json

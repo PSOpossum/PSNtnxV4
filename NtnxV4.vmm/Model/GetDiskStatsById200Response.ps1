@@ -23,7 +23,7 @@ No description available.
 GetDiskStatsById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetDiskStatsById200Response {
+function Initialize-GetDiskStatsById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetDiskStatsById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetDiskStatsById200Response {
+function ConvertFrom-JsonToGetDiskStatsById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

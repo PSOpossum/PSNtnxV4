@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigDiskAllOfBackingInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDiskAllOfBackingInfo {
+function Initialize-VmmV41AhvConfigDiskAllOfBackingInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VmmV41AhvConfigDiskAllOfBackingInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDiskAllOfBackingInfo {
+function ConvertFrom-JsonToVmmV41AhvConfigDiskAllOfBackingInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

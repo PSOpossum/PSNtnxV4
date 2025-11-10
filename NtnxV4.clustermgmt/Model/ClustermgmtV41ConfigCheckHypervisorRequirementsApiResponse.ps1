@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigCheckHypervisorRequirementsApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigCheckHypervisorRequirementsApiResponse {
+function Initialize-ClustermgmtV41ConfigCheckHypervisorRequirementsApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigCheckHypervisorRequirementsApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigCheckHypervisorRequirementsApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigCheckHypervisorRequirementsApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

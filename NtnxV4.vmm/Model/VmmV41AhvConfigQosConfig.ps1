@@ -21,7 +21,7 @@ Throttled IOPS for the governed entities. The block size for the I/O is 32 kB.
 VmmV41AhvConfigQosConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigQosConfig {
+function Initialize-VmmV41AhvConfigQosConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigQosConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigQosConfig {
+function ConvertFrom-JsonToVmmV41AhvConfigQosConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

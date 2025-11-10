@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigUpdateDiskLEDStateTaskResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUpdateDiskLEDStateTaskResponse {
+function Initialize-ClustermgmtV41ConfigUpdateDiskLEDStateTaskResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigUpdateDiskLEDStateTaskResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUpdateDiskLEDStateTaskResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigUpdateDiskLEDStateTaskResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

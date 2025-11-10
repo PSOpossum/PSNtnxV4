@@ -23,7 +23,7 @@ No description available.
 VmmV41ContentCancelGuestUpdateApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentCancelGuestUpdateApiResponse {
+function Initialize-VmmV41ContentCancelGuestUpdateApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ContentCancelGuestUpdateApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentCancelGuestUpdateApiResponse {
+function ConvertFrom-JsonToVmmV41ContentCancelGuestUpdateApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

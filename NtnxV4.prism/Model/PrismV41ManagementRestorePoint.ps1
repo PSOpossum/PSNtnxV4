@@ -29,7 +29,7 @@ No description available.
 PrismV41ManagementRestorePoint<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementRestorePoint {
+function Initialize-PrismV41ManagementRestorePoint {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -94,7 +94,7 @@ Json object
 
 PrismV41ManagementRestorePoint<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementRestorePoint {
+function ConvertFrom-JsonToPrismV41ManagementRestorePoint {
     Param(
         [AllowEmptyString()]
         [string]$Json

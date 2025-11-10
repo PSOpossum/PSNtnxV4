@@ -21,7 +21,7 @@ A globally unique identifier of a VM disk of type UUID.
 VmmV41AhvConfigMigrateDiskReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigMigrateDiskReference {
+function Initialize-VmmV41AhvConfigMigrateDiskReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigMigrateDiskReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigMigrateDiskReference {
+function ConvertFrom-JsonToVmmV41AhvConfigMigrateDiskReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

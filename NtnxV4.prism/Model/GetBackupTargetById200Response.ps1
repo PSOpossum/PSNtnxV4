@@ -23,7 +23,7 @@ No description available.
 GetBackupTargetById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetBackupTargetById200Response {
+function Initialize-GetBackupTargetById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetBackupTargetById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetBackupTargetById200Response {
+function ConvertFrom-JsonToGetBackupTargetById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

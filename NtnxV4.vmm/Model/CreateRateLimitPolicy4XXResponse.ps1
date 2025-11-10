@@ -23,7 +23,7 @@ No description available.
 CreateRateLimitPolicy4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateRateLimitPolicy4XXResponse {
+function Initialize-CreateRateLimitPolicy4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateRateLimitPolicy4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateRateLimitPolicy4XXResponse {
+function ConvertFrom-JsonToCreateRateLimitPolicy4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -21,7 +21,7 @@ No description available.
 SecurityV40ConfigKeyBasedAuthCredential<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigKeyBasedAuthCredential {
+function Initialize-SecurityV40ConfigKeyBasedAuthCredential {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 SecurityV40ConfigKeyBasedAuthCredential<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigKeyBasedAuthCredential {
+function ConvertFrom-JsonToSecurityV40ConfigKeyBasedAuthCredential {
     Param(
         [AllowEmptyString()]
         [string]$Json

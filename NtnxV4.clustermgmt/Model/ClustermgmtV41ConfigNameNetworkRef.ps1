@@ -25,7 +25,7 @@ List of networks for interface.
 ClustermgmtV41ConfigNameNetworkRef<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNameNetworkRef {
+function Initialize-ClustermgmtV41ConfigNameNetworkRef {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -85,7 +85,7 @@ Json object
 
 ClustermgmtV41ConfigNameNetworkRef<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNameNetworkRef {
+function ConvertFrom-JsonToClustermgmtV41ConfigNameNetworkRef {
     Param(
         [AllowEmptyString()]
         [string]$Json

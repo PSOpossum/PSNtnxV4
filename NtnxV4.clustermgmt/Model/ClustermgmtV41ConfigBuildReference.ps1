@@ -29,7 +29,7 @@ Short commit Id used for version.
 ClustermgmtV41ConfigBuildReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigBuildReference {
+function Initialize-ClustermgmtV41ConfigBuildReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 ClustermgmtV41ConfigBuildReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigBuildReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigBuildReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

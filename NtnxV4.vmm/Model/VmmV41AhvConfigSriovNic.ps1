@@ -27,7 +27,7 @@ Indicates whether the NIC is connected or not. Default is True.
 VmmV41AhvConfigSriovNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigSriovNic {
+function Initialize-VmmV41AhvConfigSriovNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -83,7 +83,7 @@ Json object
 
 VmmV41AhvConfigSriovNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSriovNic {
+function ConvertFrom-JsonToVmmV41AhvConfigSriovNic {
     Param(
         [AllowEmptyString()]
         [string]$Json

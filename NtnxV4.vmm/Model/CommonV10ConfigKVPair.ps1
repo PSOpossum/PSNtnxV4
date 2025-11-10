@@ -23,7 +23,7 @@ No description available.
 CommonV10ConfigKVPair<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigKVPair {
+function Initialize-CommonV10ConfigKVPair {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 CommonV10ConfigKVPair<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigKVPair {
+function ConvertFrom-JsonToCommonV10ConfigKVPair {
     Param(
         [AllowEmptyString()]
         [string]$Json

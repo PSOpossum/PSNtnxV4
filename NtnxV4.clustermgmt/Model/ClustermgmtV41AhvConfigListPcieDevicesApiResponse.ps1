@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41AhvConfigListPcieDevicesApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41AhvConfigListPcieDevicesApiResponse {
+function Initialize-ClustermgmtV41AhvConfigListPcieDevicesApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41AhvConfigListPcieDevicesApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41AhvConfigListPcieDevicesApiResponse {
+function ConvertFrom-JsonToClustermgmtV41AhvConfigListPcieDevicesApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigPowerOffVmApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigPowerOffVmApiResponse {
+function Initialize-VmmV41AhvConfigPowerOffVmApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigPowerOffVmApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigPowerOffVmApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigPowerOffVmApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

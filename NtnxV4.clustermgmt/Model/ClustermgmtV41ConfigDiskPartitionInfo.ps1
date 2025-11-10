@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigDiskPartitionInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDiskPartitionInfo {
+function Initialize-ClustermgmtV41ConfigDiskPartitionInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 ClustermgmtV41ConfigDiskPartitionInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDiskPartitionInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigDiskPartitionInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

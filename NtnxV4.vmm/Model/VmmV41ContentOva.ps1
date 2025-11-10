@@ -47,7 +47,7 @@ No description available.
 VmmV41ContentOva<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentOva {
+function Initialize-VmmV41ContentOva {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -173,7 +173,7 @@ Json object
 
 VmmV41ContentOva<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentOva {
+function ConvertFrom-JsonToVmmV41ContentOva {
     Param(
         [AllowEmptyString()]
         [string]$Json

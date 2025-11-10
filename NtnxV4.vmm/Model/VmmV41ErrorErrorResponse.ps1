@@ -21,7 +21,7 @@ No description available.
 VmmV41ErrorErrorResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ErrorErrorResponse {
+function Initialize-VmmV41ErrorErrorResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41ErrorErrorResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse {
+function ConvertFrom-JsonToVmmV41ErrorErrorResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

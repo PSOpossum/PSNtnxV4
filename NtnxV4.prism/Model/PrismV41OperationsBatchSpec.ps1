@@ -23,7 +23,7 @@ No description available.
 PrismV41OperationsBatchSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41OperationsBatchSpec {
+function Initialize-PrismV41OperationsBatchSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 PrismV41OperationsBatchSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41OperationsBatchSpec {
+function ConvertFrom-JsonToPrismV41OperationsBatchSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

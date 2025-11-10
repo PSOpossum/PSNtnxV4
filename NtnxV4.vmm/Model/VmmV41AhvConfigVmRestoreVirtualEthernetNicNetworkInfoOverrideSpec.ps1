@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigVmRestoreVirtualEthernetNicNetworkInfoOverrideSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmRestoreVirtualEthernetNicNetworkInfoOverrideSpec {
+function Initialize-VmmV41AhvConfigVmRestoreVirtualEthernetNicNetworkInfoOverrideSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigVmRestoreVirtualEthernetNicNetworkInfoOverrideSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmRestoreVirtualEthernetNicNetworkInfoOverrideSpec {
+function ConvertFrom-JsonToVmmV41AhvConfigVmRestoreVirtualEthernetNicNetworkInfoOverrideSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

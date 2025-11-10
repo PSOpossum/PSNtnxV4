@@ -27,7 +27,7 @@ No description available.
 ClustermgmtV41ConfigBackplaneNetworkParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigBackplaneNetworkParams {
+function Initialize-ClustermgmtV41ConfigBackplaneNetworkParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -78,7 +78,7 @@ Json object
 
 ClustermgmtV41ConfigBackplaneNetworkParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigBackplaneNetworkParams {
+function ConvertFrom-JsonToClustermgmtV41ConfigBackplaneNetworkParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

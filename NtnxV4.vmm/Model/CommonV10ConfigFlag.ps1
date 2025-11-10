@@ -23,7 +23,7 @@ Value of the flag.
 CommonV10ConfigFlag<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigFlag {
+function Initialize-CommonV10ConfigFlag {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 CommonV10ConfigFlag<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigFlag {
+function ConvertFrom-JsonToCommonV10ConfigFlag {
     Param(
         [AllowEmptyString()]
         [string]$Json

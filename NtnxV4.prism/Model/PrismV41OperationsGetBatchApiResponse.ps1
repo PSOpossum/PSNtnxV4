@@ -23,7 +23,7 @@ No description available.
 PrismV41OperationsGetBatchApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41OperationsGetBatchApiResponse {
+function Initialize-PrismV41OperationsGetBatchApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41OperationsGetBatchApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41OperationsGetBatchApiResponse {
+function ConvertFrom-JsonToPrismV41OperationsGetBatchApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

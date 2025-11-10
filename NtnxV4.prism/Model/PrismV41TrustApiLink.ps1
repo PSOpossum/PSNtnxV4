@@ -23,7 +23,7 @@ The name of the relationship
 PrismV41TrustApiLink<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41TrustApiLink {
+function Initialize-PrismV41TrustApiLink {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41TrustApiLink<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41TrustApiLink {
+function ConvertFrom-JsonToPrismV41TrustApiLink {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 ListImages200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListImages200Response {
+function Initialize-ListImages200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListImages200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListImages200Response {
+function ConvertFrom-JsonToListImages200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

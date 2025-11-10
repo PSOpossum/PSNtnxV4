@@ -23,7 +23,7 @@ The name of the relationship.
 PrismV41ProtectpcApiLink<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcApiLink {
+function Initialize-PrismV41ProtectpcApiLink {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41ProtectpcApiLink<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcApiLink {
+function ConvertFrom-JsonToPrismV41ProtectpcApiLink {
     Param(
         [AllowEmptyString()]
         [string]$Json

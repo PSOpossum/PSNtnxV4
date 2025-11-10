@@ -19,7 +19,7 @@
 .OUTPUTS
     Hashtable
 #>
-function Get-NtnxV4HttpSignedHeader {
+function Get-HttpSignedHeader {
     param(
         [string]$Method,
         [System.UriBuilder]$UriBuilder,
@@ -48,11 +48,11 @@ function Get-NtnxV4HttpSignedHeader {
     $HttpSignedRequestHeader = @{ }
     $HttpSignatureHeader = @{ }
     $TargetHost = $UriBuilder.Host
-    $httpSigningConfiguration = Get-NtnxV4ConfigurationHttpSigning
+    $httpSigningConfiguration = Get-ConfigurationHttpSigning
     $Digest = $null
 
     #get the body digest
-    $bodyHash = Get-NtnxV4StringHash -String $Body -HashName $httpSigningConfiguration.HashAlgorithm
+    $bodyHash = Get-StringHash -String $Body -HashName $httpSigningConfiguration.HashAlgorithm
     if ($httpSigningConfiguration.HashAlgorithm -eq "SHA256") {
         $Digest = [String]::Format("SHA-256={0}", [Convert]::ToBase64String($bodyHash))
     } elseif ($httpSigningConfiguration.HashAlgorithm -eq "SHA512") {
@@ -69,11 +69,11 @@ function Get-NtnxV4HttpSignedHeader {
             $requestTargetPath = [string]::Format("{0} {1}{2}", $Method.ToLower(), $UriBuilder.Path, $UriBuilder.Query)
             $HttpSignatureHeader.Add($HEADER_REQUEST_TARGET, $requestTargetPath)
         } elseif ($headerItem -eq $HEADER_CREATED) {
-            $created = Get-NtnxV4UnixTime -Date $dateTime -TotalTime TotalSeconds
+            $created = Get-UnixTime -Date $dateTime -TotalTime TotalSeconds
             $HttpSignatureHeader.Add($HEADER_CREATED, $created)
         } elseif ($headerItem -eq $HEADER_EXPIRES) {
             $expire = $dateTime.AddSeconds($httpSigningConfiguration.SignatureValidityPeriod)
-            $expireEpocTime = Get-NtnxV4UnixTime -Date $expire -TotalTime TotalSeconds
+            $expireEpocTime = Get-UnixTime -Date $expire -TotalTime TotalSeconds
             $HttpSignatureHeader.Add($HEADER_EXPIRES, $expireEpocTime)
         } elseif ($headerItem -eq $HEADER_HOST) {
             $HttpSignedRequestHeader[$HEADER_HOST] = $TargetHost
@@ -101,25 +101,25 @@ function Get-NtnxV4HttpSignedHeader {
     $headerValuesString = $headerValuesList -join "`n"
 
     #Gets the hash of the headers value
-    $signatureHashString = Get-NtnxV4StringHash -String $headerValuesString -HashName $httpSigningConfiguration.HashAlgorithm
+    $signatureHashString = Get-StringHash -String $headerValuesString -HashName $httpSigningConfiguration.HashAlgorithm
 
     #Gets the Key type to select the correct signing algorithm
-    $KeyType = Get-NtnxV4KeyTypeFromFile -KeyFilePath $httpSigningConfiguration.KeyFilePath
+    $KeyType = Get-KeyTypeFromFile -KeyFilePath $httpSigningConfiguration.KeyFilePath
 
     if ($keyType -eq "RSA") {
-        $headerSignatureStr = Get-NtnxV4RSASignature -PrivateKeyFilePath $httpSigningConfiguration.KeyFilePath `
+        $headerSignatureStr = Get-RSASignature -PrivateKeyFilePath $httpSigningConfiguration.KeyFilePath `
             -DataToSign $signatureHashString `
             -HashAlgorithmName $httpSigningConfiguration.HashAlgorithm `
             -KeyPassPhrase $httpSigningConfiguration.KeyPassPhrase `
             -SigningAlgorithm $httpSigningConfiguration.SigningAlgorithm
     } elseif ($KeyType -eq "EC") {
-        $headerSignatureStr = Get-NtnxV4ECDSASignature -ECKeyFilePath $httpSigningConfiguration.KeyFilePath `
+        $headerSignatureStr = Get-ECDSASignature -ECKeyFilePath $httpSigningConfiguration.KeyFilePath `
             -DataToSign $signatureHashString `
             -HashAlgorithmName $httpSigningConfiguration.HashAlgorithm `
             -KeyPassPhrase $httpSigningConfiguration.KeyPassPhrase
     }
     #Deprecated
-    <#$cryptographicScheme = Get-NtnxV4CryptographicScheme -SigningAlgorithm $httpSigningConfiguration.SigningAlgorithm `
+    <#$cryptographicScheme = Get-CryptographicScheme -SigningAlgorithm $httpSigningConfiguration.SigningAlgorithm `
                                                  -HashAlgorithm $httpSigningConfiguration.HashAlgorithm
     #>
     $cryptographicScheme = "hs2019"
@@ -158,7 +158,7 @@ function Get-NtnxV4HttpSignedHeader {
 .OUTPUTS
     Base64String
 #>
-function Get-NtnxV4RSASignature {
+function Get-RSASignature {
     Param(
         [string]$PrivateKeyFilePath,
         [byte[]]$DataToSign,
@@ -227,7 +227,7 @@ function Get-NtnxV4RSASignature {
 .OUTPUTS
     Base64String
 #>
-function Get-NtnxV4ECDSASignature {
+function Get-ECDSASignature {
     param(
         [Parameter(Mandatory = $true)]
         [string]$ECKeyFilePath,
@@ -279,7 +279,7 @@ function Get-NtnxV4ECDSASignature {
 .Outputs
     String
 #>
-Function Get-NtnxV4StringHash {
+Function Get-StringHash {
     param(
         [Parameter(Mandatory = $true)]
         [AllowEmptyString()]
@@ -304,7 +304,7 @@ Function Get-NtnxV4StringHash {
 .Outputs
 Integer
 #>
-function Get-NtnxV4UnixTime {
+function Get-UnixTime {
     param(
         [Parameter(Mandatory = $true)]
         [DateTime]$Date,
@@ -323,7 +323,7 @@ function Get-NtnxV4UnixTime {
     }
 }
 
-function Get-NtnxV4CryptographicScheme {
+function Get-CryptographicScheme {
     param(
         [Parameter(Mandatory = $true)]
         [string]$SigningAlgorithm,
@@ -351,7 +351,7 @@ function Get-NtnxV4CryptographicScheme {
 .Outputs
 String
 #>
-function Get-NtnxV4KeyTypeFromFile {
+function Get-KeyTypeFromFile {
     param(
         [Parameter(Mandatory = $true)]
         [string]$KeyFilePath

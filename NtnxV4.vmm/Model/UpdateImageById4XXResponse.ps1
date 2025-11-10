@@ -23,7 +23,7 @@ No description available.
 UpdateImageById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpdateImageById4XXResponse {
+function Initialize-UpdateImageById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpdateImageById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpdateImageById4XXResponse {
+function ConvertFrom-JsonToUpdateImageById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

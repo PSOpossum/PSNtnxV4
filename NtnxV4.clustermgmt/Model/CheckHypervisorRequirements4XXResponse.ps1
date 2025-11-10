@@ -23,7 +23,7 @@ No description available.
 CheckHypervisorRequirements4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CheckHypervisorRequirements4XXResponse {
+function Initialize-CheckHypervisorRequirements4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CheckHypervisorRequirements4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCheckHypervisorRequirements4XXResponse {
+function ConvertFrom-JsonToCheckHypervisorRequirements4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

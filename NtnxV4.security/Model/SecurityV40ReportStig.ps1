@@ -45,7 +45,7 @@ Benchmark ID of the STIG rules.
 SecurityV40ReportStig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ReportStig {
+function Initialize-SecurityV40ReportStig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -175,7 +175,7 @@ Json object
 
 SecurityV40ReportStig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ReportStig {
+function ConvertFrom-JsonToSecurityV40ReportStig {
     Param(
         [AllowEmptyString()]
         [string]$Json

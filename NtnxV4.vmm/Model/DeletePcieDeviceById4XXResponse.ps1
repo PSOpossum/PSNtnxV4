@@ -23,7 +23,7 @@ No description available.
 DeletePcieDeviceById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeletePcieDeviceById4XXResponse {
+function Initialize-DeletePcieDeviceById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeletePcieDeviceById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeletePcieDeviceById4XXResponse {
+function ConvertFrom-JsonToDeletePcieDeviceById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

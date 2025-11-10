@@ -23,7 +23,7 @@ No description available.
 GetHostStats4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetHostStats4XXResponse {
+function Initialize-GetHostStats4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetHostStats4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetHostStats4XXResponse {
+function ConvertFrom-JsonToGetHostStats4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

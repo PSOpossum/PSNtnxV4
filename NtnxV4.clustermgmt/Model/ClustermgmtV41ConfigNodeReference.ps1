@@ -23,7 +23,7 @@ List of nodes in a cluster.
 ClustermgmtV41ConfigNodeReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeReference {
+function Initialize-ClustermgmtV41ConfigNodeReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 ClustermgmtV41ConfigNodeReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

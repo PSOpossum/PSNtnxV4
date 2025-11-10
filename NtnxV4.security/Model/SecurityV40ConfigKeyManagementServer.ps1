@@ -29,7 +29,7 @@ No description available.
 SecurityV40ConfigKeyManagementServer<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigKeyManagementServer {
+function Initialize-SecurityV40ConfigKeyManagementServer {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -102,7 +102,7 @@ Json object
 
 SecurityV40ConfigKeyManagementServer<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigKeyManagementServer {
+function ConvertFrom-JsonToSecurityV40ConfigKeyManagementServer {
     Param(
         [AllowEmptyString()]
         [string]$Json

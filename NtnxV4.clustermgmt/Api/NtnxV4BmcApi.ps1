@@ -28,7 +28,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetBmcInfo200Response
 #>
-function Get-NtnxV4BmcInfo {
+function Get-BmcInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -42,7 +42,7 @@ function Get-NtnxV4BmcInfo {
     )
 
     Process {
-        'Calling method: Get-NtnxV4BmcInfo' | Write-Debug
+        'Calling method: Get-BmcInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -85,7 +85,7 @@ function Get-NtnxV4BmcInfo {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -137,7 +137,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateBmcInfo202Response
 #>
-function Update-NtnxV4BmcInfo {
+function Update-BmcInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -160,7 +160,7 @@ function Update-NtnxV4BmcInfo {
     )
 
     Process {
-        'Calling method: Update-NtnxV4BmcInfo' | Write-Debug
+        'Calling method: Update-BmcInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -222,7 +222,7 @@ function Update-NtnxV4BmcInfo {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

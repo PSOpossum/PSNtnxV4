@@ -21,7 +21,7 @@ Name of the host.
 ClustermgmtV41ConfigHostNameParam<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHostNameParam {
+function Initialize-ClustermgmtV41ConfigHostNameParam {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 ClustermgmtV41ConfigHostNameParam<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHostNameParam {
+function ConvertFrom-JsonToClustermgmtV41ConfigHostNameParam {
     Param(
         [AllowEmptyString()]
         [string]$Json

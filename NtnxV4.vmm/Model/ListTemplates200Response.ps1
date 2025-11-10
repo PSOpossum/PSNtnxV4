@@ -23,7 +23,7 @@ No description available.
 ListTemplates200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListTemplates200Response {
+function Initialize-ListTemplates200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListTemplates200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListTemplates200Response {
+function ConvertFrom-JsonToListTemplates200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

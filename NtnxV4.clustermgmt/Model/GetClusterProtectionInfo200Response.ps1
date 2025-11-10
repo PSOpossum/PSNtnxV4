@@ -23,7 +23,7 @@ No description available.
 GetClusterProtectionInfo200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetClusterProtectionInfo200Response {
+function Initialize-GetClusterProtectionInfo200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetClusterProtectionInfo200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetClusterProtectionInfo200Response {
+function ConvertFrom-JsonToGetClusterProtectionInfo200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ List of NIC parameters to override the corresponding NICs captured in the VM Rec
 VmmV41AhvConfigVmRestoreNicConfigSpecification<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmRestoreNicConfigSpecification {
+function Initialize-VmmV41AhvConfigVmRestoreNicConfigSpecification {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 VmmV41AhvConfigVmRestoreNicConfigSpecification<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmRestoreNicConfigSpecification {
+function ConvertFrom-JsonToVmmV41AhvConfigVmRestoreNicConfigSpecification {
     Param(
         [AllowEmptyString()]
         [string]$Json

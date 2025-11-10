@@ -23,7 +23,7 @@ No description available.
 PrismV41TrustTrust<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41TrustTrust {
+function Initialize-PrismV41TrustTrust {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PrismV41TrustTrust<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41TrustTrust {
+function ConvertFrom-JsonToPrismV41TrustTrust {
     Param(
         [AllowEmptyString()]
         [string]$Json

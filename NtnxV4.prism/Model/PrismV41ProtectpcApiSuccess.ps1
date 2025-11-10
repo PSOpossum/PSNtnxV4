@@ -21,7 +21,7 @@ The success message field where the success response message will be put.
 PrismV41ProtectpcApiSuccess<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcApiSuccess {
+function Initialize-PrismV41ProtectpcApiSuccess {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 PrismV41ProtectpcApiSuccess<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcApiSuccess {
+function ConvertFrom-JsonToPrismV41ProtectpcApiSuccess {
     Param(
         [AllowEmptyString()]
         [string]$Json

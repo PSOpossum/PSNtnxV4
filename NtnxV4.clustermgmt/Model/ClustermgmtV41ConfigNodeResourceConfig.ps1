@@ -27,7 +27,7 @@ ExtId for the container on which Node storage has to be hosted on.
 ClustermgmtV41ConfigNodeResourceConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNodeResourceConfig {
+function Initialize-ClustermgmtV41ConfigNodeResourceConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -79,7 +79,7 @@ Json object
 
 ClustermgmtV41ConfigNodeResourceConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNodeResourceConfig {
+function ConvertFrom-JsonToClustermgmtV41ConfigNodeResourceConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

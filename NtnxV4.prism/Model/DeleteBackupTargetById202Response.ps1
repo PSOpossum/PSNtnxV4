@@ -23,7 +23,7 @@ No description available.
 DeleteBackupTargetById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteBackupTargetById202Response {
+function Initialize-DeleteBackupTargetById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteBackupTargetById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteBackupTargetById202Response {
+function ConvertFrom-JsonToDeleteBackupTargetById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

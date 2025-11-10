@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigRebootPreference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigRebootPreference {
+function Initialize-VmmV41AhvConfigRebootPreference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -67,7 +67,7 @@ Json object
 
 VmmV41AhvConfigRebootPreference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigRebootPreference {
+function ConvertFrom-JsonToVmmV41AhvConfigRebootPreference {
     Param(
         [AllowEmptyString()]
         [string]$Json

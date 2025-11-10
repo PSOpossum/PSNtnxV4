@@ -49,7 +49,7 @@ Maximum instances allowed per VM.
 ClustermgmtV41ConfigVirtualGpuConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigVirtualGpuConfig {
+function Initialize-ClustermgmtV41ConfigVirtualGpuConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -201,7 +201,7 @@ Json object
 
 ClustermgmtV41ConfigVirtualGpuConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigVirtualGpuConfig {
+function ConvertFrom-JsonToClustermgmtV41ConfigVirtualGpuConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

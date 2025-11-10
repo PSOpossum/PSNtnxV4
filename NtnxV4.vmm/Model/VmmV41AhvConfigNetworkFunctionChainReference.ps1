@@ -21,7 +21,7 @@ The globally unique identifier of a network function chain. It should be of type
 VmmV41AhvConfigNetworkFunctionChainReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigNetworkFunctionChainReference {
+function Initialize-VmmV41AhvConfigNetworkFunctionChainReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigNetworkFunctionChainReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigNetworkFunctionChainReference {
+function ConvertFrom-JsonToVmmV41AhvConfigNetworkFunctionChainReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigBootDeviceDisk<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigBootDeviceDisk {
+function Initialize-VmmV41AhvConfigBootDeviceDisk {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigBootDeviceDisk<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigBootDeviceDisk {
+function ConvertFrom-JsonToVmmV41AhvConfigBootDeviceDisk {
     Param(
         [AllowEmptyString()]
         [string]$Json

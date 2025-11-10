@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigDeleteSnmpTrapApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDeleteSnmpTrapApiResponse {
+function Initialize-ClustermgmtV41ConfigDeleteSnmpTrapApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigDeleteSnmpTrapApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDeleteSnmpTrapApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigDeleteSnmpTrapApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

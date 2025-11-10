@@ -27,7 +27,7 @@ No description available.
 SecurityV40ConfigVerifyPassword<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigVerifyPassword {
+function Initialize-SecurityV40ConfigVerifyPassword {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -89,7 +89,7 @@ Json object
 
 SecurityV40ConfigVerifyPassword<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigVerifyPassword {
+function ConvertFrom-JsonToSecurityV40ConfigVerifyPassword {
     Param(
         [AllowEmptyString()]
         [string]$Json

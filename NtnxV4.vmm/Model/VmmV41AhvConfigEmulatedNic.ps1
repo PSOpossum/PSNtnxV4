@@ -27,7 +27,7 @@ The number of Tx/Rx queue pairs for this NIC.
 VmmV41AhvConfigEmulatedNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigEmulatedNic {
+function Initialize-VmmV41AhvConfigEmulatedNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 VmmV41AhvConfigEmulatedNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigEmulatedNic {
+function ConvertFrom-JsonToVmmV41AhvConfigEmulatedNic {
     Param(
         [AllowEmptyString()]
         [string]$Json

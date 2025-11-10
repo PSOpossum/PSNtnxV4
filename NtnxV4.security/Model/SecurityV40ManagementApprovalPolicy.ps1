@@ -39,7 +39,7 @@ Current update status of the approval request update.
 SecurityV40ManagementApprovalPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ManagementApprovalPolicy {
+function Initialize-SecurityV40ManagementApprovalPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -164,7 +164,7 @@ Json object
 
 SecurityV40ManagementApprovalPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ManagementApprovalPolicy {
+function ConvertFrom-JsonToSecurityV40ManagementApprovalPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

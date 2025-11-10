@@ -21,7 +21,7 @@ The start time for a scheduled restart.
 VmmV41EsxiConfigNutanixRebootPreferenceSchedule<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNutanixRebootPreferenceSchedule {
+function Initialize-VmmV41EsxiConfigNutanixRebootPreferenceSchedule {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41EsxiConfigNutanixRebootPreferenceSchedule<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNutanixRebootPreferenceSchedule {
+function ConvertFrom-JsonToVmmV41EsxiConfigNutanixRebootPreferenceSchedule {
     Param(
         [AllowEmptyString()]
         [string]$Json

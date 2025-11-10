@@ -29,7 +29,7 @@ No description available.
 ClustermgmtV41ConfigDiskReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDiskReference {
+function Initialize-ClustermgmtV41ConfigDiskReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 ClustermgmtV41ConfigDiskReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDiskReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigDiskReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

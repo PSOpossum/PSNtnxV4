@@ -33,7 +33,7 @@ No description available.
 PrismV41ConfigDomainManagerNetwork<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigDomainManagerNetwork {
+function Initialize-PrismV41ConfigDomainManagerNetwork {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -142,7 +142,7 @@ Json object
 
 PrismV41ConfigDomainManagerNetwork<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigDomainManagerNetwork {
+function ConvertFrom-JsonToPrismV41ConfigDomainManagerNetwork {
     Param(
         [AllowEmptyString()]
         [string]$Json

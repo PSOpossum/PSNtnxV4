@@ -22,7 +22,7 @@ JSON object
 
 ClustermgmtV41ErrorErrorResponseError<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponseError {
+function ConvertFrom-JsonToClustermgmtV41ErrorErrorResponseError {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponseError {
 
         # try to match ClustermgmtV41ErrorAppMessage[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorAppMessage[] $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorAppMessage[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorErrorResponseError {
 
         # try to match ClustermgmtV41ErrorSchemaValidationError defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToClustermgmtV41ErrorSchemaValidationError $Json
+            $matchInstance = ConvertFrom-JsonToClustermgmtV41ErrorSchemaValidationError $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

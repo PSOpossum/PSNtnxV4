@@ -21,7 +21,7 @@ Message describing the completed steps for the task.
 PrismV41ConfigTaskStep<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigTaskStep {
+function Initialize-PrismV41ConfigTaskStep {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 PrismV41ConfigTaskStep<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigTaskStep {
+function ConvertFrom-JsonToPrismV41ConfigTaskStep {
     Param(
         [AllowEmptyString()]
         [string]$Json

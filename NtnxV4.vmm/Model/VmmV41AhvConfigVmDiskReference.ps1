@@ -25,7 +25,7 @@ No description available.
 VmmV41AhvConfigVmDiskReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmDiskReference {
+function Initialize-VmmV41AhvConfigVmDiskReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -73,7 +73,7 @@ Json object
 
 VmmV41AhvConfigVmDiskReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmDiskReference {
+function ConvertFrom-JsonToVmmV41AhvConfigVmDiskReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -43,7 +43,7 @@ External identifier of the user who updated the placement policy.
 CatalogCommonV10ConfigCommonPlacementPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CatalogCommonV10ConfigCommonPlacementPolicy {
+function Initialize-CatalogCommonV10ConfigCommonPlacementPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -151,7 +151,7 @@ Json object
 
 CatalogCommonV10ConfigCommonPlacementPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCatalogCommonV10ConfigCommonPlacementPolicy {
+function ConvertFrom-JsonToCatalogCommonV10ConfigCommonPlacementPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

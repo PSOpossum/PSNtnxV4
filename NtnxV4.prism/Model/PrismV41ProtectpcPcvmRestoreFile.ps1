@@ -29,7 +29,7 @@ No description available.
 PrismV41ProtectpcPcvmRestoreFile<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcPcvmRestoreFile {
+function Initialize-PrismV41ProtectpcPcvmRestoreFile {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 PrismV41ProtectpcPcvmRestoreFile<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcPcvmRestoreFile {
+function ConvertFrom-JsonToPrismV41ProtectpcPcvmRestoreFile {
     Param(
         [AllowEmptyString()]
         [string]$Json

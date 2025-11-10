@@ -23,7 +23,7 @@ No description available.
 GetSSLCertificate200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetSSLCertificate200Response {
+function Initialize-GetSSLCertificate200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetSSLCertificate200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetSSLCertificate200Response {
+function ConvertFrom-JsonToGetSSLCertificate200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

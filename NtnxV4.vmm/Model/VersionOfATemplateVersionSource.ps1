@@ -21,7 +21,7 @@ No description available.
 VersionOfATemplateVersionSource<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VersionOfATemplateVersionSource {
+function Initialize-VersionOfATemplateVersionSource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VersionOfATemplateVersionSource<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVersionOfATemplateVersionSource {
+function ConvertFrom-JsonToVersionOfATemplateVersionSource {
     Param(
         [AllowEmptyString()]
         [string]$Json

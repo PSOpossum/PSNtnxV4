@@ -23,7 +23,7 @@ No description available.
 UpgradeVmGuestTools202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpgradeVmGuestTools202Response {
+function Initialize-UpgradeVmGuestTools202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpgradeVmGuestTools202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpgradeVmGuestTools202Response {
+function ConvertFrom-JsonToUpgradeVmGuestTools202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

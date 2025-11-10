@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigClearThickProvisionedSpaceApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigClearThickProvisionedSpaceApiResponse {
+function Initialize-ClustermgmtV41ConfigClearThickProvisionedSpaceApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigClearThickProvisionedSpaceApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigClearThickProvisionedSpaceApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigClearThickProvisionedSpaceApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

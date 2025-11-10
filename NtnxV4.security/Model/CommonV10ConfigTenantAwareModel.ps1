@@ -21,7 +21,7 @@ A globally unique identifier that represents the tenant that owns this entity. T
 CommonV10ConfigTenantAwareModel<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ConfigTenantAwareModel {
+function Initialize-CommonV10ConfigTenantAwareModel {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 CommonV10ConfigTenantAwareModel<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ConfigTenantAwareModel {
+function ConvertFrom-JsonToCommonV10ConfigTenantAwareModel {
     Param(
         [AllowEmptyString()]
         [string]$Json

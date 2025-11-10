@@ -23,7 +23,7 @@ The disks included in the migration plan.
 VmmV41AhvConfigADSFDiskMigrationPlan<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigADSFDiskMigrationPlan {
+function Initialize-VmmV41AhvConfigADSFDiskMigrationPlan {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 VmmV41AhvConfigADSFDiskMigrationPlan<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigADSFDiskMigrationPlan {
+function ConvertFrom-JsonToVmmV41AhvConfigADSFDiskMigrationPlan {
     Param(
         [AllowEmptyString()]
         [string]$Json

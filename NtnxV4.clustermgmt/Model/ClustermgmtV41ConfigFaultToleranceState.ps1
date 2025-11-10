@@ -31,7 +31,7 @@ No description available.
 ClustermgmtV41ConfigFaultToleranceState<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigFaultToleranceState {
+function Initialize-ClustermgmtV41ConfigFaultToleranceState {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -93,7 +93,7 @@ Json object
 
 ClustermgmtV41ConfigFaultToleranceState<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigFaultToleranceState {
+function ConvertFrom-JsonToClustermgmtV41ConfigFaultToleranceState {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -25,7 +25,7 @@ vCenter port to connect for registering/unregistering extension.
 ClustermgmtV41ConfigVcenterCredentials<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigVcenterCredentials {
+function Initialize-ClustermgmtV41ConfigVcenterCredentials {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 ClustermgmtV41ConfigVcenterCredentials<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigVcenterCredentials {
+function ConvertFrom-JsonToClustermgmtV41ConfigVcenterCredentials {
     Param(
         [AllowEmptyString()]
         [string]$Json

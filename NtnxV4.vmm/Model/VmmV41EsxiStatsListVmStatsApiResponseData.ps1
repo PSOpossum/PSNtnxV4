@@ -22,7 +22,7 @@ JSON object
 
 VmmV41EsxiStatsListVmStatsApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiStatsListVmStatsApiResponseData {
+function ConvertFrom-JsonToVmmV41EsxiStatsListVmStatsApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41EsxiStatsListVmStatsApiResponseData {
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41EsxiStatsListVmStatsApiResponseData {
 
         # try to match VmmV41EsxiStatsVmStats[] defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41EsxiStatsVmStats[] $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41EsxiStatsVmStats[] $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

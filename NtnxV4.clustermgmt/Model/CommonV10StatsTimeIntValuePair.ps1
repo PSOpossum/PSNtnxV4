@@ -23,7 +23,7 @@ The date and time at which the stat was recorded.The value should be in extended
 CommonV10StatsTimeIntValuePair<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10StatsTimeIntValuePair {
+function Initialize-CommonV10StatsTimeIntValuePair {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CommonV10StatsTimeIntValuePair<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10StatsTimeIntValuePair {
+function ConvertFrom-JsonToCommonV10StatsTimeIntValuePair {
     Param(
         [AllowEmptyString()]
         [string]$Json

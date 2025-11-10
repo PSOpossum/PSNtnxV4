@@ -23,7 +23,7 @@ No description available.
 GetBatchById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetBatchById200Response {
+function Initialize-GetBatchById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetBatchById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetBatchById200Response {
+function ConvertFrom-JsonToGetBatchById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

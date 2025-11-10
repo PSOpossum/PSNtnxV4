@@ -23,7 +23,7 @@ Indicates that the Nutanix Guest Tools are already installed on the guest VM, an
 VmmV41AhvConfigGuestToolsInsertConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGuestToolsInsertConfig {
+function Initialize-VmmV41AhvConfigGuestToolsInsertConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 VmmV41AhvConfigGuestToolsInsertConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGuestToolsInsertConfig {
+function ConvertFrom-JsonToVmmV41AhvConfigGuestToolsInsertConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

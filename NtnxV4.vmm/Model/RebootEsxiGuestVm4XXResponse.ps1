@@ -23,7 +23,7 @@ No description available.
 RebootEsxiGuestVm4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4RebootEsxiGuestVm4XXResponse {
+function Initialize-RebootEsxiGuestVm4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 RebootEsxiGuestVm4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToRebootEsxiGuestVm4XXResponse {
+function ConvertFrom-JsonToRebootEsxiGuestVm4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -37,7 +37,7 @@ No description available.
 VmmV41AhvConfigNicNetworkInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigNicNetworkInfo {
+function Initialize-VmmV41AhvConfigNicNetworkInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -119,7 +119,7 @@ Json object
 
 VmmV41AhvConfigNicNetworkInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigNicNetworkInfo {
+function ConvertFrom-JsonToVmmV41AhvConfigNicNetworkInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

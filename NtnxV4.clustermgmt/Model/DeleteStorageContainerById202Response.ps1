@@ -23,7 +23,7 @@ No description available.
 DeleteStorageContainerById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteStorageContainerById202Response {
+function Initialize-DeleteStorageContainerById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteStorageContainerById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteStorageContainerById202Response {
+function ConvertFrom-JsonToDeleteStorageContainerById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

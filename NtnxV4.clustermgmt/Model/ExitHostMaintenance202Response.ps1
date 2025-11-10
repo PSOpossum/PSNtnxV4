@@ -23,7 +23,7 @@ No description available.
 ExitHostMaintenance202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ExitHostMaintenance202Response {
+function Initialize-ExitHostMaintenance202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ExitHostMaintenance202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToExitHostMaintenance202Response {
+function ConvertFrom-JsonToExitHostMaintenance202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

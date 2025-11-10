@@ -21,7 +21,7 @@ The SHA256 digest of an OVA file in hexadecimal format.
 VmmV41ContentOvaSha256Checksum<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentOvaSha256Checksum {
+function Initialize-VmmV41ContentOvaSha256Checksum {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -65,7 +65,7 @@ Json object
 
 VmmV41ContentOvaSha256Checksum<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentOvaSha256Checksum {
+function ConvertFrom-JsonToVmmV41ContentOvaSha256Checksum {
     Param(
         [AllowEmptyString()]
         [string]$Json

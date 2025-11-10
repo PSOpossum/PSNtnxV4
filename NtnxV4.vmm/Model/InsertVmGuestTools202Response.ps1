@@ -23,7 +23,7 @@ No description available.
 InsertVmGuestTools202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4InsertVmGuestTools202Response {
+function Initialize-InsertVmGuestTools202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 InsertVmGuestTools202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToInsertVmGuestTools202Response {
+function ConvertFrom-JsonToInsertVmGuestTools202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

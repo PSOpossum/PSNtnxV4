@@ -22,7 +22,7 @@ JSON object
 
 PrismV41ManagementCreateRestoreSourceApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementCreateRestoreSourceApiResponseData {
+function ConvertFrom-JsonToPrismV41ManagementCreateRestoreSourceApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementCreateRestoreSourceApiRespons
 
         # try to match PrismV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToPrismV41ManagementCreateRestoreSourceApiRespons
 
         # try to match PrismV41ManagementRestoreSource defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToPrismV41ManagementRestoreSource $Json
+            $matchInstance = ConvertFrom-JsonToPrismV41ManagementRestoreSource $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

@@ -29,7 +29,7 @@ The UUIDs of the nodes where the NFS datastore has to be created.
 ClustermgmtV41ConfigDataStoreUnmount<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDataStoreUnmount {
+function Initialize-ClustermgmtV41ConfigDataStoreUnmount {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -110,7 +110,7 @@ Json object
 
 ClustermgmtV41ConfigDataStoreUnmount<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDataStoreUnmount {
+function ConvertFrom-JsonToClustermgmtV41ConfigDataStoreUnmount {
     Param(
         [AllowEmptyString()]
         [string]$Json

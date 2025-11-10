@@ -23,7 +23,7 @@ No description available.
 UninstallVmGuestTools202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UninstallVmGuestTools202Response {
+function Initialize-UninstallVmGuestTools202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UninstallVmGuestTools202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUninstallVmGuestTools202Response {
+function ConvertFrom-JsonToUninstallVmGuestTools202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 CreateDisk202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateDisk202Response {
+function Initialize-CreateDisk202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateDisk202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateDisk202Response {
+function ConvertFrom-JsonToCreateDisk202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

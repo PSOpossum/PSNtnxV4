@@ -21,7 +21,7 @@ The list of the individual KeyValuePair elements.
 VmmV41AhvConfigCustomKeyValues<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCustomKeyValues {
+function Initialize-VmmV41AhvConfigCustomKeyValues {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigCustomKeyValues<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCustomKeyValues {
+function ConvertFrom-JsonToVmmV41AhvConfigCustomKeyValues {
     Param(
         [AllowEmptyString()]
         [string]$Json

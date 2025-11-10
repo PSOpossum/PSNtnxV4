@@ -25,7 +25,7 @@ Name of the entity.
 PrismV41ConfigEntityReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigEntityReference {
+function Initialize-PrismV41ConfigEntityReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -76,7 +76,7 @@ Json object
 
 PrismV41ConfigEntityReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigEntityReference {
+function ConvertFrom-JsonToPrismV41ConfigEntityReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

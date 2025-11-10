@@ -47,7 +47,7 @@ Score to indicate how much cluster is eligible for storing domain manager backup
 ClustermgmtV41ConfigCluster<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigCluster {
+function Initialize-ClustermgmtV41ConfigCluster {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -166,7 +166,7 @@ Json object
 
 ClustermgmtV41ConfigCluster<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigCluster {
+function ConvertFrom-JsonToClustermgmtV41ConfigCluster {
     Param(
         [AllowEmptyString()]
         [string]$Json

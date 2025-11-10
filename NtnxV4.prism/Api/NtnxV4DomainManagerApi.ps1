@@ -31,7 +31,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateBackupTarget202Response
 #>
-function New-NtnxV4BackupTarget {
+function New-BackupTarget {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -48,7 +48,7 @@ function New-NtnxV4BackupTarget {
     )
 
     Process {
-        'Calling method: New-NtnxV4BackupTarget' | Write-Debug
+        'Calling method: New-BackupTarget' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -60,7 +60,7 @@ function New-NtnxV4BackupTarget {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -101,7 +101,7 @@ function New-NtnxV4BackupTarget {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -144,7 +144,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateDomainManager202Response
 #>
-function New-NtnxV4DomainManager {
+function New-DomainManager {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -158,7 +158,7 @@ function New-NtnxV4DomainManager {
     )
 
     Process {
-        'Calling method: New-NtnxV4DomainManager' | Write-Debug
+        'Calling method: New-DomainManager' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -170,7 +170,7 @@ function New-NtnxV4DomainManager {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -207,7 +207,7 @@ function New-NtnxV4DomainManager {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -247,7 +247,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateRestoreSource201Response
 #>
-function New-NtnxV4RestoreSource {
+function New-RestoreSource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -258,7 +258,7 @@ function New-NtnxV4RestoreSource {
     )
 
     Process {
-        'Calling method: New-NtnxV4RestoreSource' | Write-Debug
+        'Calling method: New-RestoreSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -270,7 +270,7 @@ function New-NtnxV4RestoreSource {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -302,7 +302,7 @@ function New-NtnxV4RestoreSource {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -351,7 +351,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeleteBackupTargetById202Response
 #>
-function Invoke-NtnxV4DeleteBackupTargetById {
+function Invoke-DeleteBackupTargetById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -371,7 +371,7 @@ function Invoke-NtnxV4DeleteBackupTargetById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteBackupTargetById' | Write-Debug
+        'Calling method: Invoke-DeleteBackupTargetById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -383,7 +383,7 @@ function Invoke-NtnxV4DeleteBackupTargetById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -424,7 +424,7 @@ function Invoke-NtnxV4DeleteBackupTargetById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -467,7 +467,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 None
 #>
-function Invoke-NtnxV4DeleteRestoreSourceById {
+function Invoke-DeleteRestoreSourceById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -481,7 +481,7 @@ function Invoke-NtnxV4DeleteRestoreSourceById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteRestoreSourceById' | Write-Debug
+        'Calling method: Invoke-DeleteRestoreSourceById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -493,7 +493,7 @@ function Invoke-NtnxV4DeleteRestoreSourceById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -525,7 +525,7 @@ function Invoke-NtnxV4DeleteRestoreSourceById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -568,7 +568,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetBackupTargetById200Response
 #>
-function Get-NtnxV4BackupTargetById {
+function Get-BackupTargetById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -582,7 +582,7 @@ function Get-NtnxV4BackupTargetById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4BackupTargetById' | Write-Debug
+        'Calling method: Get-BackupTargetById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -594,7 +594,7 @@ function Get-NtnxV4BackupTargetById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -625,7 +625,7 @@ function Get-NtnxV4BackupTargetById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -665,7 +665,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetDomainManagerById200Response
 #>
-function Get-NtnxV4DomainManagerById {
+function Get-DomainManagerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -676,7 +676,7 @@ function Get-NtnxV4DomainManagerById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4DomainManagerById' | Write-Debug
+        'Calling method: Get-DomainManagerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -688,7 +688,7 @@ function Get-NtnxV4DomainManagerById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -715,7 +715,7 @@ function Get-NtnxV4DomainManagerById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -758,7 +758,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetProductById200Response
 #>
-function Get-NtnxV4ProductById {
+function Get-ProductById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -772,7 +772,7 @@ function Get-NtnxV4ProductById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4ProductById' | Write-Debug
+        'Calling method: Get-ProductById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -784,7 +784,7 @@ function Get-NtnxV4ProductById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -815,7 +815,7 @@ function Get-NtnxV4ProductById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -861,7 +861,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetRestorePointById200Response
 #>
-function Get-NtnxV4RestorePointById {
+function Get-RestorePointById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -878,7 +878,7 @@ function Get-NtnxV4RestorePointById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4RestorePointById' | Write-Debug
+        'Calling method: Get-RestorePointById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -890,7 +890,7 @@ function Get-NtnxV4RestorePointById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -925,7 +925,7 @@ function Get-NtnxV4RestorePointById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -965,7 +965,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetRestoreSourceById200Response
 #>
-function Get-NtnxV4RestoreSourceById {
+function Get-RestoreSourceById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -976,7 +976,7 @@ function Get-NtnxV4RestoreSourceById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4RestoreSourceById' | Write-Debug
+        'Calling method: Get-RestoreSourceById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -988,7 +988,7 @@ function Get-NtnxV4RestoreSourceById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1015,7 +1015,7 @@ function Get-NtnxV4RestoreSourceById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1055,7 +1055,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListBackupTargets200Response
 #>
-function Invoke-NtnxV4ListBackupTargets {
+function Invoke-ListBackupTargets {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1066,7 +1066,7 @@ function Invoke-NtnxV4ListBackupTargets {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListBackupTargets' | Write-Debug
+        'Calling method: Invoke-ListBackupTargets' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1078,7 +1078,7 @@ function Invoke-NtnxV4ListBackupTargets {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1105,7 +1105,7 @@ function Invoke-NtnxV4ListBackupTargets {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1145,7 +1145,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListDomainManagers200Response
 #>
-function Invoke-NtnxV4ListDomainManagers {
+function Invoke-ListDomainManagers {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1156,7 +1156,7 @@ function Invoke-NtnxV4ListDomainManagers {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListDomainManagers' | Write-Debug
+        'Calling method: Invoke-ListDomainManagers' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1168,7 +1168,7 @@ function Invoke-NtnxV4ListDomainManagers {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1195,7 +1195,7 @@ function Invoke-NtnxV4ListDomainManagers {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1250,7 +1250,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListProducts200Response
 #>
-function Invoke-NtnxV4ListProducts {
+function Invoke-ListProducts {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1276,7 +1276,7 @@ function Invoke-NtnxV4ListProducts {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListProducts' | Write-Debug
+        'Calling method: Invoke-ListProducts' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1288,7 +1288,7 @@ function Invoke-NtnxV4ListProducts {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1335,7 +1335,7 @@ function Invoke-NtnxV4ListProducts {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1384,7 +1384,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListRestorableDomainManagers200Response
 #>
-function Invoke-NtnxV4ListRestorableDomainManagers {
+function Invoke-ListRestorableDomainManagers {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1404,7 +1404,7 @@ function Invoke-NtnxV4ListRestorableDomainManagers {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListRestorableDomainManagers' | Write-Debug
+        'Calling method: Invoke-ListRestorableDomainManagers' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1416,7 +1416,7 @@ function Invoke-NtnxV4ListRestorableDomainManagers {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1455,7 +1455,7 @@ function Invoke-NtnxV4ListRestorableDomainManagers {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1513,7 +1513,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListRestorePoints200Response
 #>
-function Invoke-NtnxV4ListRestorePoints {
+function Invoke-ListRestorePoints {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1542,7 +1542,7 @@ function Invoke-NtnxV4ListRestorePoints {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListRestorePoints' | Write-Debug
+        'Calling method: Invoke-ListRestorePoints' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1554,7 +1554,7 @@ function Invoke-NtnxV4ListRestorePoints {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1605,7 +1605,7 @@ function Invoke-NtnxV4ListRestorePoints {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1654,7 +1654,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 Register202Response
 #>
-function Register-NtnxV4 {
+function Register- {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1674,7 +1674,7 @@ function Register-NtnxV4 {
     )
 
     Process {
-        'Calling method: Register-NtnxV4' | Write-Debug
+        'Calling method: Register-' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1686,7 +1686,7 @@ function Register-NtnxV4 {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1731,7 +1731,7 @@ function Register-NtnxV4 {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1780,7 +1780,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 Restore202Response
 #>
-function Restore-NtnxV4 {
+function Restore- {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1800,7 +1800,7 @@ function Restore-NtnxV4 {
     )
 
     Process {
-        'Calling method: Restore-NtnxV4' | Write-Debug
+        'Calling method: Restore-' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1812,7 +1812,7 @@ function Restore-NtnxV4 {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1856,7 +1856,7 @@ function Restore-NtnxV4 {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -1905,7 +1905,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 Unregister202Response
 #>
-function Unregister-NtnxV4 {
+function Unregister- {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1925,7 +1925,7 @@ function Unregister-NtnxV4 {
     )
 
     Process {
-        'Calling method: Unregister-NtnxV4' | Write-Debug
+        'Calling method: Unregister-' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -1937,7 +1937,7 @@ function Unregister-NtnxV4 {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1982,7 +1982,7 @@ function Unregister-NtnxV4 {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -2034,7 +2034,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateBackupTargetById202Response
 #>
-function Update-NtnxV4BackupTargetById {
+function Update-BackupTargetById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -2057,7 +2057,7 @@ function Update-NtnxV4BackupTargetById {
     )
 
     Process {
-        'Calling method: Update-NtnxV4BackupTargetById' | Write-Debug
+        'Calling method: Update-BackupTargetById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -2069,7 +2069,7 @@ function Update-NtnxV4BackupTargetById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -2119,7 +2119,7 @@ function Update-NtnxV4BackupTargetById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -2171,7 +2171,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateProductById202Response
 #>
-function Update-NtnxV4ProductById {
+function Update-ProductById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -2194,7 +2194,7 @@ function Update-NtnxV4ProductById {
     )
 
     Process {
-        'Calling method: Update-NtnxV4ProductById' | Write-Debug
+        'Calling method: Update-ProductById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -2206,7 +2206,7 @@ function Update-NtnxV4ProductById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -2256,7 +2256,7 @@ function Update-NtnxV4ProductById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

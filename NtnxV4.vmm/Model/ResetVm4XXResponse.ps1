@@ -23,7 +23,7 @@ No description available.
 ResetVm4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ResetVm4XXResponse {
+function Initialize-ResetVm4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ResetVm4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToResetVm4XXResponse {
+function ConvertFrom-JsonToResetVm4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

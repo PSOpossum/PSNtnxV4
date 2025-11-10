@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigPulseStatus<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigPulseStatus {
+function Initialize-ClustermgmtV41ConfigPulseStatus {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -67,7 +67,7 @@ Json object
 
 ClustermgmtV41ConfigPulseStatus<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigPulseStatus {
+function ConvertFrom-JsonToClustermgmtV41ConfigPulseStatus {
     Param(
         [AllowEmptyString()]
         [string]$Json

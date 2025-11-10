@@ -21,7 +21,7 @@ The SHA256 digest of an image file in hexadecimal format.
 VmmV41ContentImageSha256Checksum<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentImageSha256Checksum {
+function Initialize-VmmV41ContentImageSha256Checksum {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -65,7 +65,7 @@ Json object
 
 VmmV41ContentImageSha256Checksum<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentImageSha256Checksum {
+function ConvertFrom-JsonToVmmV41ContentImageSha256Checksum {
     Param(
         [AllowEmptyString()]
         [string]$Json

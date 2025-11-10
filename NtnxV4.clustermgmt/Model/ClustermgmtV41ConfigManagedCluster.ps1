@@ -27,7 +27,7 @@ Drifted settings information.
 ClustermgmtV41ConfigManagedCluster<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigManagedCluster {
+function Initialize-ClustermgmtV41ConfigManagedCluster {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -91,7 +91,7 @@ Json object
 
 ClustermgmtV41ConfigManagedCluster<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigManagedCluster {
+function ConvertFrom-JsonToClustermgmtV41ConfigManagedCluster {
     Param(
         [AllowEmptyString()]
         [string]$Json

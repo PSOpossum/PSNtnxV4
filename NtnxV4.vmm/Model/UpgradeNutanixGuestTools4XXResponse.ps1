@@ -23,7 +23,7 @@ No description available.
 UpgradeNutanixGuestTools4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4UpgradeNutanixGuestTools4XXResponse {
+function Initialize-UpgradeNutanixGuestTools4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 UpgradeNutanixGuestTools4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToUpgradeNutanixGuestTools4XXResponse {
+function ConvertFrom-JsonToUpgradeNutanixGuestTools4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

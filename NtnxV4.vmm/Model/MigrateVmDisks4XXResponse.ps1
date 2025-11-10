@@ -23,7 +23,7 @@ No description available.
 MigrateVmDisks4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4MigrateVmDisks4XXResponse {
+function Initialize-MigrateVmDisks4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 MigrateVmDisks4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToMigrateVmDisks4XXResponse {
+function ConvertFrom-JsonToMigrateVmDisks4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

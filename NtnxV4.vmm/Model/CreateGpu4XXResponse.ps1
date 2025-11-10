@@ -23,7 +23,7 @@ No description available.
 CreateGpu4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateGpu4XXResponse {
+function Initialize-CreateGpu4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateGpu4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateGpu4XXResponse {
+function ConvertFrom-JsonToCreateGpu4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

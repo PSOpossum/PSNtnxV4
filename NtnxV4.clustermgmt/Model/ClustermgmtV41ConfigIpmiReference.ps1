@@ -23,7 +23,7 @@ IPMI username.
 ClustermgmtV41ConfigIpmiReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigIpmiReference {
+function Initialize-ClustermgmtV41ConfigIpmiReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -70,7 +70,7 @@ Json object
 
 ClustermgmtV41ConfigIpmiReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigIpmiReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigIpmiReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

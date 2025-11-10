@@ -23,7 +23,7 @@ No description available.
 ListRestorePoints200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListRestorePoints200Response {
+function Initialize-ListRestorePoints200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListRestorePoints200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListRestorePoints200Response {
+function ConvertFrom-JsonToListRestorePoints200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

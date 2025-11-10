@@ -27,7 +27,7 @@ No description available.
 VmmV41AhvConfigVmCrossClusterMigrateParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVmCrossClusterMigrateParams {
+function Initialize-VmmV41AhvConfigVmCrossClusterMigrateParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 VmmV41AhvConfigVmCrossClusterMigrateParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmCrossClusterMigrateParams {
+function ConvertFrom-JsonToVmmV41AhvConfigVmCrossClusterMigrateParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

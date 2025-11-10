@@ -35,7 +35,7 @@ The target path on which to mount the NFS datastore.
 ClustermgmtV41ConfigDataStoreMount<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDataStoreMount {
+function Initialize-ClustermgmtV41ConfigDataStoreMount {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -132,7 +132,7 @@ Json object
 
 ClustermgmtV41ConfigDataStoreMount<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDataStoreMount {
+function ConvertFrom-JsonToClustermgmtV41ConfigDataStoreMount {
     Param(
         [AllowEmptyString()]
         [string]$Json

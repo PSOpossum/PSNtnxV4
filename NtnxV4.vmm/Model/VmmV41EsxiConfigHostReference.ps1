@@ -21,7 +21,7 @@ The globally unique identifier of a host type UUID.
 VmmV41EsxiConfigHostReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigHostReference {
+function Initialize-VmmV41EsxiConfigHostReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41EsxiConfigHostReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigHostReference {
+function ConvertFrom-JsonToVmmV41EsxiConfigHostReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

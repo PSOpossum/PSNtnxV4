@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigDeleteRsyslogServerApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDeleteRsyslogServerApiResponse {
+function Initialize-ClustermgmtV41ConfigDeleteRsyslogServerApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigDeleteRsyslogServerApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDeleteRsyslogServerApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigDeleteRsyslogServerApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

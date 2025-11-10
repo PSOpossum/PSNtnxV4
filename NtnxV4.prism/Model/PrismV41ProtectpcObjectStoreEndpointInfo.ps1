@@ -29,7 +29,7 @@ A unique id corresponding to the object store.
 PrismV41ProtectpcObjectStoreEndpointInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ProtectpcObjectStoreEndpointInfo {
+function Initialize-PrismV41ProtectpcObjectStoreEndpointInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -85,7 +85,7 @@ Json object
 
 PrismV41ProtectpcObjectStoreEndpointInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ProtectpcObjectStoreEndpointInfo {
+function ConvertFrom-JsonToPrismV41ProtectpcObjectStoreEndpointInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 ListPcieDevicesByVmId4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListPcieDevicesByVmId4XXResponse {
+function Initialize-ListPcieDevicesByVmId4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListPcieDevicesByVmId4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListPcieDevicesByVmId4XXResponse {
+function ConvertFrom-JsonToListPcieDevicesByVmId4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

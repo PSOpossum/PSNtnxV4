@@ -29,7 +29,7 @@ List of validation error messages
 PrismV41ErrorSchemaValidationError<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ErrorSchemaValidationError {
+function Initialize-PrismV41ErrorSchemaValidationError {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 PrismV41ErrorSchemaValidationError<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ErrorSchemaValidationError {
+function ConvertFrom-JsonToPrismV41ErrorSchemaValidationError {
     Param(
         [AllowEmptyString()]
         [string]$Json

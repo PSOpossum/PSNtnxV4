@@ -23,7 +23,7 @@ No description available.
 GetFileByOvaId4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetFileByOvaId4XXResponse {
+function Initialize-GetFileByOvaId4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetFileByOvaId4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetFileByOvaId4XXResponse {
+function ConvertFrom-JsonToGetFileByOvaId4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

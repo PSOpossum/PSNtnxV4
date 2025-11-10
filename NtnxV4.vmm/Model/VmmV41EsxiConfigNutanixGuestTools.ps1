@@ -39,7 +39,7 @@ Indicates whether the VM mobility drivers are installed on the VM or not.
 VmmV41EsxiConfigNutanixGuestTools<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigNutanixGuestTools {
+function Initialize-VmmV41EsxiConfigNutanixGuestTools {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -122,7 +122,7 @@ Json object
 
 VmmV41EsxiConfigNutanixGuestTools<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigNutanixGuestTools {
+function ConvertFrom-JsonToVmmV41EsxiConfigNutanixGuestTools {
     Param(
         [AllowEmptyString()]
         [string]$Json

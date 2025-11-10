@@ -35,7 +35,7 @@ Name of the hypervisor bundle.
 ClustermgmtV41ConfigUploadInfoNodeItem<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUploadInfoNodeItem {
+function Initialize-ClustermgmtV41ConfigUploadInfoNodeItem {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -109,7 +109,7 @@ Json object
 
 ClustermgmtV41ConfigUploadInfoNodeItem<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUploadInfoNodeItem {
+function ConvertFrom-JsonToClustermgmtV41ConfigUploadInfoNodeItem {
     Param(
         [AllowEmptyString()]
         [string]$Json

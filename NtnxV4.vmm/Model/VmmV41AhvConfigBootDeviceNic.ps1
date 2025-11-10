@@ -21,7 +21,7 @@ Mac address of the NIC that will be used to boot the VM.
 VmmV41AhvConfigBootDeviceNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigBootDeviceNic {
+function Initialize-VmmV41AhvConfigBootDeviceNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvConfigBootDeviceNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigBootDeviceNic {
+function ConvertFrom-JsonToVmmV41AhvConfigBootDeviceNic {
     Param(
         [AllowEmptyString()]
         [string]$Json

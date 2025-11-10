@@ -22,7 +22,7 @@ JSON object
 
 SecurityV40ManagementGetApprovalPolicyApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ManagementGetApprovalPolicyApiResponseData {
+function ConvertFrom-JsonToSecurityV40ManagementGetApprovalPolicyApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ManagementGetApprovalPolicyApiRespon
 
         # try to match SecurityV40ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToSecurityV40ManagementGetApprovalPolicyApiRespon
 
         # try to match SecurityV40ManagementApprovalPolicy defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToSecurityV40ManagementApprovalPolicy $Json
+            $matchInstance = ConvertFrom-JsonToSecurityV40ManagementApprovalPolicy $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

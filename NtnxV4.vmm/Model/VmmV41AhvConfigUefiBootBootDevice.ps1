@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigUefiBootBootDevice<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUefiBootBootDevice {
+function ConvertFrom-JsonToVmmV41AhvConfigUefiBootBootDevice {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUefiBootBootDevice {
 
         # try to match VmmV41AhvConfigBootDeviceDisk defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigBootDeviceDisk $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigBootDeviceDisk $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUefiBootBootDevice {
 
         # try to match VmmV41AhvConfigBootDeviceNic defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigBootDeviceNic $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigBootDeviceNic $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

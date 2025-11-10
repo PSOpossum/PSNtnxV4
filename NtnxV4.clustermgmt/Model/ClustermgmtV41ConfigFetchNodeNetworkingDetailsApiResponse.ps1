@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigFetchNodeNetworkingDetailsApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigFetchNodeNetworkingDetailsApiResponse {
+function Initialize-ClustermgmtV41ConfigFetchNodeNetworkingDetailsApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigFetchNodeNetworkingDetailsApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigFetchNodeNetworkingDetailsApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigFetchNodeNetworkingDetailsApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

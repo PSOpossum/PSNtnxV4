@@ -23,7 +23,7 @@ Date value for trends
 SecurityV40ReportTrendValue<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ReportTrendValue {
+function Initialize-SecurityV40ReportTrendValue {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SecurityV40ReportTrendValue<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ReportTrendValue {
+function ConvertFrom-JsonToSecurityV40ReportTrendValue {
     Param(
         [AllowEmptyString()]
         [string]$Json

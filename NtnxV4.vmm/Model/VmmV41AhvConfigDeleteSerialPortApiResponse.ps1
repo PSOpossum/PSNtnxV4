@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigDeleteSerialPortApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDeleteSerialPortApiResponse {
+function Initialize-VmmV41AhvConfigDeleteSerialPortApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigDeleteSerialPortApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDeleteSerialPortApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigDeleteSerialPortApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

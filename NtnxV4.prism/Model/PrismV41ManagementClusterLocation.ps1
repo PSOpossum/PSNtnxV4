@@ -21,7 +21,7 @@ No description available.
 PrismV41ManagementClusterLocation<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementClusterLocation {
+function Initialize-PrismV41ManagementClusterLocation {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 PrismV41ManagementClusterLocation<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementClusterLocation {
+function ConvertFrom-JsonToPrismV41ManagementClusterLocation {
     Param(
         [AllowEmptyString()]
         [string]$Json

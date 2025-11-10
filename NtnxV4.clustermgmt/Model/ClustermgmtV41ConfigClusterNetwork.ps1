@@ -27,7 +27,7 @@ Cluster fully qualified domain name. This is part of payload for cluster update 
 ClustermgmtV41ConfigClusterNetwork<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigClusterNetwork {
+function Initialize-ClustermgmtV41ConfigClusterNetwork {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -95,7 +95,7 @@ Json object
 
 ClustermgmtV41ConfigClusterNetwork<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigClusterNetwork {
+function ConvertFrom-JsonToClustermgmtV41ConfigClusterNetwork {
     Param(
         [AllowEmptyString()]
         [string]$Json

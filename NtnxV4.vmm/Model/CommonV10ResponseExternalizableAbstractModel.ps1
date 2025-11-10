@@ -25,7 +25,7 @@ A HATEOAS style link for the response.  Each link contains a user-friendly name 
 CommonV10ResponseExternalizableAbstractModel<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CommonV10ResponseExternalizableAbstractModel {
+function Initialize-CommonV10ResponseExternalizableAbstractModel {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -82,7 +82,7 @@ Json object
 
 CommonV10ResponseExternalizableAbstractModel<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCommonV10ResponseExternalizableAbstractModel {
+function ConvertFrom-JsonToCommonV10ResponseExternalizableAbstractModel {
     Param(
         [AllowEmptyString()]
         [string]$Json

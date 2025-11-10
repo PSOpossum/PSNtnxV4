@@ -23,7 +23,7 @@ Pre-defined type of credential.
 SecurityV40ConfigBmcCredential<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigBmcCredential {
+function Initialize-SecurityV40ConfigBmcCredential {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -70,7 +70,7 @@ Json object
 
 SecurityV40ConfigBmcCredential<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigBmcCredential {
+function ConvertFrom-JsonToSecurityV40ConfigBmcCredential {
     Param(
         [AllowEmptyString()]
         [string]$Json

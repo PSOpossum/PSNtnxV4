@@ -27,7 +27,7 @@ No description available.
 ClustermgmtV41ConfigNonMigratableVmInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNonMigratableVmInfo {
+function Initialize-ClustermgmtV41ConfigNonMigratableVmInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -83,7 +83,7 @@ Json object
 
 ClustermgmtV41ConfigNonMigratableVmInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNonMigratableVmInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigNonMigratableVmInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

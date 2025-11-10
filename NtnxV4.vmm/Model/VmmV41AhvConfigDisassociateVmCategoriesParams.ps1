@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigDisassociateVmCategoriesParams<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDisassociateVmCategoriesParams {
+function Initialize-VmmV41AhvConfigDisassociateVmCategoriesParams {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41AhvConfigDisassociateVmCategoriesParams<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDisassociateVmCategoriesParams {
+function ConvertFrom-JsonToVmmV41AhvConfigDisassociateVmCategoriesParams {
     Param(
         [AllowEmptyString()]
         [string]$Json

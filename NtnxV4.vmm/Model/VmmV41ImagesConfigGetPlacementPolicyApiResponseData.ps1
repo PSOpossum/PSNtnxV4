@@ -22,7 +22,7 @@ JSON object
 
 VmmV41ImagesConfigGetPlacementPolicyApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigGetPlacementPolicyApiResponseData {
+function ConvertFrom-JsonToVmmV41ImagesConfigGetPlacementPolicyApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigGetPlacementPolicyApiResponse
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigGetPlacementPolicyApiResponse
 
         # try to match VmmV41ImagesConfigPlacementPolicy defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigPlacementPolicy $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ImagesConfigPlacementPolicy $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

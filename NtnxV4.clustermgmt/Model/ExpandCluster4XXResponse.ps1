@@ -23,7 +23,7 @@ No description available.
 ExpandCluster4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ExpandCluster4XXResponse {
+function Initialize-ExpandCluster4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ExpandCluster4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToExpandCluster4XXResponse {
+function ConvertFrom-JsonToExpandCluster4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

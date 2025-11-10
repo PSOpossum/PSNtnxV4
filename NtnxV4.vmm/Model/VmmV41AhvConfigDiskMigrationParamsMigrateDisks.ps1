@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigDiskMigrationParamsMigrateDisks<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDiskMigrationParamsMigrateDisks {
+function ConvertFrom-JsonToVmmV41AhvConfigDiskMigrationParamsMigrateDisks {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDiskMigrationParamsMigrateDisks 
 
         # try to match VmmV41AhvConfigAllDisksMigrationPlan defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigAllDisksMigrationPlan $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigAllDisksMigrationPlan $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDiskMigrationParamsMigrateDisks 
 
         # try to match VmmV41AhvConfigMigrationPlans defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigMigrationPlans $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigMigrationPlans $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

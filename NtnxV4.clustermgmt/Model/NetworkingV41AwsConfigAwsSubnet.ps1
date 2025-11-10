@@ -39,7 +39,7 @@ Availability Zone in which resource is situated.
 NetworkingV41AwsConfigAwsSubnet<PSCustomObject>
 #>
 
-function Initialize-NtnxV4NetworkingV41AwsConfigAwsSubnet {
+function Initialize-NetworkingV41AwsConfigAwsSubnet {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -151,7 +151,7 @@ Json object
 
 NetworkingV41AwsConfigAwsSubnet<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToNetworkingV41AwsConfigAwsSubnet {
+function ConvertFrom-JsonToNetworkingV41AwsConfigAwsSubnet {
     Param(
         [AllowEmptyString()]
         [string]$Json

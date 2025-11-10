@@ -21,7 +21,7 @@ The external ID (UUID) of the user.
 VmmV41AhvPoliciesUserReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesUserReference {
+function Initialize-VmmV41AhvPoliciesUserReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 VmmV41AhvPoliciesUserReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesUserReference {
+function ConvertFrom-JsonToVmmV41AhvPoliciesUserReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

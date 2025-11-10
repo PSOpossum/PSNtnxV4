@@ -23,7 +23,7 @@ No description available.
 CreateCdRom202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateCdRom202Response {
+function Initialize-CreateCdRom202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateCdRom202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateCdRom202Response {
+function ConvertFrom-JsonToCreateCdRom202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

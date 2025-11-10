@@ -45,7 +45,7 @@ IP address range
 ClustermgmtV41ConfigSubnet<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSubnet {
+function Initialize-ClustermgmtV41ConfigSubnet {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -169,7 +169,7 @@ Json object
 
 ClustermgmtV41ConfigSubnet<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSubnet {
+function ConvertFrom-JsonToClustermgmtV41ConfigSubnet {
     Param(
         [AllowEmptyString()]
         [string]$Json

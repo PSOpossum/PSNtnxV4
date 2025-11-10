@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigListSystemUserPasswordsApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigListSystemUserPasswordsApiResponse {
+function Initialize-ClustermgmtV41ConfigListSystemUserPasswordsApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigListSystemUserPasswordsApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigListSystemUserPasswordsApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigListSystemUserPasswordsApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

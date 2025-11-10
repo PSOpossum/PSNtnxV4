@@ -23,7 +23,7 @@ No description available.
 GetEsxiNicStatsById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetEsxiNicStatsById4XXResponse {
+function Initialize-GetEsxiNicStatsById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetEsxiNicStatsById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetEsxiNicStatsById4XXResponse {
+function ConvertFrom-JsonToGetEsxiNicStatsById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

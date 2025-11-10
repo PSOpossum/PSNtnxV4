@@ -23,7 +23,7 @@ No description available.
 VmmV41ContentDeleteOvaApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentDeleteOvaApiResponse {
+function Initialize-VmmV41ContentDeleteOvaApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ContentDeleteOvaApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentDeleteOvaApiResponse {
+function ConvertFrom-JsonToVmmV41ContentDeleteOvaApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

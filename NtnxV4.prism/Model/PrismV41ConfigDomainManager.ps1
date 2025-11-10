@@ -37,7 +37,7 @@ Domain manager (Prism Central) nodes external identifier.
 PrismV41ConfigDomainManager<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigDomainManager {
+function Initialize-PrismV41ConfigDomainManager {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -135,7 +135,7 @@ Json object
 
 PrismV41ConfigDomainManager<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigDomainManager {
+function ConvertFrom-JsonToPrismV41ConfigDomainManager {
     Param(
         [AllowEmptyString()]
         [string]$Json

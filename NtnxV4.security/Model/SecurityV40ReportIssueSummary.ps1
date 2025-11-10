@@ -23,7 +23,7 @@ Historical data containing how many issues were present and when
 SecurityV40ReportIssueSummary<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ReportIssueSummary {
+function Initialize-SecurityV40ReportIssueSummary {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 SecurityV40ReportIssueSummary<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ReportIssueSummary {
+function ConvertFrom-JsonToSecurityV40ReportIssueSummary {
     Param(
         [AllowEmptyString()]
         [string]$Json

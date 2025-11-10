@@ -23,7 +23,7 @@ No description available.
 RestoreVmRecoveryPoint202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4RestoreVmRecoveryPoint202Response {
+function Initialize-RestoreVmRecoveryPoint202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 RestoreVmRecoveryPoint202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToRestoreVmRecoveryPoint202Response {
+function ConvertFrom-JsonToRestoreVmRecoveryPoint202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

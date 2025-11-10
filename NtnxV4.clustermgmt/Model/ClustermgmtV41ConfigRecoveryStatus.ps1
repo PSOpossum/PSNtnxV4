@@ -25,7 +25,7 @@ No description available.
 ClustermgmtV41ConfigRecoveryStatus<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRecoveryStatus {
+function Initialize-ClustermgmtV41ConfigRecoveryStatus {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -75,7 +75,7 @@ Json object
 
 ClustermgmtV41ConfigRecoveryStatus<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRecoveryStatus {
+function ConvertFrom-JsonToClustermgmtV41ConfigRecoveryStatus {
     Param(
         [AllowEmptyString()]
         [string]$Json

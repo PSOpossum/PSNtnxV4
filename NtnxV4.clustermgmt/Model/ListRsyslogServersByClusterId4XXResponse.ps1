@@ -23,7 +23,7 @@ No description available.
 ListRsyslogServersByClusterId4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListRsyslogServersByClusterId4XXResponse {
+function Initialize-ListRsyslogServersByClusterId4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListRsyslogServersByClusterId4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListRsyslogServersByClusterId4XXResponse {
+function ConvertFrom-JsonToListRsyslogServersByClusterId4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ List of external identifiers for images that need to be imported.
 VmmV41ContentImageImportConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentImageImportConfig {
+function Initialize-VmmV41ContentImageImportConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -83,7 +83,7 @@ Json object
 
 VmmV41ContentImageImportConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentImageImportConfig {
+function ConvertFrom-JsonToVmmV41ContentImageImportConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

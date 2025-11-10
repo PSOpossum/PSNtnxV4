@@ -23,7 +23,7 @@ No description available.
 GetPlacementPolicyById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetPlacementPolicyById4XXResponse {
+function Initialize-GetPlacementPolicyById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetPlacementPolicyById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetPlacementPolicyById4XXResponse {
+function ConvertFrom-JsonToGetPlacementPolicyById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -51,7 +51,7 @@ UUID of the switch.
 ClustermgmtV41ConfigNetworkSwitchInterface<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigNetworkSwitchInterface {
+function Initialize-ClustermgmtV41ConfigNetworkSwitchInterface {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -175,7 +175,7 @@ Json object
 
 ClustermgmtV41ConfigNetworkSwitchInterface<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigNetworkSwitchInterface {
+function ConvertFrom-JsonToClustermgmtV41ConfigNetworkSwitchInterface {
     Param(
         [AllowEmptyString()]
         [string]$Json

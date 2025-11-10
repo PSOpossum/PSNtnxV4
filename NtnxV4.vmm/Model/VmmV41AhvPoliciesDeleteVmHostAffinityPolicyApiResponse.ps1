@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvPoliciesDeleteVmHostAffinityPolicyApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesDeleteVmHostAffinityPolicyApiResponse {
+function Initialize-VmmV41AhvPoliciesDeleteVmHostAffinityPolicyApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvPoliciesDeleteVmHostAffinityPolicyApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesDeleteVmHostAffinityPolicyApiResponse {
+function ConvertFrom-JsonToVmmV41AhvPoliciesDeleteVmHostAffinityPolicyApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

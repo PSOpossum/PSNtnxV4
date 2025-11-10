@@ -27,7 +27,7 @@ The external identifier of the container that will be used to create the domain 
 PrismV41ConfigDomainManagerResourceConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigDomainManagerResourceConfig {
+function Initialize-PrismV41ConfigDomainManagerResourceConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 PrismV41ConfigDomainManagerResourceConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigDomainManagerResourceConfig {
+function ConvertFrom-JsonToPrismV41ConfigDomainManagerResourceConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

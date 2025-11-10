@@ -23,7 +23,7 @@ No description available.
 VmmV41ImagesConfigUpdatePlacementPolicyApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ImagesConfigUpdatePlacementPolicyApiResponse {
+function Initialize-VmmV41ImagesConfigUpdatePlacementPolicyApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41ImagesConfigUpdatePlacementPolicyApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigUpdatePlacementPolicyApiResponse {
+function ConvertFrom-JsonToVmmV41ImagesConfigUpdatePlacementPolicyApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

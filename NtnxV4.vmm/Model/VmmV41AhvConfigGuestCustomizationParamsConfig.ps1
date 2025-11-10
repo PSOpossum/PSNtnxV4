@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigGuestCustomizationParamsConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGuestCustomizationParamsConfig {
+function ConvertFrom-JsonToVmmV41AhvConfigGuestCustomizationParamsConfig {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGuestCustomizationParamsConfig {
 
         # try to match VmmV41AhvConfigCloudInit defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCloudInit $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigCloudInit $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGuestCustomizationParamsConfig {
 
         # try to match VmmV41AhvConfigSysprep defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigSysprep $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigSysprep $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

@@ -22,7 +22,7 @@ JSON object
 
 VmmV41ContentGetTemplateVersionApiResponseData<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentGetTemplateVersionApiResponseData {
+function ConvertFrom-JsonToVmmV41ContentGetTemplateVersionApiResponseData {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41ContentGetTemplateVersionApiResponseData 
 
         # try to match VmmV41ContentTemplateVersionSpec defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ContentTemplateVersionSpec $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ContentTemplateVersionSpec $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41ContentGetTemplateVersionApiResponseData 
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41ErrorErrorResponse $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41ErrorErrorResponse $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

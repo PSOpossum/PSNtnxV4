@@ -23,7 +23,7 @@ No description available.
 DeleteKeyManagementServerById202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteKeyManagementServerById202Response {
+function Initialize-DeleteKeyManagementServerById202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteKeyManagementServerById202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteKeyManagementServerById202Response {
+function ConvertFrom-JsonToDeleteKeyManagementServerById202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

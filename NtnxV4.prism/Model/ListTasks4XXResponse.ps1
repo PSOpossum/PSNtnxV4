@@ -23,7 +23,7 @@ No description available.
 ListTasks4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ListTasks4XXResponse {
+function Initialize-ListTasks4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ListTasks4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToListTasks4XXResponse {
+function ConvertFrom-JsonToListTasks4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

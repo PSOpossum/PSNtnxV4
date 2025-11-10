@@ -21,7 +21,7 @@ The external identifier of a VM disk.
 VmmV41ContentVmDiskSource<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentVmDiskSource {
+function Initialize-VmmV41ContentVmDiskSource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -65,7 +65,7 @@ Json object
 
 VmmV41ContentVmDiskSource<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentVmDiskSource {
+function ConvertFrom-JsonToVmmV41ContentVmDiskSource {
     Param(
         [AllowEmptyString()]
         [string]$Json

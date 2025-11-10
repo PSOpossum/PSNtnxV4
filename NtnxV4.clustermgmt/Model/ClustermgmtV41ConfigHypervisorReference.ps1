@@ -33,7 +33,7 @@ No description available.
 ClustermgmtV41ConfigHypervisorReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHypervisorReference {
+function Initialize-ClustermgmtV41ConfigHypervisorReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -107,7 +107,7 @@ Json object
 
 ClustermgmtV41ConfigHypervisorReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHypervisorReference {
+function ConvertFrom-JsonToClustermgmtV41ConfigHypervisorReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

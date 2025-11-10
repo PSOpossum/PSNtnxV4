@@ -23,7 +23,7 @@ No description available.
 SecurityV40ConfigDeleteCredentialApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigDeleteCredentialApiResponse {
+function Initialize-SecurityV40ConfigDeleteCredentialApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 SecurityV40ConfigDeleteCredentialApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigDeleteCredentialApiResponse {
+function ConvertFrom-JsonToSecurityV40ConfigDeleteCredentialApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

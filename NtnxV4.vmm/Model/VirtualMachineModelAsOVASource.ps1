@@ -21,7 +21,7 @@ No description available.
 VirtualMachineModelAsOVASource<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VirtualMachineModelAsOVASource {
+function Initialize-VirtualMachineModelAsOVASource {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 VirtualMachineModelAsOVASource<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVirtualMachineModelAsOVASource {
+function ConvertFrom-JsonToVirtualMachineModelAsOVASource {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -41,7 +41,7 @@ Indicates whether the Nutanix Guest Tools communication over Serial Port is acti
 VmmV41AhvConfigGuestTools<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGuestTools {
+function Initialize-VmmV41AhvConfigGuestTools {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -128,7 +128,7 @@ Json object
 
 VmmV41AhvConfigGuestTools<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGuestTools {
+function ConvertFrom-JsonToVmmV41AhvConfigGuestTools {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ Device index on the bus. This field is ignored unless the bus details are specif
 VmmV41AhvConfigDiskAddress<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigDiskAddress {
+function Initialize-VmmV41AhvConfigDiskAddress {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -71,7 +71,7 @@ Json object
 
 VmmV41AhvConfigDiskAddress<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDiskAddress {
+function ConvertFrom-JsonToVmmV41AhvConfigDiskAddress {
     Param(
         [AllowEmptyString()]
         [string]$Json

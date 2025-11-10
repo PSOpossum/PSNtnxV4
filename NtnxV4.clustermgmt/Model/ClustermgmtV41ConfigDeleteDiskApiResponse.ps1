@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigDeleteDiskApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDeleteDiskApiResponse {
+function Initialize-ClustermgmtV41ConfigDeleteDiskApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigDeleteDiskApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDeleteDiskApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigDeleteDiskApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

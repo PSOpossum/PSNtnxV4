@@ -21,7 +21,7 @@ No description available.
 VmmV41AhvConfigNvramDevice<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigNvramDevice {
+function Initialize-VmmV41AhvConfigNvramDevice {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 VmmV41AhvConfigNvramDevice<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigNvramDevice {
+function ConvertFrom-JsonToVmmV41AhvConfigNvramDevice {
     Param(
         [AllowEmptyString()]
         [string]$Json

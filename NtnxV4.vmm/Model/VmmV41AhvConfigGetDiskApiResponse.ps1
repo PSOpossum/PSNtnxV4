@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigGetDiskApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigGetDiskApiResponse {
+function Initialize-VmmV41AhvConfigGetDiskApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigGetDiskApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigGetDiskApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigGetDiskApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

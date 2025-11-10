@@ -23,7 +23,7 @@ No description available.
 DeleteOvaById4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeleteOvaById4XXResponse {
+function Initialize-DeleteOvaById4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeleteOvaById4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeleteOvaById4XXResponse {
+function ConvertFrom-JsonToDeleteOvaById4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

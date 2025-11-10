@@ -23,7 +23,7 @@ Cluster identifier to deploy VM from OVA. This field is required when deploying 
 VmmV41ContentOvaDeploymentSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentOvaDeploymentSpec {
+function Initialize-VmmV41ContentOvaDeploymentSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -75,7 +75,7 @@ Json object
 
 VmmV41ContentOvaDeploymentSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentOvaDeploymentSpec {
+function ConvertFrom-JsonToVmmV41ContentOvaDeploymentSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

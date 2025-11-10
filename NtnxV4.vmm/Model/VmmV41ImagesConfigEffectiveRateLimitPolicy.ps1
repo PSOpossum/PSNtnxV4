@@ -29,7 +29,7 @@ The external identifier of image rate limit policy.
 VmmV41ImagesConfigEffectiveRateLimitPolicy<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ImagesConfigEffectiveRateLimitPolicy {
+function Initialize-VmmV41ImagesConfigEffectiveRateLimitPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -104,7 +104,7 @@ Json object
 
 VmmV41ImagesConfigEffectiveRateLimitPolicy<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ImagesConfigEffectiveRateLimitPolicy {
+function ConvertFrom-JsonToVmmV41ImagesConfigEffectiveRateLimitPolicy {
     Param(
         [AllowEmptyString()]
         [string]$Json

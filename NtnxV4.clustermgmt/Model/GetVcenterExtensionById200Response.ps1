@@ -23,7 +23,7 @@ No description available.
 GetVcenterExtensionById200Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4GetVcenterExtensionById200Response {
+function Initialize-GetVcenterExtensionById200Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 GetVcenterExtensionById200Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToGetVcenterExtensionById200Response {
+function ConvertFrom-JsonToGetVcenterExtensionById200Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

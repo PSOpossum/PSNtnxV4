@@ -119,7 +119,7 @@ Power instant consumption (watt)
 ClustermgmtV41StatsClusterStats<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41StatsClusterStats {
+function Initialize-ClustermgmtV41StatsClusterStats {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -364,7 +364,7 @@ Json object
 
 ClustermgmtV41StatsClusterStats<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41StatsClusterStats {
+function ConvertFrom-JsonToClustermgmtV41StatsClusterStats {
     Param(
         [AllowEmptyString()]
         [string]$Json

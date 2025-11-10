@@ -33,7 +33,7 @@ No description available.
 VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceState<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceState {
+function Initialize-VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceState {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -114,7 +114,7 @@ Json object
 
 VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceState<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceState {
+function ConvertFrom-JsonToVmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceState {
     Param(
         [AllowEmptyString()]
         [string]$Json

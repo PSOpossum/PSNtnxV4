@@ -23,7 +23,7 @@ No description available.
 VmmV41AhvConfigUninstallVmGuestToolsApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigUninstallVmGuestToolsApiResponse {
+function Initialize-VmmV41AhvConfigUninstallVmGuestToolsApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 VmmV41AhvConfigUninstallVmGuestToolsApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigUninstallVmGuestToolsApiResponse {
+function ConvertFrom-JsonToVmmV41AhvConfigUninstallVmGuestToolsApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

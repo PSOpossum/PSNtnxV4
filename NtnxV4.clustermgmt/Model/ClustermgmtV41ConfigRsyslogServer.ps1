@@ -35,7 +35,7 @@ List of modules registered to RSYSLOG server.
 ClustermgmtV41ConfigRsyslogServer<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigRsyslogServer {
+function Initialize-ClustermgmtV41ConfigRsyslogServer {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -141,7 +141,7 @@ Json object
 
 ClustermgmtV41ConfigRsyslogServer<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigRsyslogServer {
+function ConvertFrom-JsonToClustermgmtV41ConfigRsyslogServer {
     Param(
         [AllowEmptyString()]
         [string]$Json

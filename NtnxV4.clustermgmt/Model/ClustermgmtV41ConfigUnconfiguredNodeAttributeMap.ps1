@@ -29,7 +29,7 @@ Indicates whether the hypervisor is robo mixed or not.
 ClustermgmtV41ConfigUnconfiguredNodeAttributeMap<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUnconfiguredNodeAttributeMap {
+function Initialize-ClustermgmtV41ConfigUnconfiguredNodeAttributeMap {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 ClustermgmtV41ConfigUnconfiguredNodeAttributeMap<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUnconfiguredNodeAttributeMap {
+function ConvertFrom-JsonToClustermgmtV41ConfigUnconfiguredNodeAttributeMap {
     Param(
         [AllowEmptyString()]
         [string]$Json

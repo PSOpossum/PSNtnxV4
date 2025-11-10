@@ -21,7 +21,7 @@ Md5sum of ISO.
 ClustermgmtV41ConfigValidateBundleInfo<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigValidateBundleInfo {
+function Initialize-ClustermgmtV41ConfigValidateBundleInfo {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -61,7 +61,7 @@ Json object
 
 ClustermgmtV41ConfigValidateBundleInfo<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigValidateBundleInfo {
+function ConvertFrom-JsonToClustermgmtV41ConfigValidateBundleInfo {
     Param(
         [AllowEmptyString()]
         [string]$Json

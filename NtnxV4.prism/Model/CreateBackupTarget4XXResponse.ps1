@@ -23,7 +23,7 @@ No description available.
 CreateBackupTarget4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4CreateBackupTarget4XXResponse {
+function Initialize-CreateBackupTarget4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 CreateBackupTarget4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToCreateBackupTarget4XXResponse {
+function ConvertFrom-JsonToCreateBackupTarget4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

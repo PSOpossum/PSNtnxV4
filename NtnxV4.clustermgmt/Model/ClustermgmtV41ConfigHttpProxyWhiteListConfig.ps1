@@ -23,7 +23,7 @@ Target's identifier which is exempted from going through the configured HTTP Pro
 ClustermgmtV41ConfigHttpProxyWhiteListConfig<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigHttpProxyWhiteListConfig {
+function Initialize-ClustermgmtV41ConfigHttpProxyWhiteListConfig {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -75,7 +75,7 @@ Json object
 
 ClustermgmtV41ConfigHttpProxyWhiteListConfig<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigHttpProxyWhiteListConfig {
+function ConvertFrom-JsonToClustermgmtV41ConfigHttpProxyWhiteListConfig {
     Param(
         [AllowEmptyString()]
         [string]$Json

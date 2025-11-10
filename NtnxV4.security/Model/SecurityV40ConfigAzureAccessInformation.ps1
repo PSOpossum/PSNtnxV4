@@ -33,7 +33,7 @@ When the client secret is going to expire.
 SecurityV40ConfigAzureAccessInformation<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ConfigAzureAccessInformation {
+function Initialize-SecurityV40ConfigAzureAccessInformation {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -153,7 +153,7 @@ Json object
 
 SecurityV40ConfigAzureAccessInformation<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ConfigAzureAccessInformation {
+function ConvertFrom-JsonToSecurityV40ConfigAzureAccessInformation {
     Param(
         [AllowEmptyString()]
         [string]$Json

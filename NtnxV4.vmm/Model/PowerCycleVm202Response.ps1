@@ -23,7 +23,7 @@ No description available.
 PowerCycleVm202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PowerCycleVm202Response {
+function Initialize-PowerCycleVm202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 PowerCycleVm202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPowerCycleVm202Response {
+function ConvertFrom-JsonToPowerCycleVm202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

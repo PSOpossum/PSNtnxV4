@@ -28,7 +28,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 CreateVmHostAffinityPolicy202Response
 #>
-function New-NtnxV4VmHostAffinityPolicy {
+function New-VmHostAffinityPolicy {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -42,7 +42,7 @@ function New-NtnxV4VmHostAffinityPolicy {
     )
 
     Process {
-        'Calling method: New-NtnxV4VmHostAffinityPolicy' | Write-Debug
+        'Calling method: New-VmHostAffinityPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -54,7 +54,7 @@ function New-NtnxV4VmHostAffinityPolicy {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -91,7 +91,7 @@ function New-NtnxV4VmHostAffinityPolicy {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -137,7 +137,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 DeleteVmHostAffinityPolicyById202Response
 #>
-function Invoke-NtnxV4DeleteVmHostAffinityPolicyById {
+function Invoke-DeleteVmHostAffinityPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -154,7 +154,7 @@ function Invoke-NtnxV4DeleteVmHostAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4DeleteVmHostAffinityPolicyById' | Write-Debug
+        'Calling method: Invoke-DeleteVmHostAffinityPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -166,7 +166,7 @@ function Invoke-NtnxV4DeleteVmHostAffinityPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -203,7 +203,7 @@ function Invoke-NtnxV4DeleteVmHostAffinityPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'DELETE' `
+        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -243,7 +243,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 GetVmHostAffinityPolicyById200Response
 #>
-function Get-NtnxV4VmHostAffinityPolicyById {
+function Get-VmHostAffinityPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -254,7 +254,7 @@ function Get-NtnxV4VmHostAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Get-NtnxV4VmHostAffinityPolicyById' | Write-Debug
+        'Calling method: Get-VmHostAffinityPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -266,7 +266,7 @@ function Get-NtnxV4VmHostAffinityPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -293,7 +293,7 @@ function Get-NtnxV4VmHostAffinityPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -342,7 +342,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListVmHostAffinityPolicies200Response
 #>
-function Invoke-NtnxV4ListVmHostAffinityPolicies {
+function Invoke-ListVmHostAffinityPolicies {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -362,7 +362,7 @@ function Invoke-NtnxV4ListVmHostAffinityPolicies {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListVmHostAffinityPolicies' | Write-Debug
+        'Calling method: Invoke-ListVmHostAffinityPolicies' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -374,7 +374,7 @@ function Invoke-NtnxV4ListVmHostAffinityPolicies {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -413,7 +413,7 @@ function Invoke-NtnxV4ListVmHostAffinityPolicies {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -459,7 +459,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ListVmHostAffinityPolicyVmComplianceStates200Response
 #>
-function Invoke-NtnxV4ListVmHostAffinityPolicyVmComplianceStates {
+function Invoke-ListVmHostAffinityPolicyVmComplianceStates {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -476,7 +476,7 @@ function Invoke-NtnxV4ListVmHostAffinityPolicyVmComplianceStates {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ListVmHostAffinityPolicyVmComplianceStates' | Write-Debug
+        'Calling method: Invoke-ListVmHostAffinityPolicyVmComplianceStates' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -488,7 +488,7 @@ function Invoke-NtnxV4ListVmHostAffinityPolicyVmComplianceStates {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -523,7 +523,7 @@ function Invoke-NtnxV4ListVmHostAffinityPolicyVmComplianceStates {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'GET' `
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -569,7 +569,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ReEnforceVmHostAffinityPolicyById202Response
 #>
-function Invoke-NtnxV4ReEnforceVmHostAffinityPolicyById {
+function Invoke-ReEnforceVmHostAffinityPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -586,7 +586,7 @@ function Invoke-NtnxV4ReEnforceVmHostAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-NtnxV4ReEnforceVmHostAffinityPolicyById' | Write-Debug
+        'Calling method: Invoke-ReEnforceVmHostAffinityPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -598,7 +598,7 @@ function Invoke-NtnxV4ReEnforceVmHostAffinityPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -635,7 +635,7 @@ function Invoke-NtnxV4ReEnforceVmHostAffinityPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'POST' `
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `
@@ -684,7 +684,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 UpdateVmHostAffinityPolicyById202Response
 #>
-function Update-NtnxV4VmHostAffinityPolicyById {
+function Update-VmHostAffinityPolicyById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -704,7 +704,7 @@ function Update-NtnxV4VmHostAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Update-NtnxV4VmHostAffinityPolicyById' | Write-Debug
+        'Calling method: Update-VmHostAffinityPolicyById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -716,7 +716,7 @@ function Update-NtnxV4VmHostAffinityPolicyById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-NtnxV4Configuration
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -762,7 +762,7 @@ function Update-NtnxV4VmHostAffinityPolicyById {
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        $LocalVarResult = Invoke-NtnxV4ApiClient -Method 'PUT' `
+        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
                                 -Uri $LocalVarUri `
                                 -Accepts $LocalVarAccepts `
                                 -ContentTypes $LocalVarContentTypes `

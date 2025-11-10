@@ -21,7 +21,7 @@ No description available.
 PrismV41ManagementClusterRegistrationSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ManagementClusterRegistrationSpec {
+function Initialize-PrismV41ManagementClusterRegistrationSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -64,7 +64,7 @@ Json object
 
 PrismV41ManagementClusterRegistrationSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ManagementClusterRegistrationSpec {
+function ConvertFrom-JsonToPrismV41ManagementClusterRegistrationSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

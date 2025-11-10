@@ -22,7 +22,7 @@ JSON object
 
 VmmV41AhvConfigDataSourceReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDataSourceReference {
+function ConvertFrom-JsonToVmmV41AhvConfigDataSourceReference {
     [CmdletBinding()]
     Param (
         [AllowEmptyString()]
@@ -36,7 +36,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDataSourceReference {
 
         # try to match VmmV41AhvConfigImageReference defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigImageReference $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigImageReference $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -52,7 +52,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDataSourceReference {
 
         # try to match VmmV41AhvConfigVmDiskRecoveryPointReference defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmDiskRecoveryPointReference $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigVmDiskRecoveryPointReference $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -68,7 +68,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDataSourceReference {
 
         # try to match VmmV41AhvConfigVmDiskReference defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVmDiskReference $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigVmDiskReference $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -84,7 +84,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDataSourceReference {
 
         # try to match VmmV41AhvConfigVolumeDiskRecoveryPointReference defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVolumeDiskRecoveryPointReference $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigVolumeDiskRecoveryPointReference $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {
@@ -100,7 +100,7 @@ function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigDataSourceReference {
 
         # try to match VmmV41AhvConfigVolumeDiskReference defined in the oneOf schemas
         try {
-            $matchInstance = ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVolumeDiskReference $Json
+            $matchInstance = ConvertFrom-JsonToVmmV41AhvConfigVolumeDiskReference $Json
 
             foreach($property in $matchInstance.PsObject.Properties) {
                 if ($null -ne $property.Value) {

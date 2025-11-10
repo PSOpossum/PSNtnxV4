@@ -29,7 +29,7 @@ List of UUIDs of virtual machines with an allocated GPU belonging to this profil
 ClustermgmtV41ConfigPhysicalGpuProfile<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigPhysicalGpuProfile {
+function Initialize-ClustermgmtV41ConfigPhysicalGpuProfile {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -102,7 +102,7 @@ Json object
 
 ClustermgmtV41ConfigPhysicalGpuProfile<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigPhysicalGpuProfile {
+function ConvertFrom-JsonToClustermgmtV41ConfigPhysicalGpuProfile {
     Param(
         [AllowEmptyString()]
         [string]$Json

@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigDiscoverUnconfiguredNodesApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigDiscoverUnconfiguredNodesApiResponse {
+function Initialize-ClustermgmtV41ConfigDiscoverUnconfiguredNodesApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigDiscoverUnconfiguredNodesApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigDiscoverUnconfiguredNodesApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigDiscoverUnconfiguredNodesApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

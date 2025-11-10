@@ -23,7 +23,7 @@ Indicates the order of device types in which the VM should try to boot from. If 
 VmmV41AhvConfigLegacyBoot<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigLegacyBoot {
+function Initialize-VmmV41AhvConfigLegacyBoot {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -74,7 +74,7 @@ Json object
 
 VmmV41AhvConfigLegacyBoot<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigLegacyBoot {
+function ConvertFrom-JsonToVmmV41AhvConfigLegacyBoot {
     Param(
         [AllowEmptyString()]
         [string]$Json

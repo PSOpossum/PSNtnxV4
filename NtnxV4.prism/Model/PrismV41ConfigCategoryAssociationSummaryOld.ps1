@@ -27,7 +27,7 @@ Denotes the type of a category.<br> There are three types of categories: SYSTEM,
 PrismV41ConfigCategoryAssociationSummaryOld<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigCategoryAssociationSummaryOld {
+function Initialize-PrismV41ConfigCategoryAssociationSummaryOld {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -80,7 +80,7 @@ Json object
 
 PrismV41ConfigCategoryAssociationSummaryOld<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigCategoryAssociationSummaryOld {
+function ConvertFrom-JsonToPrismV41ConfigCategoryAssociationSummaryOld {
     Param(
         [AllowEmptyString()]
         [string]$Json

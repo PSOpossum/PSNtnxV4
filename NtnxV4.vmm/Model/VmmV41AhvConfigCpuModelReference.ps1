@@ -23,7 +23,7 @@ Name of the CPU model associated with the VM.
 VmmV41AhvConfigCpuModelReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigCpuModelReference {
+function Initialize-VmmV41AhvConfigCpuModelReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -71,7 +71,7 @@ Json object
 
 VmmV41AhvConfigCpuModelReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigCpuModelReference {
+function ConvertFrom-JsonToVmmV41AhvConfigCpuModelReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

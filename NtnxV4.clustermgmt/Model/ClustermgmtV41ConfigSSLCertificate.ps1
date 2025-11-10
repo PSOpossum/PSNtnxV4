@@ -29,7 +29,7 @@ No description available.
 ClustermgmtV41ConfigSSLCertificate<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigSSLCertificate {
+function Initialize-ClustermgmtV41ConfigSSLCertificate {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -121,7 +121,7 @@ Json object
 
 ClustermgmtV41ConfigSSLCertificate<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigSSLCertificate {
+function ConvertFrom-JsonToClustermgmtV41ConfigSSLCertificate {
     Param(
         [AllowEmptyString()]
         [string]$Json

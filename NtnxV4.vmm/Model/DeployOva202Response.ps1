@@ -23,7 +23,7 @@ No description available.
 DeployOva202Response<PSCustomObject>
 #>
 
-function Initialize-NtnxV4DeployOva202Response {
+function Initialize-DeployOva202Response {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 DeployOva202Response<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToDeployOva202Response {
+function ConvertFrom-JsonToDeployOva202Response {
     Param(
         [AllowEmptyString()]
         [string]$Json

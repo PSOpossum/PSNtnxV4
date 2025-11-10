@@ -25,7 +25,7 @@ Specify whether to mark the template version as active or not. The newly created
 VmmV41ContentCompleteGuestUpdateSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41ContentCompleteGuestUpdateSpec {
+function Initialize-VmmV41ContentCompleteGuestUpdateSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -88,7 +88,7 @@ Json object
 
 VmmV41ContentCompleteGuestUpdateSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41ContentCompleteGuestUpdateSpec {
+function ConvertFrom-JsonToVmmV41ContentCompleteGuestUpdateSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

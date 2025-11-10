@@ -23,7 +23,7 @@ New password for a user account.
 ClustermgmtV41ConfigChangePasswordSpec<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigChangePasswordSpec {
+function Initialize-ClustermgmtV41ConfigChangePasswordSpec {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -86,7 +86,7 @@ Json object
 
 ClustermgmtV41ConfigChangePasswordSpec<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigChangePasswordSpec {
+function ConvertFrom-JsonToClustermgmtV41ConfigChangePasswordSpec {
     Param(
         [AllowEmptyString()]
         [string]$Json

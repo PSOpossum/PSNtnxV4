@@ -23,7 +23,7 @@ No description available.
 ValidateNode4XXResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ValidateNode4XXResponse {
+function Initialize-ValidateNode4XXResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ValidateNode4XXResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToValidateNode4XXResponse {
+function ConvertFrom-JsonToValidateNode4XXResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

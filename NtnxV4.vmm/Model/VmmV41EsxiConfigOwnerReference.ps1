@@ -23,7 +23,7 @@ The globally unique identifier of an instance of type UUID.
 VmmV41EsxiConfigOwnerReference<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41EsxiConfigOwnerReference {
+function Initialize-VmmV41EsxiConfigOwnerReference {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -68,7 +68,7 @@ Json object
 
 VmmV41EsxiConfigOwnerReference<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41EsxiConfigOwnerReference {
+function ConvertFrom-JsonToVmmV41EsxiConfigOwnerReference {
     Param(
         [AllowEmptyString()]
         [string]$Json

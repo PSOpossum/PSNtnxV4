@@ -21,7 +21,7 @@ No description available.
 SecurityV40ErrorErrorResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4SecurityV40ErrorErrorResponse {
+function Initialize-SecurityV40ErrorErrorResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -60,7 +60,7 @@ Json object
 
 SecurityV40ErrorErrorResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToSecurityV40ErrorErrorResponse {
+function ConvertFrom-JsonToSecurityV40ErrorErrorResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

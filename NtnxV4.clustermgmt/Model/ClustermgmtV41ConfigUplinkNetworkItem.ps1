@@ -25,7 +25,7 @@ No description available.
 ClustermgmtV41ConfigUplinkNetworkItem<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigUplinkNetworkItem {
+function Initialize-ClustermgmtV41ConfigUplinkNetworkItem {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 ClustermgmtV41ConfigUplinkNetworkItem<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigUplinkNetworkItem {
+function ConvertFrom-JsonToClustermgmtV41ConfigUplinkNetworkItem {
     Param(
         [AllowEmptyString()]
         [string]$Json

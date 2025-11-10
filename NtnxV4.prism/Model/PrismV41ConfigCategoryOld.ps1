@@ -45,7 +45,7 @@ Opaque metadata which can be associated to a category.<br> It is a list of key-v
 PrismV41ConfigCategoryOld<PSCustomObject>
 #>
 
-function Initialize-NtnxV4PrismV41ConfigCategoryOld {
+function Initialize-PrismV41ConfigCategoryOld {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -193,7 +193,7 @@ Json object
 
 PrismV41ConfigCategoryOld<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToPrismV41ConfigCategoryOld {
+function ConvertFrom-JsonToPrismV41ConfigCategoryOld {
     Param(
         [AllowEmptyString()]
         [string]$Json

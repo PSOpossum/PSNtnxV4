@@ -23,7 +23,7 @@ No description available.
 ClustermgmtV41ConfigGetStorageContainerApiResponse<PSCustomObject>
 #>
 
-function Initialize-NtnxV4ClustermgmtV41ConfigGetStorageContainerApiResponse {
+function Initialize-ClustermgmtV41ConfigGetStorageContainerApiResponse {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -66,7 +66,7 @@ Json object
 
 ClustermgmtV41ConfigGetStorageContainerApiResponse<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToClustermgmtV41ConfigGetStorageContainerApiResponse {
+function ConvertFrom-JsonToClustermgmtV41ConfigGetStorageContainerApiResponse {
     Param(
         [AllowEmptyString()]
         [string]$Json

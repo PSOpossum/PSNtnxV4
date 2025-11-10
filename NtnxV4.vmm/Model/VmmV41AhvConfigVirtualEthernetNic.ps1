@@ -27,7 +27,7 @@ The number of Tx/Rx queue pairs for this NIC.
 VmmV41AhvConfigVirtualEthernetNic<PSCustomObject>
 #>
 
-function Initialize-NtnxV4VmmV41AhvConfigVirtualEthernetNic {
+function Initialize-VmmV41AhvConfigVirtualEthernetNic {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipelineByPropertyName = $true)]
@@ -84,7 +84,7 @@ Json object
 
 VmmV41AhvConfigVirtualEthernetNic<PSCustomObject>
 #>
-function ConvertFrom-NtnxV4JsonToVmmV41AhvConfigVirtualEthernetNic {
+function ConvertFrom-JsonToVmmV41AhvConfigVirtualEthernetNic {
     Param(
         [AllowEmptyString()]
         [string]$Json
