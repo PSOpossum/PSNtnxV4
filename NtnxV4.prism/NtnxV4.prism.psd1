@@ -33,7 +33,7 @@ Copyright = 'PSOpossum'
 Description = 'NtnxV4.prism - the PowerShell module for Nutanix Prism APIs'
 
 # Minimum version of the PowerShell engine required by this module
-PowerShellVersion = '6.2'
+PowerShellVersion = '7.4'
 
 # Name of the PowerShell host required by this module
 # PowerShellHostName = ''
@@ -546,7 +546,7 @@ PrivateData = @{
         # LicenseUri = ''
 
         # A URL to the main website for this project.
-        # ProjectUri = ''
+        ProjectUri = 'https://github.com/PSOpossum/PSNtnxV4'
 
         # A URL to an icon representing this module.
         # IconUri = ''
