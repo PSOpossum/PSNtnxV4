@@ -30,7 +30,7 @@ $Script:Configuration = [System.Collections.HashTable]@{}
 
 $Script:CmdletBindingParameters = @('Verbose','Debug','ErrorAction','WarningAction','InformationAction','ErrorVariable','WarningVariable','InformationVariable','OutVariable','OutBuffer','PipelineVariable')
 
-'Public', 'Private', 'Client' | Where-Object {
+'Client', 'Public', 'Private' | Where-Object {
     Join-Path $PSScriptRoot $_ | Test-Path
 } | Get-ChildItem -Path {
     Join-Path $PSScriptRoot $_

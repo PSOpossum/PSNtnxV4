@@ -69,7 +69,7 @@ PowerShellVersion = '7.4'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Connect-PrismServer', 'Disconnect-PrismServer', "Invoke-NtnxV4ApiClient"
+FunctionsToExport = 'Connect-PrismServer', 'Disconnect-PrismServer', "Invoke-NtnxV4ApiClient", "Get-CommonParameters", "NtnxV4HttpSignatureAuth", "NtnxV4RSAEncryptionProvider", "Out-DebugParameter"
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
