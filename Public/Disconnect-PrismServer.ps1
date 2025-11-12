@@ -11,3 +11,5 @@ function Disconnect-PrismServer {
 
     $Global:PrismServerConnection = @()
 }
+
+Export-ModuleMember -Function *

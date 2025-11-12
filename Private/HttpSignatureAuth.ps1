@@ -434,3 +434,5 @@ function ConvertTo-ECDSAANS1Format{
     $derBytes += $sBytes
     return $derBytes
 }
+
+Export-ModuleMember -Function *

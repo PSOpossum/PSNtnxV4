@@ -19,3 +19,5 @@ function Get-CommonParameters {
 
     (Get-Command -Name tmp -CommandType Function).Parameters.Keys
 }
+
+Export-ModuleMember -Function *

@@ -524,3 +524,5 @@ function Get-ConfigurationHttpSigning{
     $httpSignatureConfiguration = $Script:Configuration["HttpSigning"]
     return $httpSignatureConfiguration
 }
+
+Export-ModuleMember -Function *
