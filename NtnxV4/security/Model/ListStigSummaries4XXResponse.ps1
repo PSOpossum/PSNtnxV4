@@ -35,7 +35,7 @@ function Initialize-ListStigSummaries4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4ListStigSummaries4XXResponse' | Write-Debug
+        'Creating PSCustomObject: security => ListStigSummaries4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToListStigSummaries4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4ListStigSummaries4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: security => ListStigSummaries4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ListStigSummaries4XXResponse
+        # check if Json contains properties not defined in ListStigSummaries4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

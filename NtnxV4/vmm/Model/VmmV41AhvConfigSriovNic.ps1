@@ -46,7 +46,7 @@ function Initialize-VmmV41AhvConfigSriovNic {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigSriovNic' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigSriovNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $SriovProfileReference) {
@@ -90,12 +90,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigSriovNic {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigSriovNic' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigSriovNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigSriovNic
+        # check if Json contains properties not defined in VmmV41AhvConfigSriovNic
         $AllProperties = ("sriovProfileReference", "hostPcieDeviceReference", "macAddress", "isConnected")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

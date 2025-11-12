@@ -445,7 +445,7 @@ function Initialize-VmmV41AhvStatsVmStatsTuple {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvStatsVmStatsTuple' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvStatsVmStatsTuple' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -565,12 +565,12 @@ function ConvertFrom-JsonToVmmV41AhvStatsVmStatsTuple {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvStatsVmStatsTuple' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvStatsVmStatsTuple' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvStatsVmStatsTuple
+        # check if Json contains properties not defined in VmmV41AhvStatsVmStatsTuple
         $AllProperties = ("timestamp", "controllerAvgIoLatencyMicros", "controllerAvgReadIoLatencyMicros", "controllerAvgReadIoSizeKb", "controllerAvgWriteIoLatencyMicros", "controllerAvgWriteIoSizeKb", "controllerIoBandwidthKbps", "controllerNumIo", "controllerNumIops", "controllerNumRandomIo", "controllerNumReadIo", "controllerNumReadIops", "controllerNumSeqIo", "controllerNumWriteIo", "controllerNumWriteIops", "controllerOplogDrainDestHddBytes", "controllerOplogDrainDestSsdBytes", "controllerRandomIoPpm", "controllerReadIoBandwidthKbps", "controllerReadIoPpm", "controllerReadSourceEstoreHddLocalBytes", "controllerReadSourceEstoreSsdLocalBytes", "controllerReadSourceEstoreHddRemoteBytes", "controllerReadSourceEstoreSsdRemoteBytes", "controllerReadSourceOplogBytes", "controllerSeqIoPpm", "controllerSharedUsageBytes", "controllerSnapshotUsageBytes", "controllerStorageTierSsdUsageBytes", "controllerTimespanMicros", "controllerTotalIoSizeKb", "controllerTotalIoTimeMicros", "controllerTotalReadIoSizeKb", "controllerTotalReadIoTimeMicros", "controllerTotalTransformedUsageBytes", "controllerUserBytes", "controllerWriteDestEstoreSsdBytes", "controllerWriteDestEstoreHddBytes", "controllerWriteIoBandwidthKbps", "controllerWriteIoPpm", "controllerWss120SecondUnionMb", "controllerWss120SecondReadMb", "controllerWss120SecondWriteMb", "controllerWss3600SecondUnionMb", "controllerWss3600SecondReadMb", "controllerWss3600SecondWriteMb", "frameBufferUsagePpm", "gpuUsagePpm", "guestMemoryUsagePpm", "hypervisorAvgIoLatencyMicros", "hypervisorCpuReadyTimePpm", "hypervisorCpuUsagePpm", "hypervisorIoBandwidthKbps", "hypervisorMemoryBalloonReclaimedBytes", "hypervisorMemoryBalloonReclaimTargetBytes", "hypervisorMemoryUsagePpm", "hypervisorNumIo", "hypervisorNumIops", "hypervisorNumReadIops", "hypervisorNumReadIo", "hypervisorNumReceivedBytes", "hypervisorNumReceivePacketsDropped", "hypervisorNumTransmittedBytes", "hypervisorNumTransmitPacketsDropped", "hypervisorNumWriteIo", "hypervisorNumWriteIops", "hypervisorReadIoBandwidthKbps", "hypervisorTimespanMicros", "hypervisorTotalIoSizeKb", "hypervisorTotalIoTimeMicros", "hypervisorTotalReadIoSizeKb", "hypervisorVmRunningTimeUsecs", "hypervisorWriteIoBandwidthKbps", "memoryUsageBytes", "memoryUsagePpm", "numVcpusUsedPpm", "checkScore", "cluster", "hypervisorType", "diskUsagePpm", "diskCapacityBytes", "hypervisorSwapInRateKbps", "hypervisorSwapOutRateKbps", "memoryReservedBytes")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -36,7 +36,7 @@ function Initialize-VmmV41EsxiConfigCdRomBackingInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigCdRomBackingInfo' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41EsxiConfigCdRomBackingInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -74,12 +74,12 @@ function ConvertFrom-JsonToVmmV41EsxiConfigCdRomBackingInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigCdRomBackingInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41EsxiConfigCdRomBackingInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41EsxiConfigCdRomBackingInfo
+        # check if Json contains properties not defined in VmmV41EsxiConfigCdRomBackingInfo
         $AllProperties = ("diskExtId", "storageContainer")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

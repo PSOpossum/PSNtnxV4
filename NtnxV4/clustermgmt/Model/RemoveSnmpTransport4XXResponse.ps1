@@ -35,7 +35,7 @@ function Initialize-RemoveSnmpTransport4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4RemoveSnmpTransport4XXResponse' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => RemoveSnmpTransport4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToRemoveSnmpTransport4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4RemoveSnmpTransport4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => RemoveSnmpTransport4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4RemoveSnmpTransport4XXResponse
+        # check if Json contains properties not defined in RemoveSnmpTransport4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

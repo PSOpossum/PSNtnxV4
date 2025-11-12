@@ -71,7 +71,7 @@ function Initialize-SecurityV40ManagementSecurityValidationSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementSecurityValidationSpec' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ManagementSecurityValidationSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $SecuredEntityType) {
@@ -147,12 +147,12 @@ function ConvertFrom-JsonToSecurityV40ManagementSecurityValidationSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementSecurityValidationSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ManagementSecurityValidationSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ManagementSecurityValidationSpec
+        # check if Json contains properties not defined in SecurityV40ManagementSecurityValidationSpec
         $AllProperties = ("securedEntityType", "securedEntityName", "securedEntityExtId", "eventType", "securedPolicyExtId", "securedEntityLocation", "requesterExtId", "fullyQualifiedSecuredEntityName")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

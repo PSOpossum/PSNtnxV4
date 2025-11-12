@@ -57,7 +57,7 @@ function Initialize-SecurityV40ConfigCredential {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigCredential' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ConfigCredential' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -123,12 +123,12 @@ function ConvertFrom-JsonToSecurityV40ConfigCredential {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigCredential' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ConfigCredential' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ConfigCredential
+        # check if Json contains properties not defined in SecurityV40ConfigCredential
         $AllProperties = ("tenantId", "extId", "links", "name", "credentialDetails", "isValid")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

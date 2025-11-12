@@ -41,7 +41,7 @@ function Initialize-ClustermgmtV41ConfigNameNetworkRef {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNameNetworkRef' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNameNetworkRef' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 64) {
@@ -92,12 +92,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNameNetworkRef {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNameNetworkRef' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNameNetworkRef' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNameNetworkRef
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNameNetworkRef
         $AllProperties = ("hypervisorType", "name", "networks")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

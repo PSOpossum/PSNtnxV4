@@ -36,7 +36,7 @@ function Initialize-SecurityV40CommonCluster {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40CommonCluster' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40CommonCluster' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$ClusterName -and $ClusterName.length -gt 199) {
@@ -78,12 +78,12 @@ function ConvertFrom-JsonToSecurityV40CommonCluster {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40CommonCluster' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40CommonCluster' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40CommonCluster
+        # check if Json contains properties not defined in SecurityV40CommonCluster
         $AllProperties = ("clusterExtId", "clusterName")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

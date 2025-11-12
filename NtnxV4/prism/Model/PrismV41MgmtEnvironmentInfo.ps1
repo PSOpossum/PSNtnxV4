@@ -118,7 +118,7 @@ function Initialize-PrismV41MgmtEnvironmentInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41MgmtEnvironmentInfo' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41MgmtEnvironmentInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -179,12 +179,12 @@ function ConvertFrom-JsonToPrismV41MgmtEnvironmentInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41MgmtEnvironmentInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41MgmtEnvironmentInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41MgmtEnvironmentInfo
+        # check if Json contains properties not defined in PrismV41MgmtEnvironmentInfo
         $AllProperties = ("tenantId", "extId", "links", "environmentType", "providerType", "instanceType", "cellFqdn", "tenantUuid", "pcExternalUrl", "localAzName", "cloudSiteName", "cloudRegionName", "myNutanixUrl", "xlbVirtualAddress", "olbVirtualAddress", "billingHost", "billingApiHost")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

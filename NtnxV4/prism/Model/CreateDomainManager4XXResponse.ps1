@@ -35,7 +35,7 @@ function Initialize-CreateDomainManager4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4CreateDomainManager4XXResponse' | Write-Debug
+        'Creating PSCustomObject: prism => CreateDomainManager4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToCreateDomainManager4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4CreateDomainManager4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => CreateDomainManager4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CreateDomainManager4XXResponse
+        # check if Json contains properties not defined in CreateDomainManager4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

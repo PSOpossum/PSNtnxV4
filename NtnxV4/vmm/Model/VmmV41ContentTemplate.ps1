@@ -87,7 +87,7 @@ function Initialize-VmmV41ContentTemplate {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentTemplate' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentTemplate' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -163,12 +163,12 @@ function ConvertFrom-JsonToVmmV41ContentTemplate {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentTemplate' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentTemplate' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentTemplate
+        # check if Json contains properties not defined in VmmV41ContentTemplate
         $AllProperties = ("tenantId", "extId", "links", "templateName", "templateDescription", "templateVersionSpec", "guestUpdateStatus", "createTime", "updateTime", "createdBy", "updatedBy", "categoryExtIds")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

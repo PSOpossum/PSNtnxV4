@@ -295,7 +295,7 @@ function Initialize-VmmV41EsxiStatsVmStatsTuple {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiStatsVmStatsTuple' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41EsxiStatsVmStatsTuple' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -385,12 +385,12 @@ function ConvertFrom-JsonToVmmV41EsxiStatsVmStatsTuple {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiStatsVmStatsTuple' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41EsxiStatsVmStatsTuple' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41EsxiStatsVmStatsTuple
+        # check if Json contains properties not defined in VmmV41EsxiStatsVmStatsTuple
         $AllProperties = ("checkScore", "cluster", "controllerAvgIoLatencyMicros", "controllerAvgReadIoLatencyMicros", "controllerAvgReadIoSizeKb", "controllerAvgWriteIoLatencyMicros", "controllerAvgWriteIoSizeKb", "controllerIoBandwidthKbps", "controllerNumIo", "controllerNumIops", "controllerNumRandomIo", "controllerNumReadIo", "controllerNumReadIops", "controllerNumSeqIo", "controllerNumWriteIo", "controllerNumWriteIops", "controllerRandomIoPpm", "controllerReadIoBandwidthKbps", "controllerReadIoPpm", "controllerSeqIoPpm", "controllerStorageTierSsdUsageBytes", "controllerTimespanMicros", "controllerTotalIoSizeKb", "controllerTotalIoTimeMicros", "controllerTotalReadIoSizeKb", "controllerTotalReadIoTimeMicros", "controllerTotalTransformedUsageBytes", "controllerUserBytes", "controllerWriteIoBandwidthKbps", "controllerWriteIoPpm", "hypervisorAvgIoLatencyMicros", "hypervisorCpuReadyTimePpm", "hypervisorCpuUsagePpm", "hypervisorIoBandwidthKbps", "hypervisorMemoryUsagePpm", "hypervisorNumIo", "hypervisorNumIops", "hypervisorNumReadIo", "hypervisorNumReadIops", "hypervisorNumReceivedBytes", "hypervisorNumTransmittedBytes", "hypervisorNumWriteIo", "hypervisorNumWriteIops", "hypervisorReadIoBandwidthKbps", "hypervisorSwapInRateKbps", "hypervisorSwapOutRateKbps", "hypervisorTimespanMicros", "hypervisorTotalIoSizeKb", "hypervisorTotalIoTimeMicros", "hypervisorTotalReadIoSizeKb", "hypervisorWriteIoBandwidthKbps", "hypervisorType", "memoryUsagePpm", "timestamp")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

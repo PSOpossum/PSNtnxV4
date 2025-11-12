@@ -47,7 +47,7 @@ function Initialize-ClustermgmtV41OperationsRollingRebootParams {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41OperationsRollingRebootParams' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41OperationsRollingRebootParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$NodeExtIdList -and $NodeExtIdList.length -gt 48) {
@@ -99,12 +99,12 @@ function ConvertFrom-JsonToClustermgmtV41OperationsRollingRebootParams {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41OperationsRollingRebootParams' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41OperationsRollingRebootParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41OperationsRollingRebootParams
+        # check if Json contains properties not defined in ClustermgmtV41OperationsRollingRebootParams
         $AllProperties = ("nodeExtIdList", "rebootType", "rebootDescription", "targetRebootDomain")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigUplinks {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUplinks' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigUplinks' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Active -and $Active.length -gt 1024) {
@@ -89,12 +89,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigUplinks {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUplinks' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigUplinks' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigUplinks
+        # check if Json contains properties not defined in ClustermgmtV41ConfigUplinks
         $AllProperties = ("active", "standby")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

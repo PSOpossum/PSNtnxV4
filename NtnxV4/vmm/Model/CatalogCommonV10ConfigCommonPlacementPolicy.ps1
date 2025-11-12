@@ -90,7 +90,7 @@ function Initialize-CatalogCommonV10ConfigCommonPlacementPolicy {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4CatalogCommonV10ConfigCommonPlacementPolicy' | Write-Debug
+        'Creating PSCustomObject: vmm => CatalogCommonV10ConfigCommonPlacementPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -158,12 +158,12 @@ function ConvertFrom-JsonToCatalogCommonV10ConfigCommonPlacementPolicy {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4CatalogCommonV10ConfigCommonPlacementPolicy' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => CatalogCommonV10ConfigCommonPlacementPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CatalogCommonV10ConfigCommonPlacementPolicy
+        # check if Json contains properties not defined in CatalogCommonV10ConfigCommonPlacementPolicy
         $AllProperties = ("tenantId", "extId", "links", "name", "description", "placementType", "contentFilter", "clusterFilter", "createTime", "updateTime", "createdBy", "updatedBy")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

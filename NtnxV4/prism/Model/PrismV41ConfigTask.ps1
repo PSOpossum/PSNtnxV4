@@ -157,7 +157,7 @@ function Initialize-PrismV41ConfigTask {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigTask' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigTask' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($ProgressPercentage -and $ProgressPercentage -gt 100) {
@@ -291,12 +291,12 @@ function ConvertFrom-JsonToPrismV41ConfigTask {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigTask' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigTask' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigTask
+        # check if Json contains properties not defined in PrismV41ConfigTask
         $AllProperties = ("extId", "operation", "operationDescription", "parentTask", "createdTime", "startedTime", "completedTime", "status", "progressPercentage", "entitiesAffected", "subTasks", "subSteps", "isCancelable", "ownedBy", "completionDetails", "errorMessages", "legacyErrorMessage", "warnings", "lastUpdatedTime", "clusterExtIds", "rootTask", "isBackgroundTask", "numberOfSubtasks", "numberOfEntitiesAffected", "resourceLinks", "appName")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

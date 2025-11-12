@@ -139,7 +139,7 @@ function Initialize-ClustermgmtV41ConfigUnconfiguredNodeListItem {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUnconfiguredNodeListItem' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigUnconfiguredNodeListItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$CpuType -and $CpuType.length -gt 1024) {
@@ -205,12 +205,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigUnconfiguredNodeListItem {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUnconfiguredNodeListItem' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigUnconfiguredNodeListItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigUnconfiguredNodeListItem
+        # check if Json contains properties not defined in ClustermgmtV41ConfigUnconfiguredNodeListItem
         $AllProperties = ("foundationVersion", "rackableUnitSerial", "nodeUuid", "rackableUnitMaxNodes", "currentNetworkInterface", "nodePosition", "cvmIp", "currentCvmVlanTag", "isSecureBooted", "nosVersion", "cpuType", "hypervisorType", "hypervisorVersion", "interfaceIpv6", "clusterId", "attributes", "rackableUnitModel", "arch", "hypervisorIp", "ipmiIp", "hostType", "luksStatus")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

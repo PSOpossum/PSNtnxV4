@@ -102,7 +102,7 @@ function Initialize-VmmV41AhvPoliciesVmHostAffinityPolicy {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvPoliciesVmHostAffinityPolicy' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvPoliciesVmHostAffinityPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -181,12 +181,12 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesVmHostAffinityPolicy {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvPoliciesVmHostAffinityPolicy' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvPoliciesVmHostAffinityPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvPoliciesVmHostAffinityPolicy
+        # check if Json contains properties not defined in VmmV41AhvPoliciesVmHostAffinityPolicy
         $AllProperties = ("tenantId", "extId", "links", "name", "description", "createTime", "updateTime", "createdBy", "lastUpdatedBy", "vmCategories", "hostCategories", "numVms", "numHosts", "numCompliantVms", "numNonCompliantVms")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -56,7 +56,7 @@ function Initialize-SecurityV40ErrorAppMessage {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ErrorAppMessage' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ErrorAppMessage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -98,12 +98,12 @@ function ConvertFrom-JsonToSecurityV40ErrorAppMessage {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ErrorAppMessage' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ErrorAppMessage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ErrorAppMessage
+        # check if Json contains properties not defined in SecurityV40ErrorAppMessage
         $AllProperties = ("message", "severity", "code", "locale", "errorGroup", "argumentsMap")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

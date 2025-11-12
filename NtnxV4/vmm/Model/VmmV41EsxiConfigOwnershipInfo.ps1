@@ -30,7 +30,7 @@ function Initialize-VmmV41EsxiConfigOwnershipInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigOwnershipInfo' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41EsxiConfigOwnershipInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Owner) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVmmV41EsxiConfigOwnershipInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigOwnershipInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41EsxiConfigOwnershipInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41EsxiConfigOwnershipInfo
+        # check if Json contains properties not defined in VmmV41EsxiConfigOwnershipInfo
         $AllProperties = ("owner")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

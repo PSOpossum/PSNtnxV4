@@ -35,7 +35,7 @@ function Initialize-ListProducts200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4ListProducts200Response' | Write-Debug
+        'Creating PSCustomObject: prism => ListProducts200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToListProducts200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4ListProducts200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => ListProducts200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ListProducts200Response
+        # check if Json contains properties not defined in ListProducts200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

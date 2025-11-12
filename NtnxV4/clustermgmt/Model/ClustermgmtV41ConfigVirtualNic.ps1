@@ -104,7 +104,7 @@ function Initialize-ClustermgmtV41ConfigVirtualNic {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigVirtualNic' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigVirtualNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -191,12 +191,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigVirtualNic {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigVirtualNic' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigVirtualNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigVirtualNic
+        # check if Json contains properties not defined in ClustermgmtV41ConfigVirtualNic
         $AllProperties = ("tenantId", "extId", "links", "name", "hostDescription", "macAddress", "ipv4Addresses", "ipv6Addresses", "interfaceStatus", "isDhcpEnabled", "linkSpeedInKbps", "mtuInBytes", "nodeUuid", "vlanId", "hostNicsUuids")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

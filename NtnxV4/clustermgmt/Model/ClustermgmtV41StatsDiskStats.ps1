@@ -207,7 +207,7 @@ function Initialize-ClustermgmtV41StatsDiskStats {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41StatsDiskStats' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41StatsDiskStats' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -551,12 +551,12 @@ function ConvertFrom-JsonToClustermgmtV41StatsDiskStats {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41StatsDiskStats' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41StatsDiskStats' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41StatsDiskStats
+        # check if Json contains properties not defined in ClustermgmtV41StatsDiskStats
         $AllProperties = ("tenantId", "extId", "links", "diskUsagePpm", "diskCapacityBytes", "diskNumIops", "diskPeakNumIops", "diskBaseNumIops", "diskIoBandwidthkbps", "diskPeakIoBandwidthkbps", "diskBaseIoBandwidthkbps", "diskAvgIoLatencyMicrosec", "diskPeakIoLatencyMicrosec", "diskBaseIoLatencyMicrosec", "diskFreeBytes", "diskUsageBytes", "diskReadIops", "diskBaseReadIops", "diskPeakReadIops", "diskWriteIops", "diskPeakWriteIops", "diskBaseWriteIops", "diskReadIoBandwidthkbps", "diskPeakReadIoBandwidthkbps", "diskBaseReadIoBandwidthkbps", "diskWriteIoBandwidthkbps", "diskPeakWriteIoBandwidthkbps", "diskBaseWriteIoBandwidthkbps", "diskReadIoAvgLatencyMicrosec", "diskPeakReadIoAvgLatencyMicrosec", "diskBaseReadIoAvgLatencyMicrosec", "diskWriteIoAvgLatencyMicrosec", "diskPeakWriteIoAvgLatencyMicrosec", "diskBaseWriteIoAvgLatencyMicrosec", "diskReadIoPpm", "diskWriteIoPpm")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -41,7 +41,7 @@ function Initialize-ClustermgmtV41ConfigNodeListItemReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeListItemReference' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeListItemReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -80,12 +80,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNodeListItemReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeListItemReference' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeListItemReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNodeListItemReference
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNodeListItemReference
         $AllProperties = ("controllerVmIp", "nodeUuid", "hostIp")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

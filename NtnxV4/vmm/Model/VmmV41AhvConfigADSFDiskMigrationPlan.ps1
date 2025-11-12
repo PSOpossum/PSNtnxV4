@@ -35,7 +35,7 @@ function Initialize-VmmV41AhvConfigADSFDiskMigrationPlan {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigADSFDiskMigrationPlan' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigADSFDiskMigrationPlan' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$VmDisks -and $VmDisks.length -gt 1034) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigADSFDiskMigrationPlan {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigADSFDiskMigrationPlan' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigADSFDiskMigrationPlan' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigADSFDiskMigrationPlan
+        # check if Json contains properties not defined in VmmV41AhvConfigADSFDiskMigrationPlan
         $AllProperties = ("storageContainer", "vmDisks")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

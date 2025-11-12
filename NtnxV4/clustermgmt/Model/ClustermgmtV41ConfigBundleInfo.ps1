@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigBundleInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigBundleInfo' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigBundleInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 64) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigBundleInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigBundleInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigBundleInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigBundleInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigBundleInfo
         $AllProperties = ("name")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

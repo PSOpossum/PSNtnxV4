@@ -31,7 +31,7 @@ function Initialize-VmmV41ContentVmDiskSource {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentVmDiskSource' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentVmDiskSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ExtId) {
@@ -72,12 +72,12 @@ function ConvertFrom-JsonToVmmV41ContentVmDiskSource {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentVmDiskSource' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentVmDiskSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentVmDiskSource
+        # check if Json contains properties not defined in VmmV41ContentVmDiskSource
         $AllProperties = ("extId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

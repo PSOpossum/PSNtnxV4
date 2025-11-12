@@ -36,7 +36,7 @@ function Initialize-CommonV10ConfigIPv4Address {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4CommonV10ConfigIPv4Address' | Write-Debug
+        'Creating PSCustomObject: vmm => CommonV10ConfigIPv4Address' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Value) {
@@ -86,12 +86,12 @@ function ConvertFrom-JsonToCommonV10ConfigIPv4Address {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4CommonV10ConfigIPv4Address' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => CommonV10ConfigIPv4Address' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10ConfigIPv4Address
+        # check if Json contains properties not defined in CommonV10ConfigIPv4Address
         $AllProperties = ("value", "prefixLength")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

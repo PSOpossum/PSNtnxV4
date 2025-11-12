@@ -30,7 +30,7 @@ function Initialize-PrismV41ManagementConnectionUnconfigurationSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementConnectionUnconfigurationSpec' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementConnectionUnconfigurationSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $RemoteCluster) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToPrismV41ManagementConnectionUnconfigurationSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementConnectionUnconfigurationSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementConnectionUnconfigurationSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementConnectionUnconfigurationSpec
+        # check if Json contains properties not defined in PrismV41ManagementConnectionUnconfigurationSpec
         $AllProperties = ("remoteCluster")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

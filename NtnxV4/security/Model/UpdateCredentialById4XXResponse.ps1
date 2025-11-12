@@ -35,7 +35,7 @@ function Initialize-UpdateCredentialById4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4UpdateCredentialById4XXResponse' | Write-Debug
+        'Creating PSCustomObject: security => UpdateCredentialById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToUpdateCredentialById4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4UpdateCredentialById4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: security => UpdateCredentialById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4UpdateCredentialById4XXResponse
+        # check if Json contains properties not defined in UpdateCredentialById4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

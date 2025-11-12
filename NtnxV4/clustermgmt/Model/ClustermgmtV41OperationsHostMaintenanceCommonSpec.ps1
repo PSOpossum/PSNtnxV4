@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41OperationsHostMaintenanceCommonSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41OperationsHostMaintenanceCommonSpec' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41OperationsHostMaintenanceCommonSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($TimeoutSeconds -and $TimeoutSeconds -lt 1) {
@@ -77,12 +77,12 @@ function ConvertFrom-JsonToClustermgmtV41OperationsHostMaintenanceCommonSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41OperationsHostMaintenanceCommonSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41OperationsHostMaintenanceCommonSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41OperationsHostMaintenanceCommonSpec
+        # check if Json contains properties not defined in ClustermgmtV41OperationsHostMaintenanceCommonSpec
         $AllProperties = ("vcenterInfo", "timeoutSeconds")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

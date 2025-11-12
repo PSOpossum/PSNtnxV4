@@ -35,7 +35,7 @@ function Initialize-GetDiskStatsById200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4GetDiskStatsById200Response' | Write-Debug
+        'Creating PSCustomObject: vmm => GetDiskStatsById200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToGetDiskStatsById200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4GetDiskStatsById200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => GetDiskStatsById200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4GetDiskStatsById200Response
+        # check if Json contains properties not defined in GetDiskStatsById200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

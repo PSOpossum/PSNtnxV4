@@ -35,7 +35,7 @@ function Initialize-ReEnforceVmHostAffinityPolicyById4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4ReEnforceVmHostAffinityPolicyById4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => ReEnforceVmHostAffinityPolicyById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToReEnforceVmHostAffinityPolicyById4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4ReEnforceVmHostAffinityPolicyById4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => ReEnforceVmHostAffinityPolicyById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ReEnforceVmHostAffinityPolicyById4XXResponse
+        # check if Json contains properties not defined in ReEnforceVmHostAffinityPolicyById4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

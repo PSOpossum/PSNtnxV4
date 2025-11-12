@@ -35,7 +35,7 @@ function Initialize-Unregister4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4Unregister4XXResponse' | Write-Debug
+        'Creating PSCustomObject: prism => Unregister4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToUnregister4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4Unregister4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => Unregister4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4Unregister4XXResponse
+        # check if Json contains properties not defined in Unregister4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

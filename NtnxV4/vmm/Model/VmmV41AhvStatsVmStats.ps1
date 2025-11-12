@@ -47,7 +47,7 @@ function Initialize-VmmV41AhvStatsVmStats {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvStatsVmStats' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvStatsVmStats' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -95,12 +95,12 @@ function ConvertFrom-JsonToVmmV41AhvStatsVmStats {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvStatsVmStats' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvStatsVmStats' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvStatsVmStats
+        # check if Json contains properties not defined in VmmV41AhvStatsVmStats
         $AllProperties = ("tenantId", "extId", "links", "stats")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

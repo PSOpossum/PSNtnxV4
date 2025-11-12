@@ -47,7 +47,7 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonC
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'SystemCollectionsHashtable' defined in oneOf (NtnxV4VmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'SystemCollectionsHashtable' defined in oneOf (VmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonC
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy' defined in oneOf (NtnxV4VmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvPoliciesConflictingLegacyVmAntiAffinityPolicy' defined in oneOf (VmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvPoliciesConflictingVmAntiAffinityPolicy defined in the oneOf schemas
@@ -79,7 +79,7 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonC
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvPoliciesConflictingVmAntiAffinityPolicy' defined in oneOf (NtnxV4VmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvPoliciesConflictingVmAntiAffinityPolicy' defined in oneOf (VmmV41AhvPoliciesNonCompliantVmAntiAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

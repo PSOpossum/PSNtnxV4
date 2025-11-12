@@ -30,7 +30,7 @@ function Initialize-PrismV41ManagementBackupPolicy {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementBackupPolicy' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementBackupPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $RpoInMinutes) {
@@ -79,12 +79,12 @@ function ConvertFrom-JsonToPrismV41ManagementBackupPolicy {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementBackupPolicy' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementBackupPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementBackupPolicy
+        # check if Json contains properties not defined in PrismV41ManagementBackupPolicy
         $AllProperties = ("rpoInMinutes")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

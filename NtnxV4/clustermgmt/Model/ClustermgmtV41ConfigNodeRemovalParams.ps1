@@ -45,7 +45,7 @@ function Initialize-ClustermgmtV41ConfigNodeRemovalParams {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeRemovalParams' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeRemovalParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $NodeUuids) {
@@ -97,12 +97,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNodeRemovalParams {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeRemovalParams' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeRemovalParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNodeRemovalParams
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNodeRemovalParams
         $AllProperties = ("shouldSkipPrechecks", "shouldSkipRemove", "nodeUuids", "extraParams")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

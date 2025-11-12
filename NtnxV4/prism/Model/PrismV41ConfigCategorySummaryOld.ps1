@@ -94,7 +94,7 @@ function Initialize-PrismV41ConfigCategorySummaryOld {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigCategorySummaryOld' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigCategorySummaryOld' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -186,12 +186,12 @@ function ConvertFrom-JsonToPrismV41ConfigCategorySummaryOld {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigCategorySummaryOld' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigCategorySummaryOld' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigCategorySummaryOld
+        # check if Json contains properties not defined in PrismV41ConfigCategorySummaryOld
         $AllProperties = ("tenantId", "extId", "links", "fqName", "name", "parentExtId", "userSpecifiedName", "type", "description", "associations", "childCategories", "ownerUuid")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

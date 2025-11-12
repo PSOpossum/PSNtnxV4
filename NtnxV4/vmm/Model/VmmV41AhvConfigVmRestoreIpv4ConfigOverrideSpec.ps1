@@ -35,7 +35,7 @@ function Initialize-VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$SecondaryIpAddressList -and $SecondaryIpAddressList.length -gt 100) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec
+        # check if Json contains properties not defined in VmmV41AhvConfigVmRestoreIpv4ConfigOverrideSpec
         $AllProperties = ("ipAddress", "secondaryIpAddressList")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -35,7 +35,7 @@ function Initialize-MountStorageContainer4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4MountStorageContainer4XXResponse' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => MountStorageContainer4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToMountStorageContainer4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4MountStorageContainer4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => MountStorageContainer4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4MountStorageContainer4XXResponse
+        # check if Json contains properties not defined in MountStorageContainer4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

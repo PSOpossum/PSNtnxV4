@@ -35,7 +35,7 @@ function Initialize-DeleteTemplateVersionById202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4DeleteTemplateVersionById202Response' | Write-Debug
+        'Creating PSCustomObject: vmm => DeleteTemplateVersionById202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToDeleteTemplateVersionById202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4DeleteTemplateVersionById202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => DeleteTemplateVersionById202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4DeleteTemplateVersionById202Response
+        # check if Json contains properties not defined in DeleteTemplateVersionById202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

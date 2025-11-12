@@ -8,23 +8,20 @@
 <#
 .SYNOPSIS
 
-Apply cluster profile
+Clear thick provision for a Storage Container
 
 .DESCRIPTION
 
 No description available.
 
 .PARAMETER ExtId
-UUID of the cluster profile.
+The external identifier of the Storage Container.
 
 .PARAMETER NTNXRequestId
 A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
 
-.PARAMETER ClustermgmtV41ConfigClusterReferenceListSpec
-Request body that will contain a list of clusters to apply to a cluster profile.
-
-.PARAMETER Dryrun
-A URL query parameter that allows long running operations to execute in a dry-run mode providing ability to identify trouble spots and system failures without performing the actual operation. Additionally this mode also offers a summary snapshot of the resultant system in order to better understand how things fit together. The operation runs in dry-run mode only if the provided value is true. 
+.PARAMETER XClusterId
+The external identifier of the remote cluster to which the request is forwarded.
 
 .PARAMETER WithHttpInfo
 
@@ -32,9 +29,9 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 .OUTPUTS
 
-ApplyClusterProfile202Response
+ClearThickProvisionedSpace202Response
 #>
-function Invoke-ApplyClusterProfile {
+function Clear-ThickProvisionedSpace {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -44,17 +41,14 @@ function Invoke-ApplyClusterProfile {
         [String]
         ${NTNXRequestId},
         [Parameter(Position = 2, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
-        [PSCustomObject]
-        ${ClustermgmtV41ConfigClusterReferenceListSpec},
-        [Parameter(Position = 3, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
-        [System.Nullable[Boolean]]
-        ${Dryrun},
+        [String]
+        ${XClusterId},
         [Switch]
         $WithHttpInfo
     )
 
     Process {
-        'Calling method: Invoke-ApplyClusterProfile' | Write-Debug
+        'Calling method: Clear-ThickProvisionedSpace' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -66,33 +60,24 @@ function Invoke-ApplyClusterProfile {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = $Global:PrismServerConnection
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
-        # HTTP header 'Content-Type'
-        $LocalVarContentTypes = @('application/json')
-
-        $LocalVarUri = '/clustermgmt/v4.1/config/cluster-profiles/{extId}/$actions/apply'
+        $LocalVarUri = '/clustermgmt/v4.1/config/storage-containers/{extId}/$actions/clear-thick-provisioned-space'
         if (!$ExtId) {
-            throw "Error! The required parameter `ExtId` missing when calling applyClusterProfile."
+            throw "Error! The required parameter `ExtId` missing when calling clearThickProvisionedSpace."
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
         if (!$NTNXRequestId) {
-            throw "Error! The required parameter `NTNXRequestId` missing when calling applyClusterProfile."
+            throw "Error! The required parameter `NTNXRequestId` missing when calling clearThickProvisionedSpace."
         }
         $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
 
-        if ($Dryrun) {
-            $LocalVarQueryParameters['$dryrun'] = $Dryrun
+        if ($XClusterId) {
+            $LocalVarHeaderParameters['X-Cluster-Id'] = $XClusterId
         }
-
-        if (!$ClustermgmtV41ConfigClusterReferenceListSpec) {
-            throw "Error! The required parameter `ClustermgmtV41ConfigClusterReferenceListSpec` missing when calling applyClusterProfile."
-        }
-
-        $LocalVarBodyParameter = $ClustermgmtV41ConfigClusterReferenceListSpec | ConvertTo-Json -Depth 100
 
         if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
             $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
@@ -120,7 +105,7 @@ function Invoke-ApplyClusterProfile {
                                 -QueryParameters $LocalVarQueryParameters `
                                 -FormParameters $LocalVarFormParameters `
                                 -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ApplyClusterProfile202Response" `
+                                -ReturnType "ClearThickProvisionedSpace202Response" `
                                 -IsBodyNullable $false
 
         if ($WithHttpInfo.IsPresent) {
@@ -134,17 +119,20 @@ function Invoke-ApplyClusterProfile {
 <#
 .SYNOPSIS
 
-Create a cluster profile
+Create a Storage Container
 
 .DESCRIPTION
 
 No description available.
 
+.PARAMETER XClusterId
+The external identifier of the remote cluster to which the request is forwarded.
+
 .PARAMETER NTNXRequestId
 A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
 
-.PARAMETER ClustermgmtV41ConfigClusterProfile
-The required parameters to create a cluster profile.
+.PARAMETER ClustermgmtV41ConfigStorageContainer
+No description available.
 
 .PARAMETER WithHttpInfo
 
@@ -152,23 +140,26 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 .OUTPUTS
 
-CreateClusterProfile202Response
+CreateStorageContainer202Response
 #>
-function New-ClusterProfile {
+function New-StorageContainer {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
         [String]
-        ${NTNXRequestId},
+        ${XClusterId},
         [Parameter(Position = 1, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [String]
+        ${NTNXRequestId},
+        [Parameter(Position = 2, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
         [PSCustomObject]
-        ${ClustermgmtV41ConfigClusterProfile},
+        ${ClustermgmtV41ConfigStorageContainer},
         [Switch]
         $WithHttpInfo
     )
 
     Process {
-        'Calling method: New-ClusterProfile' | Write-Debug
+        'Calling method: New-StorageContainer' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -180,25 +171,30 @@ function New-ClusterProfile {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = $Global:PrismServerConnection
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
         # HTTP header 'Content-Type'
         $LocalVarContentTypes = @('application/json')
 
-        $LocalVarUri = '/clustermgmt/v4.1/config/cluster-profiles'
+        $LocalVarUri = '/clustermgmt/v4.1/config/storage-containers'
+
+        if (!$XClusterId) {
+            throw "Error! The required parameter `XClusterId` missing when calling createStorageContainer."
+        }
+        $LocalVarHeaderParameters['X-Cluster-Id'] = $XClusterId
 
         if (!$NTNXRequestId) {
-            throw "Error! The required parameter `NTNXRequestId` missing when calling createClusterProfile."
+            throw "Error! The required parameter `NTNXRequestId` missing when calling createStorageContainer."
         }
         $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
 
-        if (!$ClustermgmtV41ConfigClusterProfile) {
-            throw "Error! The required parameter `ClustermgmtV41ConfigClusterProfile` missing when calling createClusterProfile."
+        if (!$ClustermgmtV41ConfigStorageContainer) {
+            throw "Error! The required parameter `ClustermgmtV41ConfigStorageContainer` missing when calling createStorageContainer."
         }
 
-        $LocalVarBodyParameter = $ClustermgmtV41ConfigClusterProfile | ConvertTo-Json -Depth 100
+        $LocalVarBodyParameter = $ClustermgmtV41ConfigStorageContainer | ConvertTo-Json -Depth 100
 
         if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
             $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
@@ -226,7 +222,7 @@ function New-ClusterProfile {
                                 -QueryParameters $LocalVarQueryParameters `
                                 -FormParameters $LocalVarFormParameters `
                                 -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "CreateClusterProfile202Response" `
+                                -ReturnType "CreateStorageContainer202Response" `
                                 -IsBodyNullable $false
 
         if ($WithHttpInfo.IsPresent) {
@@ -240,17 +236,20 @@ function New-ClusterProfile {
 <#
 .SYNOPSIS
 
-Delete cluster profile
+Delete a Storage Container
 
 .DESCRIPTION
 
 No description available.
 
 .PARAMETER ExtId
-UUID of the cluster profile.
+The external identifier of the Storage Container.
 
 .PARAMETER NTNXRequestId
 A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
+
+.PARAMETER IgnoreSmallFiles
+No description available.
 
 .PARAMETER WithHttpInfo
 
@@ -258,9 +257,9 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 .OUTPUTS
 
-DeleteClusterProfileById202Response
+DeleteStorageContainerById202Response
 #>
-function Invoke-DeleteClusterProfileById {
+function Invoke-DeleteStorageContainerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -269,12 +268,15 @@ function Invoke-DeleteClusterProfileById {
         [Parameter(Position = 1, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
         [String]
         ${NTNXRequestId},
+        [Parameter(Position = 2, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [System.Nullable[Boolean]]
+        ${IgnoreSmallFiles},
         [Switch]
         $WithHttpInfo
     )
 
     Process {
-        'Calling method: Invoke-DeleteClusterProfileById' | Write-Debug
+        'Calling method: Invoke-DeleteStorageContainerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -286,20 +288,24 @@ function Invoke-DeleteClusterProfileById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = $Global:PrismServerConnection
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
-        $LocalVarUri = '/clustermgmt/v4.1/config/cluster-profiles/{extId}'
+        $LocalVarUri = '/clustermgmt/v4.1/config/storage-containers/{extId}'
         if (!$ExtId) {
-            throw "Error! The required parameter `ExtId` missing when calling deleteClusterProfileById."
+            throw "Error! The required parameter `ExtId` missing when calling deleteStorageContainerById."
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
         if (!$NTNXRequestId) {
-            throw "Error! The required parameter `NTNXRequestId` missing when calling deleteClusterProfileById."
+            throw "Error! The required parameter `NTNXRequestId` missing when calling deleteStorageContainerById."
         }
         $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
+
+        if ($IgnoreSmallFiles) {
+            $LocalVarQueryParameters['ignoreSmallFiles'] = $IgnoreSmallFiles
+        }
 
         if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
             $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
@@ -327,7 +333,7 @@ function Invoke-DeleteClusterProfileById {
                                 -QueryParameters $LocalVarQueryParameters `
                                 -FormParameters $LocalVarFormParameters `
                                 -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "DeleteClusterProfileById202Response" `
+                                -ReturnType "DeleteStorageContainerById202Response" `
                                 -IsBodyNullable $false
 
         if ($WithHttpInfo.IsPresent) {
@@ -341,20 +347,14 @@ function Invoke-DeleteClusterProfileById {
 <#
 .SYNOPSIS
 
-Disassociate cluster from a cluster profile
+Get Storage Container configuration
 
 .DESCRIPTION
 
 No description available.
 
 .PARAMETER ExtId
-UUID of the cluster profile.
-
-.PARAMETER NTNXRequestId
-A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
-
-.PARAMETER ClustermgmtV41ConfigClusterReferenceListSpec
-Request body that will accept a list of clusters to disassociate from the cluster profile.
+The external identifier of the Storage Container.
 
 .PARAMETER WithHttpInfo
 
@@ -362,26 +362,20 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 .OUTPUTS
 
-DisassociateClusterFromClusterProfile202Response
+GetStorageContainerById200Response
 #>
-function Invoke-DisassociateClusterFromClusterProfile {
+function Get-StorageContainerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
         [String]
         ${ExtId},
-        [Parameter(Position = 1, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
-        [String]
-        ${NTNXRequestId},
-        [Parameter(Position = 2, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
-        [PSCustomObject]
-        ${ClustermgmtV41ConfigClusterReferenceListSpec},
         [Switch]
         $WithHttpInfo
     )
 
     Process {
-        'Calling method: Invoke-DisassociateClusterFromClusterProfile' | Write-Debug
+        'Calling method: Get-StorageContainerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -393,117 +387,13 @@ function Invoke-DisassociateClusterFromClusterProfile {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = $Global:PrismServerConnection
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
-        # HTTP header 'Content-Type'
-        $LocalVarContentTypes = @('application/json')
-
-        $LocalVarUri = '/clustermgmt/v4.1/config/cluster-profiles/{extId}/$actions/disassociate-cluster'
+        $LocalVarUri = '/clustermgmt/v4.1/config/storage-containers/{extId}'
         if (!$ExtId) {
-            throw "Error! The required parameter `ExtId` missing when calling disassociateClusterFromClusterProfile."
-        }
-        $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
-
-        if (!$NTNXRequestId) {
-            throw "Error! The required parameter `NTNXRequestId` missing when calling disassociateClusterFromClusterProfile."
-        }
-        $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
-
-        if (!$ClustermgmtV41ConfigClusterReferenceListSpec) {
-            throw "Error! The required parameter `ClustermgmtV41ConfigClusterReferenceListSpec` missing when calling disassociateClusterFromClusterProfile."
-        }
-
-        $LocalVarBodyParameter = $ClustermgmtV41ConfigClusterReferenceListSpec | ConvertTo-Json -Depth 100
-
-        if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
-            $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
-        } else {
-            $apiKeyPrefix = ""
-        }
-        if ($Configuration["ApiKey"] -and $Configuration["ApiKey"]["X-ntnx-api-key"]) {
-            $LocalVarHeaderParameters['X-ntnx-api-key'] = $apiKeyPrefix + $Configuration["ApiKey"]["X-ntnx-api-key"]
-            Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
-        }
-
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
-            Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
-        }
-
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "DisassociateClusterFromClusterProfile202Response" `
-                                -IsBodyNullable $false
-
-        if ($WithHttpInfo.IsPresent) {
-            return $LocalVarResult
-        } else {
-            return $LocalVarResult["Response"]
-        }
-    }
-}
-
-<#
-.SYNOPSIS
-
-Get cluster profile
-
-.DESCRIPTION
-
-No description available.
-
-.PARAMETER ExtId
-UUID of the cluster profile.
-
-.PARAMETER WithHttpInfo
-
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
-
-.OUTPUTS
-
-GetClusterProfileById200Response
-#>
-function Get-ClusterProfileById {
-    [CmdletBinding()]
-    Param (
-        [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
-        [String]
-        ${ExtId},
-        [Switch]
-        $WithHttpInfo
-    )
-
-    Process {
-        'Calling method: Get-ClusterProfileById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
-
-        $LocalVarAccepts = @()
-        $LocalVarContentTypes = @()
-        $LocalVarQueryParameters = @{}
-        $LocalVarHeaderParameters = @{}
-        $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
-        $LocalVarCookieParameters = @{}
-        $LocalVarBodyParameter = $null
-
-        $Configuration = $Global:PrismServerConnection
-        # HTTP header 'Accept' (if needed)
-        $LocalVarAccepts = @('application/json')
-
-        $LocalVarUri = '/clustermgmt/v4.1/config/cluster-profiles/{extId}'
-        if (!$ExtId) {
-            throw "Error! The required parameter `ExtId` missing when calling getClusterProfileById."
+            throw "Error! The required parameter `ExtId` missing when calling getStorageContainerById."
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
@@ -533,7 +423,7 @@ function Get-ClusterProfileById {
                                 -QueryParameters $LocalVarQueryParameters `
                                 -FormParameters $LocalVarFormParameters `
                                 -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "GetClusterProfileById200Response" `
+                                -ReturnType "GetStorageContainerById200Response" `
                                 -IsBodyNullable $false
 
         if ($WithHttpInfo.IsPresent) {
@@ -547,7 +437,259 @@ function Get-ClusterProfileById {
 <#
 .SYNOPSIS
 
-List cluster profiles
+Get Stats for a Storage Container
+
+.DESCRIPTION
+
+No description available.
+
+.PARAMETER ExtId
+The external identifier of the Storage Container.
+
+.PARAMETER StartTime
+The start time of the period for which stats should be reported. The value should be in extended ISO-8601 format. For example, start time of 2022-04-23T01:23:45.678+09:00 would consider all stats starting at 1:23:45.678 on the 23rd of April 2022. Details around ISO-8601 format can be found at https://www.iso.org/standard/70907.html 
+
+.PARAMETER EndTime
+The end time of the period for which stats should be reported. The value should be in extended ISO-8601 format. For example, end time of 2022-04-23T013:23:45.678+09:00 would consider all stats till 13:23:45 .678 on the 23rd of April 2022. Details around ISO-8601 format can be found at https://www.iso.org/standard/70907.html 
+
+.PARAMETER SamplingInterval
+The sampling interval in seconds at which statistical data should be collected. For example, if you want performance statistics every 30 seconds, then provide the value as 30. 
+
+.PARAMETER StatType
+No description available.
+
+.PARAMETER WithHttpInfo
+
+A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+
+.OUTPUTS
+
+GetStorageContainerStats200Response
+#>
+function Get-StorageContainerStats {
+    [CmdletBinding()]
+    Param (
+        [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [String]
+        ${ExtId},
+        [Parameter(Position = 1, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [System.DateTime]
+        ${StartTime},
+        [Parameter(Position = 2, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [System.DateTime]
+        ${EndTime},
+        [Parameter(Position = 3, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [System.Nullable[Int32]]
+        ${SamplingInterval},
+        [Parameter(Position = 4, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [PSCustomObject]
+        ${StatType},
+        [Switch]
+        $WithHttpInfo
+    )
+
+    Process {
+        'Calling method: Get-StorageContainerStats' | Write-Debug
+        $PSBoundParameters | Out-DebugParameter | Write-Debug
+
+        $LocalVarAccepts = @()
+        $LocalVarContentTypes = @()
+        $LocalVarQueryParameters = @{}
+        $LocalVarHeaderParameters = @{}
+        $LocalVarFormParameters = @{}
+        $LocalVarPathParameters = @{}
+        $LocalVarCookieParameters = @{}
+        $LocalVarBodyParameter = $null
+
+        $Configuration = Get-Configuration
+        # HTTP header 'Accept' (if needed)
+        $LocalVarAccepts = @('application/json')
+
+        $LocalVarUri = '/clustermgmt/v4.1/stats/storage-containers/{extId}'
+        if (!$ExtId) {
+            throw "Error! The required parameter `ExtId` missing when calling getStorageContainerStats."
+        }
+        $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
+
+        if (!$StartTime) {
+            throw "Error! The required parameter `StartTime` missing when calling getStorageContainerStats."
+        }
+        $LocalVarQueryParameters['$startTime'] = $StartTime
+
+        if (!$EndTime) {
+            throw "Error! The required parameter `EndTime` missing when calling getStorageContainerStats."
+        }
+        $LocalVarQueryParameters['$endTime'] = $EndTime
+
+        if ($SamplingInterval) {
+            $LocalVarQueryParameters['$samplingInterval'] = $SamplingInterval
+        }
+
+        if ($StatType) {
+            $LocalVarQueryParameters['$statType'] = $StatType
+        }
+
+        if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
+            $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
+        } else {
+            $apiKeyPrefix = ""
+        }
+        if ($Configuration["ApiKey"] -and $Configuration["ApiKey"]["X-ntnx-api-key"]) {
+            $LocalVarHeaderParameters['X-ntnx-api-key'] = $apiKeyPrefix + $Configuration["ApiKey"]["X-ntnx-api-key"]
+            Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
+        }
+
+        if ($Configuration["Username"] -and $Configuration["Password"]) {
+            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
+            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
+            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+            Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
+        }
+
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
+                                -Uri $LocalVarUri `
+                                -Accepts $LocalVarAccepts `
+                                -ContentTypes $LocalVarContentTypes `
+                                -Body $LocalVarBodyParameter `
+                                -HeaderParameters $LocalVarHeaderParameters `
+                                -QueryParameters $LocalVarQueryParameters `
+                                -FormParameters $LocalVarFormParameters `
+                                -CookieParameters $LocalVarCookieParameters `
+                                -ReturnType "GetStorageContainerStats200Response" `
+                                -IsBodyNullable $false
+
+        if ($WithHttpInfo.IsPresent) {
+            return $LocalVarResult
+        } else {
+            return $LocalVarResult["Response"]
+        }
+    }
+}
+
+<#
+.SYNOPSIS
+
+List datastores of a cluster
+
+.DESCRIPTION
+
+No description available.
+
+.PARAMETER ClusterExtId
+The cluster from which the datastores needs to be listed.
+
+.PARAMETER Page
+A URL query parameter that specifies the page number of the result set. It must be a positive integer between 0 and the maximum number of pages that are available for that resource. Any number out of this range might lead to no results. 
+
+.PARAMETER Limit
+A URL query parameter that specifies the total number of records returned in the result set.  Must be a positive integer between 1 and 100. Any number out of this range will lead to a validation error. If the limit is not provided, a default value of 50 records will be returned in the result set. 
+
+.PARAMETER Filter
+A URL query parameter that allows clients to filter a collection of resources. The expression specified with $filter is evaluated for each resource in the collection, and only items where the expression evaluates to true are included in the response. Expression specified with the $filter must conform to the [OData V4.01](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html) URL conventions. For example, filter '$filter=name eq 'karbon-ntnx-1.0' would filter the result on cluster name 'karbon-ntnx1.0', filter '$filter=startswith(name, 'C')' would filter on cluster name starting with 'C'.
+
+.PARAMETER WithHttpInfo
+
+A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+
+.OUTPUTS
+
+ListDataStoresByClusterId200Response
+#>
+function Invoke-ListDataStoresByClusterId {
+    [CmdletBinding()]
+    Param (
+        [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [String]
+        ${ClusterExtId},
+        [Parameter(Position = 1, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [System.Nullable[Int32]]
+        ${Page},
+        [Parameter(Position = 2, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [System.Nullable[Int32]]
+        ${Limit},
+        [Parameter(Position = 3, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [String]
+        ${Filter},
+        [Switch]
+        $WithHttpInfo
+    )
+
+    Process {
+        'Calling method: Invoke-ListDataStoresByClusterId' | Write-Debug
+        $PSBoundParameters | Out-DebugParameter | Write-Debug
+
+        $LocalVarAccepts = @()
+        $LocalVarContentTypes = @()
+        $LocalVarQueryParameters = @{}
+        $LocalVarHeaderParameters = @{}
+        $LocalVarFormParameters = @{}
+        $LocalVarPathParameters = @{}
+        $LocalVarCookieParameters = @{}
+        $LocalVarBodyParameter = $null
+
+        $Configuration = Get-Configuration
+        # HTTP header 'Accept' (if needed)
+        $LocalVarAccepts = @('application/json')
+
+        $LocalVarUri = '/clustermgmt/v4.1/config/clusters/{clusterExtId}/storage-containers/datastores'
+        if (!$ClusterExtId) {
+            throw "Error! The required parameter `ClusterExtId` missing when calling listDataStoresByClusterId."
+        }
+        $LocalVarUri = $LocalVarUri.replace('{clusterExtId}', [System.Web.HTTPUtility]::UrlEncode($ClusterExtId))
+
+        if ($Page) {
+            $LocalVarQueryParameters['$page'] = $Page
+        }
+
+        if ($Limit) {
+            $LocalVarQueryParameters['$limit'] = $Limit
+        }
+
+        if ($Filter) {
+            $LocalVarQueryParameters['$filter'] = $Filter
+        }
+
+        if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
+            $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
+        } else {
+            $apiKeyPrefix = ""
+        }
+        if ($Configuration["ApiKey"] -and $Configuration["ApiKey"]["X-ntnx-api-key"]) {
+            $LocalVarHeaderParameters['X-ntnx-api-key'] = $apiKeyPrefix + $Configuration["ApiKey"]["X-ntnx-api-key"]
+            Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
+        }
+
+        if ($Configuration["Username"] -and $Configuration["Password"]) {
+            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
+            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
+            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+            Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
+        }
+
+        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
+                                -Uri $LocalVarUri `
+                                -Accepts $LocalVarAccepts `
+                                -ContentTypes $LocalVarContentTypes `
+                                -Body $LocalVarBodyParameter `
+                                -HeaderParameters $LocalVarHeaderParameters `
+                                -QueryParameters $LocalVarQueryParameters `
+                                -FormParameters $LocalVarFormParameters `
+                                -CookieParameters $LocalVarCookieParameters `
+                                -ReturnType "ListDataStoresByClusterId200Response" `
+                                -IsBodyNullable $false
+
+        if ($WithHttpInfo.IsPresent) {
+            return $LocalVarResult
+        } else {
+            return $LocalVarResult["Response"]
+        }
+    }
+}
+
+<#
+.SYNOPSIS
+
+List Storage Containers
 
 .DESCRIPTION
 
@@ -574,9 +716,9 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 .OUTPUTS
 
-ListClusterProfiles200Response
+ListStorageContainers200Response
 #>
-function Invoke-ListClusterProfiles {
+function Invoke-ListStorageContainers {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -599,7 +741,7 @@ function Invoke-ListClusterProfiles {
     )
 
     Process {
-        'Calling method: Invoke-ListClusterProfiles' | Write-Debug
+        'Calling method: Invoke-ListStorageContainers' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -611,11 +753,11 @@ function Invoke-ListClusterProfiles {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = $Global:PrismServerConnection
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
-        $LocalVarUri = '/clustermgmt/v4.1/config/cluster-profiles'
+        $LocalVarUri = '/clustermgmt/v4.1/config/storage-containers'
 
         if ($Page) {
             $LocalVarQueryParameters['$page'] = $Page
@@ -663,7 +805,7 @@ function Invoke-ListClusterProfiles {
                                 -QueryParameters $LocalVarQueryParameters `
                                 -FormParameters $LocalVarFormParameters `
                                 -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ListClusterProfiles200Response" `
+                                -ReturnType "ListStorageContainers200Response" `
                                 -IsBodyNullable $false
 
         if ($WithHttpInfo.IsPresent) {
@@ -677,26 +819,17 @@ function Invoke-ListClusterProfiles {
 <#
 .SYNOPSIS
 
-Update cluster profile
+Mount Storage Container on ESX datastore
 
 .DESCRIPTION
 
 No description available.
 
 .PARAMETER ExtId
-UUID of the cluster profile.
+The external identifier of the Storage Container.
 
-.PARAMETER IfMatch
-The If-Match request header makes the request conditional. When not provided, the server will respond with  an HTTP-428 (Precondition Required) response code indicating that the server requires the request to be conditional. The server will allow the successful completion of PUT and PATCH operations, if the resource matches the ETag value returned to the response of a GET operation. If the conditional does not match, then an HTTP-412 (Precondition Failed) response will be returned.
-
-.PARAMETER NTNXRequestId
-A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
-
-.PARAMETER ClustermgmtV41ConfigClusterProfile
-Updates a cluster profile with the settings provided in request body.
-
-.PARAMETER Dryrun
-A URL query parameter that allows long running operations to execute in a dry-run mode providing ability to identify trouble spots and system failures without performing the actual operation. Additionally this mode also offers a summary snapshot of the resultant system in order to better understand how things fit together. The operation runs in dry-run mode only if the provided value is true. 
+.PARAMETER ClustermgmtV41ConfigDataStoreMount
+No description available.
 
 .PARAMETER WithHttpInfo
 
@@ -704,9 +837,225 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 .OUTPUTS
 
-UpdateClusterProfileById202Response
+MountStorageContainer202Response
 #>
-function Update-ClusterProfileById {
+function Mount-StorageContainer {
+    [CmdletBinding()]
+    Param (
+        [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [String]
+        ${ExtId},
+        [Parameter(Position = 1, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [PSCustomObject]
+        ${ClustermgmtV41ConfigDataStoreMount},
+        [Switch]
+        $WithHttpInfo
+    )
+
+    Process {
+        'Calling method: Mount-StorageContainer' | Write-Debug
+        $PSBoundParameters | Out-DebugParameter | Write-Debug
+
+        $LocalVarAccepts = @()
+        $LocalVarContentTypes = @()
+        $LocalVarQueryParameters = @{}
+        $LocalVarHeaderParameters = @{}
+        $LocalVarFormParameters = @{}
+        $LocalVarPathParameters = @{}
+        $LocalVarCookieParameters = @{}
+        $LocalVarBodyParameter = $null
+
+        $Configuration = Get-Configuration
+        # HTTP header 'Accept' (if needed)
+        $LocalVarAccepts = @('application/json')
+
+        # HTTP header 'Content-Type'
+        $LocalVarContentTypes = @('application/json')
+
+        $LocalVarUri = '/clustermgmt/v4.1/config/storage-containers/{extId}/$actions/mount'
+        if (!$ExtId) {
+            throw "Error! The required parameter `ExtId` missing when calling mountStorageContainer."
+        }
+        $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
+
+        if (!$ClustermgmtV41ConfigDataStoreMount) {
+            throw "Error! The required parameter `ClustermgmtV41ConfigDataStoreMount` missing when calling mountStorageContainer."
+        }
+
+        $LocalVarBodyParameter = $ClustermgmtV41ConfigDataStoreMount | ConvertTo-Json -Depth 100
+
+        if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
+            $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
+        } else {
+            $apiKeyPrefix = ""
+        }
+        if ($Configuration["ApiKey"] -and $Configuration["ApiKey"]["X-ntnx-api-key"]) {
+            $LocalVarHeaderParameters['X-ntnx-api-key'] = $apiKeyPrefix + $Configuration["ApiKey"]["X-ntnx-api-key"]
+            Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
+        }
+
+        if ($Configuration["Username"] -and $Configuration["Password"]) {
+            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
+            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
+            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+            Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
+        }
+
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
+                                -Uri $LocalVarUri `
+                                -Accepts $LocalVarAccepts `
+                                -ContentTypes $LocalVarContentTypes `
+                                -Body $LocalVarBodyParameter `
+                                -HeaderParameters $LocalVarHeaderParameters `
+                                -QueryParameters $LocalVarQueryParameters `
+                                -FormParameters $LocalVarFormParameters `
+                                -CookieParameters $LocalVarCookieParameters `
+                                -ReturnType "MountStorageContainer202Response" `
+                                -IsBodyNullable $false
+
+        if ($WithHttpInfo.IsPresent) {
+            return $LocalVarResult
+        } else {
+            return $LocalVarResult["Response"]
+        }
+    }
+}
+
+<#
+.SYNOPSIS
+
+Unmount Storage Container from ESX datastore
+
+.DESCRIPTION
+
+No description available.
+
+.PARAMETER ExtId
+The external identifier of the Storage Container.
+
+.PARAMETER ClustermgmtV41ConfigDataStoreUnmount
+No description available.
+
+.PARAMETER WithHttpInfo
+
+A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+
+.OUTPUTS
+
+UnmountStorageContainer202Response
+#>
+function Invoke-UnmountStorageContainer {
+    [CmdletBinding()]
+    Param (
+        [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [String]
+        ${ExtId},
+        [Parameter(Position = 1, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
+        [PSCustomObject]
+        ${ClustermgmtV41ConfigDataStoreUnmount},
+        [Switch]
+        $WithHttpInfo
+    )
+
+    Process {
+        'Calling method: Invoke-UnmountStorageContainer' | Write-Debug
+        $PSBoundParameters | Out-DebugParameter | Write-Debug
+
+        $LocalVarAccepts = @()
+        $LocalVarContentTypes = @()
+        $LocalVarQueryParameters = @{}
+        $LocalVarHeaderParameters = @{}
+        $LocalVarFormParameters = @{}
+        $LocalVarPathParameters = @{}
+        $LocalVarCookieParameters = @{}
+        $LocalVarBodyParameter = $null
+
+        $Configuration = Get-Configuration
+        # HTTP header 'Accept' (if needed)
+        $LocalVarAccepts = @('application/json')
+
+        # HTTP header 'Content-Type'
+        $LocalVarContentTypes = @('application/json')
+
+        $LocalVarUri = '/clustermgmt/v4.1/config/storage-containers/{extId}/$actions/unmount'
+        if (!$ExtId) {
+            throw "Error! The required parameter `ExtId` missing when calling unmountStorageContainer."
+        }
+        $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
+
+        if (!$ClustermgmtV41ConfigDataStoreUnmount) {
+            throw "Error! The required parameter `ClustermgmtV41ConfigDataStoreUnmount` missing when calling unmountStorageContainer."
+        }
+
+        $LocalVarBodyParameter = $ClustermgmtV41ConfigDataStoreUnmount | ConvertTo-Json -Depth 100
+
+        if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
+            $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
+        } else {
+            $apiKeyPrefix = ""
+        }
+        if ($Configuration["ApiKey"] -and $Configuration["ApiKey"]["X-ntnx-api-key"]) {
+            $LocalVarHeaderParameters['X-ntnx-api-key'] = $apiKeyPrefix + $Configuration["ApiKey"]["X-ntnx-api-key"]
+            Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
+        }
+
+        if ($Configuration["Username"] -and $Configuration["Password"]) {
+            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
+            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
+            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+            Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
+        }
+
+        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
+                                -Uri $LocalVarUri `
+                                -Accepts $LocalVarAccepts `
+                                -ContentTypes $LocalVarContentTypes `
+                                -Body $LocalVarBodyParameter `
+                                -HeaderParameters $LocalVarHeaderParameters `
+                                -QueryParameters $LocalVarQueryParameters `
+                                -FormParameters $LocalVarFormParameters `
+                                -CookieParameters $LocalVarCookieParameters `
+                                -ReturnType "UnmountStorageContainer202Response" `
+                                -IsBodyNullable $false
+
+        if ($WithHttpInfo.IsPresent) {
+            return $LocalVarResult
+        } else {
+            return $LocalVarResult["Response"]
+        }
+    }
+}
+
+<#
+.SYNOPSIS
+
+Update a Storage Container
+
+.DESCRIPTION
+
+No description available.
+
+.PARAMETER ExtId
+The external identifier of the Storage Container.
+
+.PARAMETER IfMatch
+The If-Match request header makes the request conditional. When not provided, the server will respond with  an HTTP-428 (Precondition Required) response code indicating that the server requires the request to be conditional. The server will allow the successful completion of PUT and PATCH operations, if the resource matches the ETag value returned to the response of a GET operation. If the conditional does not match, then an HTTP-412 (Precondition Failed) response will be returned.
+
+.PARAMETER NTNXRequestId
+A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
+
+.PARAMETER ClustermgmtV41ConfigStorageContainer
+No description available.
+
+.PARAMETER WithHttpInfo
+
+A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+
+.OUTPUTS
+
+UpdateStorageContainerById202Response
+#>
+function Update-StorageContainerById {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -720,16 +1069,13 @@ function Update-ClusterProfileById {
         ${NTNXRequestId},
         [Parameter(Position = 3, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
         [PSCustomObject]
-        ${ClustermgmtV41ConfigClusterProfile},
-        [Parameter(Position = 4, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
-        [System.Nullable[Boolean]]
-        ${Dryrun},
+        ${ClustermgmtV41ConfigStorageContainer},
         [Switch]
         $WithHttpInfo
     )
 
     Process {
-        'Calling method: Update-ClusterProfileById' | Write-Debug
+        'Calling method: Update-StorageContainerById' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
@@ -741,38 +1087,34 @@ function Update-ClusterProfileById {
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = $Global:PrismServerConnection
+        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
         # HTTP header 'Content-Type'
         $LocalVarContentTypes = @('application/json')
 
-        $LocalVarUri = '/clustermgmt/v4.1/config/cluster-profiles/{extId}'
+        $LocalVarUri = '/clustermgmt/v4.1/config/storage-containers/{extId}'
         if (!$ExtId) {
-            throw "Error! The required parameter `ExtId` missing when calling updateClusterProfileById."
+            throw "Error! The required parameter `ExtId` missing when calling updateStorageContainerById."
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
         if (!$IfMatch) {
-            throw "Error! The required parameter `IfMatch` missing when calling updateClusterProfileById."
+            throw "Error! The required parameter `IfMatch` missing when calling updateStorageContainerById."
         }
         $LocalVarHeaderParameters['If-Match'] = $IfMatch
 
         if (!$NTNXRequestId) {
-            throw "Error! The required parameter `NTNXRequestId` missing when calling updateClusterProfileById."
+            throw "Error! The required parameter `NTNXRequestId` missing when calling updateStorageContainerById."
         }
         $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
 
-        if ($Dryrun) {
-            $LocalVarQueryParameters['$dryrun'] = $Dryrun
+        if (!$ClustermgmtV41ConfigStorageContainer) {
+            throw "Error! The required parameter `ClustermgmtV41ConfigStorageContainer` missing when calling updateStorageContainerById."
         }
 
-        if (!$ClustermgmtV41ConfigClusterProfile) {
-            throw "Error! The required parameter `ClustermgmtV41ConfigClusterProfile` missing when calling updateClusterProfileById."
-        }
-
-        $LocalVarBodyParameter = $ClustermgmtV41ConfigClusterProfile | ConvertTo-Json -Depth 100
+        $LocalVarBodyParameter = $ClustermgmtV41ConfigStorageContainer | ConvertTo-Json -Depth 100
 
         if ($Configuration["ApiKeyPrefix"] -and $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]) {
             $apiKeyPrefix = $Configuration["ApiKeyPrefix"]["X-ntnx-api-key"]
@@ -800,7 +1142,7 @@ function Update-ClusterProfileById {
                                 -QueryParameters $LocalVarQueryParameters `
                                 -FormParameters $LocalVarFormParameters `
                                 -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "UpdateClusterProfileById202Response" `
+                                -ReturnType "UpdateStorageContainerById202Response" `
                                 -IsBodyNullable $false
 
         if ($WithHttpInfo.IsPresent) {

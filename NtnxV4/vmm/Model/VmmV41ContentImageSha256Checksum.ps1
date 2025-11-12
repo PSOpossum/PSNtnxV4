@@ -31,7 +31,7 @@ function Initialize-VmmV41ContentImageSha256Checksum {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentImageSha256Checksum' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentImageSha256Checksum' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $HexDigest) {
@@ -72,12 +72,12 @@ function ConvertFrom-JsonToVmmV41ContentImageSha256Checksum {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentImageSha256Checksum' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentImageSha256Checksum' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentImageSha256Checksum
+        # check if Json contains properties not defined in VmmV41ContentImageSha256Checksum
         $AllProperties = ("hexDigest")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

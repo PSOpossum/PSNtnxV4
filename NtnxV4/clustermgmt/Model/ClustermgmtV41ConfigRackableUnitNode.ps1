@@ -41,7 +41,7 @@ function Initialize-ClustermgmtV41ConfigRackableUnitNode {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigRackableUnitNode' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigRackableUnitNode' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -80,12 +80,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigRackableUnitNode {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigRackableUnitNode' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigRackableUnitNode' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigRackableUnitNode
+        # check if Json contains properties not defined in ClustermgmtV41ConfigRackableUnitNode
         $AllProperties = ("uuid", "svmId", "position")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

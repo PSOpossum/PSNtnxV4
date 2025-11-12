@@ -35,7 +35,7 @@ function Initialize-Restore202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4Restore202Response' | Write-Debug
+        'Creating PSCustomObject: prism => Restore202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToRestore202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4Restore202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => Restore202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4Restore202Response
+        # check if Json contains properties not defined in Restore202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

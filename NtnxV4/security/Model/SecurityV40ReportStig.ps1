@@ -97,7 +97,7 @@ function Initialize-SecurityV40ReportStig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ReportStig' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ReportStig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -182,12 +182,12 @@ function ConvertFrom-JsonToSecurityV40ReportStig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ReportStig' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ReportStig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ReportStig
+        # check if Json contains properties not defined in SecurityV40ReportStig
         $AllProperties = ("tenantId", "extId", "links", "title", "ruleId", "stigVersion", "identifiers", "affectedClusters", "severity", "status", "comments", "fixText", "benchmarkId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

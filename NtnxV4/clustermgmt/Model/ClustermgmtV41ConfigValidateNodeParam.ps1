@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigValidateNodeParam {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigValidateNodeParam' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigValidateNodeParam' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Spec) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigValidateNodeParam {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigValidateNodeParam' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigValidateNodeParam' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigValidateNodeParam
+        # check if Json contains properties not defined in ClustermgmtV41ConfigValidateNodeParam
         $AllProperties = ("spec")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

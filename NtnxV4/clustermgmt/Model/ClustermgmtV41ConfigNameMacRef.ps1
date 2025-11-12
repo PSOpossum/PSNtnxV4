@@ -36,7 +36,7 @@ function Initialize-ClustermgmtV41ConfigNameMacRef {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNameMacRef' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNameMacRef' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 64) {
@@ -78,12 +78,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNameMacRef {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNameMacRef' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNameMacRef' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNameMacRef
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNameMacRef
         $AllProperties = ("name", "mac")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

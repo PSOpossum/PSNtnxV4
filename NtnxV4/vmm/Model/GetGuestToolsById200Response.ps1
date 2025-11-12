@@ -35,7 +35,7 @@ function Initialize-GetGuestToolsById200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4GetGuestToolsById200Response' | Write-Debug
+        'Creating PSCustomObject: vmm => GetGuestToolsById200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToGetGuestToolsById200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4GetGuestToolsById200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => GetGuestToolsById200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4GetGuestToolsById200Response
+        # check if Json contains properties not defined in GetGuestToolsById200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

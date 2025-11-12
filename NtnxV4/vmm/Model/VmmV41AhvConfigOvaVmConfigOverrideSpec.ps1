@@ -65,7 +65,7 @@ function Initialize-VmmV41AhvConfigOvaVmConfigOverrideSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigOvaVmConfigOverrideSpec' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigOvaVmConfigOverrideSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 80) {
@@ -157,12 +157,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigOvaVmConfigOverrideSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigOvaVmConfigOverrideSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigOvaVmConfigOverrideSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigOvaVmConfigOverrideSpec
+        # check if Json contains properties not defined in VmmV41AhvConfigOvaVmConfigOverrideSpec
         $AllProperties = ("name", "numSockets", "numCoresPerSocket", "numThreadsPerCore", "memorySizeBytes", "nics", "cdRoms", "categories")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigApplyClusterProfileApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigApplyClusterProfileApiResponse' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigApplyClusterProfileApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigApplyClusterProfileApiResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigApplyClusterProfileApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigApplyClusterProfileApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigApplyClusterProfileApiResponse
+        # check if Json contains properties not defined in ClustermgmtV41ConfigApplyClusterProfileApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

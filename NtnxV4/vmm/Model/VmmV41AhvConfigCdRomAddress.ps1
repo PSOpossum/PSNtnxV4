@@ -36,7 +36,7 @@ function Initialize-VmmV41AhvConfigCdRomAddress {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigCdRomAddress' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigCdRomAddress' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -74,12 +74,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigCdRomAddress {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigCdRomAddress' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigCdRomAddress' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigCdRomAddress
+        # check if Json contains properties not defined in VmmV41AhvConfigCdRomAddress
         $AllProperties = ("busType", "index")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

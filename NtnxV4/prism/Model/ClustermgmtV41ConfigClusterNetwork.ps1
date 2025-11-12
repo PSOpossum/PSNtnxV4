@@ -46,7 +46,7 @@ function Initialize-ClustermgmtV41ConfigClusterNetwork {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4ClustermgmtV41ConfigClusterNetwork' | Write-Debug
+        'Creating PSCustomObject: prism => ClustermgmtV41ConfigClusterNetwork' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$NameServers -and $NameServers.length -gt 1024) {
@@ -102,12 +102,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigClusterNetwork {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4ClustermgmtV41ConfigClusterNetwork' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => ClustermgmtV41ConfigClusterNetwork' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigClusterNetwork
+        # check if Json contains properties not defined in ClustermgmtV41ConfigClusterNetwork
         $AllProperties = ("externalAddress", "nameServers", "ntpServers", "fqdn")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

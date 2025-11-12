@@ -89,7 +89,7 @@ function Initialize-PrismV41OperationsBatch {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41OperationsBatch' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41OperationsBatch' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -149,12 +149,12 @@ function ConvertFrom-JsonToPrismV41OperationsBatch {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41OperationsBatch' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41OperationsBatch' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41OperationsBatch
+        # check if Json contains properties not defined in PrismV41OperationsBatch
         $AllProperties = ("tenantId", "extId", "links", "name", "startTime", "endTime", "size", "successCount", "failedCount", "completionStatus", "executionStatus", "shouldStopOnError")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

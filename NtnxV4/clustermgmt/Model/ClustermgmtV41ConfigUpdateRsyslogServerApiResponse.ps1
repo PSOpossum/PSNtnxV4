@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigUpdateRsyslogServerApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUpdateRsyslogServerApiResponse' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigUpdateRsyslogServerApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigUpdateRsyslogServerApiResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUpdateRsyslogServerApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigUpdateRsyslogServerApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigUpdateRsyslogServerApiResponse
+        # check if Json contains properties not defined in ClustermgmtV41ConfigUpdateRsyslogServerApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

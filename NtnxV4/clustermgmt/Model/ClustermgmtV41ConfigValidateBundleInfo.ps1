@@ -31,7 +31,7 @@ function Initialize-ClustermgmtV41ConfigValidateBundleInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigValidateBundleInfo' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigValidateBundleInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigValidateBundleInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigValidateBundleInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigValidateBundleInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigValidateBundleInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigValidateBundleInfo
         $AllProperties = ("md5Sum")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

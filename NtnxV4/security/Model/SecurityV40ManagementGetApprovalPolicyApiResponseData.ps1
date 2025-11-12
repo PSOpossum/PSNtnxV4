@@ -47,7 +47,7 @@ function ConvertFrom-JsonToSecurityV40ManagementGetApprovalPolicyApiResponseData
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'SecurityV40ErrorErrorResponse' defined in oneOf (NtnxV4SecurityV40ManagementGetApprovalPolicyApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'SecurityV40ErrorErrorResponse' defined in oneOf (SecurityV40ManagementGetApprovalPolicyApiResponseData). Proceeding to the next one if any."
         }
 
         # try to match SecurityV40ManagementApprovalPolicy defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToSecurityV40ManagementGetApprovalPolicyApiResponseData
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'SecurityV40ManagementApprovalPolicy' defined in oneOf (NtnxV4SecurityV40ManagementGetApprovalPolicyApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'SecurityV40ManagementApprovalPolicy' defined in oneOf (SecurityV40ManagementGetApprovalPolicyApiResponseData). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

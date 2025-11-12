@@ -47,7 +47,7 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonC
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'SystemCollectionsHashtable' defined in oneOf (NtnxV4VmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'SystemCollectionsHashtable' defined in oneOf (VmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvPoliciesConflictingVmHostAffinityPolicy defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonC
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvPoliciesConflictingVmHostAffinityPolicy' defined in oneOf (NtnxV4VmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvPoliciesConflictingVmHostAffinityPolicy' defined in oneOf (VmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy defined in the oneOf schemas
@@ -79,7 +79,7 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonC
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy' defined in oneOf (NtnxV4VmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvPoliciesPeNotCapableForVmHostAffinityPolicy' defined in oneOf (VmmV41AhvPoliciesNonCompliantVmHostAffinityPolicyNonComplianceReason). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

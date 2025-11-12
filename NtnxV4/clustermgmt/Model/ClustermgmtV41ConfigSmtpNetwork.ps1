@@ -45,7 +45,7 @@ function Initialize-ClustermgmtV41ConfigSmtpNetwork {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigSmtpNetwork' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigSmtpNetwork' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $IpAddress) {
@@ -93,12 +93,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigSmtpNetwork {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigSmtpNetwork' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigSmtpNetwork' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigSmtpNetwork
+        # check if Json contains properties not defined in ClustermgmtV41ConfigSmtpNetwork
         $AllProperties = ("ipAddress", "port", "username", "password")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

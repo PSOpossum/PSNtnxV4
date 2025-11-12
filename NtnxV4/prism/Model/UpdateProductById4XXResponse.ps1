@@ -35,7 +35,7 @@ function Initialize-UpdateProductById4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4UpdateProductById4XXResponse' | Write-Debug
+        'Creating PSCustomObject: prism => UpdateProductById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToUpdateProductById4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4UpdateProductById4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => UpdateProductById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4UpdateProductById4XXResponse
+        # check if Json contains properties not defined in UpdateProductById4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

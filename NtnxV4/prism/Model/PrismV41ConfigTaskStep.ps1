@@ -30,7 +30,7 @@ function Initialize-PrismV41ConfigTaskStep {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigTaskStep' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigTaskStep' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 512) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToPrismV41ConfigTaskStep {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigTaskStep' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigTaskStep' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigTaskStep
+        # check if Json contains properties not defined in PrismV41ConfigTaskStep
         $AllProperties = ("name")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

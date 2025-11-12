@@ -35,7 +35,7 @@ function Initialize-PrismV41ConfigCancelTaskApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigCancelTaskApiResponse' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigCancelTaskApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToPrismV41ConfigCancelTaskApiResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigCancelTaskApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigCancelTaskApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigCancelTaskApiResponse
+        # check if Json contains properties not defined in PrismV41ConfigCancelTaskApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

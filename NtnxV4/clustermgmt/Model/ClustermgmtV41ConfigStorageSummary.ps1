@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigStorageSummary {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigStorageSummary' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigStorageSummary' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -67,12 +67,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigStorageSummary {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigStorageSummary' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigStorageSummary' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigStorageSummary
+        # check if Json contains properties not defined in ClustermgmtV41ConfigStorageSummary
         $AllProperties = ("clusterFaultTolerantCapacityInBytes")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

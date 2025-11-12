@@ -30,7 +30,7 @@ function Initialize-PrismV41ManagementRestoreSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementRestoreSpec' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementRestoreSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $DomainManager) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToPrismV41ManagementRestoreSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementRestoreSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementRestoreSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementRestoreSpec
+        # check if Json contains properties not defined in PrismV41ManagementRestoreSpec
         $AllProperties = ("domainManager")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

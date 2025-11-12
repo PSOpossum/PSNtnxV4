@@ -30,7 +30,7 @@ function Initialize-PrismV41ManagementBackupTargetAllOfLocation {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementBackupTargetAllOfLocation' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementBackupTargetAllOfLocation' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToPrismV41ManagementBackupTargetAllOfLocation {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementBackupTargetAllOfLocation' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementBackupTargetAllOfLocation' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementBackupTargetAllOfLocation
+        # check if Json contains properties not defined in PrismV41ManagementBackupTargetAllOfLocation
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

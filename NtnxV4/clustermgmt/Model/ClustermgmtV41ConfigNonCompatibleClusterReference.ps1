@@ -36,7 +36,7 @@ function Initialize-ClustermgmtV41ConfigNonCompatibleClusterReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNonCompatibleClusterReference' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNonCompatibleClusterReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$ConfigDrifts -and $ConfigDrifts.length -gt 50) {
@@ -82,12 +82,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNonCompatibleClusterReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNonCompatibleClusterReference' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNonCompatibleClusterReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNonCompatibleClusterReference
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNonCompatibleClusterReference
         $AllProperties = ("clusterExtId", "configDrifts")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

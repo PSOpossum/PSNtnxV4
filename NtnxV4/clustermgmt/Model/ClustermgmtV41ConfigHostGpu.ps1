@@ -68,7 +68,7 @@ function Initialize-ClustermgmtV41ConfigHostGpu {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHostGpu' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigHostGpu' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -120,12 +120,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigHostGpu {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHostGpu' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigHostGpu' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigHostGpu
+        # check if Json contains properties not defined in ClustermgmtV41ConfigHostGpu
         $AllProperties = ("tenantId", "extId", "links", "nodeUuid", "nodeId", "cluster", "numberOfVgpusAllocated", "config")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

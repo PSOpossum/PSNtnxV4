@@ -35,7 +35,7 @@ function Initialize-GetClusterProtectionInfo200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4GetClusterProtectionInfo200Response' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => GetClusterProtectionInfo200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToGetClusterProtectionInfo200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4GetClusterProtectionInfo200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => GetClusterProtectionInfo200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4GetClusterProtectionInfo200Response
+        # check if Json contains properties not defined in GetClusterProtectionInfo200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

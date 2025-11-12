@@ -35,7 +35,7 @@ function Initialize-CommonV10ConfigFlag {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4CommonV10ConfigFlag' | Write-Debug
+        'Creating PSCustomObject: prism => CommonV10ConfigFlag' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 128) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToCommonV10ConfigFlag {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4CommonV10ConfigFlag' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => CommonV10ConfigFlag' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10ConfigFlag
+        # check if Json contains properties not defined in CommonV10ConfigFlag
         $AllProperties = ("name", "value")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

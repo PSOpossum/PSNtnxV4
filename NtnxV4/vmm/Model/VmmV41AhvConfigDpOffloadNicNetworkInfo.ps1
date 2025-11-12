@@ -61,7 +61,7 @@ function Initialize-VmmV41AhvConfigDpOffloadNicNetworkInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigDpOffloadNicNetworkInfo' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigDpOffloadNicNetworkInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$TrunkedVlans -and $TrunkedVlans.length -gt 4095) {
@@ -112,12 +112,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigDpOffloadNicNetworkInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigDpOffloadNicNetworkInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigDpOffloadNicNetworkInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigDpOffloadNicNetworkInfo
+        # check if Json contains properties not defined in VmmV41AhvConfigDpOffloadNicNetworkInfo
         $AllProperties = ("subnet", "vlanMode", "trunkedVlans", "shouldAllowUnknownMacs", "ipv4Config", "ipv4Info", "ipv6Info")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

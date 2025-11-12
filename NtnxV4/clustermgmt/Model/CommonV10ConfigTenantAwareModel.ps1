@@ -31,7 +31,7 @@ function Initialize-CommonV10ConfigTenantAwareModel {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4CommonV10ConfigTenantAwareModel' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => CommonV10ConfigTenantAwareModel' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToCommonV10ConfigTenantAwareModel {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4CommonV10ConfigTenantAwareModel' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => CommonV10ConfigTenantAwareModel' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10ConfigTenantAwareModel
+        # check if Json contains properties not defined in CommonV10ConfigTenantAwareModel
         $AllProperties = ("tenantId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

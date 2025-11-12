@@ -47,7 +47,7 @@ function Initialize-ClustermgmtV41ConfigMultiDomainFaultToleranceStatus {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigMultiDomainFaultToleranceStatus' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigMultiDomainFaultToleranceStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -103,12 +103,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigMultiDomainFaultToleranceStatus {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigMultiDomainFaultToleranceStatus' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigMultiDomainFaultToleranceStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigMultiDomainFaultToleranceStatus
+        # check if Json contains properties not defined in ClustermgmtV41ConfigMultiDomainFaultToleranceStatus
         $AllProperties = ("tenantId", "extId", "links", "multiDomainFaultToleranceStatus")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

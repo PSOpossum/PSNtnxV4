@@ -66,7 +66,7 @@ function Initialize-ClustermgmtV41ConfigComputeNodeItem {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigComputeNodeItem' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigComputeNodeItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$DigitalCertificateMapList -and $DigitalCertificateMapList.length -gt 1024) {
@@ -122,12 +122,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigComputeNodeItem {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigComputeNodeItem' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigComputeNodeItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigComputeNodeItem
+        # check if Json contains properties not defined in ClustermgmtV41ConfigComputeNodeItem
         $AllProperties = ("nodeUuid", "blockId", "nodePosition", "hypervisorIp", "ipmiIp", "digitalCertificateMapList", "hypervisorHostname", "model")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigBuildInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4ClustermgmtV41ConfigBuildInfo' | Write-Debug
+        'Creating PSCustomObject: prism => ClustermgmtV41ConfigBuildInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -67,12 +67,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigBuildInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4ClustermgmtV41ConfigBuildInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => ClustermgmtV41ConfigBuildInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigBuildInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigBuildInfo
         $AllProperties = ("version")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

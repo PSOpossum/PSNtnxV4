@@ -67,7 +67,7 @@ function Initialize-ClustermgmtV41ConfigDataStoreMount {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigDataStoreMount' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigDataStoreMount' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -139,12 +139,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigDataStoreMount {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigDataStoreMount' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigDataStoreMount' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigDataStoreMount
+        # check if Json contains properties not defined in ClustermgmtV41ConfigDataStoreMount
         $AllProperties = ("tenantId", "extId", "links", "datastoreName", "containerName", "nodeExtIds", "isReadOnly", "targetPath")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -45,7 +45,7 @@ function Initialize-SecurityV40ConfigExternalSshAccessConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigExternalSshAccessConfig' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ConfigExternalSshAccessConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($SshEnableDurationHours -and $SshEnableDurationHours -gt 72) {
@@ -93,12 +93,12 @@ function ConvertFrom-JsonToSecurityV40ConfigExternalSshAccessConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigExternalSshAccessConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ConfigExternalSshAccessConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ConfigExternalSshAccessConfig
+        # check if Json contains properties not defined in SecurityV40ConfigExternalSshAccessConfig
         $AllProperties = ("isSshEnabled", "sshExpiryTime", "sshlastEnabledTime", "sshEnableDurationHours")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

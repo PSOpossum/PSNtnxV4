@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvConfigUserdata {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4VmmV41AhvConfigUserdata' | Write-Debug
+        'Creating PSCustomObject: prism => VmmV41AhvConfigUserdata' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Value -and $Value.length -gt 128000) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigUserdata {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4VmmV41AhvConfigUserdata' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => VmmV41AhvConfigUserdata' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigUserdata
+        # check if Json contains properties not defined in VmmV41AhvConfigUserdata
         $AllProperties = ("value")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

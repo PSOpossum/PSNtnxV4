@@ -35,7 +35,7 @@ function Initialize-GetVmRecoveryPointByExtId200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4GetVmRecoveryPointByExtId200Response' | Write-Debug
+        'Creating PSCustomObject: vmm => GetVmRecoveryPointByExtId200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToGetVmRecoveryPointByExtId200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4GetVmRecoveryPointByExtId200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => GetVmRecoveryPointByExtId200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4GetVmRecoveryPointByExtId200Response
+        # check if Json contains properties not defined in GetVmRecoveryPointByExtId200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

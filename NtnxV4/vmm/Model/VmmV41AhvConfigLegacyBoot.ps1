@@ -35,7 +35,7 @@ function Initialize-VmmV41AhvConfigLegacyBoot {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigLegacyBoot' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigLegacyBoot' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$BootOrder -and $BootOrder.length -gt 3) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigLegacyBoot {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigLegacyBoot' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigLegacyBoot' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigLegacyBoot
+        # check if Json contains properties not defined in VmmV41AhvConfigLegacyBoot
         $AllProperties = ("bootDevice", "bootOrder")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

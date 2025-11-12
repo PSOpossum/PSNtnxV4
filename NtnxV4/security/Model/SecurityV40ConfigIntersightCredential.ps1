@@ -47,7 +47,7 @@ function Initialize-SecurityV40ConfigIntersightCredential {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigIntersightCredential' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ConfigIntersightCredential' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Credential) {
@@ -99,12 +99,12 @@ function ConvertFrom-JsonToSecurityV40ConfigIntersightCredential {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigIntersightCredential' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ConfigIntersightCredential' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ConfigIntersightCredential
+        # check if Json contains properties not defined in SecurityV40ConfigIntersightCredential
         $AllProperties = ("credential", "url", "deploymentType", "type")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

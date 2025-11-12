@@ -43,7 +43,7 @@ function Initialize-ClustermgmtV41ConfigRecoveryStatus {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigRecoveryStatus' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigRecoveryStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -82,12 +82,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigRecoveryStatus {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigRecoveryStatus' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigRecoveryStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigRecoveryStatus
+        # check if Json contains properties not defined in ClustermgmtV41ConfigRecoveryStatus
         $AllProperties = ("destinationClusterExtId", "sourceClusterExtId", "recoveryState")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

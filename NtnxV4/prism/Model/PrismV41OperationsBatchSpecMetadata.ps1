@@ -52,7 +52,7 @@ function Initialize-PrismV41OperationsBatchSpecMetadata {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41OperationsBatchSpecMetadata' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41OperationsBatchSpecMetadata' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Action) {
@@ -113,12 +113,12 @@ function ConvertFrom-JsonToPrismV41OperationsBatchSpecMetadata {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41OperationsBatchSpecMetadata' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41OperationsBatchSpecMetadata' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41OperationsBatchSpecMetadata
+        # check if Json contains properties not defined in PrismV41OperationsBatchSpecMetadata
         $AllProperties = ("action", "name", "uri", "shouldStopOnError", "chunkSize")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

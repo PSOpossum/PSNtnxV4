@@ -35,7 +35,7 @@ function Initialize-VmmV41AhvPoliciesUpdateVmAntiAffinityPolicyApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvPoliciesUpdateVmAntiAffinityPolicyApiResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvPoliciesUpdateVmAntiAffinityPolicyApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesUpdateVmAntiAffinityPolicyApiRespons
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvPoliciesUpdateVmAntiAffinityPolicyApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvPoliciesUpdateVmAntiAffinityPolicyApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvPoliciesUpdateVmAntiAffinityPolicyApiResponse
+        # check if Json contains properties not defined in VmmV41AhvPoliciesUpdateVmAntiAffinityPolicyApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

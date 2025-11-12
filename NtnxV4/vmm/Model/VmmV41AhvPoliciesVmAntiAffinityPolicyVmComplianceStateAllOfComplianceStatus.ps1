@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceStateAllOfC
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceStateAllOfComplianceStatus' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceStateAllOfComplianceStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceStat
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceStateAllOfComplianceStatus' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceStateAllOfComplianceStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceStateAllOfComplianceStatus
+        # check if Json contains properties not defined in VmmV41AhvPoliciesVmAntiAffinityPolicyVmComplianceStateAllOfComplianceStatus
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -30,7 +30,7 @@ function Initialize-SecurityV40ManagementAssociatePoliciesSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementAssociatePoliciesSpec' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ManagementAssociatePoliciesSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $SecuredPolicies) {
@@ -79,12 +79,12 @@ function ConvertFrom-JsonToSecurityV40ManagementAssociatePoliciesSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementAssociatePoliciesSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ManagementAssociatePoliciesSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ManagementAssociatePoliciesSpec
+        # check if Json contains properties not defined in SecurityV40ManagementAssociatePoliciesSpec
         $AllProperties = ("securedPolicies")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

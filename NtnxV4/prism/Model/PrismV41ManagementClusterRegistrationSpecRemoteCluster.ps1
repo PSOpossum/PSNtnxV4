@@ -47,7 +47,7 @@ function ConvertFrom-JsonToPrismV41ManagementClusterRegistrationSpecRemoteCluste
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'PrismV41ManagementAOSRemoteClusterSpec' defined in oneOf (NtnxV4PrismV41ManagementClusterRegistrationSpecRemoteCluster). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'PrismV41ManagementAOSRemoteClusterSpec' defined in oneOf (PrismV41ManagementClusterRegistrationSpecRemoteCluster). Proceeding to the next one if any."
         }
 
         # try to match PrismV41ManagementClusterReference defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToPrismV41ManagementClusterRegistrationSpecRemoteCluste
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'PrismV41ManagementClusterReference' defined in oneOf (NtnxV4PrismV41ManagementClusterRegistrationSpecRemoteCluster). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'PrismV41ManagementClusterReference' defined in oneOf (PrismV41ManagementClusterRegistrationSpecRemoteCluster). Proceeding to the next one if any."
         }
 
         # try to match PrismV41ManagementDomainManagerRemoteClusterSpec defined in the oneOf schemas
@@ -79,7 +79,7 @@ function ConvertFrom-JsonToPrismV41ManagementClusterRegistrationSpecRemoteCluste
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'PrismV41ManagementDomainManagerRemoteClusterSpec' defined in oneOf (NtnxV4PrismV41ManagementClusterRegistrationSpecRemoteCluster). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'PrismV41ManagementDomainManagerRemoteClusterSpec' defined in oneOf (PrismV41ManagementClusterRegistrationSpecRemoteCluster). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

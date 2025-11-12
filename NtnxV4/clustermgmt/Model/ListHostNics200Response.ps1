@@ -35,7 +35,7 @@ function Initialize-ListHostNics200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ListHostNics200Response' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ListHostNics200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToListHostNics200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ListHostNics200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ListHostNics200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ListHostNics200Response
+        # check if Json contains properties not defined in ListHostNics200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

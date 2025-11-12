@@ -47,7 +47,7 @@ function ConvertFrom-JsonToCommonV10ConfigKVPairValue {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'Boolean' defined in oneOf (NtnxV4CommonV10ConfigKVPairValue). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'Boolean' defined in oneOf (CommonV10ConfigKVPairValue). Proceeding to the next one if any."
         }
 
         # try to match CommonV10ConfigMapOfStringWrapper[] defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToCommonV10ConfigKVPairValue {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'CommonV10ConfigMapOfStringWrapper[]' defined in oneOf (NtnxV4CommonV10ConfigKVPairValue). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'CommonV10ConfigMapOfStringWrapper[]' defined in oneOf (CommonV10ConfigKVPairValue). Proceeding to the next one if any."
         }
 
         # try to match Int32 defined in the oneOf schemas
@@ -79,7 +79,7 @@ function ConvertFrom-JsonToCommonV10ConfigKVPairValue {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'Int32' defined in oneOf (NtnxV4CommonV10ConfigKVPairValue). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'Int32' defined in oneOf (CommonV10ConfigKVPairValue). Proceeding to the next one if any."
         }
 
         # try to match Int32[] defined in the oneOf schemas
@@ -95,7 +95,7 @@ function ConvertFrom-JsonToCommonV10ConfigKVPairValue {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'Int32[]' defined in oneOf (NtnxV4CommonV10ConfigKVPairValue). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'Int32[]' defined in oneOf (CommonV10ConfigKVPairValue). Proceeding to the next one if any."
         }
 
         # try to match String defined in the oneOf schemas
@@ -111,7 +111,7 @@ function ConvertFrom-JsonToCommonV10ConfigKVPairValue {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'String' defined in oneOf (NtnxV4CommonV10ConfigKVPairValue). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'String' defined in oneOf (CommonV10ConfigKVPairValue). Proceeding to the next one if any."
         }
 
         # try to match String[] defined in the oneOf schemas
@@ -127,7 +127,7 @@ function ConvertFrom-JsonToCommonV10ConfigKVPairValue {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'String[]' defined in oneOf (NtnxV4CommonV10ConfigKVPairValue). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'String[]' defined in oneOf (CommonV10ConfigKVPairValue). Proceeding to the next one if any."
         }
 
         # try to match System.Collections.Hashtable defined in the oneOf schemas
@@ -143,7 +143,7 @@ function ConvertFrom-JsonToCommonV10ConfigKVPairValue {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'System.Collections.Hashtable' defined in oneOf (NtnxV4CommonV10ConfigKVPairValue). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'System.Collections.Hashtable' defined in oneOf (CommonV10ConfigKVPairValue). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

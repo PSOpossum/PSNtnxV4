@@ -35,7 +35,7 @@ function Initialize-DeleteSerialPortById202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4DeleteSerialPortById202Response' | Write-Debug
+        'Creating PSCustomObject: vmm => DeleteSerialPortById202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToDeleteSerialPortById202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4DeleteSerialPortById202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => DeleteSerialPortById202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4DeleteSerialPortById202Response
+        # check if Json contains properties not defined in DeleteSerialPortById202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

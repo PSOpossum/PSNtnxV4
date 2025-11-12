@@ -50,7 +50,7 @@ function Initialize-ClustermgmtV41ConfigBuildReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigBuildReference' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigBuildReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -91,12 +91,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigBuildReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigBuildReference' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigBuildReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigBuildReference
+        # check if Json contains properties not defined in ClustermgmtV41ConfigBuildReference
         $AllProperties = ("buildType", "version", "fullVersion", "commitId", "shortCommitId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

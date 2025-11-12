@@ -95,7 +95,7 @@ function Initialize-SecurityV40ConfigSecurityConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigSecurityConfig' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ConfigSecurityConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -152,12 +152,12 @@ function ConvertFrom-JsonToSecurityV40ConfigSecurityConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigSecurityConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ConfigSecurityConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ConfigSecurityConfig
+        # check if Json contains properties not defined in SecurityV40ConfigSecurityConfig
         $AllProperties = ("tenantId", "extId", "links", "clusterExtId", "isHighStrengthPasswordEnabled", "isAideEnabled", "isSecureBootEnabled", "isClusterLockdownEnabled", "isLogForwardingEnabled", "clusterScmaSchedule", "ahvScmaSchedule", "isAhvDefenseConsentBannerEnabled", "isClusterDefenseConsentBannerEnabled")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

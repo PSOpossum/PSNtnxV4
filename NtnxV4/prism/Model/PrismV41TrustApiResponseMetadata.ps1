@@ -30,7 +30,7 @@ function Initialize-PrismV41TrustApiResponseMetadata {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41TrustApiResponseMetadata' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41TrustApiResponseMetadata' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -67,12 +67,12 @@ function ConvertFrom-JsonToPrismV41TrustApiResponseMetadata {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41TrustApiResponseMetadata' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41TrustApiResponseMetadata' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41TrustApiResponseMetadata
+        # check if Json contains properties not defined in PrismV41TrustApiResponseMetadata
         $AllProperties = ("links")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

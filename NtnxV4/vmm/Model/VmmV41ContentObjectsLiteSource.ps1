@@ -30,7 +30,7 @@ function Initialize-VmmV41ContentObjectsLiteSource {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentObjectsLiteSource' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentObjectsLiteSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Key) {
@@ -79,12 +79,12 @@ function ConvertFrom-JsonToVmmV41ContentObjectsLiteSource {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentObjectsLiteSource' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentObjectsLiteSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentObjectsLiteSource
+        # check if Json contains properties not defined in VmmV41ContentObjectsLiteSource
         $AllProperties = ("key")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

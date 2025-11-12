@@ -31,7 +31,7 @@ function Initialize-VmmV41AhvConfigVtpmDevice {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVtpmDevice' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigVtpmDevice' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigVtpmDevice {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVtpmDevice' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigVtpmDevice' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigVtpmDevice
+        # check if Json contains properties not defined in VmmV41AhvConfigVtpmDevice
         $AllProperties = ("diskExtId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

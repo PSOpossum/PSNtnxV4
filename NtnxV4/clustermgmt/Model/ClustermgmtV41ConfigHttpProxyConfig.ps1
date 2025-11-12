@@ -55,7 +55,7 @@ function Initialize-ClustermgmtV41ConfigHttpProxyConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHttpProxyConfig' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigHttpProxyConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Username -and $Username.length -gt 64) {
@@ -117,12 +117,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigHttpProxyConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHttpProxyConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigHttpProxyConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigHttpProxyConfig
+        # check if Json contains properties not defined in ClustermgmtV41ConfigHttpProxyConfig
         $AllProperties = ("ipAddress", "port", "username", "password", "name", "proxyTypes")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

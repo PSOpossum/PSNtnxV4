@@ -103,7 +103,7 @@ function Initialize-IamV41B1AuthnBucketsAccessKey {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4IamV41B1AuthnBucketsAccessKey' | Write-Debug
+        'Creating PSCustomObject: security => IamV41B1AuthnBucketsAccessKey' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -181,12 +181,12 @@ function ConvertFrom-JsonToIamV41B1AuthnBucketsAccessKey {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4IamV41B1AuthnBucketsAccessKey' | Write-Debug
+        'Converting JSON to PSCustomObject: security => IamV41B1AuthnBucketsAccessKey' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4IamV41B1AuthnBucketsAccessKey
+        # check if Json contains properties not defined in IamV41B1AuthnBucketsAccessKey
         $AllProperties = ("tenantId", "extId", "links", "accessKeyName", "secretAccessKey", "userId", "createdTime", "lastUpdatedBy", "assignedTo", "creationType", "expiryTime", "status", "createdBy", "lastUpdatedTime")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

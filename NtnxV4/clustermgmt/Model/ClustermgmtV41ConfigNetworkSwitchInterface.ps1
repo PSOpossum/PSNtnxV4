@@ -110,7 +110,7 @@ function Initialize-ClustermgmtV41ConfigNetworkSwitchInterface {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNetworkSwitchInterface' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNetworkSwitchInterface' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -182,12 +182,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNetworkSwitchInterface {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNetworkSwitchInterface' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNetworkSwitchInterface' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNetworkSwitchInterface
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNetworkSwitchInterface
         $AllProperties = ("tenantId", "extId", "links", "port", "switchInterfaceName", "switchInterfaceDescription", "switchInterfaceType", "index", "speedInKbps", "mtuInBytes", "macAddress", "lastChangeTime", "switchManagementAddress", "attachedHostUuid", "attachedHostNicUuids", "switchUuid")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

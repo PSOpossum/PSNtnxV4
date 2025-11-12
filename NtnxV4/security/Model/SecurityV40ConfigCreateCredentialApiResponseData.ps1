@@ -47,7 +47,7 @@ function ConvertFrom-JsonToSecurityV40ConfigCreateCredentialApiResponseData {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'PrismV41ConfigTaskReference' defined in oneOf (NtnxV4SecurityV40ConfigCreateCredentialApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'PrismV41ConfigTaskReference' defined in oneOf (SecurityV40ConfigCreateCredentialApiResponseData). Proceeding to the next one if any."
         }
 
         # try to match SecurityV40ErrorErrorResponse defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToSecurityV40ConfigCreateCredentialApiResponseData {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'SecurityV40ErrorErrorResponse' defined in oneOf (NtnxV4SecurityV40ConfigCreateCredentialApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'SecurityV40ErrorErrorResponse' defined in oneOf (SecurityV40ConfigCreateCredentialApiResponseData). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

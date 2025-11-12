@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigLEDStateUpdationSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigLEDStateUpdationSpec' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigLEDStateUpdationSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $IsEngaged) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigLEDStateUpdationSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigLEDStateUpdationSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigLEDStateUpdationSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigLEDStateUpdationSpec
+        # check if Json contains properties not defined in ClustermgmtV41ConfigLEDStateUpdationSpec
         $AllProperties = ("isEngaged")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

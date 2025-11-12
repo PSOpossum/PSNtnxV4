@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvConfigDiskAllOfBackingInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigDiskAllOfBackingInfo' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigDiskAllOfBackingInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigDiskAllOfBackingInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigDiskAllOfBackingInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigDiskAllOfBackingInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigDiskAllOfBackingInfo
+        # check if Json contains properties not defined in VmmV41AhvConfigDiskAllOfBackingInfo
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

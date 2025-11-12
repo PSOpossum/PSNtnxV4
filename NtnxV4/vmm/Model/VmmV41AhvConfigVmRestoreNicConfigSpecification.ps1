@@ -35,7 +35,7 @@ function Initialize-VmmV41AhvConfigVmRestoreNicConfigSpecification {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmRestoreNicConfigSpecification' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigVmRestoreNicConfigSpecification' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$NicRemoveList -and $NicRemoveList.length -gt 64) {
@@ -89,12 +89,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigVmRestoreNicConfigSpecification {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmRestoreNicConfigSpecification' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigVmRestoreNicConfigSpecification' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigVmRestoreNicConfigSpecification
+        # check if Json contains properties not defined in VmmV41AhvConfigVmRestoreNicConfigSpecification
         $AllProperties = ("nicRemoveList", "nicOverrideList")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

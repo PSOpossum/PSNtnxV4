@@ -35,7 +35,7 @@ function Initialize-PowerOnVm202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4PowerOnVm202Response' | Write-Debug
+        'Creating PSCustomObject: vmm => PowerOnVm202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToPowerOnVm202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4PowerOnVm202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => PowerOnVm202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PowerOnVm202Response
+        # check if Json contains properties not defined in PowerOnVm202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

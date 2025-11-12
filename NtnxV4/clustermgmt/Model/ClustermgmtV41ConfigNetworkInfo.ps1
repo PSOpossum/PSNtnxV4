@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigNetworkInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNetworkInfo' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNetworkInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Hci -and $Hci.length -gt 1024) {
@@ -89,12 +89,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNetworkInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNetworkInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNetworkInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNetworkInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNetworkInfo
         $AllProperties = ("hci", "so")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

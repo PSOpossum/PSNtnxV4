@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigVcenterInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigVcenterInfo' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigVcenterInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Address) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigVcenterInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigVcenterInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigVcenterInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigVcenterInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigVcenterInfo
         $AllProperties = ("address", "credentials")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

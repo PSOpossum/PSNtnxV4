@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvConfigUnattendxml {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigUnattendxml' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigUnattendxml' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Value -and $Value.length -gt 32000) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigUnattendxml {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigUnattendxml' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigUnattendxml' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigUnattendxml
+        # check if Json contains properties not defined in VmmV41AhvConfigUnattendxml
         $AllProperties = ("value")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

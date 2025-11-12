@@ -36,7 +36,7 @@ function Initialize-VmmV41ContentTemplateVmReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentTemplateVmReference' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentTemplateVmReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ExtId) {
@@ -78,12 +78,12 @@ function ConvertFrom-JsonToVmmV41ContentTemplateVmReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentTemplateVmReference' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentTemplateVmReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentTemplateVmReference
+        # check if Json contains properties not defined in VmmV41ContentTemplateVmReference
         $AllProperties = ("extId", "guestCustomization")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

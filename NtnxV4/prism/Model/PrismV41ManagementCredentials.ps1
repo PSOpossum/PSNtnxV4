@@ -30,7 +30,7 @@ function Initialize-PrismV41ManagementCredentials {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementCredentials' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementCredentials' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Authentication) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToPrismV41ManagementCredentials {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementCredentials' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementCredentials' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementCredentials
+        # check if Json contains properties not defined in PrismV41ManagementCredentials
         $AllProperties = ("authentication")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

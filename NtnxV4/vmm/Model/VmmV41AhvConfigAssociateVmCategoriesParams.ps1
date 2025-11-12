@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvConfigAssociateVmCategoriesParams {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigAssociateVmCategoriesParams' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigAssociateVmCategoriesParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Categories -and $Categories.length -gt 256) {
@@ -75,12 +75,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigAssociateVmCategoriesParams {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigAssociateVmCategoriesParams' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigAssociateVmCategoriesParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigAssociateVmCategoriesParams
+        # check if Json contains properties not defined in VmmV41AhvConfigAssociateVmCategoriesParams
         $AllProperties = ("categories")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

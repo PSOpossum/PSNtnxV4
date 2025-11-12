@@ -35,7 +35,7 @@ function Initialize-ListPcieDevices200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ListPcieDevices200Response' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ListPcieDevices200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToListPcieDevices200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ListPcieDevices200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ListPcieDevices200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ListPcieDevices200Response
+        # check if Json contains properties not defined in ListPcieDevices200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

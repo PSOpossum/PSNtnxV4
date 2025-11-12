@@ -107,7 +107,7 @@ function Initialize-VmmV41AhvConfigVmRecoveryPoint {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmRecoveryPoint' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigVmRecoveryPoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -186,12 +186,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigVmRecoveryPoint {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmRecoveryPoint' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigVmRecoveryPoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigVmRecoveryPoint
+        # check if Json contains properties not defined in VmmV41AhvConfigVmRecoveryPoint
         $AllProperties = ("tenantId", "extId", "links", "locationAgnosticId", "name", "creationTime", "expirationTime", "status", "recoveryPointType", "consistencyGroupExtId", "diskRecoveryPoints", "vmExtId", "vmCategories", "applicationConsistentProperties", "vm")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -36,7 +36,7 @@ function Initialize-ClustermgmtV41OperationsTargetRebootDomain {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41OperationsTargetRebootDomain' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41OperationsTargetRebootDomain' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -74,12 +74,12 @@ function ConvertFrom-JsonToClustermgmtV41OperationsTargetRebootDomain {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41OperationsTargetRebootDomain' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41OperationsTargetRebootDomain' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41OperationsTargetRebootDomain
+        # check if Json contains properties not defined in ClustermgmtV41OperationsTargetRebootDomain
         $AllProperties = ("domainType", "maxConcurrentDomainRebootsTolerated")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

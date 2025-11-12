@@ -30,7 +30,7 @@ function Initialize-VirtualMachineModelAsOVAChecksum {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VirtualMachineModelAsOVAChecksum' | Write-Debug
+        'Creating PSCustomObject: vmm => VirtualMachineModelAsOVAChecksum' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVirtualMachineModelAsOVAChecksum {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VirtualMachineModelAsOVAChecksum' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VirtualMachineModelAsOVAChecksum' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VirtualMachineModelAsOVAChecksum
+        # check if Json contains properties not defined in VirtualMachineModelAsOVAChecksum
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

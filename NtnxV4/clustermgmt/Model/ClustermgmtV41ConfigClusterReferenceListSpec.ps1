@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigClusterReferenceListSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigClusterReferenceListSpec' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigClusterReferenceListSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Clusters) {
@@ -79,12 +79,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigClusterReferenceListSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigClusterReferenceListSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigClusterReferenceListSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigClusterReferenceListSpec
+        # check if Json contains properties not defined in ClustermgmtV41ConfigClusterReferenceListSpec
         $AllProperties = ("clusters")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

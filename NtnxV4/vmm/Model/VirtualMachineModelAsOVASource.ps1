@@ -30,7 +30,7 @@ function Initialize-VirtualMachineModelAsOVASource {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VirtualMachineModelAsOVASource' | Write-Debug
+        'Creating PSCustomObject: vmm => VirtualMachineModelAsOVASource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVirtualMachineModelAsOVASource {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VirtualMachineModelAsOVASource' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VirtualMachineModelAsOVASource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VirtualMachineModelAsOVASource
+        # check if Json contains properties not defined in VirtualMachineModelAsOVASource
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

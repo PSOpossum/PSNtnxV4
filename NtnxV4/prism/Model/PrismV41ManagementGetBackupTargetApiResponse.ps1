@@ -35,7 +35,7 @@ function Initialize-PrismV41ManagementGetBackupTargetApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementGetBackupTargetApiResponse' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementGetBackupTargetApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToPrismV41ManagementGetBackupTargetApiResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementGetBackupTargetApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementGetBackupTargetApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementGetBackupTargetApiResponse
+        # check if Json contains properties not defined in PrismV41ManagementGetBackupTargetApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

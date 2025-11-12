@@ -63,7 +63,7 @@ function Initialize-ClustermgmtV41ConfigHypervisorReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHypervisorReference' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigHypervisorReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$UserName -and $UserName.length -gt 64) {
@@ -114,12 +114,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigHypervisorReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHypervisorReference' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigHypervisorReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigHypervisorReference
+        # check if Json contains properties not defined in ClustermgmtV41ConfigHypervisorReference
         $AllProperties = ("externalAddress", "userName", "fullName", "type", "numberOfVms", "state", "acropolisConnectionState")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

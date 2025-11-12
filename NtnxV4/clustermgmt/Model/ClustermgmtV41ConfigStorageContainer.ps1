@@ -185,7 +185,7 @@ function Initialize-ClustermgmtV41ConfigStorageContainer {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigStorageContainer' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigStorageContainer' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -279,12 +279,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigStorageContainer {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigStorageContainer' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigStorageContainer' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigStorageContainer
+        # check if Json contains properties not defined in ClustermgmtV41ConfigStorageContainer
         $AllProperties = ("tenantId", "extId", "links", "containerExtId", "ownerExtId", "name", "clusterExtId", "storagePoolExtId", "isMarkedForRemoval", "markedForRemoval", "maxCapacityBytes", "logicalExplicitReservedCapacityBytes", "logicalImplicitReservedCapacityBytes", "logicalAdvertisedCapacityBytes", "replicationFactor", "nfsWhitelistAddress", "isNfsWhitelistInherited", "erasureCode", "isInlineEcEnabled", "hasHigherEcFaultDomainPreference", "erasureCodeDelaySecs", "cacheDeduplication", "onDiskDedup", "isCompressionEnabled", "compressionDelaySecs", "isInternal", "isSoftwareEncryptionEnabled", "isEncrypted", "affinityHostExtId", "clusterName")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

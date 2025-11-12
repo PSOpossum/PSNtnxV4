@@ -47,7 +47,7 @@ function ConvertFrom-JsonToClustermgmtV41ConfigGetRsyslogServerApiResponseData {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'ClustermgmtV41ConfigRsyslogServer' defined in oneOf (NtnxV4ClustermgmtV41ConfigGetRsyslogServerApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'ClustermgmtV41ConfigRsyslogServer' defined in oneOf (ClustermgmtV41ConfigGetRsyslogServerApiResponseData). Proceeding to the next one if any."
         }
 
         # try to match ClustermgmtV41ErrorErrorResponse defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToClustermgmtV41ConfigGetRsyslogServerApiResponseData {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'ClustermgmtV41ErrorErrorResponse' defined in oneOf (NtnxV4ClustermgmtV41ConfigGetRsyslogServerApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'ClustermgmtV41ErrorErrorResponse' defined in oneOf (ClustermgmtV41ConfigGetRsyslogServerApiResponseData). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

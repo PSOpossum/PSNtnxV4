@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvConfigVmMigrateToHostParams {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmMigrateToHostParams' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigVmMigrateToHostParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $VarHost) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigVmMigrateToHostParams {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmMigrateToHostParams' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigVmMigrateToHostParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigVmMigrateToHostParams
+        # check if Json contains properties not defined in VmmV41AhvConfigVmMigrateToHostParams
         $AllProperties = ("host")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

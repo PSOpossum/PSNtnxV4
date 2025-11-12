@@ -31,7 +31,7 @@ function Initialize-CommonV10ConfigFQDN {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4CommonV10ConfigFQDN' | Write-Debug
+        'Creating PSCustomObject: prism => CommonV10ConfigFQDN' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToCommonV10ConfigFQDN {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4CommonV10ConfigFQDN' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => CommonV10ConfigFQDN' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10ConfigFQDN
+        # check if Json contains properties not defined in CommonV10ConfigFQDN
         $AllProperties = ("value")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

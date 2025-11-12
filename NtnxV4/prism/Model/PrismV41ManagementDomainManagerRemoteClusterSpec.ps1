@@ -36,7 +36,7 @@ function Initialize-PrismV41ManagementDomainManagerRemoteClusterSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementDomainManagerRemoteClusterSpec' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementDomainManagerRemoteClusterSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $RemoteCluster) {
@@ -82,12 +82,12 @@ function ConvertFrom-JsonToPrismV41ManagementDomainManagerRemoteClusterSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementDomainManagerRemoteClusterSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementDomainManagerRemoteClusterSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementDomainManagerRemoteClusterSpec
+        # check if Json contains properties not defined in PrismV41ManagementDomainManagerRemoteClusterSpec
         $AllProperties = ("remoteCluster", "cloudType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

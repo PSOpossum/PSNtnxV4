@@ -79,7 +79,7 @@ function Initialize-SecurityV40ReportSummary {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ReportSummary' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ReportSummary' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -133,12 +133,12 @@ function ConvertFrom-JsonToSecurityV40ReportSummary {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ReportSummary' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ReportSummary' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ReportSummary
+        # check if Json contains properties not defined in SecurityV40ReportSummary
         $AllProperties = ("tenantId", "extId", "links", "clusterExtId", "securityConfigSummary", "stigSummary", "vulnerabilitiesSummary", "passwordSummary", "trendType", "lastRefreshTime")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

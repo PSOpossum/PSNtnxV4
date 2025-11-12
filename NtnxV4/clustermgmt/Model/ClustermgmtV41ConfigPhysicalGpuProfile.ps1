@@ -52,7 +52,7 @@ function Initialize-ClustermgmtV41ConfigPhysicalGpuProfile {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigPhysicalGpuProfile' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigPhysicalGpuProfile' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -109,12 +109,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigPhysicalGpuProfile {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigPhysicalGpuProfile' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigPhysicalGpuProfile' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigPhysicalGpuProfile
+        # check if Json contains properties not defined in ClustermgmtV41ConfigPhysicalGpuProfile
         $AllProperties = ("tenantId", "extId", "links", "physicalGpuConfig", "allocatedVmExtIds")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -35,7 +35,7 @@ function Initialize-CommonV10ConfigBasicAuth {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4CommonV10ConfigBasicAuth' | Write-Debug
+        'Creating PSCustomObject: prism => CommonV10ConfigBasicAuth' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Username) {
@@ -97,12 +97,12 @@ function ConvertFrom-JsonToCommonV10ConfigBasicAuth {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4CommonV10ConfigBasicAuth' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => CommonV10ConfigBasicAuth' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10ConfigBasicAuth
+        # check if Json contains properties not defined in CommonV10ConfigBasicAuth
         $AllProperties = ("username", "password")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

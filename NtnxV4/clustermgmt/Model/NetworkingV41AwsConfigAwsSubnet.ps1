@@ -80,7 +80,7 @@ function Initialize-NetworkingV41AwsConfigAwsSubnet {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4NetworkingV41AwsConfigAwsSubnet' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => NetworkingV41AwsConfigAwsSubnet' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -158,12 +158,12 @@ function ConvertFrom-JsonToNetworkingV41AwsConfigAwsSubnet {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4NetworkingV41AwsConfigAwsSubnet' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => NetworkingV41AwsConfigAwsSubnet' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4NetworkingV41AwsConfigAwsSubnet
+        # check if Json contains properties not defined in NetworkingV41AwsConfigAwsSubnet
         $AllProperties = ("tenantId", "extId", "links", "vpcId", "annotation", "subnetId", "cidr", "gatewayIp", "cloudType", "availabilityZone")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

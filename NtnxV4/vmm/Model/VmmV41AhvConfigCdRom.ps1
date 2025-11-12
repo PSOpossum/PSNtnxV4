@@ -58,7 +58,7 @@ function Initialize-VmmV41AhvConfigCdRom {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigCdRom' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigCdRom' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -108,12 +108,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigCdRom {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigCdRom' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigCdRom' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigCdRom
+        # check if Json contains properties not defined in VmmV41AhvConfigCdRom
         $AllProperties = ("tenantId", "extId", "links", "diskAddress", "backingInfo", "isoType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

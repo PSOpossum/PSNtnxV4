@@ -30,7 +30,7 @@ function Initialize-VirtualDiskImageChecksum {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VirtualDiskImageChecksum' | Write-Debug
+        'Creating PSCustomObject: vmm => VirtualDiskImageChecksum' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVirtualDiskImageChecksum {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VirtualDiskImageChecksum' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VirtualDiskImageChecksum' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VirtualDiskImageChecksum
+        # check if Json contains properties not defined in VirtualDiskImageChecksum
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

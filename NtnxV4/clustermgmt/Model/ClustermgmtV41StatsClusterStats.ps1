@@ -277,7 +277,7 @@ function Initialize-ClustermgmtV41StatsClusterStats {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41StatsClusterStats' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41StatsClusterStats' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -371,12 +371,12 @@ function ConvertFrom-JsonToClustermgmtV41StatsClusterStats {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41StatsClusterStats' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41StatsClusterStats' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41StatsClusterStats
+        # check if Json contains properties not defined in ClustermgmtV41StatsClusterStats
         $AllProperties = ("tenantId", "extId", "links", "controllerAvgIoLatencyUsecs", "controllerAvgIoLatencyUsecsUpperBuf", "controllerAvgIoLatencyUsecsLowerBuf", "controllerAvgReadIoLatencyUsecs", "controllerAvgReadIoLatencyUsecsUpperBuf", "controllerAvgReadIoLatencyUsecsLowerBuf", "controllerAvgWriteIoLatencyUsecs", "controllerAvgWriteIoLatencyUsecsUpperBuf", "controllerAvgWriteIoLatencyUsecsLowerBuf", "controllerNumIops", "controllerNumIopsUpperBuf", "controllerNumIopsLowerBuf", "hypervisorCpuUsagePpm", "hypervisorCpuUsagePpmUpperBuf", "hypervisorCpuUsagePpmLowerBuf", "aggregateHypervisorMemoryUsagePpm", "aggregateHypervisorMemoryUsagePpmUpperBuf", "aggregateHypervisorMemoryUsagePpmLowerBuf", "controllerNumReadIops", "controllerNumReadIopsUpperBuf", "controllerNumReadIopsLowerBuf", "controllerNumWriteIops", "controllerNumWriteIopsUpperBuf", "controllerNumWriteIopsLowerBuf", "ioBandwidthKbps", "ioBandwidthKbpsUpperBuf", "ioBandwidthKbpsLowerBuf", "controllerReadIoBandwidthKbps", "controllerReadIoBandwidthKbpsUpperBuf", "controllerReadIoBandwidthKbpsLowerBuf", "controllerWriteIoBandwidthKbpsUpperBuf", "controllerWriteIoBandwidthKbpsLowerBuf", "controllerWriteIoBandwidthKbps", "storageUsageBytes", "storageCapacityBytes", "freePhysicalStorageBytes", "logicalStorageUsageBytes", "overallMemoryUsageBytes", "healthCheckScore", "recycleBinUsageBytes", "snapshotCapacityBytes", "overallSavingsBytes", "overallSavingsRatio", "cpuCapacityHz", "cpuUsageHz", "memoryCapacityBytes", "powerConsumptionInstantWatt")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

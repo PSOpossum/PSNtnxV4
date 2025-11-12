@@ -35,7 +35,7 @@ function Initialize-CancelGuestUpdate202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4CancelGuestUpdate202Response' | Write-Debug
+        'Creating PSCustomObject: vmm => CancelGuestUpdate202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToCancelGuestUpdate202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4CancelGuestUpdate202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => CancelGuestUpdate202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CancelGuestUpdate202Response
+        # check if Json contains properties not defined in CancelGuestUpdate202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

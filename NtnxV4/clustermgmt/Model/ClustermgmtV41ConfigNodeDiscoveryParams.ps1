@@ -56,7 +56,7 @@ function Initialize-ClustermgmtV41ConfigNodeDiscoveryParams {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeDiscoveryParams' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeDiscoveryParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$IpFilterList -and $IpFilterList.length -gt 1024) {
@@ -122,12 +122,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNodeDiscoveryParams {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeDiscoveryParams' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeDiscoveryParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNodeDiscoveryParams
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNodeDiscoveryParams
         $AllProperties = ("addressType", "ipFilterList", "uuidFilterList", "timeout", "interfaceFilterList", "isManualDiscovery")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

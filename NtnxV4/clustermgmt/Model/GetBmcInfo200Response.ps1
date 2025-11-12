@@ -35,7 +35,7 @@ function Initialize-GetBmcInfo200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4GetBmcInfo200Response' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => GetBmcInfo200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToGetBmcInfo200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4GetBmcInfo200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => GetBmcInfo200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4GetBmcInfo200Response
+        # check if Json contains properties not defined in GetBmcInfo200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

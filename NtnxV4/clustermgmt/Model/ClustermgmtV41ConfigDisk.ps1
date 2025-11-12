@@ -154,7 +154,7 @@ function Initialize-ClustermgmtV41ConfigDisk {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigDisk' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigDisk' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -258,12 +258,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigDisk {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigDisk' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigDisk' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigDisk
+        # check if Json contains properties not defined in ClustermgmtV41ConfigDisk
         $AllProperties = ("tenantId", "extId", "links", "clusterName", "clusterExtId", "status", "storageTier", "storagePoolExtId", "serviceVMId", "nodeExtId", "cvmIpAddress", "nodeIpAddress", "mountPath", "location", "serialNumber", "diskSizeBytes", "physicalCapacityBytes", "model", "vendor", "nvmePciePath", "firmwareVersion", "targetFirmwareVersion", "hostName", "diskAdvanceConfig")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

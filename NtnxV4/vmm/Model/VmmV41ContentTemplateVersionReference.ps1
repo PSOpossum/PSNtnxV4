@@ -36,7 +36,7 @@ function Initialize-VmmV41ContentTemplateVersionReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentTemplateVersionReference' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentTemplateVersionReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $VersionId) {
@@ -82,12 +82,12 @@ function ConvertFrom-JsonToVmmV41ContentTemplateVersionReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentTemplateVersionReference' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentTemplateVersionReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentTemplateVersionReference
+        # check if Json contains properties not defined in VmmV41ContentTemplateVersionReference
         $AllProperties = ("versionId", "overrideVmConfig")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

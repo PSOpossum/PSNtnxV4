@@ -48,7 +48,7 @@ function Initialize-SecurityV40ConfigVerifyPassword {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigVerifyPassword' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ConfigVerifyPassword' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -96,12 +96,12 @@ function ConvertFrom-JsonToSecurityV40ConfigVerifyPassword {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigVerifyPassword' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ConfigVerifyPassword' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ConfigVerifyPassword
+        # check if Json contains properties not defined in SecurityV40ConfigVerifyPassword
         $AllProperties = ("tenantId", "extId", "links", "verificationStatus")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

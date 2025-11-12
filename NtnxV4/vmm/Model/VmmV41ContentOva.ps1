@@ -98,7 +98,7 @@ function Initialize-VmmV41ContentOva {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentOva' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentOva' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -180,12 +180,12 @@ function ConvertFrom-JsonToVmmV41ContentOva {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentOva' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentOva' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentOva
+        # check if Json contains properties not defined in VmmV41ContentOva
         $AllProperties = ("tenantId", "extId", "links", "name", "checksum", "sizeBytes", "source", "createTime", "lastUpdateTime", "createdBy", "clusterLocationExtIds", "parentVm", "vmConfig", "diskFormat")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

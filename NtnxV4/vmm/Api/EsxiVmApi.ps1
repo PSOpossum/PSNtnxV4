@@ -1312,7 +1312,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 ResetEsxiVm202Response
 #>
-function ReSet-EsxiVm {
+function Reset-EsxiVm {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1329,7 +1329,7 @@ function ReSet-EsxiVm {
     )
 
     Process {
-        'Calling method: ReSet-EsxiVm' | Write-Debug
+        'Calling method: Reset-EsxiVm' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()

@@ -90,7 +90,7 @@ function Initialize-ClustermgmtV41ConfigSnmpTrap {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigSnmpTrap' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigSnmpTrap' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -162,12 +162,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigSnmpTrap {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigSnmpTrap' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigSnmpTrap' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigSnmpTrap
+        # check if Json contains properties not defined in ClustermgmtV41ConfigSnmpTrap
         $AllProperties = ("tenantId", "extId", "links", "address", "username", "protocol", "port", "shouldInform", "engineId", "version", "recieverName", "communityString")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

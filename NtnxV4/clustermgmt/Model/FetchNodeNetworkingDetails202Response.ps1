@@ -35,7 +35,7 @@ function Initialize-FetchNodeNetworkingDetails202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4FetchNodeNetworkingDetails202Response' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => FetchNodeNetworkingDetails202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToFetchNodeNetworkingDetails202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4FetchNodeNetworkingDetails202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => FetchNodeNetworkingDetails202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4FetchNodeNetworkingDetails202Response
+        # check if Json contains properties not defined in FetchNodeNetworkingDetails202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

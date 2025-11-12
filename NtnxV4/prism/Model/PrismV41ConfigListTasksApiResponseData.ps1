@@ -47,7 +47,7 @@ function ConvertFrom-JsonToPrismV41ConfigListTasksApiResponseData {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'PrismV41ConfigTask[]' defined in oneOf (NtnxV4PrismV41ConfigListTasksApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'PrismV41ConfigTask[]' defined in oneOf (PrismV41ConfigListTasksApiResponseData). Proceeding to the next one if any."
         }
 
         # try to match PrismV41ErrorErrorResponse defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToPrismV41ConfigListTasksApiResponseData {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'PrismV41ErrorErrorResponse' defined in oneOf (NtnxV4PrismV41ConfigListTasksApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'PrismV41ErrorErrorResponse' defined in oneOf (PrismV41ConfigListTasksApiResponseData). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

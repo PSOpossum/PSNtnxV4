@@ -35,7 +35,7 @@ function Initialize-GetApprovalPolicyByExtId200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4GetApprovalPolicyByExtId200Response' | Write-Debug
+        'Creating PSCustomObject: security => GetApprovalPolicyByExtId200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToGetApprovalPolicyByExtId200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4GetApprovalPolicyByExtId200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: security => GetApprovalPolicyByExtId200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4GetApprovalPolicyByExtId200Response
+        # check if Json contains properties not defined in GetApprovalPolicyByExtId200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

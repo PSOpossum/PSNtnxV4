@@ -35,7 +35,7 @@ function Initialize-VmmV41AhvConfigMigrateVmToHostApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigMigrateVmToHostApiResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigMigrateVmToHostApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigMigrateVmToHostApiResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigMigrateVmToHostApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigMigrateVmToHostApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigMigrateVmToHostApiResponse
+        # check if Json contains properties not defined in VmmV41AhvConfigMigrateVmToHostApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

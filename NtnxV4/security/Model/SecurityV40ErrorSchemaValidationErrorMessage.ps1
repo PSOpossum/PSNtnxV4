@@ -40,7 +40,7 @@ function Initialize-SecurityV40ErrorSchemaValidationErrorMessage {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ErrorSchemaValidationErrorMessage' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ErrorSchemaValidationErrorMessage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -79,12 +79,12 @@ function ConvertFrom-JsonToSecurityV40ErrorSchemaValidationErrorMessage {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ErrorSchemaValidationErrorMessage' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ErrorSchemaValidationErrorMessage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ErrorSchemaValidationErrorMessage
+        # check if Json contains properties not defined in SecurityV40ErrorSchemaValidationErrorMessage
         $AllProperties = ("location", "message", "attributePath")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

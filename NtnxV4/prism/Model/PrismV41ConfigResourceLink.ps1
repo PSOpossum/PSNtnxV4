@@ -40,7 +40,7 @@ function Initialize-PrismV41ConfigResourceLink {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigResourceLink' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigResourceLink' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 128) {
@@ -83,12 +83,12 @@ function ConvertFrom-JsonToPrismV41ConfigResourceLink {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigResourceLink' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigResourceLink' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigResourceLink
+        # check if Json contains properties not defined in PrismV41ConfigResourceLink
         $AllProperties = ("href", "rel", "name")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

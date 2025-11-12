@@ -35,7 +35,7 @@ function Initialize-PrismV41OperationsBatchSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41OperationsBatchSpec' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41OperationsBatchSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Payload -and $Payload.length -gt 500) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToPrismV41OperationsBatchSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41OperationsBatchSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41OperationsBatchSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41OperationsBatchSpec
+        # check if Json contains properties not defined in PrismV41OperationsBatchSpec
         $AllProperties = ("metadata", "payload")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

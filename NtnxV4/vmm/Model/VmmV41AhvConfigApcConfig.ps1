@@ -35,7 +35,7 @@ function Initialize-VmmV41AhvConfigApcConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigApcConfig' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigApcConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigApcConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigApcConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigApcConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigApcConfig
+        # check if Json contains properties not defined in VmmV41AhvConfigApcConfig
         $AllProperties = ("isApcEnabled", "cpuModel")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

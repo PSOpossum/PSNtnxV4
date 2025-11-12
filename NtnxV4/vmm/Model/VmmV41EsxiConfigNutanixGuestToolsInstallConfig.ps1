@@ -40,7 +40,7 @@ function Initialize-VmmV41EsxiConfigNutanixGuestToolsInstallConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigNutanixGuestToolsInstallConfig' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41EsxiConfigNutanixGuestToolsInstallConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Capabilities -and $Capabilities.length -gt 2) {
@@ -91,12 +91,12 @@ function ConvertFrom-JsonToVmmV41EsxiConfigNutanixGuestToolsInstallConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigNutanixGuestToolsInstallConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41EsxiConfigNutanixGuestToolsInstallConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41EsxiConfigNutanixGuestToolsInstallConfig
+        # check if Json contains properties not defined in VmmV41EsxiConfigNutanixGuestToolsInstallConfig
         $AllProperties = ("capabilities", "credential", "rebootPreference")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

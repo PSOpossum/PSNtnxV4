@@ -40,7 +40,7 @@ function Initialize-ClustermgmtV41ConfigNodeNetworkingDetails {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeNetworkingDetails' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeNetworkingDetails' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Uplinks -and $Uplinks.length -gt 1024) {
@@ -95,12 +95,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNodeNetworkingDetails {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeNetworkingDetails' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeNetworkingDetails' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNodeNetworkingDetails
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNodeNetworkingDetails
         $AllProperties = ("networkInfo", "uplinks", "warnings")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvConfigDiskMigrationParams {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigDiskMigrationParams' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigDiskMigrationParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -67,12 +67,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigDiskMigrationParams {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigDiskMigrationParams' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigDiskMigrationParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigDiskMigrationParams
+        # check if Json contains properties not defined in VmmV41AhvConfigDiskMigrationParams
         $AllProperties = ("migrateDisks")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

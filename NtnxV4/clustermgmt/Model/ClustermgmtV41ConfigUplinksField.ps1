@@ -41,7 +41,7 @@ function Initialize-ClustermgmtV41ConfigUplinksField {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUplinksField' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigUplinksField' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 64) {
@@ -84,12 +84,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigUplinksField {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUplinksField' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigUplinksField' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigUplinksField
+        # check if Json contains properties not defined in ClustermgmtV41ConfigUplinksField
         $AllProperties = ("mac", "name", "value")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

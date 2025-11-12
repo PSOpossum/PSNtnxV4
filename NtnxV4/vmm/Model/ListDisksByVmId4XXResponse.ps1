@@ -35,7 +35,7 @@ function Initialize-ListDisksByVmId4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4ListDisksByVmId4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => ListDisksByVmId4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToListDisksByVmId4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4ListDisksByVmId4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => ListDisksByVmId4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ListDisksByVmId4XXResponse
+        # check if Json contains properties not defined in ListDisksByVmId4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

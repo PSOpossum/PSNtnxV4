@@ -35,7 +35,7 @@ function Initialize-ValidateNode202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ValidateNode202Response' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ValidateNode202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToValidateNode202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ValidateNode202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ValidateNode202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ValidateNode202Response
+        # check if Json contains properties not defined in ValidateNode202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -35,7 +35,7 @@ function Initialize-DeleteRateLimitPolicyById4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4DeleteRateLimitPolicyById4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => DeleteRateLimitPolicyById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToDeleteRateLimitPolicyById4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4DeleteRateLimitPolicyById4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => DeleteRateLimitPolicyById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4DeleteRateLimitPolicyById4XXResponse
+        # check if Json contains properties not defined in DeleteRateLimitPolicyById4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

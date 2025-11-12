@@ -36,7 +36,7 @@ function Initialize-VmmV41EsxiConfigDiskAddress {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigDiskAddress' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41EsxiConfigDiskAddress' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($Index -and $Index -lt 0) {
@@ -78,12 +78,12 @@ function ConvertFrom-JsonToVmmV41EsxiConfigDiskAddress {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigDiskAddress' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41EsxiConfigDiskAddress' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41EsxiConfigDiskAddress
+        # check if Json contains properties not defined in VmmV41EsxiConfigDiskAddress
         $AllProperties = ("busType", "index")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

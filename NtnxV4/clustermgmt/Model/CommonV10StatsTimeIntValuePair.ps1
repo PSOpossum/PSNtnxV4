@@ -35,7 +35,7 @@ function Initialize-CommonV10StatsTimeIntValuePair {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4CommonV10StatsTimeIntValuePair' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => CommonV10StatsTimeIntValuePair' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToCommonV10StatsTimeIntValuePair {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4CommonV10StatsTimeIntValuePair' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => CommonV10StatsTimeIntValuePair' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10StatsTimeIntValuePair
+        # check if Json contains properties not defined in CommonV10StatsTimeIntValuePair
         $AllProperties = ("value", "timestamp")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

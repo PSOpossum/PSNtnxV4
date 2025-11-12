@@ -47,7 +47,7 @@ function ConvertFrom-JsonToVmmV41AhvConfigCloneOverrideParamsBootConfig {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvConfigLegacyBoot' defined in oneOf (NtnxV4VmmV41AhvConfigCloneOverrideParamsBootConfig). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvConfigLegacyBoot' defined in oneOf (VmmV41AhvConfigCloneOverrideParamsBootConfig). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvConfigUefiBoot defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToVmmV41AhvConfigCloneOverrideParamsBootConfig {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvConfigUefiBoot' defined in oneOf (NtnxV4VmmV41AhvConfigCloneOverrideParamsBootConfig). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvConfigUefiBoot' defined in oneOf (VmmV41AhvConfigCloneOverrideParamsBootConfig). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

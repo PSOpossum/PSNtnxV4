@@ -35,7 +35,7 @@ function Initialize-SecurityV40ManagementListApprovalPoliciesApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementListApprovalPoliciesApiResponse' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ManagementListApprovalPoliciesApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToSecurityV40ManagementListApprovalPoliciesApiResponse 
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementListApprovalPoliciesApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ManagementListApprovalPoliciesApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ManagementListApprovalPoliciesApiResponse
+        # check if Json contains properties not defined in SecurityV40ManagementListApprovalPoliciesApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

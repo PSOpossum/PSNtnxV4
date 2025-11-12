@@ -47,7 +47,7 @@ function ConvertFrom-JsonToVmmV41ContentListTemplatesApiResponseData {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41ContentTemplate[]' defined in oneOf (NtnxV4VmmV41ContentListTemplatesApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41ContentTemplate[]' defined in oneOf (VmmV41ContentListTemplatesApiResponseData). Proceeding to the next one if any."
         }
 
         # try to match VmmV41ErrorErrorResponse defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToVmmV41ContentListTemplatesApiResponseData {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41ErrorErrorResponse' defined in oneOf (NtnxV4VmmV41ContentListTemplatesApiResponseData). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41ErrorErrorResponse' defined in oneOf (VmmV41ContentListTemplatesApiResponseData). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

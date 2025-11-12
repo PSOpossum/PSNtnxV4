@@ -30,7 +30,7 @@ function Initialize-SecurityV40ConfigBasicAuthCredential {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigBasicAuthCredential' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ConfigBasicAuthCredential' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Credential) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToSecurityV40ConfigBasicAuthCredential {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigBasicAuthCredential' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ConfigBasicAuthCredential' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ConfigBasicAuthCredential
+        # check if Json contains properties not defined in SecurityV40ConfigBasicAuthCredential
         $AllProperties = ("credential")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

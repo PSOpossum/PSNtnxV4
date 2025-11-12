@@ -30,7 +30,7 @@ function Initialize-VirtualDiskImageSource {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VirtualDiskImageSource' | Write-Debug
+        'Creating PSCustomObject: vmm => VirtualDiskImageSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVirtualDiskImageSource {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VirtualDiskImageSource' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VirtualDiskImageSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VirtualDiskImageSource
+        # check if Json contains properties not defined in VirtualDiskImageSource
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

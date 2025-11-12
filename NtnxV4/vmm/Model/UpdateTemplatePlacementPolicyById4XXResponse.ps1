@@ -35,7 +35,7 @@ function Initialize-UpdateTemplatePlacementPolicyById4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4UpdateTemplatePlacementPolicyById4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => UpdateTemplatePlacementPolicyById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToUpdateTemplatePlacementPolicyById4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4UpdateTemplatePlacementPolicyById4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => UpdateTemplatePlacementPolicyById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4UpdateTemplatePlacementPolicyById4XXResponse
+        # check if Json contains properties not defined in UpdateTemplatePlacementPolicyById4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

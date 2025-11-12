@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigToleranceMessage {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigToleranceMessage' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigToleranceMessage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$AttributeList -and $AttributeList.length -gt 1024) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigToleranceMessage {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigToleranceMessage' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigToleranceMessage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigToleranceMessage
+        # check if Json contains properties not defined in ClustermgmtV41ConfigToleranceMessage
         $AllProperties = ("id", "attributeList")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

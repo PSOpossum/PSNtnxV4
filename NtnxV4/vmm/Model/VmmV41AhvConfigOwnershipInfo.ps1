@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvConfigOwnershipInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigOwnershipInfo' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigOwnershipInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -67,12 +67,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigOwnershipInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigOwnershipInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigOwnershipInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigOwnershipInfo
+        # check if Json contains properties not defined in VmmV41AhvConfigOwnershipInfo
         $AllProperties = ("owner")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

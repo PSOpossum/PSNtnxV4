@@ -35,7 +35,7 @@ function Initialize-CreateCdRom4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4CreateCdRom4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => CreateCdRom4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToCreateCdRom4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4CreateCdRom4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => CreateCdRom4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CreateCdRom4XXResponse
+        # check if Json contains properties not defined in CreateCdRom4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

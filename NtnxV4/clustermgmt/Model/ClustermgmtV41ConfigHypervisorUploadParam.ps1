@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigHypervisorUploadParam {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHypervisorUploadParam' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigHypervisorUploadParam' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $NodeList) {
@@ -79,12 +79,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigHypervisorUploadParam {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHypervisorUploadParam' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigHypervisorUploadParam' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigHypervisorUploadParam
+        # check if Json contains properties not defined in ClustermgmtV41ConfigHypervisorUploadParam
         $AllProperties = ("nodeList")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

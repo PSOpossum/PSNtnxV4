@@ -30,7 +30,7 @@ function Initialize-PrismV41ManagementClusterLocation {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementClusterLocation' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementClusterLocation' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Config) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToPrismV41ManagementClusterLocation {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementClusterLocation' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementClusterLocation' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementClusterLocation
+        # check if Json contains properties not defined in PrismV41ManagementClusterLocation
         $AllProperties = ("config")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

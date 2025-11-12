@@ -35,7 +35,7 @@ function Initialize-SecurityV40ReportIssueSummary {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ReportIssueSummary' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ReportIssueSummary' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Trend -and $Trend.length -gt 31) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToSecurityV40ReportIssueSummary {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ReportIssueSummary' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ReportIssueSummary' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ReportIssueSummary
+        # check if Json contains properties not defined in SecurityV40ReportIssueSummary
         $AllProperties = ("currentIssueCount", "trend")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

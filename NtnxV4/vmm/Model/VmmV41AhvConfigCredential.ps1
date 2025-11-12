@@ -35,7 +35,7 @@ function Initialize-VmmV41AhvConfigCredential {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigCredential' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigCredential' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Username -and $Username.length -gt 256) {
@@ -77,12 +77,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigCredential {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigCredential' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigCredential' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigCredential
+        # check if Json contains properties not defined in VmmV41AhvConfigCredential
         $AllProperties = ("username", "password")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -35,7 +35,7 @@ function Initialize-CreateBackupTarget202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4CreateBackupTarget202Response' | Write-Debug
+        'Creating PSCustomObject: prism => CreateBackupTarget202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToCreateBackupTarget202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4CreateBackupTarget202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => CreateBackupTarget202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CreateBackupTarget202Response
+        # check if Json contains properties not defined in CreateBackupTarget202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

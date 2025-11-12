@@ -46,7 +46,7 @@ function Initialize-ClustermgmtV41ConfigNonMigratableVmInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNonMigratableVmInfo' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNonMigratableVmInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$VmName -and $VmName.length -gt 64) {
@@ -90,12 +90,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNonMigratableVmInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNonMigratableVmInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNonMigratableVmInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNonMigratableVmInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNonMigratableVmInfo
         $AllProperties = ("vmName", "vmUuid", "nonMigratableVmReason", "hostIp")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

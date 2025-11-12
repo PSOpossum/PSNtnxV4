@@ -46,7 +46,7 @@ function Initialize-VmmV41AhvConfigDpOffloadNic {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigDpOffloadNic' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigDpOffloadNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $DpOffloadProfileReference) {
@@ -90,12 +90,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigDpOffloadNic {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigDpOffloadNic' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigDpOffloadNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigDpOffloadNic
+        # check if Json contains properties not defined in VmmV41AhvConfigDpOffloadNic
         $AllProperties = ("dpOffloadProfileReference", "hostPcieDeviceReference", "macAddress", "isConnected")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

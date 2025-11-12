@@ -123,7 +123,7 @@ function Initialize-VmmV41EsxiConfigVm {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigVm' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41EsxiConfigVm' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -242,12 +242,12 @@ function ConvertFrom-JsonToVmmV41EsxiConfigVm {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigVm' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41EsxiConfigVm' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41EsxiConfigVm
+        # check if Json contains properties not defined in VmmV41EsxiConfigVm
         $AllProperties = ("tenantId", "extId", "links", "name", "cluster", "host", "description", "categories", "ownershipInfo", "nutanixGuestTools", "powerState", "memorySizeBytes", "numCoresPerSocket", "numCpus", "guestOsName", "virtualHardwareVersion", "disks", "cdRoms", "nics")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

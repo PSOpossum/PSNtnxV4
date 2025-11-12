@@ -35,7 +35,7 @@ function Initialize-GetSerialPortById4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4GetSerialPortById4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => GetSerialPortById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToGetSerialPortById4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4GetSerialPortById4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => GetSerialPortById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4GetSerialPortById4XXResponse
+        # check if Json contains properties not defined in GetSerialPortById4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -165,7 +165,7 @@ function Initialize-VmmV41AhvStatsVmDiskStatsTuple {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvStatsVmDiskStatsTuple' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvStatsVmDiskStatsTuple' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -229,12 +229,12 @@ function ConvertFrom-JsonToVmmV41AhvStatsVmDiskStatsTuple {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvStatsVmDiskStatsTuple' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvStatsVmDiskStatsTuple' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvStatsVmDiskStatsTuple
+        # check if Json contains properties not defined in VmmV41AhvStatsVmDiskStatsTuple
         $AllProperties = ("timestamp", "controllerAvgIoLatencyMicros", "controllerAvgReadIoLatencyMicros", "controllerAvgReadIoSizeKb", "controllerNumReadIops", "controllerReadIoPpm", "controllerNumWriteIo", "controllerAvgWriteIoLatencyMicros", "controllerAvgWriteIoSizeKb", "controllerIoBandwidthKbps", "controllerFrontendReadOps", "controllerFrontendWriteOps", "controllerNumIo", "controllerNumIops", "controllerNumReadIo", "controllerRandomReadOps", "controllerRandomWriteOps", "controllerReadIoBandwidthKbps", "controllerSeqIoPpm", "controllerTimespanMicros", "controllerTotalIoSizeKb", "controllerTotalIoTimeMicros", "controllerTotalReadIoSizeKb", "controllerTotalReadIoTimeMicros", "controllerUserBytes", "controllerVdiskCpuTimeMicros", "controllerWriteIoBandwidthKbps", "controllerWriteIoPpm")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

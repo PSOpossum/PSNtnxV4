@@ -30,7 +30,7 @@ function Initialize-VersionOfATemplateVersionSource {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VersionOfATemplateVersionSource' | Write-Debug
+        'Creating PSCustomObject: vmm => VersionOfATemplateVersionSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToVersionOfATemplateVersionSource {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VersionOfATemplateVersionSource' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VersionOfATemplateVersionSource' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VersionOfATemplateVersionSource
+        # check if Json contains properties not defined in VersionOfATemplateVersionSource
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -56,7 +56,7 @@ function Initialize-PrismV41ErrorAppMessage {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ErrorAppMessage' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ErrorAppMessage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -98,12 +98,12 @@ function ConvertFrom-JsonToPrismV41ErrorAppMessage {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ErrorAppMessage' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ErrorAppMessage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ErrorAppMessage
+        # check if Json contains properties not defined in PrismV41ErrorAppMessage
         $AllProperties = ("message", "severity", "code", "locale", "errorGroup", "argumentsMap")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -35,7 +35,7 @@ function Initialize-VmmV41ConfigListTemplatePlacementPoliciesApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ConfigListTemplatePlacementPoliciesApiResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ConfigListTemplatePlacementPoliciesApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToVmmV41ConfigListTemplatePlacementPoliciesApiResponse 
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ConfigListTemplatePlacementPoliciesApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ConfigListTemplatePlacementPoliciesApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ConfigListTemplatePlacementPoliciesApiResponse
+        # check if Json contains properties not defined in VmmV41ConfigListTemplatePlacementPoliciesApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

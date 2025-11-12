@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigPublicKey {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigPublicKey' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigPublicKey' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Name) {
@@ -85,12 +85,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigPublicKey {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigPublicKey' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigPublicKey' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigPublicKey
+        # check if Json contains properties not defined in ClustermgmtV41ConfigPublicKey
         $AllProperties = ("name", "key")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

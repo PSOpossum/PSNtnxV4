@@ -77,7 +77,7 @@ function Initialize-SecurityV40ManagementApprovalPolicy {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementApprovalPolicy' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ManagementApprovalPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -171,12 +171,12 @@ function ConvertFrom-JsonToSecurityV40ManagementApprovalPolicy {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementApprovalPolicy' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ManagementApprovalPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ManagementApprovalPolicy
+        # check if Json contains properties not defined in SecurityV40ManagementApprovalPolicy
         $AllProperties = ("tenantId", "extId", "links", "name", "description", "approverGroups", "securedPolicies", "lastUpdatedBy", "lastUpdateTime", "isUpdatePending")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

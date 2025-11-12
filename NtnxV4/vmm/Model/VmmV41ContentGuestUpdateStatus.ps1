@@ -31,7 +31,7 @@ function Initialize-VmmV41ContentGuestUpdateStatus {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentGuestUpdateStatus' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentGuestUpdateStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToVmmV41ContentGuestUpdateStatus {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentGuestUpdateStatus' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentGuestUpdateStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentGuestUpdateStatus
+        # check if Json contains properties not defined in VmmV41ContentGuestUpdateStatus
         $AllProperties = ("deployedVmReference")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

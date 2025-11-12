@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigBlockItem {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigBlockItem' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigBlockItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$RackName -and $RackName.length -gt 64) {
@@ -77,12 +77,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigBlockItem {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigBlockItem' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigBlockItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigBlockItem
+        # check if Json contains properties not defined in ClustermgmtV41ConfigBlockItem
         $AllProperties = ("blockId", "rackName")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

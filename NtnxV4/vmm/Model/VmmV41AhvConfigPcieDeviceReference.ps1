@@ -31,7 +31,7 @@ function Initialize-VmmV41AhvConfigPcieDeviceReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigPcieDeviceReference' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigPcieDeviceReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigPcieDeviceReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigPcieDeviceReference' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigPcieDeviceReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigPcieDeviceReference
+        # check if Json contains properties not defined in VmmV41AhvConfigPcieDeviceReference
         $AllProperties = ("deviceExtId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

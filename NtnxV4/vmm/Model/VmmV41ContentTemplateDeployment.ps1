@@ -47,7 +47,7 @@ function Initialize-VmmV41ContentTemplateDeployment {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentTemplateDeployment' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentTemplateDeployment' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $NumberOfVms) {
@@ -103,12 +103,12 @@ function ConvertFrom-JsonToVmmV41ContentTemplateDeployment {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentTemplateDeployment' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentTemplateDeployment' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentTemplateDeployment
+        # check if Json contains properties not defined in VmmV41ContentTemplateDeployment
         $AllProperties = ("versionId", "numberOfVms", "overrideVmConfigMap", "clusterReference")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

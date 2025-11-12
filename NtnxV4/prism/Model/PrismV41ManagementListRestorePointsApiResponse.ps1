@@ -35,7 +35,7 @@ function Initialize-PrismV41ManagementListRestorePointsApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementListRestorePointsApiResponse' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementListRestorePointsApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToPrismV41ManagementListRestorePointsApiResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementListRestorePointsApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementListRestorePointsApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementListRestorePointsApiResponse
+        # check if Json contains properties not defined in PrismV41ManagementListRestorePointsApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

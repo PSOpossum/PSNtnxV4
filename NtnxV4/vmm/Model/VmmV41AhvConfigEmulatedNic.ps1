@@ -47,7 +47,7 @@ function Initialize-VmmV41AhvConfigEmulatedNic {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigEmulatedNic' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigEmulatedNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($NumQueues -and $NumQueues -lt 1) {
@@ -91,12 +91,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigEmulatedNic {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigEmulatedNic' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigEmulatedNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigEmulatedNic
+        # check if Json contains properties not defined in VmmV41AhvConfigEmulatedNic
         $AllProperties = ("model", "macAddress", "isConnected", "numQueues")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

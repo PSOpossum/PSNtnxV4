@@ -45,7 +45,7 @@ function Initialize-PrismV41ProtectpcReplicaInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ProtectpcReplicaInfo' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ProtectpcReplicaInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -85,12 +85,12 @@ function ConvertFrom-JsonToPrismV41ProtectpcReplicaInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ProtectpcReplicaInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ProtectpcReplicaInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ProtectpcReplicaInfo
+        # check if Json contains properties not defined in PrismV41ProtectpcReplicaInfo
         $AllProperties = ("peClusterIpList", "peClusterId", "backupUuid", "objectStoreEndpoint")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

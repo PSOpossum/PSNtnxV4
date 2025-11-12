@@ -62,7 +62,7 @@ function Initialize-VmmV41AhvConfigNic {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigNic' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -113,12 +113,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigNic {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigNic' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigNic
+        # check if Json contains properties not defined in VmmV41AhvConfigNic
         $AllProperties = ("tenantId", "extId", "links", "backingInfo", "nicBackingInfo", "networkInfo", "nicNetworkInfo")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

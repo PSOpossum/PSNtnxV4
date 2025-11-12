@@ -42,7 +42,7 @@ function Initialize-ClustermgmtV41ConfigRsyslogModuleItem {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigRsyslogModuleItem' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigRsyslogModuleItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Name) {
@@ -89,12 +89,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigRsyslogModuleItem {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigRsyslogModuleItem' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigRsyslogModuleItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigRsyslogModuleItem
+        # check if Json contains properties not defined in ClustermgmtV41ConfigRsyslogModuleItem
         $AllProperties = ("name", "logSeverityLevel", "shouldLogMonitorFiles")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -35,7 +35,7 @@ function Initialize-InstallVmGuestTools4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4InstallVmGuestTools4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => InstallVmGuestTools4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToInstallVmGuestTools4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4InstallVmGuestTools4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => InstallVmGuestTools4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4InstallVmGuestTools4XXResponse
+        # check if Json contains properties not defined in InstallVmGuestTools4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

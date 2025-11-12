@@ -50,7 +50,7 @@ function Initialize-CommonV10ResponseApiResponseMetadata {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4CommonV10ResponseApiResponseMetadata' | Write-Debug
+        'Creating PSCustomObject: security => CommonV10ResponseApiResponseMetadata' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Flags -and $Flags.length -gt 20) {
@@ -123,12 +123,12 @@ function ConvertFrom-JsonToCommonV10ResponseApiResponseMetadata {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4CommonV10ResponseApiResponseMetadata' | Write-Debug
+        'Converting JSON to PSCustomObject: security => CommonV10ResponseApiResponseMetadata' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10ResponseApiResponseMetadata
+        # check if Json contains properties not defined in CommonV10ResponseApiResponseMetadata
         $AllProperties = ("flags", "links", "totalAvailableResults", "messages", "extraInfo")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

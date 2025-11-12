@@ -61,7 +61,7 @@ function Initialize-SecurityV40ConfigAzureAccessInformation {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigAzureAccessInformation' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ConfigAzureAccessInformation' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $EndpointUrl) {
@@ -160,12 +160,12 @@ function ConvertFrom-JsonToSecurityV40ConfigAzureAccessInformation {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigAzureAccessInformation' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ConfigAzureAccessInformation' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ConfigAzureAccessInformation
+        # check if Json contains properties not defined in SecurityV40ConfigAzureAccessInformation
         $AllProperties = ("endpointUrl", "keyId", "tenantId", "clientId", "clientSecret", "truncatedClientSecret", "credentialExpiryDate")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

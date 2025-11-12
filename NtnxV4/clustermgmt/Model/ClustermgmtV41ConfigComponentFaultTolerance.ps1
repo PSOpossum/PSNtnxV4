@@ -51,7 +51,7 @@ function Initialize-ClustermgmtV41ConfigComponentFaultTolerance {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigComponentFaultTolerance' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigComponentFaultTolerance' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -92,12 +92,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigComponentFaultTolerance {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigComponentFaultTolerance' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigComponentFaultTolerance' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigComponentFaultTolerance
+        # check if Json contains properties not defined in ClustermgmtV41ConfigComponentFaultTolerance
         $AllProperties = ("type", "maxFaultsTolerated", "lastUpdatedTime", "isUnderComputation", "detailMessage")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

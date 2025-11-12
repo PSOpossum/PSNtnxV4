@@ -35,7 +35,7 @@ function Initialize-AssociatePolicies202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4AssociatePolicies202Response' | Write-Debug
+        'Creating PSCustomObject: security => AssociatePolicies202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToAssociatePolicies202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4AssociatePolicies202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: security => AssociatePolicies202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4AssociatePolicies202Response
+        # check if Json contains properties not defined in AssociatePolicies202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

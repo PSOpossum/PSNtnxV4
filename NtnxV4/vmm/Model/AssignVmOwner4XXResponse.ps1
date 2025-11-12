@@ -35,7 +35,7 @@ function Initialize-AssignVmOwner4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4AssignVmOwner4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => AssignVmOwner4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToAssignVmOwner4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4AssignVmOwner4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => AssignVmOwner4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4AssignVmOwner4XXResponse
+        # check if Json contains properties not defined in AssignVmOwner4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -86,7 +86,7 @@ function Initialize-PrismV41ProtectpcPcObjectStoreEndpoint {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ProtectpcPcObjectStoreEndpoint' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ProtectpcPcObjectStoreEndpoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($BackupRetentionDays -and $BackupRetentionDays -lt 1) {
@@ -138,12 +138,12 @@ function ConvertFrom-JsonToPrismV41ProtectpcPcObjectStoreEndpoint {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ProtectpcPcObjectStoreEndpoint' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ProtectpcPcObjectStoreEndpoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ProtectpcPcObjectStoreEndpoint
+        # check if Json contains properties not defined in PrismV41ProtectpcPcObjectStoreEndpoint
         $AllProperties = ("endpointAddress", "endpointFlavour", "endpointCredentials", "rpoSeconds", "ipAddressOrDomain", "port", "bucket", "region", "skipTLS", "backupRetentionDays", "skipCertificateValidation", "hasCustomCertificate")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -47,7 +47,7 @@ function ConvertFrom-JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'ClustermgmtV41ConfigHypervisorUploadInfo' defined in oneOf (NtnxV4ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'ClustermgmtV41ConfigHypervisorUploadInfo' defined in oneOf (ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
         }
 
         # try to match ClustermgmtV41ConfigNodeNetworkingDetails defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'ClustermgmtV41ConfigNodeNetworkingDetails' defined in oneOf (NtnxV4ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'ClustermgmtV41ConfigNodeNetworkingDetails' defined in oneOf (ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
         }
 
         # try to match ClustermgmtV41ConfigNonCompatibleClusterReference[] defined in the oneOf schemas
@@ -79,7 +79,7 @@ function ConvertFrom-JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'ClustermgmtV41ConfigNonCompatibleClusterReference[]' defined in oneOf (NtnxV4ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'ClustermgmtV41ConfigNonCompatibleClusterReference[]' defined in oneOf (ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
         }
 
         # try to match ClustermgmtV41ConfigUnconfigureNodeDetails defined in the oneOf schemas
@@ -95,7 +95,7 @@ function ConvertFrom-JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'ClustermgmtV41ConfigUnconfigureNodeDetails' defined in oneOf (NtnxV4ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'ClustermgmtV41ConfigUnconfigureNodeDetails' defined in oneOf (ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
         }
 
         # try to match ClustermgmtV41ConfigValidateBundleInfo defined in the oneOf schemas
@@ -111,7 +111,7 @@ function ConvertFrom-JsonToClustermgmtV41ConfigTaskResponseAllOfResponse {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'ClustermgmtV41ConfigValidateBundleInfo' defined in oneOf (NtnxV4ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'ClustermgmtV41ConfigValidateBundleInfo' defined in oneOf (ClustermgmtV41ConfigTaskResponseAllOfResponse). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

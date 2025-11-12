@@ -30,7 +30,7 @@ function Initialize-CommonV10ConfigMapOfStringWrapper {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4CommonV10ConfigMapOfStringWrapper' | Write-Debug
+        'Creating PSCustomObject: prism => CommonV10ConfigMapOfStringWrapper' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -67,12 +67,12 @@ function ConvertFrom-JsonToCommonV10ConfigMapOfStringWrapper {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4CommonV10ConfigMapOfStringWrapper' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => CommonV10ConfigMapOfStringWrapper' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10ConfigMapOfStringWrapper
+        # check if Json contains properties not defined in CommonV10ConfigMapOfStringWrapper
         $AllProperties = ("map")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

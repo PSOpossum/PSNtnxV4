@@ -187,7 +187,7 @@ function Initialize-ClustermgmtV41ConfigHostNic {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHostNic' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigHostNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -306,12 +306,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigHostNic {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigHostNic' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigHostNic' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigHostNic
+        # check if Json contains properties not defined in ClustermgmtV41ConfigHostNic
         $AllProperties = ("tenantId", "extId", "links", "name", "hostDescription", "macAddress", "ipv4Addresses", "ipv6Addresses", "interfaceStatus", "isDhcpEnabled", "linkSpeedInKbps", "mtuInBytes", "nodeUuid", "discoveryProtocol", "switchDeviceId", "switchPortId", "switchVendorInfo", "switchVlanId", "switchManagementIp", "switchMacAddress", "attachedSwitchInterfaceList", "rxRingSizeInBytes", "txRingSizeInBytes", "linkCapacityInMbps", "clusterExtId", "nicProfileExtId", "supportedCapabilities", "driverVersion", "firmwareVersion", "virtualNicExtIds", "pciModelId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

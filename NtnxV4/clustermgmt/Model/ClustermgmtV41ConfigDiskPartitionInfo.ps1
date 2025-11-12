@@ -37,7 +37,7 @@ function Initialize-ClustermgmtV41ConfigDiskPartitionInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigDiskPartitionInfo' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigDiskPartitionInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -75,12 +75,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigDiskPartitionInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigDiskPartitionInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigDiskPartitionInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigDiskPartitionInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigDiskPartitionInfo
         $AllProperties = ("partitionType", "driveReplacementOption")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

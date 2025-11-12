@@ -47,7 +47,7 @@ function ConvertFrom-JsonToVmmV41AhvConfigDataSourceReference {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvConfigImageReference' defined in oneOf (NtnxV4VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvConfigImageReference' defined in oneOf (VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvConfigVmDiskRecoveryPointReference defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToVmmV41AhvConfigDataSourceReference {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvConfigVmDiskRecoveryPointReference' defined in oneOf (NtnxV4VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvConfigVmDiskRecoveryPointReference' defined in oneOf (VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvConfigVmDiskReference defined in the oneOf schemas
@@ -79,7 +79,7 @@ function ConvertFrom-JsonToVmmV41AhvConfigDataSourceReference {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvConfigVmDiskReference' defined in oneOf (NtnxV4VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvConfigVmDiskReference' defined in oneOf (VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvConfigVolumeDiskRecoveryPointReference defined in the oneOf schemas
@@ -95,7 +95,7 @@ function ConvertFrom-JsonToVmmV41AhvConfigDataSourceReference {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvConfigVolumeDiskRecoveryPointReference' defined in oneOf (NtnxV4VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvConfigVolumeDiskRecoveryPointReference' defined in oneOf (VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
         }
 
         # try to match VmmV41AhvConfigVolumeDiskReference defined in the oneOf schemas
@@ -111,7 +111,7 @@ function ConvertFrom-JsonToVmmV41AhvConfigDataSourceReference {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41AhvConfigVolumeDiskReference' defined in oneOf (NtnxV4VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41AhvConfigVolumeDiskReference' defined in oneOf (VmmV41AhvConfigDataSourceReference). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

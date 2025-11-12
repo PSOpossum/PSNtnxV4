@@ -82,7 +82,7 @@ function Initialize-ClustermgmtV41AhvConfigPcieDevice {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41AhvConfigPcieDevice' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41AhvConfigPcieDevice' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -136,12 +136,12 @@ function ConvertFrom-JsonToClustermgmtV41AhvConfigPcieDevice {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41AhvConfigPcieDevice' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41AhvConfigPcieDevice' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41AhvConfigPcieDevice
+        # check if Json contains properties not defined in ClustermgmtV41AhvConfigPcieDevice
         $AllProperties = ("tenantId", "extId", "links", "clusterExtId", "hostExtId", "state", "description", "configuration", "ownerVmExtId", "type")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

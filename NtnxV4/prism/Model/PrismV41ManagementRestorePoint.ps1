@@ -52,7 +52,7 @@ function Initialize-PrismV41ManagementRestorePoint {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementRestorePoint' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementRestorePoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -101,12 +101,12 @@ function ConvertFrom-JsonToPrismV41ManagementRestorePoint {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementRestorePoint' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementRestorePoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementRestorePoint
+        # check if Json contains properties not defined in PrismV41ManagementRestorePoint
         $AllProperties = ("tenantId", "extId", "links", "creationTime", "domainManager")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -75,7 +75,7 @@ function Initialize-DataprotectionV40CommonBaseRecoveryPoint {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4DataprotectionV40CommonBaseRecoveryPoint' | Write-Debug
+        'Creating PSCustomObject: vmm => DataprotectionV40CommonBaseRecoveryPoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -132,12 +132,12 @@ function ConvertFrom-JsonToDataprotectionV40CommonBaseRecoveryPoint {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4DataprotectionV40CommonBaseRecoveryPoint' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => DataprotectionV40CommonBaseRecoveryPoint' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4DataprotectionV40CommonBaseRecoveryPoint
+        # check if Json contains properties not defined in DataprotectionV40CommonBaseRecoveryPoint
         $AllProperties = ("tenantId", "extId", "links", "locationAgnosticId", "name", "creationTime", "expirationTime", "status", "recoveryPointType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

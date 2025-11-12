@@ -130,7 +130,7 @@ function Initialize-ClustermgmtV41ConfigClusterProfile {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigClusterProfile' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigClusterProfile' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -254,12 +254,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigClusterProfile {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigClusterProfile' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigClusterProfile' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigClusterProfile
+        # check if Json contains properties not defined in ClustermgmtV41ConfigClusterProfile
         $AllProperties = ("tenantId", "extId", "links", "name", "description", "createTime", "lastUpdateTime", "createdBy", "lastUpdatedBy", "clusterCount", "driftedClusterCount", "clusters", "allowedOverrides", "nameServerIpList", "ntpServerIpList", "smtpServer", "nfsSubnetWhitelist", "snmpConfig", "rsyslogServerList", "pulseStatus")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

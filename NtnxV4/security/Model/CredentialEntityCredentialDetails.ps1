@@ -30,7 +30,7 @@ function Initialize-CredentialEntityCredentialDetails {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4CredentialEntityCredentialDetails' | Write-Debug
+        'Creating PSCustomObject: security => CredentialEntityCredentialDetails' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ObjectType) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToCredentialEntityCredentialDetails {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4CredentialEntityCredentialDetails' | Write-Debug
+        'Converting JSON to PSCustomObject: security => CredentialEntityCredentialDetails' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CredentialEntityCredentialDetails
+        # check if Json contains properties not defined in CredentialEntityCredentialDetails
         $AllProperties = ("$objectType")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

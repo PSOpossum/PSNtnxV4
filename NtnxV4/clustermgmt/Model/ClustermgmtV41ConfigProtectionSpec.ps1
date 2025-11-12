@@ -41,7 +41,7 @@ function Initialize-ClustermgmtV41ConfigProtectionSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigProtectionSpec' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigProtectionSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($LocalSnapshotRetentionPolicy -and $LocalSnapshotRetentionPolicy -gt 4) {
@@ -96,12 +96,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigProtectionSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigProtectionSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigProtectionSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigProtectionSpec
+        # check if Json contains properties not defined in ClustermgmtV41ConfigProtectionSpec
         $AllProperties = ("localSnapshotRetentionPolicy", "protectionRpoMinutes", "protectionTarget")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

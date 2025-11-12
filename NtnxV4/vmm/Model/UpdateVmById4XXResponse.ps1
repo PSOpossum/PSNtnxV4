@@ -35,7 +35,7 @@ function Initialize-UpdateVmById4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4UpdateVmById4XXResponse' | Write-Debug
+        'Creating PSCustomObject: vmm => UpdateVmById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToUpdateVmById4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4UpdateVmById4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => UpdateVmById4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4UpdateVmById4XXResponse
+        # check if Json contains properties not defined in UpdateVmById4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

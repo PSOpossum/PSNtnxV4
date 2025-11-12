@@ -35,7 +35,7 @@ function Initialize-PrismV41ConfigListDomainManagerApiResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigListDomainManagerApiResponse' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigListDomainManagerApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToPrismV41ConfigListDomainManagerApiResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigListDomainManagerApiResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigListDomainManagerApiResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigListDomainManagerApiResponse
+        # check if Json contains properties not defined in PrismV41ConfigListDomainManagerApiResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

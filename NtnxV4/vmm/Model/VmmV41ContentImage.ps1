@@ -104,7 +104,7 @@ function Initialize-VmmV41ContentImage {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentImage' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentImage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -207,12 +207,12 @@ function ConvertFrom-JsonToVmmV41ContentImage {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentImage' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentImage' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentImage
+        # check if Json contains properties not defined in VmmV41ContentImage
         $AllProperties = ("tenantId", "extId", "links", "name", "description", "type", "checksum", "sizeBytes", "source", "categoryExtIds", "clusterLocationExtIds", "createTime", "lastUpdateTime", "ownerExtId", "placementPolicyStatus")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

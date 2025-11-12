@@ -52,7 +52,7 @@ function Initialize-PrismV41ConfigAssociationDetailOld {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigAssociationDetailOld' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigAssociationDetailOld' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$ResourceReferences -and $ResourceReferences.length -gt 500) {
@@ -101,12 +101,12 @@ function ConvertFrom-JsonToPrismV41ConfigAssociationDetailOld {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigAssociationDetailOld' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigAssociationDetailOld' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigAssociationDetailOld
+        # check if Json contains properties not defined in PrismV41ConfigAssociationDetailOld
         $AllProperties = ("categoryId", "resourceType", "resourceGroup", "count", "resourceReferences")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -62,7 +62,7 @@ function Initialize-PrismV41ConfigDomainManagerNetwork {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigDomainManagerNetwork' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigDomainManagerNetwork' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $NameServers) {
@@ -149,12 +149,12 @@ function ConvertFrom-JsonToPrismV41ConfigDomainManagerNetwork {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigDomainManagerNetwork' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigDomainManagerNetwork' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigDomainManagerNetwork
+        # check if Json contains properties not defined in PrismV41ConfigDomainManagerNetwork
         $AllProperties = ("externalAddress", "nameServers", "ntpServers", "fqdn", "internalNetworks", "externalNetworks", "capability")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

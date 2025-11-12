@@ -47,7 +47,7 @@ function ConvertFrom-JsonToVmmV41ErrorErrorResponseError {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41ErrorAppMessage[]' defined in oneOf (NtnxV4VmmV41ErrorErrorResponseError). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41ErrorAppMessage[]' defined in oneOf (VmmV41ErrorErrorResponseError). Proceeding to the next one if any."
         }
 
         # try to match VmmV41ErrorSchemaValidationError defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToVmmV41ErrorErrorResponseError {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'VmmV41ErrorSchemaValidationError' defined in oneOf (NtnxV4VmmV41ErrorErrorResponseError). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'VmmV41ErrorSchemaValidationError' defined in oneOf (VmmV41ErrorErrorResponseError). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

@@ -40,7 +40,7 @@ function Initialize-VmmV41ContentCompleteGuestUpdateSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentCompleteGuestUpdateSpec' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentCompleteGuestUpdateSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $VersionName) {
@@ -95,12 +95,12 @@ function ConvertFrom-JsonToVmmV41ContentCompleteGuestUpdateSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentCompleteGuestUpdateSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentCompleteGuestUpdateSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentCompleteGuestUpdateSpec
+        # check if Json contains properties not defined in VmmV41ContentCompleteGuestUpdateSpec
         $AllProperties = ("versionName", "versionDescription", "isActiveVersion")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

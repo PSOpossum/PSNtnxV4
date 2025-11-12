@@ -35,7 +35,7 @@ function Initialize-ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$KeyManagementServerName -and $KeyManagementServerName.length -gt 64) {
@@ -77,12 +77,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigKeyManagementDeviceToCertStatusIn
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigKeyManagementDeviceToCertStatusInfo
         $AllProperties = ("keyManagementServerName", "isCertificatePresent")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

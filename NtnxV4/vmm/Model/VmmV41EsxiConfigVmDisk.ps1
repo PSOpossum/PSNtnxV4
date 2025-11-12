@@ -40,7 +40,7 @@ function Initialize-VmmV41EsxiConfigVmDisk {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigVmDisk' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41EsxiConfigVmDisk' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($DiskSizeBytes -and $DiskSizeBytes -lt 1) {
@@ -83,12 +83,12 @@ function ConvertFrom-JsonToVmmV41EsxiConfigVmDisk {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigVmDisk' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41EsxiConfigVmDisk' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41EsxiConfigVmDisk
+        # check if Json contains properties not defined in VmmV41EsxiConfigVmDisk
         $AllProperties = ("diskSizeBytes", "storageContainer", "storageConfig")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

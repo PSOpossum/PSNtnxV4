@@ -40,7 +40,7 @@ function Initialize-SecurityV40ManagementApproverGroup {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementApproverGroup' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ManagementApproverGroup' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Name) {
@@ -103,12 +103,12 @@ function ConvertFrom-JsonToSecurityV40ManagementApproverGroup {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ManagementApproverGroup' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ManagementApproverGroup' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ManagementApproverGroup
+        # check if Json contains properties not defined in SecurityV40ManagementApproverGroup
         $AllProperties = ("name", "expiryHours", "approvers")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

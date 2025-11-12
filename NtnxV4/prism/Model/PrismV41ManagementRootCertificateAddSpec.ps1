@@ -47,7 +47,7 @@ function Initialize-PrismV41ManagementRootCertificateAddSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementRootCertificateAddSpec' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementRootCertificateAddSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -107,12 +107,12 @@ function ConvertFrom-JsonToPrismV41ManagementRootCertificateAddSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementRootCertificateAddSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementRootCertificateAddSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementRootCertificateAddSpec
+        # check if Json contains properties not defined in PrismV41ManagementRootCertificateAddSpec
         $AllProperties = ("tenantId", "extId", "links", "rootCertificate")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

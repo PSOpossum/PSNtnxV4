@@ -36,7 +36,7 @@ function Initialize-CatalogCommonV10ConfigCategoriesFilter {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4CatalogCommonV10ConfigCategoriesFilter' | Write-Debug
+        'Creating PSCustomObject: vmm => CatalogCommonV10ConfigCategoriesFilter' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Type) {
@@ -90,12 +90,12 @@ function ConvertFrom-JsonToCatalogCommonV10ConfigCategoriesFilter {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4CatalogCommonV10ConfigCategoriesFilter' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => CatalogCommonV10ConfigCategoriesFilter' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CatalogCommonV10ConfigCategoriesFilter
+        # check if Json contains properties not defined in CatalogCommonV10ConfigCategoriesFilter
         $AllProperties = ("type", "categoryExtIds")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

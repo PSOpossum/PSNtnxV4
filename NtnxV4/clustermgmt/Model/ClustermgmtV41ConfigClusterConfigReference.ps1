@@ -123,7 +123,7 @@ function Initialize-ClustermgmtV41ConfigClusterConfigReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigClusterConfigReference' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigClusterConfigReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$HypervisorTypes -and $HypervisorTypes.length -gt 5) {
@@ -226,12 +226,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigClusterConfigReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigClusterConfigReference' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigClusterConfigReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigClusterConfigReference
+        # check if Json contains properties not defined in ClustermgmtV41ConfigClusterConfigReference
         $AllProperties = ("incarnationId", "buildInfo", "hypervisorTypes", "clusterFunction", "timezone", "authorizedPublicKeyList", "redundancyFactor", "clusterSoftwareMap", "clusterArch", "faultToleranceState", "isRemoteSupportEnabled", "operationMode", "isLts", "isPasswordRemoteLoginEnabled", "encryptionInTransitStatus", "encryptionOption", "encryptionScope", "pulseStatus", "isAvailable")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

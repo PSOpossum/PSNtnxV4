@@ -45,7 +45,7 @@ function Initialize-PrismV41ManagementConnectionConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementConnectionConfig' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementConnectionConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $IpAddressOrHostname) {
@@ -93,12 +93,12 @@ function ConvertFrom-JsonToPrismV41ManagementConnectionConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementConnectionConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementConnectionConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementConnectionConfig
+        # check if Json contains properties not defined in PrismV41ManagementConnectionConfig
         $AllProperties = ("ipAddressOrHostname", "shouldSkipCertificateValidation", "certificate", "hasCustomCertificate")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

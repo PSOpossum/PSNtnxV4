@@ -35,7 +35,7 @@ function Initialize-ListRestorableDomainManagers200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4ListRestorableDomainManagers200Response' | Write-Debug
+        'Creating PSCustomObject: prism => ListRestorableDomainManagers200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToListRestorableDomainManagers200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4ListRestorableDomainManagers200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => ListRestorableDomainManagers200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ListRestorableDomainManagers200Response
+        # check if Json contains properties not defined in ListRestorableDomainManagers200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

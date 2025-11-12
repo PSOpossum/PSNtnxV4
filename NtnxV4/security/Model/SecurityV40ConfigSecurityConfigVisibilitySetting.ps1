@@ -82,7 +82,7 @@ function Initialize-SecurityV40ConfigSecurityConfigVisibilitySetting {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigSecurityConfigVisibilitySetting' | Write-Debug
+        'Creating PSCustomObject: security => SecurityV40ConfigSecurityConfigVisibilitySetting' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -137,12 +137,12 @@ function ConvertFrom-JsonToSecurityV40ConfigSecurityConfigVisibilitySetting {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.security => NtnxV4SecurityV40ConfigSecurityConfigVisibilitySetting' | Write-Debug
+        'Converting JSON to PSCustomObject: security => SecurityV40ConfigSecurityConfigVisibilitySetting' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4SecurityV40ConfigSecurityConfigVisibilitySetting
+        # check if Json contains properties not defined in SecurityV40ConfigSecurityConfigVisibilitySetting
         $AllProperties = ("tenantId", "extId", "links", "isHighStrengthPasswordVisible", "isAideVisible", "isScmaVisible", "isSecureBootVisible", "isNetworkSegmentationVisible", "isClusterLockdownVisible", "isLogForwardingVisible", "isDefenseConsentBannerVisible")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

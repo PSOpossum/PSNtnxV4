@@ -30,7 +30,7 @@ function Initialize-VmmV41AhvConfigIpv4Info {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigIpv4Info' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigIpv4Info' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$LearnedIpAddresses -and $LearnedIpAddresses.length -gt 256) {
@@ -75,12 +75,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigIpv4Info {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigIpv4Info' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigIpv4Info' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigIpv4Info
+        # check if Json contains properties not defined in VmmV41AhvConfigIpv4Info
         $AllProperties = ("learnedIpAddresses")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

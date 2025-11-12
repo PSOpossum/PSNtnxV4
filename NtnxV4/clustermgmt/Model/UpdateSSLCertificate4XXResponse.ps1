@@ -35,7 +35,7 @@ function Initialize-UpdateSSLCertificate4XXResponse {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4UpdateSSLCertificate4XXResponse' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => UpdateSSLCertificate4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToUpdateSSLCertificate4XXResponse {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4UpdateSSLCertificate4XXResponse' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => UpdateSSLCertificate4XXResponse' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4UpdateSSLCertificate4XXResponse
+        # check if Json contains properties not defined in UpdateSSLCertificate4XXResponse
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

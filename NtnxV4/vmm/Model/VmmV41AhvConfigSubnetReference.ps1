@@ -31,7 +31,7 @@ function Initialize-VmmV41AhvConfigSubnetReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigSubnetReference' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigSubnetReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigSubnetReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigSubnetReference' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigSubnetReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigSubnetReference
+        # check if Json contains properties not defined in VmmV41AhvConfigSubnetReference
         $AllProperties = ("extId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

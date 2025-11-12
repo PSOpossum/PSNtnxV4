@@ -40,7 +40,7 @@ function Initialize-PrismV41ConfigEntityReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigEntityReference' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigEntityReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 256) {
@@ -83,12 +83,12 @@ function ConvertFrom-JsonToPrismV41ConfigEntityReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigEntityReference' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigEntityReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigEntityReference
+        # check if Json contains properties not defined in PrismV41ConfigEntityReference
         $AllProperties = ("extId", "rel", "name")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

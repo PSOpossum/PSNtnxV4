@@ -31,7 +31,7 @@ function Initialize-PrismV41ConfigTaskReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4PrismV41ConfigTaskReference' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => PrismV41ConfigTaskReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToPrismV41ConfigTaskReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4PrismV41ConfigTaskReference' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => PrismV41ConfigTaskReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigTaskReference
+        # check if Json contains properties not defined in PrismV41ConfigTaskReference
         $AllProperties = ("extId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

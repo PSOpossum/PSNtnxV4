@@ -35,7 +35,7 @@ function Initialize-PrismV41ManagementAccessKeyCredentials {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementAccessKeyCredentials' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementAccessKeyCredentials' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $AccessKeyId) {
@@ -93,12 +93,12 @@ function ConvertFrom-JsonToPrismV41ManagementAccessKeyCredentials {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementAccessKeyCredentials' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementAccessKeyCredentials' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementAccessKeyCredentials
+        # check if Json contains properties not defined in PrismV41ManagementAccessKeyCredentials
         $AllProperties = ("accessKeyId", "secretAccessKey")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

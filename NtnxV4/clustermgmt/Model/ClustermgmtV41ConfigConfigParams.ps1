@@ -65,7 +65,7 @@ function Initialize-ClustermgmtV41ConfigConfigParams {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigConfigParams' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigConfigParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -109,12 +109,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigConfigParams {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigConfigParams' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigConfigParams' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigConfigParams
+        # check if Json contains properties not defined in ClustermgmtV41ConfigConfigParams
         $AllProperties = ("shouldSkipDiscovery", "shouldSkipImaging", "shouldValidateRackAwareness", "isNosCompatible", "isComputeOnly", "isNeverScheduleable", "targetHypervisor", "hyperv")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

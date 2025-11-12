@@ -101,7 +101,7 @@ function Initialize-ClustermgmtV41ConfigVirtualGpuConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigVirtualGpuConfig' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigVirtualGpuConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$DeviceName -and $DeviceName.length -gt 128) {
@@ -208,12 +208,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigVirtualGpuConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigVirtualGpuConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigVirtualGpuConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigVirtualGpuConfig
+        # check if Json contains properties not defined in ClustermgmtV41ConfigVirtualGpuConfig
         $AllProperties = ("type", "deviceId", "deviceName", "vendorName", "isInUse", "sbdf", "numaNode", "assignable", "fraction", "guestDriverVersion", "licenses", "numberOfVirtualDisplayHeads", "frameBufferSizeBytes", "maxResolution", "maxInstancesPerVm")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

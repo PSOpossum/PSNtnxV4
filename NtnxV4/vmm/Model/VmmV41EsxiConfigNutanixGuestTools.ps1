@@ -75,7 +75,7 @@ function Initialize-VmmV41EsxiConfigNutanixGuestTools {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigNutanixGuestTools' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41EsxiConfigNutanixGuestTools' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Capabilities -and $Capabilities.length -gt 2) {
@@ -129,12 +129,12 @@ function ConvertFrom-JsonToVmmV41EsxiConfigNutanixGuestTools {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41EsxiConfigNutanixGuestTools' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41EsxiConfigNutanixGuestTools' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41EsxiConfigNutanixGuestTools
+        # check if Json contains properties not defined in VmmV41EsxiConfigNutanixGuestTools
         $AllProperties = ("version", "isInstalled", "isEnabled", "isIsoInserted", "capabilities", "availableVersion", "guestOsVersion", "isReachable", "isVssSnapshotCapable", "isVmMobilityDriversInstalled")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

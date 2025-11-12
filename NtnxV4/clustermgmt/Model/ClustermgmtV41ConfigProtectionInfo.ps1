@@ -64,7 +64,7 @@ function Initialize-ClustermgmtV41ConfigProtectionInfo {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigProtectionInfo' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigProtectionInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($ProtectionRpoMinutes -and $ProtectionRpoMinutes -gt 360) {
@@ -115,12 +115,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigProtectionInfo {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigProtectionInfo' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigProtectionInfo' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigProtectionInfo
+        # check if Json contains properties not defined in ClustermgmtV41ConfigProtectionInfo
         $AllProperties = ("clusterExtId", "targetProtectionState", "protectionState", "protectionTarget", "protectionRpoMinutes", "protectedEntities", "failureReason")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

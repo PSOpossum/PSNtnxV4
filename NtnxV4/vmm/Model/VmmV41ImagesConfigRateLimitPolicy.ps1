@@ -83,7 +83,7 @@ function Initialize-VmmV41ImagesConfigRateLimitPolicy {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ImagesConfigRateLimitPolicy' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ImagesConfigRateLimitPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -178,12 +178,12 @@ function ConvertFrom-JsonToVmmV41ImagesConfigRateLimitPolicy {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ImagesConfigRateLimitPolicy' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ImagesConfigRateLimitPolicy' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ImagesConfigRateLimitPolicy
+        # check if Json contains properties not defined in VmmV41ImagesConfigRateLimitPolicy
         $AllProperties = ("tenantId", "extId", "links", "name", "description", "rateLimitKbps", "clusterEntityFilter", "createTime", "lastUpdateTime", "ownerExtId", "matchingClusterExtIds")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

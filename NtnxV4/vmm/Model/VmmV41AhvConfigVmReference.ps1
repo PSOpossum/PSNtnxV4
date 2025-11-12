@@ -31,7 +31,7 @@ function Initialize-VmmV41AhvConfigVmReference {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmReference' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigVmReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigVmReference {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVmReference' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigVmReference' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigVmReference
+        # check if Json contains properties not defined in VmmV41AhvConfigVmReference
         $AllProperties = ("extId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

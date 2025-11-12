@@ -40,7 +40,7 @@ function Initialize-PrismV41ConfigBaseNetwork {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigBaseNetwork' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigBaseNetwork' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $DefaultGateway) {
@@ -99,12 +99,12 @@ function ConvertFrom-JsonToPrismV41ConfigBaseNetwork {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigBaseNetwork' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigBaseNetwork' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigBaseNetwork
+        # check if Json contains properties not defined in PrismV41ConfigBaseNetwork
         $AllProperties = ("defaultGateway", "subnetMask", "ipRanges")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

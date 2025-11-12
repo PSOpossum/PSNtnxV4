@@ -31,7 +31,7 @@ function Initialize-PrismV41ProtectpcPcRestoreRootTask {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ProtectpcPcRestoreRootTask' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ProtectpcPcRestoreRootTask' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -68,12 +68,12 @@ function ConvertFrom-JsonToPrismV41ProtectpcPcRestoreRootTask {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ProtectpcPcRestoreRootTask' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ProtectpcPcRestoreRootTask' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ProtectpcPcRestoreRootTask
+        # check if Json contains properties not defined in PrismV41ProtectpcPcRestoreRootTask
         $AllProperties = ("taskUuid")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

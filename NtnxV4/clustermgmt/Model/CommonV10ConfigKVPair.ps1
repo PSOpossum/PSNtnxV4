@@ -35,7 +35,7 @@ function Initialize-CommonV10ConfigKVPair {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4CommonV10ConfigKVPair' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => CommonV10ConfigKVPair' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Name -and $Name.length -gt 128) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToCommonV10ConfigKVPair {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4CommonV10ConfigKVPair' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => CommonV10ConfigKVPair' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CommonV10ConfigKVPair
+        # check if Json contains properties not defined in CommonV10ConfigKVPair
         $AllProperties = ("name", "value")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

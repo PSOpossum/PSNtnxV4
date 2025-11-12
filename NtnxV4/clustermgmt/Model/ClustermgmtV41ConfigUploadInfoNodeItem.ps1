@@ -68,7 +68,7 @@ function Initialize-ClustermgmtV41ConfigUploadInfoNodeItem {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUploadInfoNodeItem' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigUploadInfoNodeItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$BundleName -and $BundleName.length -gt 64) {
@@ -116,12 +116,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigUploadInfoNodeItem {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUploadInfoNodeItem' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigUploadInfoNodeItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigUploadInfoNodeItem
+        # check if Json contains properties not defined in ClustermgmtV41ConfigUploadInfoNodeItem
         $AllProperties = ("isHypervisorUploadRequired", "isImagingMandatory", "nodeUuid", "availableHypervisorIsoError", "requiredHypervisorType", "isNodeCompatible", "md5Sum", "bundleName")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

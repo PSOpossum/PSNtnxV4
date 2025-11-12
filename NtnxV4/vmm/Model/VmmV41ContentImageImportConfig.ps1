@@ -36,7 +36,7 @@ function Initialize-VmmV41ContentImageImportConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentImageImportConfig' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentImageImportConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $ClusterExtId) {
@@ -90,12 +90,12 @@ function ConvertFrom-JsonToVmmV41ContentImageImportConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentImageImportConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentImageImportConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentImageImportConfig
+        # check if Json contains properties not defined in VmmV41ContentImageImportConfig
         $AllProperties = ("clusterExtId", "imagesExtIds")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

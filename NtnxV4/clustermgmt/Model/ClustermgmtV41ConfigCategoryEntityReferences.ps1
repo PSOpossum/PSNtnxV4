@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigCategoryEntityReferences {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigCategoryEntityReferences' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigCategoryEntityReferences' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $Categories) {
@@ -79,12 +79,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigCategoryEntityReferences {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigCategoryEntityReferences' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigCategoryEntityReferences' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigCategoryEntityReferences
+        # check if Json contains properties not defined in ClustermgmtV41ConfigCategoryEntityReferences
         $AllProperties = ("categories")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -36,7 +36,7 @@ function Initialize-ClustermgmtV41ConfigPulseStatus {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigPulseStatus' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigPulseStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -74,12 +74,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigPulseStatus {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigPulseStatus' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigPulseStatus' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigPulseStatus
+        # check if Json contains properties not defined in ClustermgmtV41ConfigPulseStatus
         $AllProperties = ("isEnabled", "piiScrubbingLevel")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -40,7 +40,7 @@ function Initialize-ClustermgmtV41ConfigUplinkNode {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUplinkNode' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigUplinkNode' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $CvmIp) {
@@ -95,12 +95,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigUplinkNode {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUplinkNode' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigUplinkNode' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigUplinkNode
+        # check if Json contains properties not defined in ClustermgmtV41ConfigUplinkNode
         $AllProperties = ("cvmIp", "hypervisorIp", "networks")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

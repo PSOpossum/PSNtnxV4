@@ -62,7 +62,7 @@ function Initialize-PrismV41ManagementBackupTarget {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementBackupTarget' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementBackupTarget' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -117,12 +117,12 @@ function ConvertFrom-JsonToPrismV41ManagementBackupTarget {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementBackupTarget' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementBackupTarget' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementBackupTarget
+        # check if Json contains properties not defined in PrismV41ManagementBackupTarget
         $AllProperties = ("tenantId", "extId", "links", "location", "lastSyncTime", "isBackupPaused", "backupPauseReason")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

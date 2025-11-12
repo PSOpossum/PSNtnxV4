@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigSnmpStatusParam {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigSnmpStatusParam' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigSnmpStatusParam' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $IsEnabled) {
@@ -71,12 +71,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigSnmpStatusParam {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigSnmpStatusParam' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigSnmpStatusParam' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigSnmpStatusParam
+        # check if Json contains properties not defined in ClustermgmtV41ConfigSnmpStatusParam
         $AllProperties = ("isEnabled")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

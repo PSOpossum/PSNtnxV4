@@ -30,7 +30,7 @@ function Initialize-ClustermgmtV41ConfigUnconfigureNodeDetails {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUnconfigureNodeDetails' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigUnconfigureNodeDetails' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$NodeList -and $NodeList.length -gt 1024) {
@@ -75,12 +75,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigUnconfigureNodeDetails {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigUnconfigureNodeDetails' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigUnconfigureNodeDetails' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigUnconfigureNodeDetails
+        # check if Json contains properties not defined in ClustermgmtV41ConfigUnconfigureNodeDetails
         $AllProperties = ("nodeList")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

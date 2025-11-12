@@ -47,7 +47,7 @@ function ConvertFrom-JsonToPrismV41ErrorErrorResponseError {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'PrismV41ErrorAppMessage[]' defined in oneOf (NtnxV4PrismV41ErrorErrorResponseError). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'PrismV41ErrorAppMessage[]' defined in oneOf (PrismV41ErrorErrorResponseError). Proceeding to the next one if any."
         }
 
         # try to match PrismV41ErrorSchemaValidationError defined in the oneOf schemas
@@ -63,7 +63,7 @@ function ConvertFrom-JsonToPrismV41ErrorErrorResponseError {
             }
         } catch {
             # fail to match the schema defined in oneOf, proceed to the next one
-            Write-Debug "Failed to match 'PrismV41ErrorSchemaValidationError' defined in oneOf (NtnxV4PrismV41ErrorErrorResponseError). Proceeding to the next one if any."
+            Write-Debug "Failed to match 'PrismV41ErrorSchemaValidationError' defined in oneOf (PrismV41ErrorErrorResponseError). Proceeding to the next one if any."
         }
 
         if ($match -gt 1) {

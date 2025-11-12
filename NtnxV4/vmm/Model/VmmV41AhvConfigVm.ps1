@@ -282,7 +282,7 @@ function Initialize-VmmV41AhvConfigVm {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVm' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41AhvConfigVm' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Links -and $Links.length -gt 20) {
@@ -464,12 +464,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigVm {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41AhvConfigVm' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41AhvConfigVm' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigVm
+        # check if Json contains properties not defined in VmmV41AhvConfigVm
         $AllProperties = ("tenantId", "extId", "links", "name", "description", "createTime", "updateTime", "source", "numSockets", "numCoresPerSocket", "numThreadsPerCore", "numNumaNodes", "memorySizeBytes", "isVcpuHardPinningEnabled", "isCpuPassthroughEnabled", "enabledCpuFeatures", "isMemoryOvercommitEnabled", "isGpuConsoleEnabled", "isCpuHotplugEnabled", "isScsiControllerEnabled", "generationUuid", "biosUuid", "categories", "project", "ownershipInfo", "host", "cluster", "availabilityZone", "guestCustomization", "guestTools", "hardwareClockTimezone", "isBrandingEnabled", "bootConfig", "isVgaConsoleEnabled", "machineType", "powerState", "vtpmConfig", "isAgentVm", "apcConfig", "isLiveMigrateCapable", "isCrossClusterMigrationInProgress", "storageConfig", "disks", "cdRoms", "nics", "gpus", "serialPorts", "protectionType", "protectionPolicyState", "pcieDevices")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

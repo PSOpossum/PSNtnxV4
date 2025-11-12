@@ -46,7 +46,7 @@ function Initialize-PrismV41ProtectpcEligibleCluster {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ProtectpcEligibleCluster' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ProtectpcEligibleCluster' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -86,12 +86,12 @@ function ConvertFrom-JsonToPrismV41ProtectpcEligibleCluster {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ProtectpcEligibleCluster' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ProtectpcEligibleCluster' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ProtectpcEligibleCluster
+        # check if Json contains properties not defined in PrismV41ProtectpcEligibleCluster
         $AllProperties = ("clusterUuid", "clusterName", "isHostingPe", "backedUpEntitiesCountSupported")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

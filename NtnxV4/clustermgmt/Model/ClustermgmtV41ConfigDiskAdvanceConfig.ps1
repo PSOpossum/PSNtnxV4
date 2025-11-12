@@ -105,7 +105,7 @@ function Initialize-ClustermgmtV41ConfigDiskAdvanceConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigDiskAdvanceConfig' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigDiskAdvanceConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -157,12 +157,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigDiskAdvanceConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigDiskAdvanceConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigDiskAdvanceConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigDiskAdvanceConfig
+        # check if Json contains properties not defined in ClustermgmtV41ConfigDiskAdvanceConfig
         $AllProperties = ("isSelfEncryptingDrive", "isSelfManagedNvme", "isPasswordProtected", "isBootDisk", "hasBootPartitionsOnly", "isSpdkManaged", "isOnline", "isMarkedForRemoval", "isDataMigrated", "isUnhealthy", "isSuspectedUnhealthy", "isMounted", "isUnderDiagnosis", "isDiagnosticInfoAvailable", "isErrorFoundInLog", "isPlannedOutage")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

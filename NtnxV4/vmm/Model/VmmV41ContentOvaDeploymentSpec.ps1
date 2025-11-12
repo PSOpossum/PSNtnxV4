@@ -36,7 +36,7 @@ function Initialize-VmmV41ContentOvaDeploymentSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentOvaDeploymentSpec' | Write-Debug
+        'Creating PSCustomObject: vmm => VmmV41ContentOvaDeploymentSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $OverrideVmConfig) {
@@ -82,12 +82,12 @@ function ConvertFrom-JsonToVmmV41ContentOvaDeploymentSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4VmmV41ContentOvaDeploymentSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => VmmV41ContentOvaDeploymentSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41ContentOvaDeploymentSpec
+        # check if Json contains properties not defined in VmmV41ContentOvaDeploymentSpec
         $AllProperties = ("overrideVmConfig", "clusterLocationExtId")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

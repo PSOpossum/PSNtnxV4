@@ -35,7 +35,7 @@ function Initialize-ListDomainManagers200Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4ListDomainManagers200Response' | Write-Debug
+        'Creating PSCustomObject: prism => ListDomainManagers200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$VarData -and $VarData.length -gt 1) {
@@ -81,12 +81,12 @@ function ConvertFrom-JsonToListDomainManagers200Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4ListDomainManagers200Response' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => ListDomainManagers200Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ListDomainManagers200Response
+        # check if Json contains properties not defined in ListDomainManagers200Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

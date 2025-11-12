@@ -35,7 +35,7 @@ function Initialize-CreateCategory201Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4CreateCategory201Response' | Write-Debug
+        'Creating PSCustomObject: prism => CreateCategory201Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToCreateCategory201Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4CreateCategory201Response' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => CreateCategory201Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4CreateCategory201Response
+        # check if Json contains properties not defined in CreateCategory201Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

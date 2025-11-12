@@ -41,7 +41,7 @@ function Initialize-VmmV41AhvConfigCloudInit {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4VmmV41AhvConfigCloudInit' | Write-Debug
+        'Creating PSCustomObject: prism => VmmV41AhvConfigCloudInit' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$Metadata -and $Metadata.length -gt 32000) {
@@ -84,12 +84,12 @@ function ConvertFrom-JsonToVmmV41AhvConfigCloudInit {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4VmmV41AhvConfigCloudInit' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => VmmV41AhvConfigCloudInit' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4VmmV41AhvConfigCloudInit
+        # check if Json contains properties not defined in VmmV41AhvConfigCloudInit
         $AllProperties = ("datasourceType", "metadata", "cloudInitScript")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

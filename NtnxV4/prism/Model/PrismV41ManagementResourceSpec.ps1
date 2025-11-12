@@ -35,7 +35,7 @@ function Initialize-PrismV41ManagementResourceSpec {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementResourceSpec' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ManagementResourceSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToPrismV41ManagementResourceSpec {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ManagementResourceSpec' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ManagementResourceSpec' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ManagementResourceSpec
+        # check if Json contains properties not defined in PrismV41ManagementResourceSpec
         $AllProperties = ("cpuCount", "memorySizeBytes")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

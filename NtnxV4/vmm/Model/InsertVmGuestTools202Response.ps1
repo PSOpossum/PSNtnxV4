@@ -35,7 +35,7 @@ function Initialize-InsertVmGuestTools202Response {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.vmm => NtnxV4InsertVmGuestTools202Response' | Write-Debug
+        'Creating PSCustomObject: vmm => InsertVmGuestTools202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
 
@@ -73,12 +73,12 @@ function ConvertFrom-JsonToInsertVmGuestTools202Response {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.vmm => NtnxV4InsertVmGuestTools202Response' | Write-Debug
+        'Converting JSON to PSCustomObject: vmm => InsertVmGuestTools202Response' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4InsertVmGuestTools202Response
+        # check if Json contains properties not defined in InsertVmGuestTools202Response
         $AllProperties = ("metadata", "data")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

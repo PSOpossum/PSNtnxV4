@@ -61,7 +61,7 @@ function Initialize-PrismV41ConfigDomainManagerClusterConfig {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigDomainManagerClusterConfig' | Write-Debug
+        'Creating PSCustomObject: prism => PrismV41ConfigDomainManagerClusterConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if ($null -eq $BuildInfo) {
@@ -132,12 +132,12 @@ function ConvertFrom-JsonToPrismV41ConfigDomainManagerClusterConfig {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.prism => NtnxV4PrismV41ConfigDomainManagerClusterConfig' | Write-Debug
+        'Converting JSON to PSCustomObject: prism => PrismV41ConfigDomainManagerClusterConfig' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4PrismV41ConfigDomainManagerClusterConfig
+        # check if Json contains properties not defined in PrismV41ConfigDomainManagerClusterConfig
         $AllProperties = ("shouldEnableLockdownMode", "buildInfo", "name", "size", "bootstrapConfig", "credentials", "resourceConfig")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {

@@ -114,7 +114,7 @@ function Initialize-ClustermgmtV41ConfigNodeItem {
     )
 
     Process {
-        'Creating PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeItem' | Write-Debug
+        'Creating PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         if (!$HypervisorHostname -and $HypervisorHostname.length -gt 63) {
@@ -187,12 +187,12 @@ function ConvertFrom-JsonToClustermgmtV41ConfigNodeItem {
     )
 
     Process {
-        'Converting JSON to PSCustomObject: NtnxV4.clustermgmt => NtnxV4ClustermgmtV41ConfigNodeItem' | Write-Debug
+        'Converting JSON to PSCustomObject: clustermgmt => ClustermgmtV41ConfigNodeItem' | Write-Debug
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $JsonParameters = ConvertFrom-Json -InputObject $Json
 
-        # check if Json contains properties not defined in NtnxV4ClustermgmtV41ConfigNodeItem
+        # check if Json contains properties not defined in ClustermgmtV41ConfigNodeItem
         $AllProperties = ("nodeUuid", "blockId", "nodePosition", "hypervisorType", "isRoboMixedHypervisor", "hypervisorHostname", "hypervisorVersion", "nosVersion", "isLightCompute", "ipmiIp", "digitalCertificateMapList", "cvmIp", "hypervisorIp", "model", "currentNetworkInterface", "networks", "luksStatus")
         foreach ($name in $JsonParameters.PsObject.Properties.Name) {
             if (!($AllProperties.Contains($name))) {
