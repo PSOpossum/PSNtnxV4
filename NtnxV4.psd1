@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'NtnxV4.connect.psm1'
+RootModule = 'NtnxV4.psm1'
 
 # Version number of this module.
 ModuleVersion = '0.1.0'
@@ -30,7 +30,7 @@ CompanyName = ''
 Copyright = '(c) PSOpossum'
 
 # Description of the functionality provided by this module
-Description = 'NtnxV4.connect - the PowerShell module for connecting, disconnecting, and interacting with the Nutanix Prism Central Server for API use. https://github.com/PSOpossum/PSNtnxV4'
+Description = 'NtnxV4.connect - the PowerShell module for connecting, disconnecting, and interacting with the Nutanix Prism Central Server for API use.'
 
 # Minimum version of the PowerShell engine required by this module
 PowerShellVersion = '7.4'
@@ -69,7 +69,7 @@ PowerShellVersion = '7.4'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Connect-PrismServer', 'Disconnect-PrismServer', "Invoke-ApiClient", "Get-CommonParameters", "NtnxV4HttpSignatureAuth", "NtnxV4RSAEncryptionProvider", "Out-DebugParameter"
+FunctionsToExport = 'Connect-PrismServer', 'Disconnect-PrismServer', "Invoke-ApiClient", "Get-CommonParameters", "HttpSignatureAuth", "RSAEncryptionProvider", "Out-DebugParameter"
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
@@ -84,7 +84,13 @@ AliasesToExport = @()
 # DscResourcesToExport = @()
 
 # List of all modules packaged with this module
-# ModuleList = @()
+ModuleList = @(
+    'NtnxV4.psm1'
+    'NtnxV4\clustermgmt.psm1'
+    'NtnxV4\prism.psm1'
+    'NtnxV4\security.psm1'
+    'NtnxV4\vmm.psm1'
+)
 
 # List of all files packaged with this module
 # FileList = @()

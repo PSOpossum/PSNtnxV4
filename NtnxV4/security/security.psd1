@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'NtnxV4.security.psm1'
+RootModule = 'security.psm1'
 
 # Version number of this module.
 ModuleVersion = '0.1.2'
@@ -51,7 +51,7 @@ PowerShellVersion = '7.4'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = 'NtnxV4.connect'
+RequiredModules = 'NtnxV4'
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
@@ -351,7 +351,7 @@ PrivateData = @{
 # HelpInfoURI = ''
 
 # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
-# DefaultCommandPrefix = ''
+DefaultCommandPrefix = 'NtnxV4'
 
 }
 
