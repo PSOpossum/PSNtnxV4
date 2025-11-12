@@ -26,8 +26,8 @@ function Get-Configuration {
         $Configuration["BaseUrl"] = "https://$($PrismCentralServer):9440/api";
     }
 
-    if (!$Configuration.containsKey("BasicAuth")) {
-        $Configuration["BasicAuth"] = $null
+    if (!$Configuration.containsKey("Authorization")) {
+        $Configuration["Authorization"] = $null
     }
     if (!$Configuration.containsKey("Username")) {
         $Configuration["Username"] = $null
