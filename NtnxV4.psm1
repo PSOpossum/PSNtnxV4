@@ -18,7 +18,7 @@ try {
 #region classes
 class PrismSession {
     [string]$BaseUrl
-    [string]$BasicAuth
+    [string]$Authorization
 }
 
 #endregion

@@ -34,7 +34,7 @@ function Connect-PrismServer {
 
         $Global:PrismServerConnection += [PrismSession]@{
             "BaseUrl"   = "https://$($PrismCentralServer):$($PrismCentralServerPort)/api"
-            "BasicAuth" = "$($BasicAuthValue)"
+            "Authorization" = "$($BasicAuthValue)"
         }
     }
 }

@@ -115,10 +115,8 @@ function Set-IpById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -242,10 +240,8 @@ function Set-VmOwner {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -369,10 +365,8 @@ function Join-Categories {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -492,10 +486,8 @@ function Copy-Vm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -619,10 +611,8 @@ function New-CdRom {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -746,10 +736,8 @@ function New-Disk {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -873,10 +861,8 @@ function New-Gpu {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1000,10 +986,8 @@ function New-Nic {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1127,10 +1111,8 @@ function New-PcieDevice {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1254,10 +1236,8 @@ function New-SerialPort {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1360,10 +1340,8 @@ function New-Vm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1497,10 +1475,8 @@ function Invoke-CrossClusterMigrateVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1624,10 +1600,8 @@ function Invoke-CustomizeGuestVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1746,10 +1720,8 @@ function Invoke-DeleteCdRomById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1868,10 +1840,8 @@ function Invoke-DeleteDiskById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -1990,10 +1960,8 @@ function Invoke-DeleteGpuById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -2112,10 +2080,8 @@ function Invoke-DeleteNicById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -2234,10 +2200,8 @@ function Invoke-DeletePcieDeviceById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -2356,10 +2320,8 @@ function Invoke-DeleteSerialPortById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -2468,10 +2430,8 @@ function Invoke-DeleteVmById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -2595,10 +2555,8 @@ function Invoke-DisassociateCategories {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -2717,10 +2675,8 @@ function Invoke-EjectCdRomById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -2817,10 +2773,8 @@ function Get-CdRomById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -2917,10 +2871,8 @@ function Get-DiskById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3017,10 +2969,8 @@ function Get-GpuById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3107,10 +3057,8 @@ function Get-GuestToolsById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3207,10 +3155,8 @@ function Get-NicById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3307,10 +3253,8 @@ function Get-PcieDeviceById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3407,10 +3351,8 @@ function Get-SerialPortById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3497,10 +3439,8 @@ function Get-VmById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3634,10 +3574,8 @@ function Add-CdRomById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3761,10 +3699,8 @@ function Add-VmGuestTools {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3888,10 +3824,8 @@ function Install-VmGuestTools {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -3998,10 +3932,8 @@ function Invoke-ListCdRomsByVmId {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -4108,10 +4040,8 @@ function Invoke-ListDisksByVmId {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -4228,10 +4158,8 @@ function Invoke-ListGpusByVmId {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -4348,10 +4276,8 @@ function Invoke-ListNicsByVmId {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -4458,10 +4384,8 @@ function Invoke-ListPcieDevicesByVmId {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -4568,10 +4492,8 @@ function Invoke-ListSerialPortsByVmId {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -4698,10 +4620,8 @@ function Invoke-ListVms {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -4835,10 +4755,8 @@ function Move-NicById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -4962,10 +4880,8 @@ function Move-VmDisks {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -5089,10 +5005,8 @@ function Move-VmToHost {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -5201,10 +5115,8 @@ function Invoke-PowerCycleVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -5313,10 +5225,8 @@ function Invoke-PowerOffVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -5425,10 +5335,8 @@ function Invoke-PowerOnVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -5552,10 +5460,8 @@ function Invoke-RebootGuestVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -5664,10 +5570,8 @@ function Invoke-RebootVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -5786,10 +5690,8 @@ function Clear-IpById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -5898,10 +5800,8 @@ function Reset-Vm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -6025,10 +5925,8 @@ function Invoke-RevertVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -6152,10 +6050,8 @@ function Invoke-ShutdownGuestVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -6264,10 +6160,8 @@ function Invoke-ShutdownVm {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -6376,10 +6270,8 @@ function Uninstall-VmGuestTools {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -6513,10 +6405,8 @@ function Update-DiskById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -6640,10 +6530,8 @@ function Update-GuestToolsById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -6777,10 +6665,8 @@ function Update-NicById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -6914,10 +6800,8 @@ function Update-SerialPortById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -7041,10 +6925,8 @@ function Update-VmById {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
@@ -7168,10 +7050,8 @@ function Invoke-UpgradeVmGuestTools {
             Write-Verbose ("Using API key 'X-ntnx-api-key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
-        if ($Configuration["Username"] -and $Configuration["Password"]) {
-            $LocalVarBytes = [System.Text.Encoding]::UTF8.GetBytes($Configuration["Username"] + ":" + $Configuration["Password"])
-            $LocalVarBase64Text =[Convert]::ToBase64String($LocalVarBytes)
-            $LocalVarHeaderParameters['Authorization'] = "Basic " + $LocalVarBase64Text
+        if ($Configuration['Authorization'] -match "^Basic.*") {
+            $LocalVarHeaderParameters['Authorization'] = $Configuration['Authorization']
             Write-Verbose ("Using HTTP basic authentication in {0}" -f $MyInvocation.MyCommand)
         }
 
