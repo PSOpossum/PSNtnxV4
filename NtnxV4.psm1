@@ -43,4 +43,9 @@ $Script:CmdletBindingParameters = @('Verbose','Debug','ErrorAction','WarningActi
     }
 }
 
+if (Test-Path "$PSScriptRoot\NtnxV4") {
+    # sub-modules
+    Get-ChildItem "$PSScriptRoot\NtnxV4\*\*\*.psm1" |
+    ForEach-Object { Import-Module $_.FullName -Force -DisableNameChecking }
+}
 #endregion
