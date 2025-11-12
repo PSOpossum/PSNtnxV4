@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'NtnxV4.psm1'
+RootModule = 'PSNtnxV4.psm1'
 
 # Version number of this module.
 ModuleVersion = '0.1.0'
@@ -66,7 +66,12 @@ PowerShellVersion = '7.4'
 # FormatsToProcess = @()
 
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
-# NestedModules = @()
+NestedModules = @(
+    'Submodules\clustermgmt.psm1'
+    'Submodules\prism.psm1'
+    'Submodules\security.psm1'
+    'Submodules\vmm.psm1'
+)
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = 'Connect-PrismServer', 'Disconnect-PrismServer', "Invoke-ApiClient", "Get-CommonParameters", "HttpSignatureAuth", "RSAEncryptionProvider", "Out-DebugParameter"
@@ -85,11 +90,10 @@ AliasesToExport = @()
 
 # List of all modules packaged with this module
 ModuleList = @(
-    'NtnxV4.psm1'
-    'NtnxV4\clustermgmt.psm1'
-    'NtnxV4\prism.psm1'
-    'NtnxV4\security.psm1'
-    'NtnxV4\vmm.psm1'
+    'clustermgmt.psm1'
+    'prism.psm1'
+    'security.psm1'
+    'vmm.psm1'
 )
 
 # List of all files packaged with this module
