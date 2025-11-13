@@ -190,7 +190,7 @@ function Get-RSASignature {
                 $signedBytes = $rsa.SignHash($DataToSign, $hashAlgo, [System.Security.Cryptography.RSASignaturePadding]::Pkcs1)
             }
         } else {
-            $rsa_provider_path = Join-Path -Path $PSScriptRoot -ChildPath "NtnxV4RSAEncryptionProvider.cs"
+            $rsa_provider_path = Join-Path -Path $PSScriptRoot -ChildPath "RSAEncryptionProvider.cs"
             $rsa_provider_sourceCode = Get-Content -Path $rsa_provider_path -Raw
             Add-Type -TypeDefinition $rsa_provider_sourceCode
 
@@ -434,5 +434,3 @@ function ConvertTo-ECDSAANS1Format{
     $derBytes += $sBytes
     return $derBytes
 }
-
-Export-ModuleMember -Function *

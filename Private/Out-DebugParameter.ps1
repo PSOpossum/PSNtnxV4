@@ -42,5 +42,3 @@ function Out-DebugParameter {
         }
     }
 }
-
-Export-ModuleMember -Function *

@@ -19,7 +19,16 @@ function Connect-PrismServer {
         [PSCredential]$Credential
     )
 
-    $Global:PrismServerConnection = @()
+    #$Global:PrismServerConnection = @()
+    <#
+    $Global:PrismServerConnection += [PrismSession]@{
+    "BaseUrl"   = "https://$($PrismCentralServer):$($PrismCentralServerPort)/api"
+    "Authorization" = "$($BasicAuthValue)"
+    }
+    
+    #>
+    [System.Collections.HashTable]$Global:PrismServerConnection = @{}
+    
 
     if ($PSCmdlet.ParameterSetName -eq "BasicAuth") {
         $Username = $Credential.GetNetworkCredential().UserName
@@ -32,9 +41,16 @@ function Connect-PrismServer {
         $BytesToBase64 = [System.Convert]::ToBase64String($ToBytes)
         $BasicAuthValue = "Basic $BytesToBase64"
 
-        $Global:PrismServerConnection += [PrismSession]@{
+        $Global:PrismServerConnection = @{
             "BaseUrl"   = "https://$($PrismCentralServer):$($PrismCentralServerPort)/api"
             "Authorization" = "$($BasicAuthValue)"
+            "AccessToken" = $null
+            "Cookie" = $null
+            "DefaultHeaders" = $null
+            "ApiKey" = $null
+            "ApiKeyPrefix" = $null
+            "SkipCertificateCheck" = $false 
+            "Proxy" = $null
         }
     }
 }

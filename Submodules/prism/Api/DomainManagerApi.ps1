@@ -1624,7 +1624,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 Register202Response
 #>
-function Register- {
+function Register-PrismCentralToCluster {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1748,7 +1748,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 Restore202Response
 #>
-function Restore- {
+function Restore-PrismCentral {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
@@ -1871,7 +1871,7 @@ A switch when turned on will return a hash table of Response, StatusCode and Hea
 
 Unregister202Response
 #>
-function Unregister- {
+function Unregister-PrismCentralFromCluster {
     [CmdletBinding()]
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]

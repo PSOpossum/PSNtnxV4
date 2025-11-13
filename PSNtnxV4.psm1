@@ -19,6 +19,13 @@ try {
 class PrismSession {
     [string]$BaseUrl
     [string]$Authorization
+    [string]$AccessToken
+    [string]$Cookie
+    [string]$DefaultHeaders
+    [string]$ApiKey
+    [string]$ApiKeyPrefix
+    [bool]$SkipCertificateCheck
+    [string]$Proxy
 }
 
 #endregion
@@ -30,7 +37,7 @@ $Script:Configuration = [System.Collections.HashTable]@{}
 
 $Script:CmdletBindingParameters = @('Verbose','Debug','ErrorAction','WarningAction','InformationAction','ErrorVariable','WarningVariable','InformationVariable','OutVariable','OutBuffer','PipelineVariable')
 
-'Client', 'Public', 'Private' | Where-Object {
+'Client', 'Public' | Where-Object {
     Join-Path $PSScriptRoot $_ | Test-Path
 } | Get-ChildItem -Path {
     Join-Path $PSScriptRoot $_

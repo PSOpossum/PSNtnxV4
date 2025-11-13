@@ -277,5 +277,3 @@ function DeserializeResponse {
         }
     }
 }
-
-Export-ModuleMember -Function *

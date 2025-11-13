@@ -8,11 +8,11 @@
 <#
 .SYNOPSIS
 
-Get the configuration object 'NtnxV4Configuration'.
+Get the configuration object 'Configuration'.
 
 .DESCRIPTION
 
-Get the configuration object 'NtnxV4Configuration'.
+Get the configuration object 'Configuration'.
 
 .OUTPUTS
 
@@ -23,18 +23,18 @@ function Get-Configuration {
     $Configuration = $Global:PrismServerConnection
 
     if ([string]::IsNullOrEmpty($Configuration["BaseUrl"])) {
-        $Configuration["BaseUrl"] = "https://$($PrismCentralServer):9440/api";
+        $Configuration["BaseUrl"] = "https://$($Global:PrismServerConnection):9440/api";
     }
 
     if (!$Configuration.containsKey("Authorization")) {
         $Configuration["Authorization"] = $null
     }
-    if (!$Configuration.containsKey("Username")) {
+<#     if (!$Configuration.containsKey("Username")) {
         $Configuration["Username"] = $null
     }
     if (!$Configuration.containsKey("Password")) {
         $Configuration["Password"] = $null
-    }
+    } #>
     if (!$Configuration.containsKey("AccessToken")) {
         $Configuration["AccessToken"] = $null
     }
@@ -120,10 +120,10 @@ function Set-Configuration {
     [CmdletBinding()]
     Param(
         [string]$BaseUrl,
-        [AllowEmptyString()]
-        [string]$Username,
-        [AllowEmptyString()]
-        [string]$Password,
+        #[AllowEmptyString()]
+        #[string]$Username,
+        #[AllowEmptyString()]
+        #[string]$Password,
         [hashtable]$ApiKey,
         [hashtable]$ApiKeyPrefix,
         [AllowEmptyString()]
@@ -147,13 +147,13 @@ function Set-Configuration {
             $Script:Configuration["BaseUrl"] = $BaseUrl
         }
 
-        If ($Username) {
+<#         If ($Username) {
             $Script:Configuration['Username'] = $Username
         }
 
         If ($Password) {
             $Script:Configuration['Password'] = $Password
-        }
+        } #>
 
         If ($ApiKey) {
             $Script:Configuration['ApiKey'] = $ApiKey
@@ -509,11 +509,11 @@ function Set-ConfigurationHttpSigning {
 <#
 .SYNOPSIS
 
-Get the configuration object 'NtnxV4ConfigurationHttpSigning'.
+Get the configuration object ConfigurationHttpSigning'.
 
 .DESCRIPTION
 
-Get the configuration object 'NtnxV4ConfigurationHttpSigning'.
+Get the configuration object ConfigurationHttpSigning'.
 
 .OUTPUTS
 
@@ -524,5 +524,3 @@ function Get-ConfigurationHttpSigning{
     $httpSignatureConfiguration = $Script:Configuration["HttpSigning"]
     return $httpSignatureConfiguration
 }
-
-Export-ModuleMember -Function *
