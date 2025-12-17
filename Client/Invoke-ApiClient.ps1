@@ -46,7 +46,7 @@ function Invoke-ApiClient {
         [Parameter(Mandatory)]
         [bool]$IsBodyNullable
         ,
-        # Enable FollowRelLink agiantion in the Invoke-RestMethod in PS 6+
+        # Enable FollowRelLink pagination in the Invoke-RestMethod in PS 6+
         [Parameter(Mandatory=$false)]
         [switch]$EnablePagination
     )
