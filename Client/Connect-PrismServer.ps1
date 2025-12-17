@@ -23,7 +23,6 @@ function Connect-PrismServer {
     )
 
     [System.Collections.HashTable]$Global:PrismServerConnection = @{}
-    
 
     if ($PSCmdlet.ParameterSetName -eq "BasicAuth") {
         # create the HTTP Basic Authorization header
@@ -45,8 +44,9 @@ function Connect-PrismServer {
             "Proxy" = $null
         }
     } elseif ($PSCmdlet.ParameterSetName -eq "ApiKey") {
-        
-        $Global:PrismServerConnection = @{
+
+        # TODO: figure out the apikey method.
+<#         $Global:PrismServerConnection = @{
             "BaseUrl"   = "https://$($PrismCentralServer):$($PrismCentralServerPort)/api"
             "Authorization" = $null
             "AuthorizationType" = "ApiKey"
@@ -57,6 +57,6 @@ function Connect-PrismServer {
             "ApiKeyPrefix" = $null
             "SkipCertificateCheck" = $false 
             "Proxy" = $null
-        }
+        } #>
     }
 }

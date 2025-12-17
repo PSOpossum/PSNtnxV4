@@ -23,11 +23,15 @@ function Get-Configuration {
     $Configuration = $Global:PrismServerConnection
 
     if ([string]::IsNullOrEmpty($Configuration["BaseUrl"])) {
-        $Configuration["BaseUrl"] = "https://$($Global:PrismServerConnection):9440/api";
+        $Configuration["BaseUrl"] = "$($Configuration.BaseUrl)"
     }
 
     if (!$Configuration.containsKey("Authorization")) {
         $Configuration["Authorization"] = $null
+    }
+
+    if (!$Configuration.containsKey("AuthorizationType")) {
+        $Configuration["AuthorizationType"] = $null
     }
 
     if (!$Configuration.containsKey("AccessToken")) {

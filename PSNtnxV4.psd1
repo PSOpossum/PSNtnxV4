@@ -69,7 +69,7 @@ PowerShellVersion = '7.5'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-EntityDescriptorsV4', 'Get-EntityMetricsV4', 'Get-EntityTypesV4', 
+FunctionsToExport = 'Connect-PrismServer', 'Disconnect-PrismServer', 'Invoke-ApiClient', 'Get-Configuration', 'Get-EntityDescriptorsV4', 'Get-EntityMetricsV4', 'Get-EntityTypesV4', 
                'Get-SourcesV4', 'New-Scenario', 'New-Simulation', 
                'Invoke-DeleteScenarioById', 'Invoke-DeleteSimulationById', 
                'New-Recommendation', 'New-Report', 'New-Runway', 'Get-ScenarioById', 

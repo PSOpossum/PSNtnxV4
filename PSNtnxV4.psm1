@@ -38,11 +38,7 @@ $Script:Configuration = [System.Collections.HashTable]@{}
 
 $Script:CmdletBindingParameters = @('Verbose','Debug','ErrorAction','WarningAction','InformationAction','ErrorVariable','WarningVariable','InformationVariable','OutVariable','OutBuffer','PipelineVariable')
 
-'Client', 'Public' | Where-Object {
-    Join-Path $PSScriptRoot $_ | Test-Path
-} | Get-ChildItem -Path {
-    Join-Path $PSScriptRoot $_
-} -Filter '*.ps1' | ForEach-Object {
+'Client', 'Public', 'Private' | Where-Object { Join-Path $PSScriptRoot $_ | Test-Path } | Get-ChildItem -Path { Join-Path $PSScriptRoot $_ } -Filter '*.ps1' | ForEach-Object {
     Write-Debug "Importing file: $($_.BaseName)"
     try {
         . $_.FullName
