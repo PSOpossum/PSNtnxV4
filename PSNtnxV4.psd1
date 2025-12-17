@@ -481,10 +481,6 @@ PrivateData = @{
 
     } # End of PSData hashtable
 
-
-    # PSData
-    PSData = 'System.Collections.Hashtable'
-
 } # End of PrivateData hashtable
 
 # HelpInfo URI of this module
