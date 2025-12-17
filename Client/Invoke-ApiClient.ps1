@@ -52,7 +52,7 @@ function Invoke-ApiClient {
     )
 
     if (!$Global:PrismServerConnection) {
-        Write-Error -Exception "No Prism Central connection establish. Connect via the Connect-PrismServer cmdlet."
+        Write-Error -Exception "No Prism Central server connection established. Connect via the (prefix/no prefix) Connect-PrismServer cmdlet."
         return
     }
     
