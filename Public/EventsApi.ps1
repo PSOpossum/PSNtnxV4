@@ -36,8 +36,7 @@ function Get-EventById {
     )
 
     Process {
-        'Calling method: Get-EventById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EventById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -133,8 +132,7 @@ function Invoke-ListEvents {
     )
 
     Process {
-        'Calling method: Invoke-ListEvents' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListEvents' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

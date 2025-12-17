@@ -36,8 +36,7 @@ function New-ReportArtifact {
     )
 
     Process {
-        'Calling method: New-ReportArtifact' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-ReportArtifact' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -121,8 +120,7 @@ function Invoke-DownloadArtifactFile {
     )
 
     Process {
-        'Calling method: Invoke-DownloadArtifactFile' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DownloadArtifactFile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -217,8 +215,7 @@ function Invoke-ListReportArtifacts {
     )
 
     Process {
-        'Calling method: Invoke-ListReportArtifacts' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListReportArtifacts' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -308,8 +305,7 @@ function Invoke-UploadArtifactFile {
     )
 
     Process {
-        'Calling method: Invoke-UploadArtifactFile' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-UploadArtifactFile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

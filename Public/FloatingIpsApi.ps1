@@ -42,8 +42,7 @@ function New-FloatingIp {
     )
 
     Process {
-        'Calling method: New-FloatingIp' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-FloatingIp' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -131,8 +130,7 @@ function Invoke-DeleteFloatingIpById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteFloatingIpById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteFloatingIpById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -209,8 +207,7 @@ function Get-FloatingIpById {
     )
 
     Process {
-        'Calling method: Get-FloatingIpById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-FloatingIpById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -306,8 +303,7 @@ function Invoke-ListFloatingIps {
     )
 
     Process {
-        'Calling method: Invoke-ListFloatingIps' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListFloatingIps' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -413,8 +409,7 @@ function Update-FloatingIpById {
     )
 
     Process {
-        'Calling method: Update-FloatingIpById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-FloatingIpById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

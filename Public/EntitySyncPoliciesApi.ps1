@@ -36,8 +36,7 @@ function Get-EntitySyncPolicyById {
     )
 
     Process {
-        'Calling method: Get-EntitySyncPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EntitySyncPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -133,8 +132,7 @@ function Invoke-ListEntitySyncPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListEntitySyncPolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListEntitySyncPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -228,8 +226,7 @@ function Sync-EntitySyncPolicyById {
     )
 
     Process {
-        'Calling method: Sync-EntitySyncPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Sync-EntitySyncPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

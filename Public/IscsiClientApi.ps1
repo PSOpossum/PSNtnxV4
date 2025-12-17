@@ -36,8 +36,7 @@ function Get-IscsiClientById {
     )
 
     Process {
-        'Calling method: Get-IscsiClientById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-IscsiClientById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -134,8 +133,7 @@ function Get-IscsiClients {
     )
 
     Process {
-        'Calling method: Get-IscsiClients' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-IscsiClients' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -232,8 +230,7 @@ function Update-IscsiClientById {
     )
 
     Process {
-        'Calling method: Update-IscsiClientById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-IscsiClientById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

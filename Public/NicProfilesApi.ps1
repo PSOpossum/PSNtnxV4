@@ -48,8 +48,7 @@ function Join-HostNicToNicProfile {
     )
 
     Process {
-        'Calling method: Join-HostNicToNicProfile' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Join-HostNicToNicProfile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -141,8 +140,7 @@ function New-NicProfile {
     )
 
     Process {
-        'Calling method: New-NicProfile' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-NicProfile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -230,8 +228,7 @@ function Invoke-DeleteNicProfileById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteNicProfileById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteNicProfileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -320,8 +317,7 @@ function Invoke-DisassociateHostNicFromNicProfile {
     )
 
     Process {
-        'Calling method: Invoke-DisassociateHostNicFromNicProfile' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DisassociateHostNicFromNicProfile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -407,8 +403,7 @@ function Get-NicProfileById {
     )
 
     Process {
-        'Calling method: Get-NicProfileById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-NicProfileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -504,8 +499,7 @@ function Invoke-ListNicProfiles {
     )
 
     Process {
-        'Calling method: Invoke-ListNicProfiles' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListNicProfiles' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -611,8 +605,7 @@ function Update-NicProfileById {
     )
 
     Process {
-        'Calling method: Update-NicProfileById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-NicProfileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

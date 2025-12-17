@@ -42,8 +42,7 @@ function New-BgpSession {
     )
 
     Process {
-        'Calling method: New-BgpSession' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-BgpSession' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -131,8 +130,7 @@ function Invoke-DeleteBgpSessionById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteBgpSessionById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteBgpSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -209,8 +207,7 @@ function Get-BgpSessionById {
     )
 
     Process {
-        'Calling method: Get-BgpSessionById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-BgpSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -306,8 +303,7 @@ function Invoke-ListBgpSessions {
     )
 
     Process {
-        'Calling method: Invoke-ListBgpSessions' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListBgpSessions' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -413,8 +409,7 @@ function Update-BgpSessionById {
     )
 
     Process {
-        'Calling method: Update-BgpSessionById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-BgpSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

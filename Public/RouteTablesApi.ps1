@@ -36,8 +36,7 @@ function Get-RouteTableById {
     )
 
     Process {
-        'Calling method: Get-RouteTableById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RouteTableById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -127,8 +126,7 @@ function Invoke-ListRouteTables {
     )
 
     Process {
-        'Calling method: Invoke-ListRouteTables' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRouteTables' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

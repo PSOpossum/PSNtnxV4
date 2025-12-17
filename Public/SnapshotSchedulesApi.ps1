@@ -48,8 +48,7 @@ function New-SnapshotSchedule {
     )
 
     Process {
-        'Calling method: New-SnapshotSchedule' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-SnapshotSchedule' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -153,8 +152,7 @@ function Invoke-DeleteSnapshotScheduleById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteSnapshotScheduleById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteSnapshotScheduleById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -246,8 +244,7 @@ function Get-SnapshotScheduleById {
     )
 
     Process {
-        'Calling method: Get-SnapshotScheduleById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SnapshotScheduleById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -353,8 +350,7 @@ function Invoke-ListSnapshotSchedules {
     )
 
     Process {
-        'Calling method: Invoke-ListSnapshotSchedules' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSnapshotSchedules' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -470,8 +466,7 @@ function Update-SnapshotScheduleById {
     )
 
     Process {
-        'Calling method: Update-SnapshotScheduleById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SnapshotScheduleById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

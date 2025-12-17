@@ -48,8 +48,7 @@ function Join-Policies {
     )
 
     Process {
-        'Calling method: Join-Policies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Join-Policies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -135,8 +134,7 @@ function New-ApprovalPolicy {
     )
 
     Process {
-        'Calling method: New-ApprovalPolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-ApprovalPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -219,8 +217,7 @@ function Get-ApprovalPolicyByExtId {
     )
 
     Process {
-        'Calling method: Get-ApprovalPolicyByExtId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ApprovalPolicyByExtId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -308,8 +305,7 @@ function Invoke-ListApprovalPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListApprovalPolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListApprovalPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -407,8 +403,7 @@ function Update-ApprovalPolicyByExtId {
     )
 
     Process {
-        'Calling method: Update-ApprovalPolicyByExtId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ApprovalPolicyByExtId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

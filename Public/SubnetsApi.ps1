@@ -42,8 +42,7 @@ function New-Subnet {
     )
 
     Process {
-        'Calling method: New-Subnet' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Subnet' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -131,8 +130,7 @@ function Invoke-DeleteSubnetById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteSubnetById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteSubnetById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -209,8 +207,7 @@ function Get-SubnetById {
     )
 
     Process {
-        'Calling method: Get-SubnetById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SubnetById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -312,8 +309,7 @@ function Invoke-ListReservedIpsBySubnetId {
     )
 
     Process {
-        'Calling method: Invoke-ListReservedIpsBySubnetId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListReservedIpsBySubnetId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -435,8 +431,7 @@ function Invoke-ListSubnets {
     )
 
     Process {
-        'Calling method: Invoke-ListSubnets' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSubnets' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -558,8 +553,7 @@ function Invoke-ListVnicsBySubnetId {
     )
 
     Process {
-        'Calling method: Invoke-ListVnicsBySubnetId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVnicsBySubnetId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -663,8 +657,7 @@ function Invoke-ReserveIpsBySubnetId {
     )
 
     Process {
-        'Calling method: Invoke-ReserveIpsBySubnetId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ReserveIpsBySubnetId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -762,8 +755,7 @@ function Invoke-UnreserveIpsBySubnetId {
     )
 
     Process {
-        'Calling method: Invoke-UnreserveIpsBySubnetId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-UnreserveIpsBySubnetId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -867,8 +859,7 @@ function Update-SubnetById {
     )
 
     Process {
-        'Calling method: Update-SubnetById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SubnetById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -36,8 +36,7 @@ function Get-OperationById {
     )
 
     Process {
-        'Calling method: Get-OperationById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-OperationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -133,8 +132,7 @@ function Invoke-ListOperations {
     )
 
     Process {
-        'Calling method: Invoke-ListOperations' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListOperations' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

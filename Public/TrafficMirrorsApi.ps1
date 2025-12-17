@@ -42,8 +42,7 @@ function New-TrafficMirror {
     )
 
     Process {
-        'Calling method: New-TrafficMirror' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-TrafficMirror' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -131,8 +130,7 @@ function Invoke-DeleteTrafficMirrorById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteTrafficMirrorById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteTrafficMirrorById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -209,8 +207,7 @@ function Get-TrafficMirrorById {
     )
 
     Process {
-        'Calling method: Get-TrafficMirrorById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-TrafficMirrorById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -312,8 +309,7 @@ function Get-TrafficMirrorStats {
     )
 
     Process {
-        'Calling method: Get-TrafficMirrorStats' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-TrafficMirrorStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -425,8 +421,7 @@ function Invoke-ListTrafficMirrors {
     )
 
     Process {
-        'Calling method: Invoke-ListTrafficMirrors' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListTrafficMirrors' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -528,8 +523,7 @@ function Update-TrafficMirrorById {
     )
 
     Process {
-        'Calling method: Update-TrafficMirrorById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-TrafficMirrorById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

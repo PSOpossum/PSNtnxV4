@@ -36,8 +36,7 @@ function New-UserGroup {
     )
 
     Process {
-        'Calling method: New-UserGroup' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-UserGroup' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -120,8 +119,7 @@ function Invoke-DeleteUserGroupById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteUserGroupById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteUserGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -198,8 +196,7 @@ function Get-UserGroupById {
     )
 
     Process {
-        'Calling method: Get-UserGroupById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-UserGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -295,8 +292,7 @@ function Invoke-ListUserGroups {
     )
 
     Process {
-        'Calling method: Invoke-ListUserGroups' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListUserGroups' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

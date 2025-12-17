@@ -42,8 +42,7 @@ function Add-LicenseKey {
     )
 
     Process {
-        'Calling method: Add-LicenseKey' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-LicenseKey' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -124,8 +123,7 @@ function Set-LicenseKeys {
     )
 
     Process {
-        'Calling method: Set-LicenseKeys' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Set-LicenseKeys' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -202,8 +200,7 @@ function Invoke-DeleteLicenseKeyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteLicenseKeyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteLicenseKeyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -275,8 +272,7 @@ function Get-LicenseKeyById {
     )
 
     Process {
-        'Calling method: Get-LicenseKeyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-LicenseKeyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -378,8 +374,7 @@ function Invoke-ListLicenseKeys {
     )
 
     Process {
-        'Calling method: Invoke-ListLicenseKeys' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListLicenseKeys' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -36,8 +36,7 @@ function Get-UplinkBondById {
     )
 
     Process {
-        'Calling method: Get-UplinkBondById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-UplinkBondById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -127,8 +126,7 @@ function Invoke-ListUplinkBonds {
     )
 
     Process {
-        'Calling method: Invoke-ListUplinkBonds' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListUplinkBonds' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -42,8 +42,7 @@ function New-UnifiedNamespace {
     )
 
     Process {
-        'Calling method: New-UnifiedNamespace' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-UnifiedNamespace' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -137,8 +136,7 @@ function Invoke-DeleteUnifiedNamespaceById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteUnifiedNamespaceById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteUnifiedNamespaceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -220,8 +218,7 @@ function Get-UnifiedNamespaceById {
     )
 
     Process {
-        'Calling method: Get-UnifiedNamespaceById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-UnifiedNamespaceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -311,8 +308,7 @@ function Invoke-ListUnifiedNamespaces {
     )
 
     Process {
-        'Calling method: Invoke-ListUnifiedNamespaces' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListUnifiedNamespaces' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -414,8 +410,7 @@ function Update-UnifiedNamespaceById {
     )
 
     Process {
-        'Calling method: Update-UnifiedNamespaceById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-UnifiedNamespaceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

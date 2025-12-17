@@ -36,8 +36,7 @@ function Get-VcenterExtensionById {
     )
 
     Process {
-        'Calling method: Get-VcenterExtensionById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VcenterExtensionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -127,8 +126,7 @@ function Invoke-ListVcenterExtensions {
     )
 
     Process {
-        'Calling method: Invoke-ListVcenterExtensions' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVcenterExtensions' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -230,8 +228,7 @@ function Register-VcenterExtension {
     )
 
     Process {
-        'Calling method: Register-VcenterExtension' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Register-VcenterExtension' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -340,8 +337,7 @@ function Unregister-VcenterExtension {
     )
 
     Process {
-        'Calling method: Unregister-VcenterExtension' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Unregister-VcenterExtension' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

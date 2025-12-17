@@ -42,8 +42,7 @@ function New-StoragePolicy {
     )
 
     Process {
-        'Calling method: New-StoragePolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-StoragePolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -137,8 +136,7 @@ function Invoke-DeleteStoragePolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteStoragePolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteStoragePolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -220,8 +218,7 @@ function Get-StoragePolicyById {
     )
 
     Process {
-        'Calling method: Get-StoragePolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-StoragePolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -317,8 +314,7 @@ function Invoke-ListStoragePolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListStoragePolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListStoragePolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -424,8 +420,7 @@ function Update-StoragePolicyById {
     )
 
     Process {
-        'Calling method: Update-StoragePolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-StoragePolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -72,8 +72,7 @@ function Get-AntivirusServerStats {
     )
 
     Process {
-        'Calling method: Get-AntivirusServerStats' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-AntivirusServerStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -201,8 +200,7 @@ function Get-FileServerStats {
     )
 
     Process {
-        'Calling method: Get-FileServerStats' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-FileServerStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -332,8 +330,7 @@ function Get-MountTargetStats {
     )
 
     Process {
-        'Calling method: Get-MountTargetStats' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-MountTargetStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

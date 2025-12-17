@@ -48,8 +48,7 @@ function Rename-SystemUserPasswordById {
     )
 
     Process {
-        'Calling method: Rename-SystemUserPasswordById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Rename-SystemUserPasswordById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -165,8 +164,7 @@ function Invoke-ListSystemUserPasswords {
     )
 
     Process {
-        'Calling method: Invoke-ListSystemUserPasswords' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSystemUserPasswords' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

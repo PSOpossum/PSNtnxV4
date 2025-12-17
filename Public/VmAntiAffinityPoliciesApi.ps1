@@ -42,8 +42,7 @@ function New-VmAntiAffinityPolicy {
     )
 
     Process {
-        'Calling method: New-VmAntiAffinityPolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VmAntiAffinityPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -131,8 +130,7 @@ function Invoke-DeleteLegacyVmAntiAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteLegacyVmAntiAffinityPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteLegacyVmAntiAffinityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -221,8 +219,7 @@ function Invoke-DeleteVmAntiAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVmAntiAffinityPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVmAntiAffinityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -304,8 +301,7 @@ function Get-VmAntiAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Get-VmAntiAffinityPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VmAntiAffinityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -389,8 +385,7 @@ function Invoke-ListLegacyVmAntiAffinityPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListLegacyVmAntiAffinityPolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListLegacyVmAntiAffinityPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -488,8 +483,7 @@ function Invoke-ListVmAntiAffinityPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListVmAntiAffinityPolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVmAntiAffinityPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -585,8 +579,7 @@ function Invoke-ListVmAntiAffinityPolicyVmComplianceStates {
     )
 
     Process {
-        'Calling method: Invoke-ListVmAntiAffinityPolicyVmComplianceStates' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVmAntiAffinityPolicyVmComplianceStates' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -684,8 +677,7 @@ function Update-VmAntiAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Update-VmAntiAffinityPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VmAntiAffinityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

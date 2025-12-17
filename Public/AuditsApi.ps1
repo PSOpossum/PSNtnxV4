@@ -36,8 +36,7 @@ function Get-AuditById {
     )
 
     Process {
-        'Calling method: Get-AuditById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-AuditById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -133,8 +132,7 @@ function Invoke-ListAudits {
     )
 
     Process {
-        'Calling method: Invoke-ListAudits' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListAudits' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

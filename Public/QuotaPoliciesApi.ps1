@@ -60,8 +60,7 @@ function New-QuotaPolicy {
     )
 
     Process {
-        'Calling method: New-QuotaPolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-QuotaPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -179,8 +178,7 @@ function Invoke-DeleteQuotaPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteQuotaPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteQuotaPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -270,8 +268,7 @@ function Get-EmailConfig {
     )
 
     Process {
-        'Calling method: Get-EmailConfig' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EmailConfig' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -355,8 +352,7 @@ function Get-QuotaPolicyById {
     )
 
     Process {
-        'Calling method: Get-QuotaPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-QuotaPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -472,8 +468,7 @@ function Invoke-ListQuotaPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListQuotaPolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListQuotaPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -587,8 +582,7 @@ function Update-EmailConfig {
     )
 
     Process {
-        'Calling method: Update-EmailConfig' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-EmailConfig' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -715,8 +709,7 @@ function Update-QuotaPolicyById {
     )
 
     Process {
-        'Calling method: Update-QuotaPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-QuotaPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -36,8 +36,7 @@ function Get-ReplicationJobById {
     )
 
     Process {
-        'Calling method: Get-ReplicationJobById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ReplicationJobById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -133,8 +132,7 @@ function Invoke-ListReplicationJobs {
     )
 
     Process {
-        'Calling method: Invoke-ListReplicationJobs' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListReplicationJobs' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

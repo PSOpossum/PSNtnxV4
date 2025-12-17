@@ -48,8 +48,7 @@ function New-AntivirusServer {
     )
 
     Process {
-        'Calling method: New-AntivirusServer' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-AntivirusServer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -153,8 +152,7 @@ function Invoke-DeleteAntivirusServerById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteAntivirusServerById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteAntivirusServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -246,8 +244,7 @@ function Get-AntivirusServerById {
     )
 
     Process {
-        'Calling method: Get-AntivirusServerById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-AntivirusServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -353,8 +350,7 @@ function Invoke-ListAntivirusServers {
     )
 
     Process {
-        'Calling method: Invoke-ListAntivirusServers' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListAntivirusServers' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -464,8 +460,7 @@ function Test-ConnectionAntivirusServer {
     )
 
     Process {
-        'Calling method: Test-ConnectionAntivirusServer' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Test-ConnectionAntivirusServer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -575,8 +570,7 @@ function Update-AntivirusServerById {
     )
 
     Process {
-        'Calling method: Update-AntivirusServerById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-AntivirusServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

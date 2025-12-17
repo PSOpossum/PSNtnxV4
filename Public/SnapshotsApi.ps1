@@ -54,8 +54,7 @@ function New-MountTargetSnapshot {
     )
 
     Process {
-        'Calling method: New-MountTargetSnapshot' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-MountTargetSnapshot' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -163,8 +162,7 @@ function Invoke-DeleteMountTargetSnapshotById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteMountTargetSnapshotById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteMountTargetSnapshotById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -261,8 +259,7 @@ function Get-MountTargetSnapshotById {
     )
 
     Process {
-        'Calling method: Get-MountTargetSnapshotById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-MountTargetSnapshotById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -378,8 +375,7 @@ function Invoke-ListMountTargetSnapshots {
     )
 
     Process {
-        'Calling method: Invoke-ListMountTargetSnapshots' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListMountTargetSnapshots' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -499,8 +495,7 @@ function Restore-MountTarget {
     )
 
     Process {
-        'Calling method: Restore-MountTarget' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Restore-MountTarget' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

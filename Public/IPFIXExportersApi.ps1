@@ -42,8 +42,7 @@ function New-IpfixExporter {
     )
 
     Process {
-        'Calling method: New-IpfixExporter' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-IpfixExporter' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -131,8 +130,7 @@ function Invoke-DeleteIpfixExporterById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteIpfixExporterById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteIpfixExporterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -209,8 +207,7 @@ function Get-IpfixExporterById {
     )
 
     Process {
-        'Calling method: Get-IpfixExporterById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-IpfixExporterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -300,8 +297,7 @@ function Invoke-ListIpfixExporters {
     )
 
     Process {
-        'Calling method: Invoke-ListIpfixExporters' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListIpfixExporters' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -403,8 +399,7 @@ function Update-IpfixExporterById {
     )
 
     Process {
-        'Calling method: Update-IpfixExporterById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-IpfixExporterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

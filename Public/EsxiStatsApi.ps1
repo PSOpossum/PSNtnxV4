@@ -72,8 +72,7 @@ function Get-EsxiDiskStatsById {
     )
 
     Process {
-        'Calling method: Get-EsxiDiskStatsById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EsxiDiskStatsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -207,8 +206,7 @@ function Get-EsxiNicStatsById {
     )
 
     Process {
-        'Calling method: Get-EsxiNicStatsById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EsxiNicStatsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -336,8 +334,7 @@ function Get-EsxiVmStatsById {
     )
 
     Process {
-        'Calling method: Get-EsxiVmStatsById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EsxiVmStatsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -479,8 +476,7 @@ function Invoke-ListEsxiVmStats {
     )
 
     Process {
-        'Calling method: Invoke-ListEsxiVmStats' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListEsxiVmStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

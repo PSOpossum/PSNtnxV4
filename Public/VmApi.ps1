@@ -60,8 +60,7 @@ function Set-IpById {
     )
 
     Process {
-        'Calling method: Set-IpById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Set-IpById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -174,8 +173,7 @@ function Set-VmOwner {
     )
 
     Process {
-        'Calling method: Set-VmOwner' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Set-VmOwner' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -284,8 +282,7 @@ function Join-Categories {
     )
 
     Process {
-        'Calling method: Join-Categories' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Join-Categories' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -394,8 +391,7 @@ function Copy-Vm {
     )
 
     Process {
-        'Calling method: Copy-Vm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Copy-Vm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -500,8 +496,7 @@ function New-CdRom {
     )
 
     Process {
-        'Calling method: New-CdRom' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-CdRom' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -610,8 +605,7 @@ function New-Disk {
     )
 
     Process {
-        'Calling method: New-Disk' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Disk' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -720,8 +714,7 @@ function New-Gpu {
     )
 
     Process {
-        'Calling method: New-Gpu' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Gpu' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -830,8 +823,7 @@ function New-Nic {
     )
 
     Process {
-        'Calling method: New-Nic' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Nic' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -940,8 +932,7 @@ function New-PcieDevice {
     )
 
     Process {
-        'Calling method: New-PcieDevice' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-PcieDevice' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1050,8 +1041,7 @@ function New-SerialPort {
     )
 
     Process {
-        'Calling method: New-SerialPort' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-SerialPort' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1148,8 +1138,7 @@ function New-Vm {
     )
 
     Process {
-        'Calling method: New-Vm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Vm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1255,8 +1244,7 @@ function Invoke-CrossClusterMigrateVm {
     )
 
     Process {
-        'Calling method: Invoke-CrossClusterMigrateVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-CrossClusterMigrateVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1369,8 +1357,7 @@ function Invoke-CustomizeGuestVm {
     )
 
     Process {
-        'Calling method: Invoke-CustomizeGuestVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-CustomizeGuestVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1479,8 +1466,7 @@ function Invoke-DeleteCdRomById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteCdRomById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteCdRomById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1584,8 +1570,7 @@ function Invoke-DeleteDiskById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteDiskById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteDiskById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1689,8 +1674,7 @@ function Invoke-DeleteGpuById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteGpuById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteGpuById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1794,8 +1778,7 @@ function Invoke-DeleteNicById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteNicById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteNicById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1899,8 +1882,7 @@ function Invoke-DeletePcieDeviceById {
     )
 
     Process {
-        'Calling method: Invoke-DeletePcieDeviceById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeletePcieDeviceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2004,8 +1986,7 @@ function Invoke-DeleteSerialPortById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteSerialPortById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteSerialPortById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2103,8 +2084,7 @@ function Invoke-DeleteVmById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVmById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVmById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2204,8 +2184,7 @@ function Invoke-DisassociateCategories {
     )
 
     Process {
-        'Calling method: Invoke-DisassociateCategories' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DisassociateCategories' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2314,8 +2293,7 @@ function Invoke-EjectCdRomById {
     )
 
     Process {
-        'Calling method: Invoke-EjectCdRomById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-EjectCdRomById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2407,8 +2385,7 @@ function Get-CdRomById {
     )
 
     Process {
-        'Calling method: Get-CdRomById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-CdRomById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2490,8 +2467,7 @@ function Get-DiskById {
     )
 
     Process {
-        'Calling method: Get-DiskById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DiskById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2573,8 +2549,7 @@ function Get-GpuById {
     )
 
     Process {
-        'Calling method: Get-GpuById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-GpuById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2650,8 +2625,7 @@ function Get-GuestToolsById {
     )
 
     Process {
-        'Calling method: Get-GuestToolsById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-GuestToolsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2729,8 +2703,7 @@ function Get-NicById {
     )
 
     Process {
-        'Calling method: Get-NicById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-NicById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2812,8 +2785,7 @@ function Get-PcieDeviceById {
     )
 
     Process {
-        'Calling method: Get-PcieDeviceById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-PcieDeviceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2895,8 +2867,7 @@ function Get-SerialPortById {
     )
 
     Process {
-        'Calling method: Get-SerialPortById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SerialPortById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2972,8 +2943,7 @@ function Get-VmById {
     )
 
     Process {
-        'Calling method: Get-VmById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VmById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3069,8 +3039,7 @@ function Add-CdRomById {
     )
 
     Process {
-        'Calling method: Add-CdRomById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-CdRomById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3183,8 +3152,7 @@ function Add-VmGuestTools {
     )
 
     Process {
-        'Calling method: Add-VmGuestTools' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-VmGuestTools' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3293,8 +3261,7 @@ function Install-VmGuestTools {
     )
 
     Process {
-        'Calling method: Install-VmGuestTools' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Install-VmGuestTools' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3397,8 +3364,7 @@ function Invoke-ListCdRomsByVmId {
     )
 
     Process {
-        'Calling method: Invoke-ListCdRomsByVmId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListCdRomsByVmId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3490,8 +3456,7 @@ function Invoke-ListDisksByVmId {
     )
 
     Process {
-        'Calling method: Invoke-ListDisksByVmId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListDisksByVmId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3589,8 +3554,7 @@ function Invoke-ListGpusByVmId {
     )
 
     Process {
-        'Calling method: Invoke-ListGpusByVmId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListGpusByVmId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3692,8 +3656,7 @@ function Invoke-ListNicsByVmId {
     )
 
     Process {
-        'Calling method: Invoke-ListNicsByVmId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListNicsByVmId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3789,8 +3752,7 @@ function Invoke-ListPcieDevicesByVmId {
     )
 
     Process {
-        'Calling method: Invoke-ListPcieDevicesByVmId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListPcieDevicesByVmId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3882,8 +3844,7 @@ function Invoke-ListSerialPortsByVmId {
     )
 
     Process {
-        'Calling method: Invoke-ListSerialPortsByVmId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSerialPortsByVmId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3987,8 +3948,7 @@ function Invoke-ListVms {
     )
 
     Process {
-        'Calling method: Invoke-ListVms' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVms' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4100,8 +4060,7 @@ function Move-NicById {
     )
 
     Process {
-        'Calling method: Move-NicById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Move-NicById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4214,8 +4173,7 @@ function Move-VmDisks {
     )
 
     Process {
-        'Calling method: Move-VmDisks' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Move-VmDisks' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4324,8 +4282,7 @@ function Move-VmToHost {
     )
 
     Process {
-        'Calling method: Move-VmToHost' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Move-VmToHost' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4428,8 +4385,7 @@ function Invoke-PowerCycleVm {
     )
 
     Process {
-        'Calling method: Invoke-PowerCycleVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PowerCycleVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4523,8 +4479,7 @@ function Invoke-PowerOffVm {
     )
 
     Process {
-        'Calling method: Invoke-PowerOffVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PowerOffVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4618,8 +4573,7 @@ function Invoke-PowerOnVm {
     )
 
     Process {
-        'Calling method: Invoke-PowerOnVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PowerOnVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4719,8 +4673,7 @@ function Invoke-RebootGuestVm {
     )
 
     Process {
-        'Calling method: Invoke-RebootGuestVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RebootGuestVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4823,8 +4776,7 @@ function Invoke-RebootVm {
     )
 
     Process {
-        'Calling method: Invoke-RebootVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RebootVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4924,8 +4876,7 @@ function Clear-IpById {
     )
 
     Process {
-        'Calling method: Clear-IpById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Clear-IpById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5023,8 +4974,7 @@ function Reset-Vm {
     )
 
     Process {
-        'Calling method: Reset-Vm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Reset-Vm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5124,8 +5074,7 @@ function Invoke-RevertVm {
     )
 
     Process {
-        'Calling method: Invoke-RevertVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RevertVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5234,8 +5183,7 @@ function Invoke-ShutdownGuestVm {
     )
 
     Process {
-        'Calling method: Invoke-ShutdownGuestVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ShutdownGuestVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5338,8 +5286,7 @@ function Invoke-ShutdownVm {
     )
 
     Process {
-        'Calling method: Invoke-ShutdownVm' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ShutdownVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5433,8 +5380,7 @@ function Uninstall-VmGuestTools {
     )
 
     Process {
-        'Calling method: Uninstall-VmGuestTools' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Uninstall-VmGuestTools' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5540,8 +5486,7 @@ function Update-DiskById {
     )
 
     Process {
-        'Calling method: Update-DiskById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-DiskById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5654,8 +5599,7 @@ function Update-GuestToolsById {
     )
 
     Process {
-        'Calling method: Update-GuestToolsById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-GuestToolsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5770,8 +5714,7 @@ function Update-NicById {
     )
 
     Process {
-        'Calling method: Update-NicById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-NicById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -5890,8 +5833,7 @@ function Update-SerialPortById {
     )
 
     Process {
-        'Calling method: Update-SerialPortById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SerialPortById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -6004,8 +5946,7 @@ function Update-VmById {
     )
 
     Process {
-        'Calling method: Update-VmById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VmById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -6114,8 +6055,7 @@ function Invoke-UpgradeVmGuestTools {
     )
 
     Process {
-        'Calling method: Invoke-UpgradeVmGuestTools' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-UpgradeVmGuestTools' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

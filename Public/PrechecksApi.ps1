@@ -54,8 +54,7 @@ function Invoke-PerformPrechecks {
     )
 
     Process {
-        'Calling method: Invoke-PerformPrechecks' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PerformPrechecks' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

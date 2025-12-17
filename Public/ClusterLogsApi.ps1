@@ -42,8 +42,7 @@ function Invoke-CollectLogs {
     )
 
     Process {
-        'Calling method: Invoke-CollectLogs' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-CollectLogs' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -154,8 +153,7 @@ function Invoke-ListTags {
     )
 
     Process {
-        'Calling method: Invoke-ListTags' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListTags' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

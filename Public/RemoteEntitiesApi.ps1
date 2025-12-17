@@ -42,8 +42,7 @@ function Get-RemoteSubnetForClusterById {
     )
 
     Process {
-        'Calling method: Get-RemoteSubnetForClusterById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RemoteSubnetForClusterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -125,8 +124,7 @@ function Get-RemoteVpnConnectionForClusterById {
     )
 
     Process {
-        'Calling method: Get-RemoteVpnConnectionForClusterById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RemoteVpnConnectionForClusterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -208,8 +206,7 @@ function Get-RemoteVtepGatewayForClusterById {
     )
 
     Process {
-        'Calling method: Get-RemoteVtepGatewayForClusterById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RemoteVtepGatewayForClusterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -309,8 +306,7 @@ function Invoke-ListRemoteSubnetsByClusterId {
     )
 
     Process {
-        'Calling method: Invoke-ListRemoteSubnetsByClusterId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRemoteSubnetsByClusterId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -422,8 +418,7 @@ function Invoke-ListRemoteVpnConnectionsByClusterId {
     )
 
     Process {
-        'Calling method: Invoke-ListRemoteVpnConnectionsByClusterId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRemoteVpnConnectionsByClusterId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -535,8 +530,7 @@ function Invoke-ListRemoteVtepGatewaysByClusterId {
     )
 
     Process {
-        'Calling method: Invoke-ListRemoteVtepGatewaysByClusterId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRemoteVtepGatewaysByClusterId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

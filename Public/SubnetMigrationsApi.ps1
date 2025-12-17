@@ -42,8 +42,7 @@ function Move-Subnets {
     )
 
     Process {
-        'Calling method: Move-Subnets' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Move-Subnets' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -137,8 +136,7 @@ function Move-VnicById {
     )
 
     Process {
-        'Calling method: Move-VnicById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Move-VnicById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -42,8 +42,7 @@ function New-VmHostAffinityPolicy {
     )
 
     Process {
-        'Calling method: New-VmHostAffinityPolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VmHostAffinityPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -137,8 +136,7 @@ function Invoke-DeleteVmHostAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVmHostAffinityPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVmHostAffinityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -220,8 +218,7 @@ function Get-VmHostAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Get-VmHostAffinityPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VmHostAffinityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -311,8 +308,7 @@ function Invoke-ListVmHostAffinityPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListVmHostAffinityPolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVmHostAffinityPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -408,8 +404,7 @@ function Invoke-ListVmHostAffinityPolicyVmComplianceStates {
     )
 
     Process {
-        'Calling method: Invoke-ListVmHostAffinityPolicyVmComplianceStates' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVmHostAffinityPolicyVmComplianceStates' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -501,8 +496,7 @@ function Invoke-ReEnforceVmHostAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-ReEnforceVmHostAffinityPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ReEnforceVmHostAffinityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -602,8 +596,7 @@ function Update-VmHostAffinityPolicyById {
     )
 
     Process {
-        'Calling method: Update-VmHostAffinityPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VmHostAffinityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

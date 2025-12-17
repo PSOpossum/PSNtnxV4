@@ -36,8 +36,7 @@ function Get-SSLCertificate {
     )
 
     Process {
-        'Calling method: Get-SSLCertificate' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SSLCertificate' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -127,8 +126,7 @@ function Update-SSLCertificate {
     )
 
     Process {
-        'Calling method: Update-SSLCertificate' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SSLCertificate' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

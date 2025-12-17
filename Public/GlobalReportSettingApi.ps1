@@ -36,8 +36,7 @@ function Get-GlobalReportSetting {
     )
 
     Process {
-        'Calling method: Get-GlobalReportSetting' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-GlobalReportSetting' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -121,8 +120,7 @@ function Update-GlobalReportSetting {
     )
 
     Process {
-        'Calling method: Update-GlobalReportSetting' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-GlobalReportSetting' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

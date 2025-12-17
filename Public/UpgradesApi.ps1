@@ -54,8 +54,7 @@ function Invoke-PerformUpgrade {
     )
 
     Process {
-        'Calling method: Invoke-PerformUpgrade' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PerformUpgrade' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

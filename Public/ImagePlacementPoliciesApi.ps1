@@ -42,8 +42,7 @@ function New-PlacementPolicy {
     )
 
     Process {
-        'Calling method: New-PlacementPolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-PlacementPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -125,8 +124,7 @@ function Invoke-DeletePlacementPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeletePlacementPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeletePlacementPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -198,8 +196,7 @@ function Get-PlacementPolicyById {
     )
 
     Process {
-        'Calling method: Get-PlacementPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-PlacementPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -295,8 +292,7 @@ function Invoke-ListPlacementPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListPlacementPolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListPlacementPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -396,8 +392,7 @@ function Resume-PlacementPolicy {
     )
 
     Process {
-        'Calling method: Resume-PlacementPolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Resume-PlacementPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -497,8 +492,7 @@ function Suspend-PlacementPolicy {
     )
 
     Process {
-        'Calling method: Suspend-PlacementPolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Suspend-PlacementPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -607,8 +601,7 @@ function Update-PlacementPolicyById {
     )
 
     Process {
-        'Calling method: Update-PlacementPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-PlacementPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

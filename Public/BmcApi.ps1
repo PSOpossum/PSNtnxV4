@@ -42,8 +42,7 @@ function Get-BmcInfo {
     )
 
     Process {
-        'Calling method: Get-BmcInfo' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-BmcInfo' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -143,8 +142,7 @@ function Update-BmcInfo {
     )
 
     Process {
-        'Calling method: Update-BmcInfo' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-BmcInfo' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

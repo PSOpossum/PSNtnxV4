@@ -48,8 +48,7 @@ function New-PartnerServer {
     )
 
     Process {
-        'Calling method: New-PartnerServer' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-PartnerServer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -153,8 +152,7 @@ function Invoke-DeletePartnerServerById {
     )
 
     Process {
-        'Calling method: Invoke-DeletePartnerServerById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeletePartnerServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -246,8 +244,7 @@ function Get-PartnerServerById {
     )
 
     Process {
-        'Calling method: Get-PartnerServerById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-PartnerServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -353,8 +350,7 @@ function Invoke-ListPartnerServers {
     )
 
     Process {
-        'Calling method: Invoke-ListPartnerServers' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListPartnerServers' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -470,8 +466,7 @@ function Update-PartnerServerById {
     )
 
     Process {
-        'Calling method: Update-PartnerServerById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-PartnerServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

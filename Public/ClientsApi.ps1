@@ -36,8 +36,7 @@ function Get-RegisteredClientById {
     )
 
     Process {
-        'Calling method: Get-RegisteredClientById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RegisteredClientById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

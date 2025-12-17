@@ -66,8 +66,7 @@ function Invoke-ListDnsRecords {
     )
 
     Process {
-        'Calling method: Invoke-ListDnsRecords' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListDnsRecords' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -171,8 +170,7 @@ function Invoke-ReviseDnsRecords {
     )
 
     Process {
-        'Calling method: Invoke-ReviseDnsRecords' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ReviseDnsRecords' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -270,8 +268,7 @@ function Test-DnsRecords {
     )
 
     Process {
-        'Calling method: Test-DnsRecords' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Test-DnsRecords' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

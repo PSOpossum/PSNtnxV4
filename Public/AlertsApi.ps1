@@ -36,8 +36,7 @@ function Get-AlertById {
     )
 
     Process {
-        'Calling method: Get-AlertById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-AlertById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -103,8 +102,7 @@ function Get-AlertEmailConfiguration {
     )
 
     Process {
-        'Calling method: Get-AlertEmailConfiguration' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-AlertEmailConfiguration' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -196,8 +194,7 @@ function Invoke-ListAlerts {
     )
 
     Process {
-        'Calling method: Invoke-ListAlerts' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListAlerts' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -297,8 +294,7 @@ function Invoke-ManageAlert {
     )
 
     Process {
-        'Calling method: Invoke-ManageAlert' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ManageAlert' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -390,8 +386,7 @@ function Update-AlertEmailConfiguration {
     )
 
     Process {
-        'Calling method: Update-AlertEmailConfiguration' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-AlertEmailConfiguration' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

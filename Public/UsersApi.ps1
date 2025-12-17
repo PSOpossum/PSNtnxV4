@@ -36,8 +36,7 @@ function Rename-UserPassword {
     )
 
     Process {
-        'Calling method: Rename-UserPassword' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Rename-UserPassword' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -120,8 +119,7 @@ function New-BucketAccessKey {
     )
 
     Process {
-        'Calling method: New-BucketAccessKey' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-BucketAccessKey' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -202,8 +200,7 @@ function New-User {
     )
 
     Process {
-        'Calling method: New-User' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-User' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -286,8 +283,7 @@ function New-UserKey {
     )
 
     Process {
-        'Calling method: New-UserKey' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-UserKey' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -380,8 +376,7 @@ function Invoke-DeleteUserBucketKeyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteUserBucketKeyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteUserBucketKeyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -474,8 +469,7 @@ function Invoke-DeleteUserKeyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteUserKeyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteUserKeyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -562,8 +556,7 @@ function Get-UserBucketKeyById {
     )
 
     Process {
-        'Calling method: Get-UserBucketKeyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-UserBucketKeyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -639,8 +632,7 @@ function Get-UserById {
     )
 
     Process {
-        'Calling method: Get-UserById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-UserById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -718,8 +710,7 @@ function Get-UserKeyById {
     )
 
     Process {
-        'Calling method: Get-UserKeyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-UserKeyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -819,8 +810,7 @@ function Invoke-ListUserBucketKeys {
     )
 
     Process {
-        'Calling method: Invoke-ListUserBucketKeys' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListUserBucketKeys' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -938,8 +928,7 @@ function Invoke-ListUserKeys {
     )
 
     Process {
-        'Calling method: Invoke-ListUserKeys' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListUserKeys' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1055,8 +1044,7 @@ function Invoke-ListUsers {
     )
 
     Process {
-        'Calling method: Invoke-ListUsers' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListUsers' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1150,8 +1138,7 @@ function Reset-UserPassword {
     )
 
     Process {
-        'Calling method: Reset-UserPassword' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Reset-UserPassword' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1238,8 +1225,7 @@ function Revoke-UserBucketAccessKey {
     )
 
     Process {
-        'Calling method: Revoke-UserBucketAccessKey' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Revoke-UserBucketAccessKey' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1321,8 +1307,7 @@ function Revoke-UserKey {
     )
 
     Process {
-        'Calling method: Revoke-UserKey' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Revoke-UserKey' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1410,8 +1395,7 @@ function Update-UserById {
     )
 
     Process {
-        'Calling method: Update-UserById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-UserById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1503,8 +1487,7 @@ function Update-UserState {
     )
 
     Process {
-        'Calling method: Update-UserState' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-UserState' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

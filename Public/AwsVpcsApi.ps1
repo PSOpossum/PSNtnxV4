@@ -36,8 +36,7 @@ function Invoke-ListAwsVpcs {
     )
 
     Process {
-        'Calling method: Invoke-ListAwsVpcs' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListAwsVpcs' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

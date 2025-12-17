@@ -48,8 +48,7 @@ function New-ObjectStoreProfile {
     )
 
     Process {
-        'Calling method: New-ObjectStoreProfile' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-ObjectStoreProfile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -147,8 +146,7 @@ function New-TieringConfiguration {
     )
 
     Process {
-        'Calling method: New-TieringConfiguration' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-TieringConfiguration' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -252,8 +250,7 @@ function Invoke-DeleteTieringConfigurationById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteTieringConfigurationById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteTieringConfigurationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -345,8 +342,7 @@ function Get-ObjectStoreProfileById {
     )
 
     Process {
-        'Calling method: Get-ObjectStoreProfileById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ObjectStoreProfileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -428,8 +424,7 @@ function Get-TieringConfigurationById {
     )
 
     Process {
-        'Calling method: Get-TieringConfigurationById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-TieringConfigurationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -535,8 +530,7 @@ function Invoke-ListObjectStoreProfiles {
     )
 
     Process {
-        'Calling method: Invoke-ListObjectStoreProfiles' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListObjectStoreProfiles' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -652,8 +646,7 @@ function Invoke-ListTieringConfigurations {
     )
 
     Process {
-        'Calling method: Invoke-ListTieringConfigurations' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListTieringConfigurations' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -747,8 +740,7 @@ function Invoke-RecalculateColdData {
     )
 
     Process {
-        'Calling method: Invoke-RecalculateColdData' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RecalculateColdData' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -837,8 +829,7 @@ function Invoke-RecallTieredFiles {
     )
 
     Process {
-        'Calling method: Invoke-RecallTieredFiles' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RecallTieredFiles' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -936,8 +927,7 @@ function Invoke-TierData {
     )
 
     Process {
-        'Calling method: Invoke-TierData' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-TierData' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1047,8 +1037,7 @@ function Update-ObjectStoreProfileById {
     )
 
     Process {
-        'Calling method: Update-ObjectStoreProfileById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ObjectStoreProfileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1167,8 +1156,7 @@ function Update-TieringConfigurationById {
     )
 
     Process {
-        'Calling method: Update-TieringConfigurationById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-TieringConfigurationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

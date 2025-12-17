@@ -42,8 +42,7 @@ function New-VmRecoveryPoint {
     )
 
     Process {
-        'Calling method: New-VmRecoveryPoint' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VmRecoveryPoint' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -131,8 +130,7 @@ function Invoke-DeleteVmRecoveryPointByExtId {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVmRecoveryPointByExtId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVmRecoveryPointByExtId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -209,8 +207,7 @@ function Get-VmRecoveryPointByExtId {
     )
 
     Process {
-        'Calling method: Get-VmRecoveryPointByExtId' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VmRecoveryPointByExtId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -306,8 +303,7 @@ function Invoke-ListVmRecoveryPoints {
     )
 
     Process {
-        'Calling method: Invoke-ListVmRecoveryPoints' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVmRecoveryPoints' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -407,8 +403,7 @@ function Restore-VmRecoveryPoint {
     )
 
     Process {
-        'Calling method: Restore-VmRecoveryPoint' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Restore-VmRecoveryPoint' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

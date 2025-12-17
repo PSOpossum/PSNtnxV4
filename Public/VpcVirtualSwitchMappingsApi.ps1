@@ -42,8 +42,7 @@ function New-VpcVirtualSwitchMapping {
     )
 
     Process {
-        'Calling method: New-VpcVirtualSwitchMapping' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VpcVirtualSwitchMapping' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -143,8 +142,7 @@ function Invoke-ListVpcVirtualSwitchMappings {
     )
 
     Process {
-        'Calling method: Invoke-ListVpcVirtualSwitchMappings' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVpcVirtualSwitchMappings' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

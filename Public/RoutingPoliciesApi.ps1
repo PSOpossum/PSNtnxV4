@@ -36,8 +36,7 @@ function Clear-RoutingPolicyCounters {
     )
 
     Process {
-        'Calling method: Clear-RoutingPolicyCounters' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Clear-RoutingPolicyCounters' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -120,8 +119,7 @@ function New-RoutingPolicy {
     )
 
     Process {
-        'Calling method: New-RoutingPolicy' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-RoutingPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -209,8 +207,7 @@ function Invoke-DeleteRoutingPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteRoutingPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteRoutingPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -287,8 +284,7 @@ function Get-RoutingPolicyById {
     )
 
     Process {
-        'Calling method: Get-RoutingPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RoutingPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -390,8 +386,7 @@ function Invoke-ListRoutingPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListRoutingPolicies' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRoutingPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -501,8 +496,7 @@ function Update-RoutingPolicyById {
     )
 
     Process {
-        'Calling method: Update-RoutingPolicyById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-RoutingPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

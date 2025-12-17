@@ -48,8 +48,7 @@ function New-RansomwareConfig {
     )
 
     Process {
-        'Calling method: New-RansomwareConfig' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-RansomwareConfig' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -153,8 +152,7 @@ function Invoke-DeleteRansomwareConfigById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteRansomwareConfigById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteRansomwareConfigById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -246,8 +244,7 @@ function Get-RansomwareConfigById {
     )
 
     Process {
-        'Calling method: Get-RansomwareConfigById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RansomwareConfigById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -347,8 +344,7 @@ function Invoke-ListRansomwareConfigs {
     )
 
     Process {
-        'Calling method: Invoke-ListRansomwareConfigs' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRansomwareConfigs' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -460,8 +456,7 @@ function Update-RansomwareConfigById {
     )
 
     Process {
-        'Calling method: Update-RansomwareConfigById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-RansomwareConfigById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

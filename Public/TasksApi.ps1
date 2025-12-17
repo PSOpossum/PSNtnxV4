@@ -36,8 +36,7 @@ function Stop-Task {
     )
 
     Process {
-        'Calling method: Stop-Task' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Stop-Task' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -115,8 +114,7 @@ function Get-TaskById {
     )
 
     Process {
-        'Calling method: Get-TaskById' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-TaskById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -216,8 +214,7 @@ function Invoke-ListTasks {
     )
 
     Process {
-        'Calling method: Invoke-ListTasks' | Write-Debug
-        $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListTasks' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
