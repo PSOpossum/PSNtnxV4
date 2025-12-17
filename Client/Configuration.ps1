@@ -29,12 +29,7 @@ function Get-Configuration {
     if (!$Configuration.containsKey("Authorization")) {
         $Configuration["Authorization"] = $null
     }
-<#     if (!$Configuration.containsKey("Username")) {
-        $Configuration["Username"] = $null
-    }
-    if (!$Configuration.containsKey("Password")) {
-        $Configuration["Password"] = $null
-    } #>
+
     if (!$Configuration.containsKey("AccessToken")) {
         $Configuration["AccessToken"] = $null
     }
@@ -120,10 +115,6 @@ function Set-Configuration {
     [CmdletBinding()]
     Param(
         [string]$BaseUrl,
-        #[AllowEmptyString()]
-        #[string]$Username,
-        #[AllowEmptyString()]
-        #[string]$Password,
         [hashtable]$ApiKey,
         [hashtable]$ApiKeyPrefix,
         [AllowEmptyString()]
@@ -146,14 +137,6 @@ function Set-Configuration {
             }
             $Script:Configuration["BaseUrl"] = $BaseUrl
         }
-
-<#         If ($Username) {
-            $Script:Configuration['Username'] = $Username
-        }
-
-        If ($Password) {
-            $Script:Configuration['Password'] = $Password
-        } #>
 
         If ($ApiKey) {
             $Script:Configuration['ApiKey'] = $ApiKey
@@ -374,9 +357,9 @@ function Get-UrlFromHostSetting {
         foreach ($h in $MyHost["Variables"].GetEnumerator()) {
             if ($Variables.containsKey($h.Name)) { # check to see if it's in the variables provided by the user
                 if ($h.Value["EnumValues"] -Contains $Variables[$h.Name]) {
-                   $Url = $Url.replace("{$($h.Name)}", $Variables[$h.Name])
+                    $Url = $Url.replace("{$($h.Name)}", $Variables[$h.Name])
                 } else {
-                   throw "The variable '$($h.Name)' in the host URL has invalid value $($Variables[$h.Name]). Must be $($h.Value["EnumValues"] -join ",")"
+                    throw "The variable '$($h.Name)' in the host URL has invalid value $($Variables[$h.Name]). Must be $($h.Value["EnumValues"] -join ",")"
                 }
             } else {
                 $Url = $Url.replace("{$($h.Name)}", $h.Value["DefaultValue"])

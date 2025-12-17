@@ -19,6 +19,7 @@ try {
 class PrismSession {
     [string]$BaseUrl
     [string]$Authorization
+    [string]$AuthorizationType
     [string]$AccessToken
     [string]$Cookie
     [string]$DefaultHeaders
@@ -50,9 +51,4 @@ $Script:CmdletBindingParameters = @('Verbose','Debug','ErrorAction','WarningActi
     }
 }
 
-if (Test-Path "$PSScriptRoot\Submodules") {
-    # sub-modules
-    Get-ChildItem "$PSScriptRoot\Submodules\*\*\*.psm1" |
-    ForEach-Object { Import-Module $_.FullName -Force -DisableNameChecking }
-}
 #endregion

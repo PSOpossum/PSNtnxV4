@@ -118,10 +118,7 @@ function Get-HttpSignedHeader {
             -HashAlgorithmName $httpSigningConfiguration.HashAlgorithm `
             -KeyPassPhrase $httpSigningConfiguration.KeyPassPhrase
     }
-    #Deprecated
-    <#$cryptographicScheme = Get-CryptographicScheme -SigningAlgorithm $httpSigningConfiguration.SigningAlgorithm `
-                                                 -HashAlgorithm $httpSigningConfiguration.HashAlgorithm
-    #>
+
     $cryptographicScheme = "hs2019"
     $authorizationHeaderValue = [string]::Format("Signature keyId=""{0}"",algorithm=""{1}""",
         $httpSigningConfiguration.KeyId, $cryptographicScheme)
