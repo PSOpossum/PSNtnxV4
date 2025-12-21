@@ -20,9 +20,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER VmmV41AhvPoliciesVmHostAffinityPolicy
 No description available.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -49,11 +49,9 @@ function New-VmHostAffinityPolicy {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -73,17 +71,17 @@ function New-VmHostAffinityPolicy {
 
         $LocalVarBodyParameter = $VmmV41AhvPoliciesVmHostAffinityPolicy | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "CreateVmHostAffinityPolicy202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "CreateVmHostAffinityPolicy202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -111,9 +109,9 @@ The If-Match request header makes the request conditional. When not provided the
 .PARAMETER NTNXRequestId
 A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -143,11 +141,9 @@ function Invoke-DeleteVmHostAffinityPolicyById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -167,17 +163,17 @@ function Invoke-DeleteVmHostAffinityPolicyById {
         }
         $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
 
-        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "DeleteVmHostAffinityPolicyById202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'DELETE' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "DeleteVmHostAffinityPolicyById202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -199,9 +195,9 @@ No description available.
 .PARAMETER ExtId
 The external ID (UUID) of the VM-host affinity policy.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -225,11 +221,9 @@ function Get-VmHostAffinityPolicyById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -239,17 +233,17 @@ function Get-VmHostAffinityPolicyById {
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "GetVmHostAffinityPolicyById200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "GetVmHostAffinityPolicyById200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -280,9 +274,9 @@ A URL query parameter that allows clients to filter a collection of resources. T
 .PARAMETER Orderby
 A URL query parameter that allows clients to specify the sort criteria for the returned list of objects. Resources can be sorted in ascending order using asc or descending order using desc. If asc or desc are not specified, the resources will be sorted in ascending order by default. For example, '$orderby=templateName desc' would get all templates sorted by templateName in descending order.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -315,11 +309,9 @@ function Invoke-ListVmHostAffinityPolicies {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -341,17 +333,17 @@ function Invoke-ListVmHostAffinityPolicies {
             $LocalVarQueryParameters['$orderby'] = $Orderby
         }
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ListVmHostAffinityPolicies200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ListVmHostAffinityPolicies200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -379,9 +371,9 @@ A URL query parameter that specifies the page number of the result set. It must 
 .PARAMETER Limit
 A URL query parameter that specifies the total number of records returned in the result set.  Must be a positive integer between 1 and 100. Any number out of this range will lead to a validation error. If the limit is not provided, a default value of 50 records will be returned in the result set. 
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -411,11 +403,9 @@ function Invoke-ListVmHostAffinityPolicyVmComplianceStates {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -433,17 +423,17 @@ function Invoke-ListVmHostAffinityPolicyVmComplianceStates {
             $LocalVarQueryParameters['$limit'] = $Limit
         }
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ListVmHostAffinityPolicyVmComplianceStates200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ListVmHostAffinityPolicyVmComplianceStates200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -471,9 +461,9 @@ The If-Match request header makes the request conditional. When not provided the
 .PARAMETER NTNXRequestId
 A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -503,11 +493,9 @@ function Invoke-ReEnforceVmHostAffinityPolicyById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -527,17 +515,17 @@ function Invoke-ReEnforceVmHostAffinityPolicyById {
         }
         $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ReEnforceVmHostAffinityPolicyById202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ReEnforceVmHostAffinityPolicyById202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -568,9 +556,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER VmmV41AhvPoliciesVmHostAffinityPolicy
 No description available.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -603,11 +591,9 @@ function Update-VmHostAffinityPolicyById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -636,17 +622,17 @@ function Update-VmHostAffinityPolicyById {
 
         $LocalVarBodyParameter = $VmmV41AhvPoliciesVmHostAffinityPolicy | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "UpdateVmHostAffinityPolicyById202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'PUT' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "UpdateVmHostAffinityPolicyById202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]

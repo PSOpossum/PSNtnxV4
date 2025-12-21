@@ -26,9 +26,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER FilesV40ConfigComputeSnapshotChangeSpec
 Compute snapshot change model details.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -61,11 +61,9 @@ function Invoke-ComputeSnapshotChange {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -93,17 +91,17 @@ function Invoke-ComputeSnapshotChange {
 
         $LocalVarBodyParameter = $FilesV40ConfigComputeSnapshotChangeSpec | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ComputeSnapshotChange200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ComputeSnapshotChange200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -134,9 +132,9 @@ Mount target snapshots changed content external identifier. Example:48f78959-14a
 .PARAMETER XNextPageToken
 The api returns the output in pagination mode (maximum number of changes returned per page is 300). This is the unicode string which acts as a token for the next page.  
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -169,11 +167,9 @@ function Get-SnapshotChangedContentById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -195,17 +191,17 @@ function Get-SnapshotChangedContentById {
             $LocalVarHeaderParameters['X-Next-Page-Token'] = $XNextPageToken
         }
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "GetSnapshotChangedContentById200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "GetSnapshotChangedContentById200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -245,9 +241,9 @@ A URL query parameter that allows clients to specify the sort criteria for the r
 .PARAMETER Select
 A URL query parameter that allows clients to request a specific set of properties for each entity or complex type. Expression specified with the $select must conform to the [OData V4.01](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html) URL conventions. If a $select expression consists of a single select item that is an asterisk (i.e., *), then all properties on the matching resource will be returned. - baseSnapshotExtId - extId - snapshotExtId 
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -289,11 +285,9 @@ function Invoke-ListSnapshotChangedContents {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -327,17 +321,17 @@ function Invoke-ListSnapshotChangedContents {
             $LocalVarQueryParameters['$select'] = $Select
         }
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ListSnapshotChangedContents200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ListSnapshotChangedContents200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]

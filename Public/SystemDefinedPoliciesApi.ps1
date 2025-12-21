@@ -20,9 +20,9 @@ Unique ID of the System-Defined Alert Policy.
 .PARAMETER ExtId
 Cluster UUID.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -49,11 +49,9 @@ function Get-ClusterConfigById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -67,17 +65,17 @@ function Get-ClusterConfigById {
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "GetClusterConfigById200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "GetClusterConfigById200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -99,9 +97,9 @@ No description available.
 .PARAMETER ExtId
 Unique ID of the System-Defined Alert Policy.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -125,11 +123,9 @@ function Get-SdaPolicyById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -139,17 +135,17 @@ function Get-SdaPolicyById {
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "GetSdaPolicyById200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "GetSdaPolicyById200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -186,9 +182,9 @@ A URL query parameter that allows clients to specify the sort criteria for the r
 .PARAMETER Select
 A URL query parameter that allows clients to request a specific set of properties for each entity or complex type. Expression specified with the $select must conform to the [OData V4.01](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html) URL conventions. If a $select expression consists of a single select item that is an asterisk (i.e., *), then all properties on the matching resource will be returned.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -227,11 +223,9 @@ function Invoke-ListClusterConfigsBySdaId {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -261,17 +255,17 @@ function Invoke-ListClusterConfigsBySdaId {
             $LocalVarQueryParameters['$select'] = $Select
         }
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ListClusterConfigsBySdaId200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ListClusterConfigsBySdaId200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -305,9 +299,9 @@ A URL query parameter that allows clients to specify the sort criteria for the r
 .PARAMETER Select
 A URL query parameter that allows clients to request a specific set of properties for each entity or complex type. Expression specified with the $select must conform to the [OData V4.01](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html) URL conventions. If a $select expression consists of a single select item that is an asterisk (i.e., *), then all properties on the matching resource will be returned.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -343,11 +337,9 @@ function Invoke-ListSdaPolicies {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -373,17 +365,17 @@ function Invoke-ListSdaPolicies {
             $LocalVarQueryParameters['$select'] = $Select
         }
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ListSdaPolicies200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ListSdaPolicies200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -411,9 +403,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER MonitoringV41ServiceabilityRunSystemDefinedChecksSpec
 Required parameters for running the System-Defined Checks.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -443,11 +435,9 @@ function Invoke-RunSystemDefinedChecks {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -471,17 +461,17 @@ function Invoke-RunSystemDefinedChecks {
 
         $LocalVarBodyParameter = $MonitoringV41ServiceabilityRunSystemDefinedChecksSpec | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "RunSystemDefinedChecks202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "RunSystemDefinedChecks202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -512,9 +502,9 @@ The If-Match request header makes the request conditional. When not provided, th
 .PARAMETER MonitoringV41ServiceabilityClusterConfig
 No description available.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -547,11 +537,9 @@ function Update-ClusterConfigById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -579,17 +567,17 @@ function Update-ClusterConfigById {
 
         $LocalVarBodyParameter = $MonitoringV41ServiceabilityClusterConfig | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "UpdateClusterConfigById202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'PUT' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "UpdateClusterConfigById202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]

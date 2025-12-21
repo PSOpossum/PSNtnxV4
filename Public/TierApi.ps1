@@ -23,9 +23,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER FilesV40ConfigObjectStoreProfile
 Object store profile specification.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -55,11 +55,9 @@ function New-ObjectStoreProfile {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -83,17 +81,17 @@ function New-ObjectStoreProfile {
 
         $LocalVarBodyParameter = $FilesV40ConfigObjectStoreProfile | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "CreateObjectStoreProfile202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "CreateObjectStoreProfile202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -121,9 +119,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER FilesV40ConfigTierConfiguration
 Tiering configuration model.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -153,11 +151,9 @@ function New-TieringConfiguration {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -181,17 +177,17 @@ function New-TieringConfiguration {
 
         $LocalVarBodyParameter = $FilesV40ConfigTierConfiguration | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "CreateTieringConfiguration202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "CreateTieringConfiguration202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -222,9 +218,9 @@ The If-Match request header makes the request conditional. When not provided the
 .PARAMETER NTNXRequestId
 A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -257,11 +253,9 @@ function Invoke-DeleteTieringConfigurationById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -285,17 +279,17 @@ function Invoke-DeleteTieringConfigurationById {
         }
         $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
 
-        $LocalVarResult = Invoke-ApiClient -Method 'DELETE' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "DeleteTieringConfigurationById202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'DELETE' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "DeleteTieringConfigurationById202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -320,9 +314,9 @@ The external identifier of the file server.
 .PARAMETER ExtId
 External identifier of the tiering object store.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -349,11 +343,9 @@ function Get-ObjectStoreProfileById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -367,17 +359,17 @@ function Get-ObjectStoreProfileById {
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "GetObjectStoreProfileById200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "GetObjectStoreProfileById200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -402,9 +394,9 @@ The external identifier of the file server.
 .PARAMETER ExtId
 Tiering configuration external identifier.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -431,11 +423,9 @@ function Get-TieringConfigurationById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -449,17 +439,17 @@ function Get-TieringConfigurationById {
         }
         $LocalVarUri = $LocalVarUri.replace('{extId}', [System.Web.HTTPUtility]::UrlEncode($ExtId))
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "GetTieringConfigurationById200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "GetTieringConfigurationById200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -496,9 +486,9 @@ A URL query parameter that allows clients to specify the sort criteria for the r
 .PARAMETER Select
 A URL query parameter that allows clients to request a specific set of properties for each entity or complex type. Expression specified with the $select must conform to the [OData V4.01](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html) URL conventions. If a $select expression consists of a single select item that is an asterisk (i.e., *), then all properties on the matching resource will be returned. - isSslPeerVerficationEnabled - mountTargetExtIds - name - objectStoreType - retentionPeriodDays 
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -537,11 +527,9 @@ function Invoke-ListObjectStoreProfiles {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -571,17 +559,17 @@ function Invoke-ListObjectStoreProfiles {
             $LocalVarQueryParameters['$select'] = $Select
         }
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ListObjectStoreProfiles200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ListObjectStoreProfiles200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -615,9 +603,9 @@ A URL query parameter that allows clients to filter a collection of resources. T
 .PARAMETER Orderby
 A URL query parameter that allows clients to specify the sort criteria for the returned list of objects. Resources can be sorted in ascending order using asc or descending order using desc. If asc or desc are not specified, the resources will be sorted in ascending order by default. For example, '$orderby=templateName desc' would get all templates sorted by templateName in descending order. The orderby can be applied to the following fields: - memoryThresholdPercent 
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -653,11 +641,9 @@ function Invoke-ListTieringConfigurations {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -683,17 +669,17 @@ function Invoke-ListTieringConfigurations {
             $LocalVarQueryParameters['$orderby'] = $Orderby
         }
 
-        $LocalVarResult = Invoke-ApiClient -Method 'GET' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "ListTieringConfigurations200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'GET' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "ListTieringConfigurations200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -718,9 +704,9 @@ The external identifier of the file server.
 .PARAMETER NTNXRequestId
 A unique identifier that is associated with each request. The provided value must be opaque and preferably in Universal Unique Identifier (UUID) format. This identifier is also used as an idempotence token for safely retrying requests in case of network errors. All the supported Nutanix API clients add this auto-generated request identifier to each request. 
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -747,11 +733,9 @@ function Invoke-RecalculateColdData {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -766,17 +750,17 @@ function Invoke-RecalculateColdData {
         }
         $LocalVarHeaderParameters['NTNX-Request-Id'] = $NTNXRequestId
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "RecalculateColdData200Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "RecalculateColdData200Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -804,9 +788,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER FilesV40ConfigFilesSpec
 Request body specification for tier APIs.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -836,11 +820,9 @@ function Invoke-RecallTieredFiles {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -864,17 +846,17 @@ function Invoke-RecallTieredFiles {
 
         $LocalVarBodyParameter = $FilesV40ConfigFilesSpec | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "RecallTieredFiles202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "RecallTieredFiles202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -902,9 +884,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER FilesV40ConfigTierDataSpec
 Model for tier data.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -934,11 +916,9 @@ function Invoke-TierData {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -962,17 +942,17 @@ function Invoke-TierData {
 
         $LocalVarBodyParameter = $FilesV40ConfigTierDataSpec | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'POST' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "TierData202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'POST' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "TierData202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -1006,9 +986,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER FilesV40ConfigObjectStoreProfile
 Object store profile specification.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -1044,11 +1024,9 @@ function Update-ObjectStoreProfileById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1081,17 +1059,17 @@ function Update-ObjectStoreProfileById {
 
         $LocalVarBodyParameter = $FilesV40ConfigObjectStoreProfile | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "UpdateObjectStoreProfileById202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'PUT' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "UpdateObjectStoreProfileById202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
@@ -1125,9 +1103,9 @@ A unique identifier that is associated with each request. The provided value mus
 .PARAMETER FilesV40ConfigTierConfiguration
 Tiering configuration model.
 
-.PARAMETER WithHttpInfo
+.PARAMETER NoHttpInfo
 
-A switch when turned on will return a hash table of Response, StatusCode and Headers instead of just the Response
+A switch that'll return just the Response, instead of a hash table with the Response, StatusCode and Headers. Don't enable this switch unless you're doing something advanced, as the prism central v4 api requires the EType to be the current and valid type in order to modify objects. The EType is returned in the Headers.
 
 .OUTPUTS
 
@@ -1163,11 +1141,9 @@ function Update-TieringConfigurationById {
         $LocalVarQueryParameters = @{}
         $LocalVarHeaderParameters = @{}
         $LocalVarFormParameters = @{}
-        $LocalVarPathParameters = @{}
         $LocalVarCookieParameters = @{}
         $LocalVarBodyParameter = $null
 
-        $Configuration = Get-Configuration
         # HTTP header 'Accept' (if needed)
         $LocalVarAccepts = @('application/json')
 
@@ -1200,17 +1176,17 @@ function Update-TieringConfigurationById {
 
         $LocalVarBodyParameter = $FilesV40ConfigTierConfiguration | ConvertTo-Json -Depth 100
 
-        $LocalVarResult = Invoke-ApiClient -Method 'PUT' `
-                                -Uri $LocalVarUri `
-                                -Accepts $LocalVarAccepts `
-                                -ContentTypes $LocalVarContentTypes `
-                                -Body $LocalVarBodyParameter `
-                                -HeaderParameters $LocalVarHeaderParameters `
-                                -QueryParameters $LocalVarQueryParameters `
-                                -FormParameters $LocalVarFormParameters `
-                                -CookieParameters $LocalVarCookieParameters `
-                                -ReturnType "UpdateTieringConfigurationById202Response" `
-                                -IsBodyNullable $false
+        $LocalVarResult = Send-ApiRequest -Method 'PUT' `
+			-Uri $LocalVarUri `
+			-Accepts $LocalVarAccepts `
+			-ContentTypes $LocalVarContentTypes `
+			-Body $LocalVarBodyParameter `
+			-HeaderParameters $LocalVarHeaderParameters `
+			-QueryParameters $LocalVarQueryParameters `
+			-FormParameters $LocalVarFormParameters `
+			-CookieParameters $LocalVarCookieParameters `
+			-ReturnType "UpdateTieringConfigurationById202Response" `
+			-IsBodyNullable $false
 
         if ($NoHttpInfo.IsPresent) {
             return $LocalVarResult["Response"]
