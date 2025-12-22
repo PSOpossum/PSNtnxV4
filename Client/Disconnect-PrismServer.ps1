@@ -9,6 +9,5 @@ function Disconnect-PrismServer {
     [CmdletBinding()]
     param ()
 
-    $Global:PrismServerConnection = @()
     Remove-Variable PrismServerConnection
 }
