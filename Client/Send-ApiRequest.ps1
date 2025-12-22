@@ -114,8 +114,13 @@ function Send-ApiRequest {
     }
 
     # add default headers if any
-    foreach ($header in $DefaultHeaders.GetEnumerator()) {
-        $HeaderParameters[$header.Name] = $header.Value
+    if ($null -ne $DefaultHeaders) {
+        foreach ($header in $DefaultHeaders.GetEnumerator()) {
+            $HeaderParameters[$header.Name] = $header.Value
+        }
+    } elseif ($null -eq $DefaultHeaders) {
+        Write-Verbose -Message "DefaultHeaders is empty, nothing to enumerate."
+        Write-Debug -Message "DefaultHeaders is empty, nothing to enumerate."
     }
 
     # construct URL query string
