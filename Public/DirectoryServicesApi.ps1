@@ -42,7 +42,8 @@ function Connect-ionStatusDirectoryService {
     )
 
     Process {
-        'Calling method: Connect-ionStatusDirectoryService' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Connect-ionStatusDirectoryService' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -121,7 +122,8 @@ function New-DirectoryService {
     )
 
     Process {
-        'Calling method: New-DirectoryService' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-DirectoryService' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -202,7 +204,8 @@ function Invoke-DeleteDirectoryServiceById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteDirectoryServiceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteDirectoryServiceById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -277,7 +280,8 @@ function Get-DirectoryServiceById {
     )
 
     Process {
-        'Calling method: Get-DirectoryServiceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DirectoryServiceById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -371,7 +375,8 @@ function Invoke-ListDirectoryServices {
     )
 
     Process {
-        'Calling method: Invoke-ListDirectoryServices' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListDirectoryServices' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -463,7 +468,8 @@ function Search-DirectoryService {
     )
 
     Process {
-        'Calling method: Search-DirectoryService' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Search-DirectoryService' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -554,7 +560,8 @@ function Update-DirectoryServiceById {
     )
 
     Process {
-        'Calling method: Update-DirectoryServiceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-DirectoryServiceById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

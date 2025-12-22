@@ -42,7 +42,8 @@ function New-Vpc {
     )
 
     Process {
-        'Calling method: New-Vpc' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Vpc' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteVpcById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVpcById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVpcById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -203,7 +205,8 @@ function Get-VpcById {
     )
 
     Process {
-        'Calling method: Get-VpcById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VpcById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -321,7 +324,8 @@ function Get-VpcNsStats {
     )
 
     Process {
-        'Calling method: Get-VpcNsStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VpcNsStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -449,7 +453,8 @@ function Invoke-ListVpcs {
     )
 
     Process {
-        'Calling method: Invoke-ListVpcs' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVpcs' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -553,7 +558,8 @@ function Update-VpcById {
     )
 
     Process {
-        'Calling method: Update-VpcById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VpcById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -48,7 +48,8 @@ function New-ConsistencyRule {
     )
 
     Process {
-        'Calling method: New-ConsistencyRule' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-ConsistencyRule' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -138,7 +139,8 @@ function New-ProtectionPolicy {
     )
 
     Process {
-        'Calling method: New-ProtectionPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-ProtectionPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -230,7 +232,8 @@ function Invoke-DeleteConsistencyRuleById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteConsistencyRuleById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteConsistencyRuleById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -315,7 +318,8 @@ function Invoke-DeleteProtectionPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteProtectionPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteProtectionPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -396,7 +400,8 @@ function Get-ConsistencyRuleById {
     )
 
     Process {
-        'Calling method: Get-ConsistencyRuleById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ConsistencyRuleById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -470,7 +475,8 @@ function Get-ProtectionPolicyById {
     )
 
     Process {
-        'Calling method: Get-ProtectionPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ProtectionPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -570,7 +576,8 @@ function Invoke-ListConsistencyRulesByProtectionPolicyId {
     )
 
     Process {
-        'Calling method: Invoke-ListConsistencyRulesByProtectionPolicyId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListConsistencyRulesByProtectionPolicyId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -684,7 +691,8 @@ function Invoke-ListProtectionPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListProtectionPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListProtectionPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -794,7 +802,8 @@ function Update-ConsistencyRuleById {
     )
 
     Process {
-        'Calling method: Update-ConsistencyRuleById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ConsistencyRuleById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -905,7 +914,8 @@ function Update-ProtectionPolicyById {
     )
 
     Process {
-        'Calling method: Update-ProtectionPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ProtectionPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

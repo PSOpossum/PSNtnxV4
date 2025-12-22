@@ -42,7 +42,8 @@ function Get-ClusterConfigById {
     )
 
     Process {
-        'Calling method: Get-ClusterConfigById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ClusterConfigById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -116,7 +117,8 @@ function Get-SdaPolicyById {
     )
 
     Process {
-        'Calling method: Get-SdaPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SdaPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -216,7 +218,8 @@ function Invoke-ListClusterConfigsBySdaId {
     )
 
     Process {
-        'Calling method: Invoke-ListClusterConfigsBySdaId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListClusterConfigsBySdaId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -330,7 +333,8 @@ function Invoke-ListSdaPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListSdaPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSdaPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -428,7 +432,8 @@ function Invoke-RunSystemDefinedChecks {
     )
 
     Process {
-        'Calling method: Invoke-RunSystemDefinedChecks' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RunSystemDefinedChecks' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -530,7 +535,8 @@ function Update-ClusterConfigById {
     )
 
     Process {
-        'Calling method: Update-ClusterConfigById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ClusterConfigById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

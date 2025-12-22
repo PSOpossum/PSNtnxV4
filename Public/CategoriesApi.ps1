@@ -36,7 +36,8 @@ function New-Category {
     )
 
     Process {
-        'Calling method: New-Category' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Category' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -111,7 +112,8 @@ function Invoke-DeleteCategoryById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteCategoryById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteCategoryById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -187,7 +189,8 @@ function Get-CategoryById {
     )
 
     Process {
-        'Calling method: Get-CategoryById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-CategoryById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -291,7 +294,8 @@ function Invoke-ListCategories {
     )
 
     Process {
-        'Calling method: Invoke-ListCategories' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListCategories' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -393,7 +397,8 @@ function Update-CategoryById {
     )
 
     Process {
-        'Calling method: Update-CategoryById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-CategoryById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

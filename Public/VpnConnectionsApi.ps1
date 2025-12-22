@@ -42,7 +42,8 @@ function New-VpnConnection {
     )
 
     Process {
-        'Calling method: New-VpnConnection' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VpnConnection' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteVpnConnectionById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVpnConnectionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVpnConnectionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -216,7 +218,8 @@ function Get-VpnApplianceForVpnConnectionById {
     )
 
     Process {
-        'Calling method: Get-VpnApplianceForVpnConnectionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VpnApplianceForVpnConnectionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -295,7 +298,8 @@ function Get-VpnConnectionById {
     )
 
     Process {
-        'Calling method: Get-VpnConnectionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VpnConnectionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -407,7 +411,8 @@ function Get-VpnConnectionStats {
     )
 
     Process {
-        'Calling method: Get-VpnConnectionStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VpnConnectionStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -531,7 +536,8 @@ function Invoke-ListVpnAppliancesByVpnConnectionId {
     )
 
     Process {
-        'Calling method: Invoke-ListVpnAppliancesByVpnConnectionId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVpnAppliancesByVpnConnectionId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -635,7 +641,8 @@ function Invoke-ListVpnConnections {
     )
 
     Process {
-        'Calling method: Invoke-ListVpnConnections' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVpnConnections' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -735,7 +742,8 @@ function Update-VpnConnectionById {
     )
 
     Process {
-        'Calling method: Update-VpnConnectionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VpnConnectionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

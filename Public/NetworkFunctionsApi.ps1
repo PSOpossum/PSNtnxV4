@@ -42,7 +42,8 @@ function New-NetworkFunction {
     )
 
     Process {
-        'Calling method: New-NetworkFunction' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-NetworkFunction' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteNetworkFunctionById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteNetworkFunctionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteNetworkFunctionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -203,7 +205,8 @@ function Get-NetworkFunctionById {
     )
 
     Process {
-        'Calling method: Get-NetworkFunctionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-NetworkFunctionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -291,7 +294,8 @@ function Invoke-ListNetworkFunctions {
     )
 
     Process {
-        'Calling method: Invoke-ListNetworkFunctions' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListNetworkFunctions' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -391,7 +395,8 @@ function Update-NetworkFunctionById {
     )
 
     Process {
-        'Calling method: Update-NetworkFunctionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-NetworkFunctionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

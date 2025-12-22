@@ -72,7 +72,8 @@ function Get-DiskStatsById {
     )
 
     Process {
-        'Calling method: Get-DiskStatsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DiskStatsById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -204,7 +205,8 @@ function Get-NicStatsById {
     )
 
     Process {
-        'Calling method: Get-NicStatsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-NicStatsById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -330,7 +332,8 @@ function Get-VmStatsById {
     )
 
     Process {
-        'Calling method: Get-VmStatsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VmStatsById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -470,7 +473,8 @@ function Invoke-ListVmStats {
     )
 
     Process {
-        'Calling method: Invoke-ListVmStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVmStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

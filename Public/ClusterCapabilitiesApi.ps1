@@ -54,7 +54,8 @@ function Invoke-ListClusterCapabilities {
     )
 
     Process {
-        'Calling method: Invoke-ListClusterCapabilities' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListClusterCapabilities' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

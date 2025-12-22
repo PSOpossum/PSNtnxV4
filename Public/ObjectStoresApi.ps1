@@ -54,7 +54,8 @@ function New-Certificate {
     )
 
     Process {
-        'Calling method: New-Certificate' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Certificate' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -156,7 +157,8 @@ function New-Objectstore {
     )
 
     Process {
-        'Calling method: New-Objectstore' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Objectstore' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -255,7 +257,8 @@ function Invoke-DeleteObjectstoreById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteObjectstoreById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteObjectstoreById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -355,7 +358,8 @@ function Get-CaByCertificateId {
     )
 
     Process {
-        'Calling method: Get-CaByCertificateId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-CaByCertificateId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -447,7 +451,8 @@ function Get-CertificateById {
     )
 
     Process {
-        'Calling method: Get-CertificateById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-CertificateById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -528,7 +533,8 @@ function Get-ObjectstoreById {
     )
 
     Process {
-        'Calling method: Get-ObjectstoreById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ObjectstoreById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -629,7 +635,8 @@ function Invoke-ListCertificatesByObjectstoreId {
     )
 
     Process {
-        'Calling method: Invoke-ListCertificatesByObjectstoreId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListCertificatesByObjectstoreId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -752,7 +759,8 @@ function Invoke-ListObjectstores {
     )
 
     Process {
-        'Calling method: Invoke-ListObjectstores' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListObjectstores' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -867,7 +875,8 @@ function Update-ObjectstoreById {
     )
 
     Process {
-        'Calling method: Update-ObjectstoreById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ObjectstoreById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

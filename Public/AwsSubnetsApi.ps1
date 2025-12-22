@@ -66,7 +66,8 @@ function Invoke-ListAwsSubnets {
     )
 
     Process {
-        'Calling method: Invoke-ListAwsSubnets' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListAwsSubnets' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

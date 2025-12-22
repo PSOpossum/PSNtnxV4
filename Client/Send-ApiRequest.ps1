@@ -56,7 +56,8 @@ function Send-ApiRequest {
         return
     }
     
-    'Calling method: Send-ApiRequest' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+    'Calling method: Send-ApiRequest' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
     $PrismSession = $Global:PrismServerConnection
     $RequestUri = $PrismSession["BaseUrl"] + $Uri
@@ -74,7 +75,7 @@ function Send-ApiRequest {
         } else {
             $apiKeyPrefix = ""
         }
-        
+
         if ($PrismSession["ApiKey"] -and $PrismSession["ApiKey"]["X-Ntnx-Api-Key"]) {
             $HeaderParameters['X-Ntnx-Api-Key'] = $apiKeyPrefix + $PrismSession["ApiKey"]["X-Ntnx-Api-Key"]
             Write-Verbose ("Using API key 'X-Ntnx-Api-Key' in the header for authentication in {0}" -f $MyInvocation.MyCommand)

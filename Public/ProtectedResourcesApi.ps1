@@ -36,7 +36,8 @@ function Get-ProtectedResourceById {
     )
 
     Process {
-        'Calling method: Get-ProtectedResourceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ProtectedResourceById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -112,7 +113,8 @@ function Invoke-PromoteProtectedResource {
     )
 
     Process {
-        'Calling method: Invoke-PromoteProtectedResource' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PromoteProtectedResource' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -199,7 +201,8 @@ function Restore-ProtectedResource {
     )
 
     Process {
-        'Calling method: Restore-ProtectedResource' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Restore-ProtectedResource' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

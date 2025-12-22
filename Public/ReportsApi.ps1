@@ -42,7 +42,8 @@ function New-Report {
     )
 
     Process {
-        'Calling method: New-Report' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Report' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -122,7 +123,8 @@ function Invoke-DeleteReportById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteReportById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteReportById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -205,7 +207,8 @@ function Invoke-DownloadReport {
     )
 
     Process {
-        'Calling method: Invoke-DownloadReport' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DownloadReport' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -285,7 +288,8 @@ function Get-ReportById {
     )
 
     Process {
-        'Calling method: Get-ReportById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ReportById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -379,7 +383,8 @@ function Invoke-ListReports {
     )
 
     Process {
-        'Calling method: Invoke-ListReports' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListReports' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -477,7 +482,8 @@ function Invoke-NotifyReport {
     )
 
     Process {
-        'Calling method: Invoke-NotifyReport' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-NotifyReport' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

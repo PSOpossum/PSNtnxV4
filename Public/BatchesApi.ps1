@@ -36,7 +36,8 @@ function Get-BatchById {
     )
 
     Process {
-        'Calling method: Get-BatchById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-BatchById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -130,7 +131,8 @@ function Invoke-ListBatches {
     )
 
     Process {
-        'Calling method: Invoke-ListBatches' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListBatches' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -222,7 +224,8 @@ function Submit-Batch {
     )
 
     Process {
-        'Calling method: Submit-Batch' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Submit-Batch' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -54,7 +54,8 @@ function Invoke-ApplyNetworkSecurityPolicyImport {
     )
 
     Process {
-        'Calling method: Invoke-ApplyNetworkSecurityPolicyImport' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ApplyNetworkSecurityPolicyImport' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -148,7 +149,8 @@ function New-NetworkSecurityPolicy {
     )
 
     Process {
-        'Calling method: New-NetworkSecurityPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-NetworkSecurityPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -234,7 +236,8 @@ function Invoke-DeleteNetworkSecurityPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteNetworkSecurityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteNetworkSecurityPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -315,7 +318,8 @@ function Export-NetworkSecurityPolicy {
     )
 
     Process {
-        'Calling method: Export-NetworkSecurityPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Export-NetworkSecurityPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -391,7 +395,8 @@ function Get-NetworkSecurityPolicyById {
     )
 
     Process {
-        'Calling method: Get-NetworkSecurityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-NetworkSecurityPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -492,7 +497,8 @@ function Invoke-ListNetworkSecurityPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListNetworkSecurityPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListNetworkSecurityPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -613,7 +619,8 @@ function Invoke-ListNetworkSecurityPolicyRules {
     )
 
     Process {
-        'Calling method: Invoke-ListNetworkSecurityPolicyRules' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListNetworkSecurityPolicyRules' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -721,7 +728,8 @@ function Update-NetworkSecurityPolicyById {
     )
 
     Process {
-        'Calling method: Update-NetworkSecurityPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-NetworkSecurityPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

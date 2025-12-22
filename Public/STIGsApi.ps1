@@ -66,7 +66,8 @@ function Invoke-ListStigSummaries {
     )
 
     Process {
-        'Calling method: Invoke-ListStigSummaries' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListStigSummaries' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -180,7 +181,8 @@ function Invoke-ListStigs {
     )
 
     Process {
-        'Calling method: Invoke-ListStigs' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListStigs' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -66,7 +66,8 @@ function Invoke-ListAllowances {
     )
 
     Process {
-        'Calling method: Invoke-ListAllowances' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListAllowances' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -186,7 +187,8 @@ function Invoke-ListCompliances {
     )
 
     Process {
-        'Calling method: Invoke-ListCompliances' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListCompliances' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -306,7 +308,8 @@ function Invoke-ListEntitlements {
     )
 
     Process {
-        'Calling method: Invoke-ListEntitlements' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListEntitlements' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -420,7 +423,8 @@ function Invoke-ListFeatures {
     )
 
     Process {
-        'Calling method: Invoke-ListFeatures' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListFeatures' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -536,7 +540,8 @@ function Invoke-ListLicenses {
     )
 
     Process {
-        'Calling method: Invoke-ListLicenses' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListLicenses' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -638,7 +643,8 @@ function Invoke-ListRecommendations {
     )
 
     Process {
-        'Calling method: Invoke-ListRecommendations' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRecommendations' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -722,7 +728,8 @@ function Invoke-ListSettings {
     )
 
     Process {
-        'Calling method: Invoke-ListSettings' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSettings' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -802,7 +809,8 @@ function Invoke-ListViolations {
     )
 
     Process {
-        'Calling method: Invoke-ListViolations' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListViolations' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -882,7 +890,8 @@ function Sync-LicenseState {
     )
 
     Process {
-        'Calling method: Sync-LicenseState' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Sync-LicenseState' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

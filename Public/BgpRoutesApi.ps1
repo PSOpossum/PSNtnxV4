@@ -42,7 +42,8 @@ function Get-RouteForBgpSessionById {
     )
 
     Process {
-        'Calling method: Get-RouteForBgpSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RouteForBgpSessionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -140,7 +141,8 @@ function Invoke-ListRoutesByBgpSessionId {
     )
 
     Process {
-        'Calling method: Invoke-ListRoutesByBgpSessionId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRoutesByBgpSessionId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

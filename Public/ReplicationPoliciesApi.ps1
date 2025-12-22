@@ -42,7 +42,8 @@ function Invoke-AdDnsFailover {
     )
 
     Process {
-        'Calling method: Invoke-AdDnsFailover' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-AdDnsFailover' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -134,7 +135,8 @@ function New-ReplicationPolicy {
     )
 
     Process {
-        'Calling method: New-ReplicationPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-ReplicationPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -230,7 +232,8 @@ function Invoke-DeleteReplicationPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteReplicationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteReplicationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -316,7 +319,8 @@ function Invoke-Failover {
     )
 
     Process {
-        'Calling method: Invoke-Failover' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-Failover' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -396,7 +400,8 @@ function Get-ReplicationPolicyById {
     )
 
     Process {
-        'Calling method: Get-ReplicationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ReplicationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -478,7 +483,8 @@ function Get-VdiUserSessionById {
     )
 
     Process {
-        'Calling method: Get-VdiUserSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VdiUserSessionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -580,7 +586,8 @@ function Invoke-ListReplicationPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListReplicationPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListReplicationPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -702,7 +709,8 @@ function Invoke-ListVdiUserSessions {
     )
 
     Process {
-        'Calling method: Invoke-ListVdiUserSessions' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVdiUserSessions' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -802,7 +810,8 @@ function Resume-Replication {
     )
 
     Process {
-        'Calling method: Resume-Replication' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Resume-Replication' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -906,7 +915,8 @@ function Update-ReplicationPolicyById {
     )
 
     Process {
-        'Calling method: Update-ReplicationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ReplicationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1029,7 +1039,8 @@ function Update-VdiUserSessionById {
     )
 
     Process {
-        'Calling method: Update-VdiUserSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VdiUserSessionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

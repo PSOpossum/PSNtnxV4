@@ -36,7 +36,8 @@ function New-UdaPolicy {
     )
 
     Process {
-        'Calling method: New-UdaPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-UdaPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -111,7 +112,8 @@ function Invoke-DeleteUdaPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteUdaPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteUdaPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -181,7 +183,8 @@ function Find-ConflictingUdaPolicies {
     )
 
     Process {
-        'Calling method: Find-ConflictingUdaPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Find-ConflictingUdaPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -256,7 +259,8 @@ function Get-UdaPolicyById {
     )
 
     Process {
-        'Calling method: Get-UdaPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-UdaPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -350,7 +354,8 @@ function Invoke-ListUdaPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListUdaPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListUdaPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -448,7 +453,8 @@ function Update-UdaPolicyById {
     )
 
     Process {
-        'Calling method: Update-UdaPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-UdaPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

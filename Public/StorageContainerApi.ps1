@@ -42,7 +42,8 @@ function Add-DataStoreForCluster {
     )
 
     Process {
-        'Calling method: Add-DataStoreForCluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-DataStoreForCluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -134,7 +135,8 @@ function Add-StorageContainerForCluster {
     )
 
     Process {
-        'Calling method: Add-StorageContainerForCluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-StorageContainerForCluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -227,7 +229,8 @@ function Invoke-DeleteDataStoreForCluster {
     )
 
     Process {
-        'Calling method: Invoke-DeleteDataStoreForCluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteDataStoreForCluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -319,7 +322,8 @@ function Invoke-DeleteStorageContainerByExtId {
     )
 
     Process {
-        'Calling method: Invoke-DeleteStorageContainerByExtId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteStorageContainerByExtId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -424,7 +428,8 @@ function Get-AllStorageContainers {
     )
 
     Process {
-        'Calling method: Get-AllStorageContainers' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-AllStorageContainers' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -517,7 +522,8 @@ function Get-DataStores {
     )
 
     Process {
-        'Calling method: Get-DataStores' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DataStores' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -594,7 +600,8 @@ function Get-StorageContainerByExtId {
     )
 
     Process {
-        'Calling method: Get-StorageContainerByExtId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-StorageContainerByExtId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -677,7 +684,8 @@ function Update-StorageContainer {
     )
 
     Process {
-        'Calling method: Update-StorageContainer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-StorageContainer' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

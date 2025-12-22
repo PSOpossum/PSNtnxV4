@@ -108,7 +108,8 @@ function New-CertAuthProvider {
     )
 
     Process {
-        'Calling method: New-CertAuthProvider' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-CertAuthProvider' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -238,7 +239,8 @@ function Invoke-DeleteCertAuthProviderById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteCertAuthProviderById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteCertAuthProviderById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -313,7 +315,8 @@ function Get-CertAuthProviderById {
     )
 
     Process {
-        'Calling method: Get-CertAuthProviderById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-CertAuthProviderById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -389,7 +392,8 @@ function Invoke-ListCertAuthProviders {
     )
 
     Process {
-        'Calling method: Invoke-ListCertAuthProviders' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListCertAuthProviders' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -547,7 +551,8 @@ function Update-CertAuthProviderById {
     )
 
     Process {
-        'Calling method: Update-CertAuthProviderById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-CertAuthProviderById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -48,7 +48,8 @@ function Invoke-ComputeNotifications {
     )
 
     Process {
-        'Calling method: Invoke-ComputeNotifications' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ComputeNotifications' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -132,7 +133,8 @@ function Get-NotificationById {
     )
 
     Process {
-        'Calling method: Get-NotificationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-NotificationById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

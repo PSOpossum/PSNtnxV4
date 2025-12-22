@@ -36,7 +36,8 @@ function New-AuthorizationPolicy {
     )
 
     Process {
-        'Calling method: New-AuthorizationPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-AuthorizationPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -117,7 +118,8 @@ function Invoke-DeleteAuthorizationPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteAuthorizationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteAuthorizationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -192,7 +194,8 @@ function Get-AuthorizationPolicyById {
     )
 
     Process {
-        'Calling method: Get-AuthorizationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-AuthorizationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -292,7 +295,8 @@ function Invoke-ListAuthorizationPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListAuthorizationPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListAuthorizationPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -394,7 +398,8 @@ function Update-AuthorizationPolicyById {
     )
 
     Process {
-        'Calling method: Update-AuthorizationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-AuthorizationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

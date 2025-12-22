@@ -54,7 +54,8 @@ function Get-EntityDescriptorsV4 {
     )
 
     Process {
-        'Calling method: Get-EntityDescriptorsV4' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EntityDescriptorsV4' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -190,7 +191,8 @@ function Get-EntityMetricsV4 {
     )
 
     Process {
-        'Calling method: Get-EntityMetricsV4' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EntityMetricsV4' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -298,7 +300,8 @@ function Get-EntityTypesV4 {
     )
 
     Process {
-        'Calling method: Get-EntityTypesV4' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EntityTypesV4' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -362,7 +365,8 @@ function Get-SourcesV4 {
     )
 
     Process {
-        'Calling method: Get-SourcesV4' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SourcesV4' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

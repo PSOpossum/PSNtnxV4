@@ -42,7 +42,8 @@ function New-ServiceGroup {
     )
 
     Process {
-        'Calling method: New-ServiceGroup' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-ServiceGroup' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteServiceGroupById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteServiceGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteServiceGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -203,7 +205,8 @@ function Get-ServiceGroupById {
     )
 
     Process {
-        'Calling method: Get-ServiceGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ServiceGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -297,7 +300,8 @@ function Invoke-ListServiceGroups {
     )
 
     Process {
-        'Calling method: Invoke-ListServiceGroups' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListServiceGroups' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -401,7 +405,8 @@ function Update-ServiceGroupById {
     )
 
     Process {
-        'Calling method: Update-ServiceGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ServiceGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

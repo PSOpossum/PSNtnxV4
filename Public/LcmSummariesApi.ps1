@@ -36,7 +36,8 @@ function Get-LcmSummaryById {
     )
 
     Process {
-        'Calling method: Get-LcmSummaryById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-LcmSummaryById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -130,7 +131,8 @@ function Invoke-ListLcmSummaries {
     )
 
     Process {
-        'Calling method: Invoke-ListLcmSummaries' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListLcmSummaries' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

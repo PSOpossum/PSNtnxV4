@@ -42,7 +42,8 @@ function New-EntityGroup {
     )
 
     Process {
-        'Calling method: New-EntityGroup' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-EntityGroup' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteEntityGroupById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteEntityGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteEntityGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -203,7 +205,8 @@ function Get-EntityGroupById {
     )
 
     Process {
-        'Calling method: Get-EntityGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EntityGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -297,7 +300,8 @@ function Invoke-ListEntityGroups {
     )
 
     Process {
-        'Calling method: Invoke-ListEntityGroups' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListEntityGroups' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -401,7 +405,8 @@ function Update-EntityGroupById {
     )
 
     Process {
-        'Calling method: Update-EntityGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-EntityGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

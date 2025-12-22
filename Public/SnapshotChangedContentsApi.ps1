@@ -54,7 +54,8 @@ function Invoke-ComputeSnapshotChange {
     )
 
     Process {
-        'Calling method: Invoke-ComputeSnapshotChange' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ComputeSnapshotChange' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -160,7 +161,8 @@ function Get-SnapshotChangedContentById {
     )
 
     Process {
-        'Calling method: Get-SnapshotChangedContentById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SnapshotChangedContentById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -278,7 +280,8 @@ function Invoke-ListSnapshotChangedContents {
     )
 
     Process {
-        'Calling method: Invoke-ListSnapshotChangedContents' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSnapshotChangedContents' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

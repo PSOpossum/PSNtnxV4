@@ -42,7 +42,8 @@ function New-AddressGroup {
     )
 
     Process {
-        'Calling method: New-AddressGroup' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-AddressGroup' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteAddressGroupById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteAddressGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteAddressGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -203,7 +205,8 @@ function Get-AddressGroupById {
     )
 
     Process {
-        'Calling method: Get-AddressGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-AddressGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -297,7 +300,8 @@ function Invoke-ListAddressGroups {
     )
 
     Process {
-        'Calling method: Invoke-ListAddressGroups' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListAddressGroups' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -401,7 +405,8 @@ function Update-AddressGroupById {
     )
 
     Process {
-        'Calling method: Update-AddressGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-AddressGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

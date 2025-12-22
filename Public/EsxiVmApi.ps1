@@ -54,7 +54,8 @@ function Set-EsxiVmOwner {
     )
 
     Process {
-        'Calling method: Set-EsxiVmOwner' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Set-EsxiVmOwner' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -161,7 +162,8 @@ function Join-EsxiCategories {
     )
 
     Process {
-        'Calling method: Join-EsxiCategories' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Join-EsxiCategories' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -268,7 +270,8 @@ function Invoke-DisassociateEsxiCategories {
     )
 
     Process {
-        'Calling method: Invoke-DisassociateEsxiCategories' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DisassociateEsxiCategories' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -357,7 +360,8 @@ function Get-EsxiVmById {
     )
 
     Process {
-        'Calling method: Get-EsxiVmById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-EsxiVmById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -427,7 +431,8 @@ function Get-NutanixGuestToolsById {
     )
 
     Process {
-        'Calling method: Get-NutanixGuestToolsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-NutanixGuestToolsById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -515,7 +520,8 @@ function Add-NutanixGuestTools {
     )
 
     Process {
-        'Calling method: Add-NutanixGuestTools' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-NutanixGuestTools' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -622,7 +628,8 @@ function Install-NutanixGuestTools {
     )
 
     Process {
-        'Calling method: Install-NutanixGuestTools' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Install-NutanixGuestTools' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -735,7 +742,8 @@ function Invoke-ListEsxiVms {
     )
 
     Process {
-        'Calling method: Invoke-ListEsxiVms' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListEsxiVms' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -833,7 +841,8 @@ function Invoke-PowerOffEsxiVm {
     )
 
     Process {
-        'Calling method: Invoke-PowerOffEsxiVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PowerOffEsxiVm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -925,7 +934,8 @@ function Invoke-PowerOnEsxiVm {
     )
 
     Process {
-        'Calling method: Invoke-PowerOnEsxiVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PowerOnEsxiVm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1017,7 +1027,8 @@ function Invoke-RebootEsxiGuestVm {
     )
 
     Process {
-        'Calling method: Invoke-RebootEsxiGuestVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RebootEsxiGuestVm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1109,7 +1120,8 @@ function Reset-EsxiVm {
     )
 
     Process {
-        'Calling method: Reset-EsxiVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Reset-EsxiVm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1207,7 +1219,8 @@ function Invoke-RevertEsxiVm {
     )
 
     Process {
-        'Calling method: Invoke-RevertEsxiVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RevertEsxiVm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1308,7 +1321,8 @@ function Invoke-ShutdownEsxiGuestVm {
     )
 
     Process {
-        'Calling method: Invoke-ShutdownEsxiGuestVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ShutdownEsxiGuestVm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1400,7 +1414,8 @@ function Suspend-Vm {
     )
 
     Process {
-        'Calling method: Suspend-Vm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Suspend-Vm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1492,7 +1507,8 @@ function Uninstall-NutanixGuestTools {
     )
 
     Process {
-        'Calling method: Uninstall-NutanixGuestTools' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Uninstall-NutanixGuestTools' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1590,7 +1606,8 @@ function Update-NutanixGuestToolsById {
     )
 
     Process {
-        'Calling method: Update-NutanixGuestToolsById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-NutanixGuestToolsById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1697,7 +1714,8 @@ function Invoke-UpgradeNutanixGuestTools {
     )
 
     Process {
-        'Calling method: Invoke-UpgradeNutanixGuestTools' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-UpgradeNutanixGuestTools' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

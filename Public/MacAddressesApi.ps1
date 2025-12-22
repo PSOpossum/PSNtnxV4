@@ -42,7 +42,8 @@ function Get-LearnedMacAddressForLayer2StretchById {
     )
 
     Process {
-        'Calling method: Get-LearnedMacAddressForLayer2StretchById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-LearnedMacAddressForLayer2StretchById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -140,7 +141,8 @@ function Invoke-ListLearnedMacAddressesByLayer2StretchId {
     )
 
     Process {
-        'Calling method: Invoke-ListLearnedMacAddressesByLayer2StretchId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListLearnedMacAddressesByLayer2StretchId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

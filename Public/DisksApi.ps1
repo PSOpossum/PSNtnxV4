@@ -42,7 +42,8 @@ function Add-Disk {
     )
 
     Process {
-        'Calling method: Add-Disk' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-Disk' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -121,7 +122,8 @@ function Invoke-DeleteDiskById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteDiskById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteDiskById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -191,7 +193,8 @@ function Get-DiskById {
     )
 
     Process {
-        'Calling method: Get-DiskById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DiskById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -285,7 +288,8 @@ function Get-DiskStats {
     )
 
     Process {
-        'Calling method: Get-DiskStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DiskStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -403,7 +407,8 @@ function Invoke-ListDisks {
     )
 
     Process {
-        'Calling method: Invoke-ListDisks' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListDisks' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -499,7 +504,8 @@ function Update-DiskLEDState {
     )
 
     Process {
-        'Calling method: Update-DiskLEDState' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-DiskLEDState' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

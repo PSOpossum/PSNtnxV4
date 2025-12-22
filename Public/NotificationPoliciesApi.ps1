@@ -48,7 +48,8 @@ function New-NotificationPolicy {
     )
 
     Process {
-        'Calling method: New-NotificationPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-NotificationPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -150,7 +151,8 @@ function Invoke-DeleteNotificationPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteNotificationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteNotificationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -240,7 +242,8 @@ function Get-NotificationPolicyById {
     )
 
     Process {
-        'Calling method: Get-NotificationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-NotificationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -344,7 +347,8 @@ function Invoke-ListNotificationPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListNotificationPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListNotificationPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -458,7 +462,8 @@ function Update-NotificationPolicyById {
     )
 
     Process {
-        'Calling method: Update-NotificationPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-NotificationPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

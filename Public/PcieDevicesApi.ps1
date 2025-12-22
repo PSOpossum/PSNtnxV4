@@ -54,7 +54,8 @@ function Invoke-ListPcieDevices {
     )
 
     Process {
-        'Calling method: Invoke-ListPcieDevices' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListPcieDevices' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

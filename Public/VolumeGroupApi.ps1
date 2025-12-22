@@ -42,7 +42,8 @@ function Join-Category {
     )
 
     Process {
-        'Calling method: Join-Category' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Join-Category' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -134,7 +135,8 @@ function Add-IscsiClient {
     )
 
     Process {
-        'Calling method: Add-IscsiClient' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-IscsiClient' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -226,7 +228,8 @@ function Add-Vm {
     )
 
     Process {
-        'Calling method: Add-Vm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-Vm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -318,7 +321,8 @@ function New-VolumeDisk {
     )
 
     Process {
-        'Calling method: New-VolumeDisk' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VolumeDisk' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -404,7 +408,8 @@ function New-VolumeGroup {
     )
 
     Process {
-        'Calling method: New-VolumeGroup' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VolumeGroup' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -492,7 +497,8 @@ function Invoke-DeleteVolumeDisk {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVolumeDisk' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVolumeDisk' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -573,7 +579,8 @@ function Invoke-DeleteVolumeGroupById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVolumeGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVolumeGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -656,7 +663,8 @@ function Invoke-DetachIscsiClient {
     )
 
     Process {
-        'Calling method: Invoke-DetachIscsiClient' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DetachIscsiClient' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -743,7 +751,8 @@ function Invoke-DetachVm {
     )
 
     Process {
-        'Calling method: Invoke-DetachVm' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DetachVm' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -830,7 +839,8 @@ function Invoke-DisassociateCategory {
     )
 
     Process {
-        'Calling method: Invoke-DisassociateCategory' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DisassociateCategory' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -928,7 +938,8 @@ function Get-CategoryAssociations {
     )
 
     Process {
-        'Calling method: Get-CategoryAssociations' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-CategoryAssociations' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1037,7 +1048,8 @@ function Get-ExternalAttachments {
     )
 
     Process {
-        'Calling method: Get-ExternalAttachments' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ExternalAttachments' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1142,7 +1154,8 @@ function Get-VmAttachments {
     )
 
     Process {
-        'Calling method: Get-VmAttachments' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VmAttachments' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1233,7 +1246,8 @@ function Get-VolumeDiskById {
     )
 
     Process {
-        'Calling method: Get-VolumeDiskById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VolumeDiskById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1326,7 +1340,8 @@ function Get-VolumeDisks {
     )
 
     Process {
-        'Calling method: Get-VolumeDisks' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VolumeDisks' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1411,7 +1426,8 @@ function Get-VolumeGroupById {
     )
 
     Process {
-        'Calling method: Get-VolumeGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VolumeGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1488,7 +1504,8 @@ function Get-VolumeGroupMetadataInfo {
     )
 
     Process {
-        'Calling method: Get-VolumeGroupMetadataInfo' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VolumeGroupMetadataInfo' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1583,7 +1600,8 @@ function Get-VolumeGroups {
     )
 
     Process {
-        'Calling method: Get-VolumeGroups' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VolumeGroups' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1678,7 +1696,8 @@ function Move-VolumeGroup {
     )
 
     Process {
-        'Calling method: Move-VolumeGroup' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Move-VolumeGroup' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1764,7 +1783,8 @@ function Suspend-VolumeGroupSynchronousReplication {
     )
 
     Process {
-        'Calling method: Suspend-VolumeGroupSynchronousReplication' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Suspend-VolumeGroupSynchronousReplication' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1841,7 +1861,8 @@ function Resume-VolumeGroupSynchronousReplication {
     )
 
     Process {
-        'Calling method: Resume-VolumeGroupSynchronousReplication' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Resume-VolumeGroupSynchronousReplication' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1924,7 +1945,8 @@ function Invoke-RevertVolumeGroup {
     )
 
     Process {
-        'Calling method: Invoke-RevertVolumeGroup' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-RevertVolumeGroup' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2022,7 +2044,8 @@ function Update-VolumeDisk {
     )
 
     Process {
-        'Calling method: Update-VolumeDisk' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VolumeDisk' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2118,7 +2141,8 @@ function Update-VolumeGroupById {
     )
 
     Process {
-        'Calling method: Update-VolumeGroupById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VolumeGroupById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2210,7 +2234,8 @@ function Update-VolumeGroupMetadataInfo {
     )
 
     Process {
-        'Calling method: Update-VolumeGroupMetadataInfo' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VolumeGroupMetadataInfo' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

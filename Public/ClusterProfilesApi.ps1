@@ -54,7 +54,8 @@ function Invoke-ApplyClusterProfile {
     )
 
     Process {
-        'Calling method: Invoke-ApplyClusterProfile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ApplyClusterProfile' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -148,7 +149,8 @@ function New-ClusterProfile {
     )
 
     Process {
-        'Calling method: New-ClusterProfile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-ClusterProfile' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -234,7 +236,8 @@ function Invoke-DeleteClusterProfileById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteClusterProfileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteClusterProfileById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -321,7 +324,8 @@ function Invoke-DisassociateClusterFromClusterProfile {
     )
 
     Process {
-        'Calling method: Invoke-DisassociateClusterFromClusterProfile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DisassociateClusterFromClusterProfile' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -405,7 +409,8 @@ function Get-ClusterProfileById {
     )
 
     Process {
-        'Calling method: Get-ClusterProfileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ClusterProfileById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -499,7 +504,8 @@ function Invoke-ListClusterProfiles {
     )
 
     Process {
-        'Calling method: Invoke-ListClusterProfiles' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListClusterProfiles' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -609,7 +615,8 @@ function Update-ClusterProfileById {
     )
 
     Process {
-        'Calling method: Update-ClusterProfileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ClusterProfileById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

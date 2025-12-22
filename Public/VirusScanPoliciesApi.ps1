@@ -48,7 +48,8 @@ function New-VirusScanPolicy {
     )
 
     Process {
-        'Calling method: New-VirusScanPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VirusScanPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -150,7 +151,8 @@ function Invoke-DeleteVirusScanPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVirusScanPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVirusScanPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -240,7 +242,8 @@ function Get-VirusScanPolicyById {
     )
 
     Process {
-        'Calling method: Get-VirusScanPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VirusScanPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -344,7 +347,8 @@ function Invoke-ListVirusScanPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListVirusScanPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVirusScanPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -458,7 +462,8 @@ function Update-VirusScanPolicyById {
     )
 
     Process {
-        'Calling method: Update-VirusScanPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VirusScanPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

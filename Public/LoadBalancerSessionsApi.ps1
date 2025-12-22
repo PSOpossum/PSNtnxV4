@@ -42,7 +42,8 @@ function New-LoadBalancerSession {
     )
 
     Process {
-        'Calling method: New-LoadBalancerSession' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-LoadBalancerSession' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteLoadBalancerSessionById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteLoadBalancerSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteLoadBalancerSessionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -209,7 +211,8 @@ function Get-LoadBalancerSessionById {
     )
 
     Process {
-        'Calling method: Get-LoadBalancerSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-LoadBalancerSessionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -313,7 +316,8 @@ function Get-LoadBalancerSessionStats {
     )
 
     Process {
-        'Calling method: Get-LoadBalancerSessionStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-LoadBalancerSessionStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -429,7 +433,8 @@ function Invoke-ListLoadBalancerSessions {
     )
 
     Process {
-        'Calling method: Invoke-ListLoadBalancerSessions' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListLoadBalancerSessions' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -533,7 +538,8 @@ function Update-LoadBalancerSessionById {
     )
 
     Process {
-        'Calling method: Update-LoadBalancerSessionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-LoadBalancerSessionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -54,7 +54,8 @@ function Invoke-DeleteInfectedFileById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteInfectedFileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteInfectedFileById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -162,7 +163,8 @@ function Restore-InfectedFile {
     )
 
     Process {
-        'Calling method: Restore-InfectedFile' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Restore-InfectedFile' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -261,7 +263,8 @@ function Get-InfectedFileById {
     )
 
     Process {
-        'Calling method: Get-InfectedFileById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-InfectedFileById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -365,7 +368,8 @@ function Invoke-ListInfectedFiles {
     )
 
     Process {
-        'Calling method: Invoke-ListInfectedFiles' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListInfectedFiles' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

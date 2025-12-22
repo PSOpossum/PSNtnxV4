@@ -48,7 +48,8 @@ function Invoke-ComputeRecommendations {
     )
 
     Process {
-        'Calling method: Invoke-ComputeRecommendations' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ComputeRecommendations' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -132,7 +133,8 @@ function Get-RecommendationById {
     )
 
     Process {
-        'Calling method: Get-RecommendationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RecommendationById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

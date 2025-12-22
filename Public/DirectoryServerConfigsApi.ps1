@@ -42,7 +42,8 @@ function New-CategoryMapping {
     )
 
     Process {
-        'Calling method: New-CategoryMapping' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-CategoryMapping' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function New-DirectoryServerConfig {
     )
 
     Process {
-        'Calling method: New-DirectoryServerConfig' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-DirectoryServerConfig' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -214,7 +216,8 @@ function Invoke-DeleteDirectoryServerConfigById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteDirectoryServerConfigById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteDirectoryServerConfigById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -295,7 +298,8 @@ function Invoke-DeleteDsCategoryMappingById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteDsCategoryMappingById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteDsCategoryMappingById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -370,7 +374,8 @@ function Get-DirectoryServerConfigById {
     )
 
     Process {
-        'Calling method: Get-DirectoryServerConfigById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DirectoryServerConfigById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -440,7 +445,8 @@ function Get-DsCategoryMappingById {
     )
 
     Process {
-        'Calling method: Get-DsCategoryMappingById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DsCategoryMappingById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -534,7 +540,8 @@ function Invoke-ListCategoryMappings {
     )
 
     Process {
-        'Calling method: Invoke-ListCategoryMappings' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListCategoryMappings' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -620,7 +627,8 @@ function Invoke-ListDirectoryServerConfigs {
     )
 
     Process {
-        'Calling method: Invoke-ListDirectoryServerConfigs' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListDirectoryServerConfigs' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -708,7 +716,8 @@ function Update-DirectoryServerConfigById {
     )
 
     Process {
-        'Calling method: Update-DirectoryServerConfigById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-DirectoryServerConfigById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -815,7 +824,8 @@ function Update-DsCategoryMappingById {
     )
 
     Process {
-        'Calling method: Update-DsCategoryMappingById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-DsCategoryMappingById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

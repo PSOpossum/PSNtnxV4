@@ -42,7 +42,8 @@ function New-Scenario {
     )
 
     Process {
-        'Calling method: New-Scenario' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Scenario' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -122,7 +123,8 @@ function New-Simulation {
     )
 
     Process {
-        'Calling method: New-Simulation' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Simulation' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -197,7 +199,8 @@ function Invoke-DeleteScenarioById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteScenarioById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteScenarioById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -267,7 +270,8 @@ function Invoke-DeleteSimulationById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteSimulationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteSimulationById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -343,7 +347,8 @@ function New-Recommendation {
     )
 
     Process {
-        'Calling method: New-Recommendation' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Recommendation' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -424,7 +429,8 @@ function New-Report {
     )
 
     Process {
-        'Calling method: New-Report' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Report' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -505,7 +511,8 @@ function New-Runway {
     )
 
     Process {
-        'Calling method: New-Runway' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Runway' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -580,7 +587,8 @@ function Get-ScenarioById {
     )
 
     Process {
-        'Calling method: Get-ScenarioById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ScenarioById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -657,7 +665,8 @@ function Get-ScenarioReport {
     )
 
     Process {
-        'Calling method: Get-ScenarioReport' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ScenarioReport' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -732,7 +741,8 @@ function Get-SimulationById {
     )
 
     Process {
-        'Calling method: Get-SimulationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SimulationById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -826,7 +836,8 @@ function Invoke-ListScenarios {
     )
 
     Process {
-        'Calling method: Invoke-ListScenarios' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListScenarios' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -936,7 +947,8 @@ function Invoke-ListSimulations {
     )
 
     Process {
-        'Calling method: Invoke-ListSimulations' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSimulations' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1040,7 +1052,8 @@ function Update-ScenarioById {
     )
 
     Process {
-        'Calling method: Update-ScenarioById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ScenarioById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1141,7 +1154,8 @@ function Update-SimulationById {
     )
 
     Process {
-        'Calling method: Update-SimulationById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SimulationById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

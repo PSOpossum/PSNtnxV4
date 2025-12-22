@@ -42,7 +42,8 @@ function New-TemplatePlacementPolicy {
     )
 
     Process {
-        'Calling method: New-TemplatePlacementPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-TemplatePlacementPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteTemplatePlacementPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteTemplatePlacementPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteTemplatePlacementPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -203,7 +205,8 @@ function Get-TemplatePlacementPolicyById {
     )
 
     Process {
-        'Calling method: Get-TemplatePlacementPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-TemplatePlacementPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -297,7 +300,8 @@ function Invoke-ListTemplatePlacementPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListTemplatePlacementPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListTemplatePlacementPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -401,7 +405,8 @@ function Update-TemplatePlacementPolicyById {
     )
 
     Process {
-        'Calling method: Update-TemplatePlacementPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-TemplatePlacementPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

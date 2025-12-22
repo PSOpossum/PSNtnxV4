@@ -42,7 +42,8 @@ function New-RateLimitPolicy {
     )
 
     Process {
-        'Calling method: New-RateLimitPolicy' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-RateLimitPolicy' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -122,7 +123,8 @@ function Invoke-DeleteRateLimitPolicyById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteRateLimitPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteRateLimitPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -192,7 +194,8 @@ function Get-RateLimitPolicyById {
     )
 
     Process {
-        'Calling method: Get-RateLimitPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RateLimitPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -286,7 +289,8 @@ function Invoke-ListEffectiveRateLimitPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListEffectiveRateLimitPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListEffectiveRateLimitPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -396,7 +400,8 @@ function Invoke-ListRateLimitPolicies {
     )
 
     Process {
-        'Calling method: Invoke-ListRateLimitPolicies' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRateLimitPolicies' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -500,7 +505,8 @@ function Update-RateLimitPolicyById {
     )
 
     Process {
-        'Calling method: Update-RateLimitPolicyById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-RateLimitPolicyById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -36,7 +36,8 @@ function Get-Capabilities {
     )
 
     Process {
-        'Calling method: Get-Capabilities' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-Capabilities' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

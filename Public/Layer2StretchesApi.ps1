@@ -42,7 +42,8 @@ function New-Layer2Stretch {
     )
 
     Process {
-        'Calling method: New-Layer2Stretch' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Layer2Stretch' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteLayer2StretchById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteLayer2StretchById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteLayer2StretchById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -203,7 +205,8 @@ function Get-Layer2StretchById {
     )
 
     Process {
-        'Calling method: Get-Layer2StretchById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-Layer2StretchById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -315,7 +318,8 @@ function Get-Layer2StretchStats {
     )
 
     Process {
-        'Calling method: Get-Layer2StretchStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-Layer2StretchStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -433,7 +437,8 @@ function Invoke-ListLayer2Stretches {
     )
 
     Process {
-        'Calling method: Invoke-ListLayer2Stretches' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListLayer2Stretches' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -533,7 +538,8 @@ function Update-Layer2StretchById {
     )
 
     Process {
-        'Calling method: Update-Layer2StretchById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-Layer2StretchById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

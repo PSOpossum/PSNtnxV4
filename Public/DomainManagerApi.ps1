@@ -48,7 +48,8 @@ function New-BackupTarget {
     )
 
     Process {
-        'Calling method: New-BackupTarget' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-BackupTarget' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -138,7 +139,8 @@ function New-DomainManager {
     )
 
     Process {
-        'Calling method: New-DomainManager' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-DomainManager' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -218,7 +220,8 @@ function New-RestoreSource {
     )
 
     Process {
-        'Calling method: New-RestoreSource' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-RestoreSource' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -311,7 +314,8 @@ function Invoke-DeleteBackupTargetById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteBackupTargetById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteBackupTargetById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -401,7 +405,8 @@ function Invoke-DeleteRestoreSourceById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteRestoreSourceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteRestoreSourceById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -482,7 +487,8 @@ function Get-BackupTargetById {
     )
 
     Process {
-        'Calling method: Get-BackupTargetById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-BackupTargetById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -556,7 +562,8 @@ function Get-DomainManagerById {
     )
 
     Process {
-        'Calling method: Get-DomainManagerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-DomainManagerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -632,7 +639,8 @@ function Get-ProductById {
     )
 
     Process {
-        'Calling method: Get-ProductById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ProductById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -718,7 +726,8 @@ function Get-RestorePointById {
     )
 
     Process {
-        'Calling method: Get-RestorePointById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RestorePointById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -796,7 +805,8 @@ function Get-RestoreSourceById {
     )
 
     Process {
-        'Calling method: Get-RestoreSourceById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RestoreSourceById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -866,7 +876,8 @@ function Invoke-ListBackupTargets {
     )
 
     Process {
-        'Calling method: Invoke-ListBackupTargets' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListBackupTargets' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -936,7 +947,8 @@ function Invoke-ListDomainManagers {
     )
 
     Process {
-        'Calling method: Invoke-ListDomainManagers' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListDomainManagers' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1036,7 +1048,8 @@ function Invoke-ListProducts {
     )
 
     Process {
-        'Calling method: Invoke-ListProducts' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListProducts' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1144,7 +1157,8 @@ function Invoke-ListRestorableDomainManagers {
     )
 
     Process {
-        'Calling method: Invoke-ListRestorableDomainManagers' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRestorableDomainManagers' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1262,7 +1276,8 @@ function Invoke-ListRestorePoints {
     )
 
     Process {
-        'Calling method: Invoke-ListRestorePoints' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRestorePoints' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1374,7 +1389,8 @@ function Register-DomainManager {
     )
 
     Process {
-        'Calling method: Register-DomainManager' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Register-DomainManager' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1480,7 +1496,8 @@ function Register-DomainManager {
     )
 
     Process {
-        'Calling method: Register-DomainManager' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Register-DomainManager' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1585,7 +1602,8 @@ function Unregister-DomainManager {
     )
 
     Process {
-        'Calling method: Unregister-DomainManager' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Unregister-DomainManager' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1697,7 +1715,8 @@ function Update-BackupTargetById {
     )
 
     Process {
-        'Calling method: Update-BackupTargetById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-BackupTargetById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1814,7 +1833,8 @@ function Update-ProductById {
     )
 
     Process {
-        'Calling method: Update-ProductById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ProductById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

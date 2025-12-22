@@ -42,7 +42,8 @@ function Add-SnmpTransport {
     )
 
     Process {
-        'Calling method: Add-SnmpTransport' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Add-SnmpTransport' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -127,7 +128,8 @@ function Join-CategoriesToCluster {
     )
 
     Process {
-        'Calling method: Join-CategoriesToCluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Join-CategoriesToCluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -212,7 +214,8 @@ function Invoke-CheckHypervisorRequirements {
     )
 
     Process {
-        'Calling method: Invoke-CheckHypervisorRequirements' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-CheckHypervisorRequirements' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -303,7 +306,8 @@ function New-Cluster {
     )
 
     Process {
-        'Calling method: New-Cluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Cluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -393,7 +397,8 @@ function New-RsyslogServer {
     )
 
     Process {
-        'Calling method: New-RsyslogServer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-RsyslogServer' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -478,7 +483,8 @@ function New-SnmpTrap {
     )
 
     Process {
-        'Calling method: New-SnmpTrap' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-SnmpTrap' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -563,7 +569,8 @@ function New-SnmpUser {
     )
 
     Process {
-        'Calling method: New-SnmpUser' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-SnmpUser' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -654,7 +661,8 @@ function Invoke-DeleteClusterById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteClusterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteClusterById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -739,7 +747,8 @@ function Invoke-DeleteRsyslogServerById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteRsyslogServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteRsyslogServerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -819,7 +828,8 @@ function Invoke-DeleteSnmpTrapById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteSnmpTrapById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteSnmpTrapById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -899,7 +909,8 @@ function Invoke-DeleteSnmpUserById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteSnmpUserById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteSnmpUserById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -979,7 +990,8 @@ function Invoke-DisassociateCategoriesFromCluster {
     )
 
     Process {
-        'Calling method: Invoke-DisassociateCategoriesFromCluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DisassociateCategoriesFromCluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1064,7 +1076,8 @@ function Invoke-DiscoverUnconfiguredNodes {
     )
 
     Process {
-        'Calling method: Invoke-DiscoverUnconfiguredNodes' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DiscoverUnconfiguredNodes' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1161,7 +1174,8 @@ function Enter-HostMaintenance {
     )
 
     Process {
-        'Calling method: Enter-HostMaintenance' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Enter-HostMaintenance' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1267,7 +1281,8 @@ function Exit-HostMaintenance {
     )
 
     Process {
-        'Calling method: Exit-HostMaintenance' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Exit-HostMaintenance' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1367,7 +1382,8 @@ function Expand-Cluster {
     )
 
     Process {
-        'Calling method: Expand-Cluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Expand-Cluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1457,7 +1473,8 @@ function Invoke-FetchNodeNetworkingDetails {
     )
 
     Process {
-        'Calling method: Invoke-FetchNodeNetworkingDetails' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-FetchNodeNetworkingDetails' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1542,7 +1559,8 @@ function Invoke-FetchTaskResponse {
     )
 
     Process {
-        'Calling method: Invoke-FetchTaskResponse' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-FetchTaskResponse' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1623,7 +1641,8 @@ function Invoke-FinalizeClusterRecovery {
     )
 
     Process {
-        'Calling method: Invoke-FinalizeClusterRecovery' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-FinalizeClusterRecovery' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1704,7 +1723,8 @@ function Get-ClusterById {
     )
 
     Process {
-        'Calling method: Get-ClusterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ClusterById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1778,7 +1798,8 @@ function Get-ClusterProtectionInfo {
     )
 
     Process {
-        'Calling method: Get-ClusterProtectionInfo' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ClusterProtectionInfo' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1848,7 +1869,8 @@ function Get-ClusterRecoveryInfo {
     )
 
     Process {
-        'Calling method: Get-ClusterRecoveryInfo' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ClusterRecoveryInfo' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1948,7 +1970,8 @@ function Get-ClusterStats {
     )
 
     Process {
-        'Calling method: Get-ClusterStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-ClusterStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2046,7 +2069,8 @@ function Get-HostById {
     )
 
     Process {
-        'Calling method: Get-HostById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-HostById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2132,7 +2156,8 @@ function Get-HostNicById {
     )
 
     Process {
-        'Calling method: Get-HostNicById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-HostNicById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2246,7 +2271,8 @@ function Get-HostStats {
     )
 
     Process {
-        'Calling method: Get-HostStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-HostStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2348,7 +2374,8 @@ function Get-RackableUnitById {
     )
 
     Process {
-        'Calling method: Get-RackableUnitById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RackableUnitById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2428,7 +2455,8 @@ function Get-RsyslogServerById {
     )
 
     Process {
-        'Calling method: Get-RsyslogServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-RsyslogServerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2502,7 +2530,8 @@ function Get-SnmpConfigByClusterId {
     )
 
     Process {
-        'Calling method: Get-SnmpConfigByClusterId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SnmpConfigByClusterId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2578,7 +2607,8 @@ function Get-SnmpTrapById {
     )
 
     Process {
-        'Calling method: Get-SnmpTrapById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SnmpTrapById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2658,7 +2688,8 @@ function Get-SnmpUserById {
     )
 
     Process {
-        'Calling method: Get-SnmpUserById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SnmpUserById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2744,7 +2775,8 @@ function Get-VirtualNicById {
     )
 
     Process {
-        'Calling method: Get-VirtualNicById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VirtualNicById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2834,7 +2866,8 @@ function Initialize-ClusterRecovery {
     )
 
     Process {
-        'Calling method: Initialize-ClusterRecovery' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Initialize-ClusterRecovery' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -2954,7 +2987,8 @@ function Invoke-ListClusters {
     )
 
     Process {
-        'Calling method: Invoke-ListClusters' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListClusters' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3072,7 +3106,8 @@ function Invoke-ListHostNics {
     )
 
     Process {
-        'Calling method: Invoke-ListHostNics' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListHostNics' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3194,7 +3229,8 @@ function Invoke-ListHostNicsByHostId {
     )
 
     Process {
-        'Calling method: Invoke-ListHostNicsByHostId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListHostNicsByHostId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3318,7 +3354,8 @@ function Invoke-ListHosts {
     )
 
     Process {
-        'Calling method: Invoke-ListHosts' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListHosts' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3444,7 +3481,8 @@ function Invoke-ListHostsByClusterId {
     )
 
     Process {
-        'Calling method: Invoke-ListHostsByClusterId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListHostsByClusterId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3562,7 +3600,8 @@ function Invoke-ListPhysicalGpuProfiles {
     )
 
     Process {
-        'Calling method: Invoke-ListPhysicalGpuProfiles' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListPhysicalGpuProfiles' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3648,7 +3687,8 @@ function Invoke-ListRackableUnitsByClusterId {
     )
 
     Process {
-        'Calling method: Invoke-ListRackableUnitsByClusterId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRackableUnitsByClusterId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3718,7 +3758,8 @@ function Invoke-ListRsyslogServersByClusterId {
     )
 
     Process {
-        'Calling method: Invoke-ListRsyslogServersByClusterId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListRsyslogServersByClusterId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3812,7 +3853,8 @@ function Invoke-ListVirtualGpuProfiles {
     )
 
     Process {
-        'Calling method: Invoke-ListVirtualGpuProfiles' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVirtualGpuProfiles' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -3934,7 +3976,8 @@ function Invoke-ListVirtualNicsByHostId {
     )
 
     Process {
-        'Calling method: Invoke-ListVirtualNicsByHostId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVirtualNicsByHostId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4040,7 +4083,8 @@ function Protect-Cluster {
     )
 
     Process {
-        'Calling method: Protect-Cluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Protect-Cluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4136,7 +4180,8 @@ function Remove-Node {
     )
 
     Process {
-        'Calling method: Remove-Node' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Remove-Node' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4226,7 +4271,8 @@ function Remove-SnmpTransport {
     )
 
     Process {
-        'Calling method: Remove-SnmpTransport' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Remove-SnmpTransport' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4311,7 +4357,8 @@ function Unprotect-Cluster {
     )
 
     Process {
-        'Calling method: Unprotect-Cluster' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Unprotect-Cluster' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4398,7 +4445,8 @@ function Update-ClusterById {
     )
 
     Process {
-        'Calling method: Update-ClusterById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-ClusterById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4500,7 +4548,8 @@ function Update-RsyslogServerById {
     )
 
     Process {
-        'Calling method: Update-RsyslogServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-RsyslogServerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4594,7 +4643,8 @@ function Update-SnmpStatus {
     )
 
     Process {
-        'Calling method: Update-SnmpStatus' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SnmpStatus' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4691,7 +4741,8 @@ function Update-SnmpTrapById {
     )
 
     Process {
-        'Calling method: Update-SnmpTrapById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SnmpTrapById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4797,7 +4848,8 @@ function Update-SnmpUserById {
     )
 
     Process {
-        'Calling method: Update-SnmpUserById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SnmpUserById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -4891,7 +4943,8 @@ function Confirm-Node {
     )
 
     Process {
-        'Calling method: Confirm-Node' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Confirm-Node' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

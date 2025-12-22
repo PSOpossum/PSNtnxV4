@@ -48,7 +48,8 @@ function New-VirtualSwitch {
     )
 
     Process {
-        'Calling method: New-VirtualSwitch' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-VirtualSwitch' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -144,7 +145,8 @@ function Invoke-DeleteVirtualSwitchById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteVirtualSwitchById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteVirtualSwitchById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -229,7 +231,8 @@ function Get-VirtualSwitchById {
     )
 
     Process {
-        'Calling method: Get-VirtualSwitchById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-VirtualSwitchById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -327,7 +330,8 @@ function Invoke-ListNodeSchedulableStatus {
     )
 
     Process {
-        'Calling method: Invoke-ListNodeSchedulableStatus' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListNodeSchedulableStatus' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -437,7 +441,8 @@ function Invoke-ListVirtualSwitches {
     )
 
     Process {
-        'Calling method: Invoke-ListVirtualSwitches' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListVirtualSwitches' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -535,7 +540,8 @@ function Move-Bridge {
     )
 
     Process {
-        'Calling method: Move-Bridge' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Move-Bridge' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -643,7 +649,8 @@ function Update-VirtualSwitchById {
     )
 
     Process {
-        'Calling method: Update-VirtualSwitchById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-VirtualSwitchById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

@@ -54,7 +54,8 @@ function Invoke-PerformInventory {
     )
 
     Process {
-        'Calling method: Invoke-PerformInventory' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-PerformInventory' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

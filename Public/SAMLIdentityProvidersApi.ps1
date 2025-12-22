@@ -36,7 +36,8 @@ function New-SamlIdentityProvider {
     )
 
     Process {
-        'Calling method: New-SamlIdentityProvider' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-SamlIdentityProvider' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -117,7 +118,8 @@ function Invoke-DeleteSamlIdentityProviderById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteSamlIdentityProviderById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteSamlIdentityProviderById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -192,7 +194,8 @@ function Get-SamlIdentityProviderById {
     )
 
     Process {
-        'Calling method: Get-SamlIdentityProviderById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SamlIdentityProviderById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -269,7 +272,8 @@ function Get-SamlIdpSpMetadataById {
     )
 
     Process {
-        'Calling method: Get-SamlIdpSpMetadataById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SamlIdpSpMetadataById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -345,7 +349,8 @@ function Get-SamlSpMetadata {
     )
 
     Process {
-        'Calling method: Get-SamlSpMetadata' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-SamlSpMetadata' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -440,7 +445,8 @@ function Invoke-ListSamlIdentityProviders {
     )
 
     Process {
-        'Calling method: Invoke-ListSamlIdentityProviders' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListSamlIdentityProviders' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -538,7 +544,8 @@ function Update-SamlIdentityProviderById {
     )
 
     Process {
-        'Calling method: Update-SamlIdentityProviderById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-SamlIdentityProviderById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

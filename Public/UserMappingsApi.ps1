@@ -43,7 +43,8 @@ function Invoke-DownloadUserMappings {
     )
 
     Process {
-        'Calling method: Invoke-DownloadUserMappings' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DownloadUserMappings' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -130,7 +131,8 @@ function Invoke-UploadUserMappings {
     )
 
     Process {
-        'Calling method: Invoke-UploadUserMappings' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-UploadUserMappings' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

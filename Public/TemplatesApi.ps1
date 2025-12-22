@@ -42,7 +42,8 @@ function Stop-GuestUpdate {
     )
 
     Process {
-        'Calling method: Stop-GuestUpdate' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Stop-GuestUpdate' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -129,7 +130,8 @@ function Complete-GuestUpdate {
     )
 
     Process {
-        'Calling method: Complete-GuestUpdate' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Complete-GuestUpdate' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -219,7 +221,8 @@ function New-Template {
     )
 
     Process {
-        'Calling method: New-Template' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-Template' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -305,7 +308,8 @@ function Invoke-DeleteTemplateById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteTemplateById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteTemplateById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -392,7 +396,8 @@ function Invoke-DeleteTemplateVersionById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteTemplateVersionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteTemplateVersionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -483,7 +488,8 @@ function Deploy-Template {
     )
 
     Process {
-        'Calling method: Deploy-Template' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Deploy-Template' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -567,7 +573,8 @@ function Get-TemplateById {
     )
 
     Process {
-        'Calling method: Get-TemplateById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-TemplateById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -643,7 +650,8 @@ function Get-TemplateVersionById {
     )
 
     Process {
-        'Calling method: Get-TemplateVersionById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-TemplateVersionById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -729,7 +737,8 @@ function ConvertTo-itiateGuestUpdate {
     )
 
     Process {
-        'Calling method: ConvertTo-itiateGuestUpdate' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: ConvertTo-itiateGuestUpdate' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -839,7 +848,8 @@ function Invoke-ListTemplateVersions {
     )
 
     Process {
-        'Calling method: Invoke-ListTemplateVersions' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListTemplateVersions' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -953,7 +963,8 @@ function Invoke-ListTemplates {
     )
 
     Process {
-        'Calling method: Invoke-ListTemplates' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListTemplates' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1057,7 +1068,8 @@ function Publish-Template {
     )
 
     Process {
-        'Calling method: Publish-Template' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Publish-Template' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -1164,7 +1176,8 @@ function Update-TemplateById {
     )
 
     Process {
-        'Calling method: Update-TemplateById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-TemplateById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

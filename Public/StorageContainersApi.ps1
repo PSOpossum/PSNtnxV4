@@ -48,7 +48,8 @@ function Clear-ThickProvisionedSpace {
     )
 
     Process {
-        'Calling method: Clear-ThickProvisionedSpace' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Clear-ThickProvisionedSpace' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -139,7 +140,8 @@ function New-StorageContainer {
     )
 
     Process {
-        'Calling method: New-StorageContainer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-StorageContainer' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -236,7 +238,8 @@ function Invoke-DeleteStorageContainerById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteStorageContainerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteStorageContainerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -315,7 +318,8 @@ function Get-StorageContainerById {
     )
 
     Process {
-        'Calling method: Get-StorageContainerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-StorageContainerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -409,7 +413,8 @@ function Get-StorageContainerStats {
     )
 
     Process {
-        'Calling method: Get-StorageContainerStats' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-StorageContainerStats' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -515,7 +520,8 @@ function Invoke-ListDataStoresByClusterId {
     )
 
     Process {
-        'Calling method: Invoke-ListDataStoresByClusterId' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListDataStoresByClusterId' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -621,7 +627,8 @@ function Invoke-ListStorageContainers {
     )
 
     Process {
-        'Calling method: Invoke-ListStorageContainers' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListStorageContainers' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -713,7 +720,8 @@ function Mount-StorageContainer {
     )
 
     Process {
-        'Calling method: Mount-StorageContainer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Mount-StorageContainer' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -798,7 +806,8 @@ function Invoke-UnmountStorageContainer {
     )
 
     Process {
-        'Calling method: Invoke-UnmountStorageContainer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-UnmountStorageContainer' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -895,7 +904,8 @@ function Update-StorageContainerById {
     )
 
     Process {
-        'Calling method: Update-StorageContainerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-StorageContainerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()

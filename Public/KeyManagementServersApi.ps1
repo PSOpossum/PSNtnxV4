@@ -42,7 +42,8 @@ function New-KeyManagementServer {
     )
 
     Process {
-        'Calling method: New-KeyManagementServer' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: New-KeyManagementServer' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -128,7 +129,8 @@ function Invoke-DeleteKeyManagementServerById {
     )
 
     Process {
-        'Calling method: Invoke-DeleteKeyManagementServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-DeleteKeyManagementServerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -203,7 +205,8 @@ function Get-KeyManagementServerById {
     )
 
     Process {
-        'Calling method: Get-KeyManagementServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Get-KeyManagementServerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -267,7 +270,8 @@ function Invoke-ListKeyManagementServers {
     )
 
     Process {
-        'Calling method: Invoke-ListKeyManagementServers' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Invoke-ListKeyManagementServers' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
@@ -351,7 +355,8 @@ function Update-KeyManagementServerById {
     )
 
     Process {
-        'Calling method: Update-KeyManagementServerById' | Write-Debug $PSBoundParameters | Out-DebugParameter | Write-Debug
+        'Calling method: Update-KeyManagementServerById' | Write-Debug
+		$PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $LocalVarAccepts = @()
         $LocalVarContentTypes = @()
